@@ -1,7 +1,5 @@
-\section{Blowing in the Wind - Bob Dylan}
-
-\begin{verbatim}
-
+## Blowing in the Wind - Bob Dylan
+```{}
 C          F          C        Am  
 How many roads must a man walk down, 
    C          F    G - G7
@@ -37,4 +35,5 @@ that too many people have Died?
 The answer my friend, is blowing in the wind.
 The answer is blowing in the wind.
 
-\end{verbatim}
+
+```

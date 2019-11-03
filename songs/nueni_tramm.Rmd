@@ -1,7 +1,6 @@
 
-\section{Mani Matter - S'nüüni Tramm}
-
-\begin{verbatim}
+## S'nüüni Tramm - Mani Matter
+```{}
 4/8
 |Am_______|________|________|________|
 |_________|________|________|________|
@@ -33,4 +32,5 @@ Ds Nüünitram isch hinden um e Rank em Depot zue
 Eine het no grüeft: I pfuuse, blaset mir id Schue!
 Und dir heit jitz vo mym Gschichtli sicher alli gnue
 
-\end{verbatim}
+
+```

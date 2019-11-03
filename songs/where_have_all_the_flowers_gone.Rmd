@@ -1,6 +1,5 @@
-\section{Where have all the flowers gone - Peter Paul and Mary}
-
-\begin{verbatim}
+## Where have all the flowers gone - Peter Paul and Mary
+```{}
 G                   Em
 Where have all the flowers gone?
 C         D
@@ -33,4 +32,5 @@ Gone to graveyards every one
 Where have all the graveyards gone?
 [...]
 Covered with flowers every one
-\end{verbatim}
+
+```

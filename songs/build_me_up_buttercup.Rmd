@@ -1,7 +1,5 @@
-\section{Build me up Buttercup - The Foundations}
-
-\begin{verbatim}
-
+## Build me up Buttercup - The Foundations
+```{}
 Intro/Chorus:  C Em F G...
 End of Chorus: C Bb F (fret barre chord) 
                C G (F G D C) G...
@@ -42,4 +40,5 @@ Bridge
 
 Chorus
 
-\end{verbatim}
+
+```

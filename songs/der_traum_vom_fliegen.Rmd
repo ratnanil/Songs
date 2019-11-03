@@ -1,14 +1,14 @@
-\section{Der Traum vom Fliegen - Alexandra}
+## Der Traum vom Fliegen - Alexandra
+```{}
+Intro:
+Am__|D___|Am__|D___|
+Chorus:
+Am___|D___|G___|C___|D___|G_Am_|____|
+D___|G___|C___|D___|G_Am_|____|
 
-% Inro:
-% Am__|D___|Am__|D___|
-% Chorus:
-% Am___|D___|G___|C___|D___|G_Am_|____|
-% D___|G___|C___|D___|G_Am_|____|
+F___|G___|C___|__G_|Am___|D_F_|
+E___|F__G|
 
-% F___|G___|C___|__G_|Am___|D_F_|
-% E___|F__G|
-\begin{verbatim}
 Intro: Am D Am D
 
 Am        D
@@ -90,4 +90,5 @@ Und vergessen wär der Traum
 Vom Flie  gen
        F  Am
 Vom Flie  gen...
-\end{verbatim}
+
+```

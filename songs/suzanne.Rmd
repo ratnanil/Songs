@@ -1,6 +1,5 @@
-\section{Suzanne - Leonard Cohen}
-
-\begin{verbatim}
+## Suzanne - Leonard Cohen
+```{}
  E               * +
 Suzanne takes you down
                    * +
@@ -78,4 +77,5 @@ And you know that you will trust her
 For she's touched your perfect body 
 with her mind 
 
-\end{verbatim}
+
+```

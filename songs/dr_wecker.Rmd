@@ -1,6 +1,5 @@
-\section{Dr Wecker - Mani Matter}
-
-\begin{verbatim}
+## Dr Wecker - Mani Matter
+```{}
 4/8
 |C_______|________|F______|________|
 |G_______|________|C_______|________|
@@ -29,4 +28,5 @@ I ha Sorge wäg myr Gsundheit
 Uswäglos isch d Situation
 Zletscht han ig dr Wecker furtggäh
 Sider weckt mi ds Telefon
-\end{verbatim}
+
+```

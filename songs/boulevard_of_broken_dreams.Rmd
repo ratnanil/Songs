@@ -1,7 +1,5 @@
-\section{Boulevard of Broken Dreams - Green Day}
-
-\begin{verbatim}
-
+## Boulevard of Broken Dreams - Green Day
+```{}
 Em        G              D              A             Em
 I walk a lonely road, the only one that I have ever known
             G             D                A               Em
@@ -46,4 +44,5 @@ And I walk alone
 
 [Interlude], [Chorus], [Interlude]
 
-\end{verbatim}
+
+```

@@ -1,1 +1,64 @@
-	(t:Heute hier,morgen dort) (st:Hannes Wader) (G)Heute hier, morgen dort, bin kaum (C)da, muß ich (G)fort, hab mich niemals des(Em)wegen be(D)klagt. Hab es (G)selbst so gewählt, nie die (C)Jahre ge(G)zählt, nie nach (Em)gestern und (D)morgen ge(G)fragt. (soc)Manchmal (D)träume ich schwer und dann (C)denk ich, es (G)wär Zeit zu (D)bleiben und nun was ganz (C)andres zu (G)tun. So vergeht Jahr um Jahr und es (C)ist mir längst (G)klar, dass nichts (Em)bleibt, dass nichts (D)bleibt, wie es (G)war.(eoc) (G)Daß man mich kaum vermißt, schon nach (C)Tagen ver(G)gißt , wenn ich längst wieder (Em)anderswo (D)bin, stört und (G)kümmert mich nicht, vielleicht (C)bleibt mein Ge(G)sicht doch dem (Em)ein oder (D)andrem im (G)Sinn. (soc)Manchmal träume ...(eoc) (G)Fragt mich einer, warum ich so (C)bin, bleib ich (G)stumm, denn die Antwort da(Em)rauf fällt mir (D)schwer. Denn was (G)neu ist wird alt und was (C)gestern noch (G)galt, stimmt schon (Em)heut oder (D)morgen nicht (G)mehr. (soc)Manchmal träume ... 
+## Heute hier morgen dort - Hannes Wader
+
+```{}
+[Verse 1]
+      G                          C          G
+Heute hier, morgen dort bin kaum da muß ich fort
+                      Em      D
+hab` mich niemals des wegen beklagt
+        G                         C        G
+hab´ es selbst so gewählt nie die Jahre gezählt
+          Em         D       G
+nie nach gestern und morgen gefragt
+
+[Chorus]
+           D                        C            G
+Manchmal träume ich schwer und dann denk` ich es wär
+          D                      C         G
+Zeit zu bleiben und nun was ganz andres zu tun
+                            C              G
+So vergeht Jahr um Jahr und ist mir längst klar
+           Em                 D             G
+daß nichts bleibt, daß nichts bleibt wie es war.
+
+[Verse 2]
+        G                            C        G
+Daß man mich kaum vermißt schon nach Tagen vergißt
+                       Em        D
+wenn ich längst wieder anders wo bin
+          G                             C            G
+stört und kümmert mich nicht vielleicht bleibt mein Gesicht
+         Em       D          G 
+doch dem ein oder andern im Sinn
+
+[Chorus]
+           D                        C            G
+Manchmal träume ich schwer und dann denk` ich es wär
+          D                      C         G
+Zeit zu bleiben und nun was ganz andres zu tun
+                            C              G
+So vergeht Jahr um Jahr und ist mir längst klar
+           Em                 D             G
+daß nichts bleibt, daß nichts bleibt wie es war.
+
+[Verse 3]
+           G                  C               G
+Fragt mich einer warum ich so bin bleib ich stumm
+                   Em             D
+denn die Antwort darauf fällt mir schwer
+         G                         C           G
+denn was neu ist wird alt und was gestern noch galt
+             Em          D           G
+stimmt schon heut` oder morgen nicht mehr.
+
+[Chorus]
+            D                        C            G
+Manchmal träume ich schwer und dann denk` ich es wär
+          D                      C         G
+Zeit zu bleiben und nun was ganz andres zu tun
+                            C              G
+So vergeht Jahr um Jahr und ist mir längst klar
+           Em                 D             G
+daß nichts bleibt, daß nichts bleibt wie es war.
+```
+

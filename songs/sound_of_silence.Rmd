@@ -1,6 +1,6 @@
 
-\section{Sound of Silence - Simon \& Garfunkel}
-\begin{verbatim}
+## Sound of Silence - Simon \& Garfunkel
+```{}
 [Verse 1]
 
 CAPO:  6ft
@@ -93,4 +93,5 @@ Are written on the subway walls
 And tenement halls.
                       G         Am      
 And whispered in the sounds of silence.
-\end{verbatim}
+
+```

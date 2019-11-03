@@ -1,6 +1,5 @@
-\section{Alls wo mir id Finger chunnt - Mani Matter}
-
-\begin{verbatim}
+## Alls wo mir id Finger chunnt - Mani Matter
+```{}
 2/4
 |Am______|Dm______|G7______|C_______|
 |Dm______|Am______|E7______|________|
@@ -37,4 +36,5 @@ Dir wärdet das begryffe, drum syt güetig, liebi Lüt
 Und gryffet ou i ds Portmonee und gäht e mildi Spänd
 Alls wo mir id Finger chunnt verbricht mer i de Händ
 
-\end{verbatim}
+
+```

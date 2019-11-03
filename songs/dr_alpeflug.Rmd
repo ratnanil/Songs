@@ -1,6 +1,5 @@
-\section{Dr Alpeflug - Mani Matter}
-
-\begin{verbatim}
+## Dr Alpeflug - Mani Matter
+```{}
 S'sy zwee Fründen im ne Sportflugzüg
 En Alpeflug ga mache
 Flügen ufe zu de Gipflen und
@@ -46,4 +45,5 @@ Nämlech wil ds Bänzin usgeit
 Und jitz wo me's hätt verstande
 Hei si beidi nüt meh gseit 
 
-\end{verbatim}
+
+```

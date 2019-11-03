@@ -1,7 +1,5 @@
-\section{Bim Coiffeur - Mani Matter}
-
-\begin{verbatim}
-
+## Bim Coiffeur - Mani Matter
+```{}
 4/4
 |C_______|____Am__|Dm______|____G7__|
 |C_______|____Am__|Dm______|G7______|
@@ -36,4 +34,5 @@ Und wenn dir findet i sött e chly meh zum Coiffeur ga
 De chöit dir jitz verstah warum i da e Hemmig ha
 
 
-\end{verbatim}
+
+```

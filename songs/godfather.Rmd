@@ -1,5 +1,6 @@
-\section{The Godfather Theme - Nino Rota}
+## The Godfather Theme - Nino Rota
+```{}
+godfather_theme_S1
 
-\includegraphics[width=10.8cm]{godfather_theme_S1}
-
-\includegraphics[width=11.8cm]{godfather_theme_S2}
+godfather_theme_S2
+```

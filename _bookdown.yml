@@ -2,40 +2,41 @@ book_filename: "Guitar_Songbook"
 delete_merged_file: true
 output_dir: docs
 download: ["pdf", "epub"]
+edit: https://github.com/ratnanil/songbook/edit/master/%s
+cover-image: "titlepage.png"
 language:
   ui:
     chapter_name: ""
 rmd_files: [
   "index.Rmd",
   "01_Selected_Songs.Rmd",
-  "songs_new3/wagon_wheel.Rmd",
-  "songs_new3/viva_la_vida.Rmd",
-  "songs_new3/suzanne.Rmd",
-  "songs_new3/new_slang.Rmd",
-  "songs_new3/jar_of_hearts.Rmd",
-  "songs_new3/i_will_follow_you_into_the_dark.Rmd",
-  "songs_new3/build_me_up_buttercup.Rmd",
-  "songs_new3/hallelujah.Rmd",
-  "songs_new3/mad_world.Rmd",
-  "songs_new3/dance_me_to_the_end_of_love.Rmd",
-  "songs_new3/windows_in_paradise.Rmd",
-  "songs_new3/all_the_world_is_green.Rmd", # braucht noch akkorde
+  "songs/wagon_wheel.Rmd",
+  "songs/viva_la_vida.Rmd",
+  "songs/suzanne.Rmd",
+  "songs/new_slang.Rmd",
+  "songs/jar_of_hearts.Rmd",
+  "songs/i_will_follow_you_into_the_dark.Rmd",
+  "songs/build_me_up_buttercup.Rmd",
+  "songs/hallelujah.Rmd",
+  "songs/mad_world.Rmd",
+  "songs/dance_me_to_the_end_of_love.Rmd",
+  "songs/windows_in_paradise.Rmd",
+  "songs/all_the_world_is_green.Rmd", # braucht noch akkorde
   # everything michael buble
   
   "02_Classics.Rmd",
   
-  "songs_new3/lemon_tree.Rmd",
-  "songs_new3/boulevard_of_broken_dreams.Rmd",
-  "songs_new3/wind_of_change.Rmd", # hat noch tabs?
-  "songs_new3/calafornia_dreaming.Rmd",
+  "songs/lemon_tree.Rmd",
+  "songs/boulevard_of_broken_dreams.Rmd",
+  "songs/wind_of_change.Rmd", # hat noch tabs?
+  "songs/calafornia_dreaming.Rmd",
+  "songs/house_of_the_rising_sun.Rmd",
+  "songs/blowing_in_the_wind.Rmd",
+  "songs/streets_of_london.Rmd",
+  "songs/where_have_all_the_flowers_gone.Rmd",
+  "songs/sound_of_silence.Rmd",
+  "songs/dust_in_the_wind.Rmd",
   # sweet home alabama
-  "songs_new3/house_of_the_rising_sun.Rmd",
-  "songs_new3/blowing_in_the_wind.Rmd",
-  "songs_new3/streets_of_london.Rmd",
-  "songs_new3/where_have_all_the_flowers_gone.Rmd",
-  "songs_new3/sound_of_silence.Rmd",
-  
-  # dust in the wind
   # leaving on a jet plane
   # bad moon rising?
   # hotel California
@@ -61,61 +62,54 @@ rmd_files: [
   # i'm gonna be 500 miles
   # tears in heaven / eternal flame
   
-  "03_Kinderlieder.Rmd",
+  #"03_Kinderlieder.Rmd",
   # hey pipi langstrumpf
-  # puff the magic dragon
-  # what shall we do with the drunken sailor
   # Schlaf anne
-  
+  # Sunnestrahl
   "04_Deutsch.Rmd",
 
-  "songs_new3/so_kleine_haende.Rmd",
-  "songs_new3/s_zundhoelzli.Rmd",
-  "songs_new3/heidi.Rmd",
-  "songs_new3/dr_alpeflug.Rmd",
-  "songs_new3/alls_wo_mir_id_finger_chunnt.Rmd",
-  "songs_new3/bim_coiffeur.Rmd",
-  "songs_new3/hemmige.Rmd",
-  "songs_new3/dr_wecker.Rmd",
-  "songs_new3/arabisch.Rmd",
-  "songs_new3/eskimo.Rmd",
-  "songs_new3/nueni_tramm.Rmd",
+  "songs/so_kleine_haende.Rmd",
+  "songs/s_zundhoelzli.Rmd",
+  "songs/heidi.Rmd",
+  "songs/dr_alpeflug.Rmd",
+  "songs/alls_wo_mir_id_finger_chunnt.Rmd",
+  "songs/bim_coiffeur.Rmd",
+  "songs/hemmige.Rmd",
+  "songs/dr_wecker.Rmd",
+  "songs/arabisch.Rmd",
+  "songs/eskimo.Rmd",
+  "songs/nueni_tramm.Rmd",
   
-  # bergvagabunden
-  # ein bett im kornfeld
-  
-  
-  "songs_new3/der_traum_vom_fliegen.Rmd",
-  "songs_new3/das_testament.Rmd"
-  # sie hört musik nur wernn sie laut ist
-  # kaspar Hannes Wader
-  # heute hier morgen dort
+  "songs/bergvagabunden.Rmd",
+  "songs/ein_bett_im_kornfeld.Rmd",
+  "songs/der_traum_vom_fliegen.Rmd",
+  "songs/das_testament.Rmd",
+  "songs/sie_hoert_musik_nur_wenn_sie_laut_ist.Rmd",
+  "songs/kaspar.Rmd",
+  "songs/heute_hier_morgen_dort.Rmd",
+
   # mein freund der baum
   
   #\chapter{Tabs}
-  
-  #\setcounter{page}{1} 
-  #"songs_new3/mad_world_tabs.Rmd",
-  #"songs_new3/godfather.Rmd",
-  #"songs_new3/all_my_loving.Rmd",
-  #"songs_new3/blackbird_tabs.Rmd",
-  
-  
-  # \chapter{Weihnachtslieder}
+  #"songs/mad_world_tabs.Rmd",
+  #"songs/godfather.Rmd",
+  #"songs/all_my_loving.Rmd",
+  #"songs/blackbird_tabs.Rmd",
+
+  "05_Weihnachtslieder.Rmd",  
   # in der weihnachtsbäckereki
   #\input{eine_muh_eine_maeh}
-  # silent night
+  "songs/silent_night.Rmd",
   # go tell it on the mountain
-  # oh holy night
-  # mary bornchild
-  # oh come all ye faithful
-  # the first noel
-  # stille nacht
-  # leise riselt der schnee
-  # ihr kinderlein kommet
-  # süsser die glocken nie klingen
-  # am weihnahctsbaume die linger brennen
-  # oh du fröhliche
-  # oh tannenbaum
-  # kommet ihr hirten
+  "songs/oh_holy_night.Rmd",
+  "songs/marys_bornchild.Rmd",
+  "songs/oh_come_all_ye_faithful.Rmd",
+  "songs/the_first_noel.Rmd",
+  "songs/leise_rieselt_der_schnee.Rmd",
+  "songs/ihr_kinderleit_kommet.Rmd",
+  "songs/suesser_die_glocken_nie_klingen.Rmd",
+  "songs/am_weihnachtsbaume_die_lichter_brennen.Rmd",
+  "songs/oh_du_froehliche.Rmd",
+  "songs/oh_tannenbaum.Rmd",
+  "songs/kommet_ihr_hirten.Rmd",
 ]

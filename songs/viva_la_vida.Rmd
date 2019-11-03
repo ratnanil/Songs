@@ -1,6 +1,5 @@
-\section{Viva la Vida - Coldplay}
-
-\begin{verbatim}
+## Viva la Vida - Coldplay
+```{}
 STANDARD TUNING - CAPO 1
 
 INTRO: C - D - G - Em    x2
@@ -68,4 +67,5 @@ C - D - Bm - Em              and fading...
 Oooooh Oooooh Oooooh
 
 
-\end{verbatim}
+
+```

@@ -1,7 +1,5 @@
-\section{The House of the Rising Sun}
-
-\begin{verbatim}
-
+## The House of the Rising Sun
+```{}
 INTRO- Am, C, D, F, Am, E, Am, E
 
       Am   C        D           F
@@ -38,4 +36,5 @@ To wear that ball and chain.
 
 First verse again
 
-\end{verbatim}
+
+```

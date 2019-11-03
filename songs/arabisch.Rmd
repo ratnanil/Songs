@@ -1,6 +1,5 @@
-\section{Arabisch - Mani Matter}
-
-\begin{verbatim}
+## Arabisch - Mani Matter
+```{}
 2/4
 |Am______|________|________|________|
 |Am______|________|________|________|
@@ -36,4 +35,5 @@ Luegt är dr Mond am Himel häll und klar a
 Und truuret hie und da
 De schönen Ouge na
 Und dänkt: Hätt i doch früecher afa spara
-\end{verbatim}
+
+```

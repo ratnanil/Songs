@@ -1,7 +1,5 @@
-\section{Hallelujah - Leonard Cohen}
-
-\begin{verbatim}
-
+## Hallelujah - Leonard Cohen
+```{}
 Well I heard there was a secret chord 
 That David played, and it pleased the Lord 
 But you don't really care for music, do ya? 
@@ -42,4 +40,5 @@ And it's not a cry that you hear at night
 It's not somebody who's seen in the light
 It's a cold and it's a broken Hallelujah
 Hallelujah (repeat... hold...)
-\end{verbatim}
+
+```

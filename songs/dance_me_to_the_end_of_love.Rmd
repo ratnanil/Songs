@@ -1,7 +1,5 @@
-\section{Dance me to the end of Love - Leonard Cohen}
-
-\begin{verbatim}
-
+## Dance me to the end of Love - Leonard Cohen
+```{}
 capo on 5th OR 6th fret
 
 Intro
@@ -41,4 +39,5 @@ Touch me with your naked hand or touch me with your glove
 Dance me to the end of love (3x)
 
 Play Intro
-\end{verbatim}
+
+```

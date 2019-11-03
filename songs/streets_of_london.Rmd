@@ -1,7 +1,5 @@
-\section{Streets of London - Ralph McTell}
-
-\begin{verbatim}
-
+## Streets of London - Ralph McTell
+```{}
 C                 G        Am                 Em
 Have you seen the old man, in the closed-down market
 F              C                D7       G7
@@ -36,4 +34,5 @@ His memory's fading, with those medal ribbons that he wears
 And in our winter city, the rain cries little pity
 For one more forgotten hero, and a world that doesn't care
 
-\end{verbatim}
+
+```

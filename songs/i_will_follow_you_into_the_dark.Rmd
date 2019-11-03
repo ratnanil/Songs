@@ -1,7 +1,5 @@
-\section{I will follow you - Deathcab for Cutie}
-
-\begin{verbatim}
-
+## I will follow you - Deathcab for Cutie
+```{}
 capo 5
 
 Intro:
@@ -83,4 +81,5 @@ E---------------------|
 F                 Fm            C    
 Then I will follow you into the dark
 
-\end{verbatim}
+
+```

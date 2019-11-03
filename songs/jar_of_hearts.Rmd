@@ -1,6 +1,5 @@
-\section{Jar of Hearts - Christina Perri}
-
-\begin{verbatim}
+## Jar of Hearts - Christina Perri
+```{}
 Bm                            D
 I know I can't take one more step towards you
 A                              Em
@@ -69,4 +68,5 @@ Gm                     D
 Who do you think you are?
 Gm                     D
 Who do you think you are? 
-\end{verbatim}
+
+```

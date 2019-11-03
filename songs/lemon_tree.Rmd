@@ -1,7 +1,5 @@
-\section{Lemon Tree - Fool's Garden}
-
-\begin{verbatim}
-
+## Lemon Tree - Fool's Garden
+```{}
 Intro : Em Bm Em Bm Am Bm Em
 
 Em                Bm
@@ -64,4 +62,5 @@ And All That I Can See
                  G
 Is Just A Yellow Lemon-tree.
 
-\end{verbatim}
+
+```

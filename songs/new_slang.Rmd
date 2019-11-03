@@ -1,7 +1,5 @@
-\section{The Shins - New Slang}
-
-\begin{verbatim}
-
+## The Shins - New Slang
+```{}
 Intro: Am C F C G C Am G 2x C
 
 Am               C
@@ -77,4 +75,5 @@ And the rest of our lives would'a fared well
 
 Outro
 
-\end{verbatim}
+
+```

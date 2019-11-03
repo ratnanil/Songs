@@ -1,6 +1,5 @@
-\section{Mad World - Gary Jules}
-
-\begin{verbatim}
+## Mad World - Gary Jules
+```{}
 All around me are familiar faces 
 Worn out places, worn out faces 
 Bright and early for their daily races 
@@ -22,4 +21,5 @@ Mad World
 Mad World
 
 Chorus
-\end{verbatim}
+
+```

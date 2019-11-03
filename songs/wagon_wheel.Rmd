@@ -1,6 +1,5 @@
-\section{Wagon Wheel - Old Clow Medicine Show}
-
-\begin{verbatim}
+## Wagon Wheel - Old Clow Medicine Show
+```{}
 Standard Tuning, Capo 2nd fret
 
 Intro: G, D, Em, C
@@ -71,4 +70,5 @@ Hey mama rock me
 Rock me mama like the wind and the rain
 Rock me mama like a south-bound train
 Hey mama rock me
-\end{verbatim}
+
+```

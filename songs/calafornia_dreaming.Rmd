@@ -1,4 +1,8 @@
-\begin{verbatim}
+
+
+## Calafornia Dreaming
+
+```{}
     NC/(Em)           Am        G          F
 All the leaves are brown
                    (all the leaves are brown)
@@ -14,14 +18,14 @@ I'd be safe and warm
                 (I'd be safe and warm)
      G      Am                 E
 If I was in L.A.  (if I was in L.A.)
-\setlength{\parindent}{\chorus}
-\emph{Chorus:}
+\chorus}
+Chorus:
 E             Am       G         F
 California dreamin'
               (California dreamin')
     G      Am       E
 On such a winter's day
-\setlength{\parindent}{\normal}
+\normal}
 E               Am
 Stopped in to a church
   G            F
@@ -37,7 +41,7 @@ You know the preacher likes the cold
          G         Am                    E
 He knows I'm gonna stay (knows I'm gonna stay)
 
-\emph{Play Chorus}
+Play Chorus
 
 E                 Am        G          F
 All the leaves are brown
@@ -65,4 +69,5 @@ On such a winter's day (California dreamin')
 On such a winter's day (California dreamin')
    G      Am       E     Am
 On such a winter's day
-\end{verbatim}
+
+```

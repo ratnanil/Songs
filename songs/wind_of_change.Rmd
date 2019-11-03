@@ -1,6 +1,5 @@
-\section{Wind of Change - Scorpions}
-
-\begin{verbatim}
+## Wind of Change - Scorpions
+```{}
 F  Dm  F  Dm*  Am*  G*  C!
 
 C               Dm
@@ -74,4 +73,5 @@ Play Outro (Same as Intro)
 ! means that you do not strum the chord, you play it in one 
   quick downward motion.
 * means that the chord has to be plucked
-\end{verbatim}
+
+```

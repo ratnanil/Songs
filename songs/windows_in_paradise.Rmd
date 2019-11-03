@@ -1,7 +1,6 @@
-\section{For the Windows in Paradise - Sufjan Stevens}
-
-\begin{verbatim}
-\emph{Capo: 2nd Fret}
+## For the Windows in Paradise - Sufjan Stevens
+```{}
+Capo: 2nd Fret
 
 Am	          Fmaj7	    C	              G
 I have called you children, I have called you son,
@@ -11,12 +10,12 @@ Am	         Fmaj7	   C	            G
 Morning comes in paradise, morning comes in light,
 Am	     Fmaj7	   C	  G
 Still I must obey, still I must invite.
-\setlength{\parindent}{\chorus}
+\chorus}
            Am	       Fmaj7	       C	   G
 If there's anything to say, if there's anything to do,
            Am	     Fmaj7	  C	       G
 If there's any other way, I'll do anything for you.
-\setlength{\parindent}{\normal}
+\normal}
 I was dressed embarrassment. 
 I was dressed in wine. 
 If you had a part of me, will you take you're time? 
@@ -35,4 +34,5 @@ I did everything for you (repeat.. about 8x)
 
 
 
-\end{verbatim}
+
+```

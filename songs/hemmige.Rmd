@@ -1,6 +1,5 @@
-\section{Hemmige - Mani Matter}
-
-\begin{verbatim}
+## Hemmige - Mani Matter
+```{}
 4/4
 |Em______|Am______|D7______|G_______|
 |________|H7______|Em______|H7______|
@@ -38,4 +37,5 @@ Und we me gseht, was hütt dr Mönschheit droht
 So gseht me würklech schwarz, nid nume rot
 Und was me no cha hoffen isch alei
 Dass si Hemmige hei
-\end{verbatim}
+
+```

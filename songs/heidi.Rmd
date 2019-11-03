@@ -1,6 +1,5 @@
-\section{Heidi - Mani Matter}
-
-\begin{verbatim}
+## Heidi - Mani Matter
+```{}
 4/8
 |Am______|Dm__Am__|____F___|____Am__|
 |________|Dm__Am__|E___Am__|____E7__|
@@ -56,4 +55,5 @@ Dadrus han i glehrt, dass hütt
 Nümm so vil erreicht, wär d'Lüt
 Mit Literatur erchlüpft
 Wi wär a ds rächten Ort hi stüpft
-\end{verbatim}
+
+```

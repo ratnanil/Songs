@@ -1,6 +1,5 @@
-\section{Kinder - So kleine Hände}
-
-\begin{verbatim}
+## Kinder - So kleine Hände
+```{}
     Am            Dm        E             Am 
 Sind so kleine Haende, winz'ge Finder dran.
 Am                     Dm    E              Am
@@ -38,4 +37,5 @@ Am          Dm      E                   Am
 Leute ohne Rueckgrat hab'n wir schon zuviel.
 
 Am Dm E Am     Ausklingen lassen  
-\end{verbatim}
+
+```
