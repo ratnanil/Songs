@@ -3,4 +3,6 @@ bookdown::gitbook:
   split_by: rmd
 bookdown::pdf_book:
   keep_tex: no
+bookdown::epub_book: 
+  default
 

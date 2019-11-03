@@ -1,6 +1,7 @@
 book_filename: "Guitar_Songbook"
 delete_merged_file: true
 output_dir: docs
+download: ["pdf", "epub"]
 language:
   ui:
     chapter_name: ""
