@@ -1,0 +1,13 @@
+--- 
+title: "Guitar Songbook"
+author: "Nils Ratnaweera"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+link-citations: yes
+description: "My Songbooks"
+---
+
+# Allgemein
+
+Hier ein kleiner Einführungstext

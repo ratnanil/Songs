@@ -1,0 +1,59 @@
+\section{Heidi - Mani Matter}
+
+\begin{verbatim}
+4/8
+|Am______|Dm__Am__|____F___|____Am__|
+|________|Dm__Am__|E___Am__|____E7__|
+|C_______|G7______|C_______|G7__C___|
+
+Är wohnt a dr glyche Gass
+Und i bi mit dir i d'Klass
+So ischs cho, das mir grad beidi
+Ds Härz a di verlore hei
+Heidi, mir wei di beidi
+Beidi, Heidi, hei di gärn
+
+Är isch grosse Held im Sport
+I probieres meh mit Wort
+Jeden uf sy Art umwärbe
+Mir di, Heidi, ig und är
+Heidi, mir wei di beidi
+Beidi, Heidi, hei di gärn
+
+Zum Bewys är heig di gärn
+Schiesst är Gool bi FC Bärn
+Ig erkläre mi dir schlicht
+I Form vo lyrische Gedicht
+Heidi, mir wei di beidi
+Beidi, Heidi, hei di gärn
+
+Jede Sunntig dänksch am Mätsch
+Är syg dä wo d'lieber hätsch
+Findsch daheim vo mir e Brief
+De chehrt sech ds Blatt, du süfzgisch tief
+Heidi, mir wei di beidi
+Beidi, Heidi, hei di gärn
+
+S'het nid chönne wytergah
+Hesch nid beidi chönne ha
+Schliesslech hei du är und i gseit
+Heidi, jitz entschliessisch di
+Heidi, entscheid di, beidi
+Wei di, beidi chasch nid ha
+
+Hätti gwüsst wis usechunnt
+Einisch ire schwache Stund
+Hesch du di verlobt, s'isch zvil
+Mit ihm am Sunntig nach em Spil
+Nei, di Entscheidig, Heidi
+Nei dy Bscheid - i bi enttüüscht
+
+Letzte Strophe:
+|Am______|Dm__Am__|____F___|____Am__|
+|________|Dm__Am__|E___Am__|E___Am__|
+
+Dadrus han i glehrt, dass hütt
+Nümm so vil erreicht, wär d'Lüt
+Mit Literatur erchlüpft
+Wi wär a ds rächten Ort hi stüpft
+\end{verbatim}

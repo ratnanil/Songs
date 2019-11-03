@@ -1,0 +1,5 @@
+\section{Mad World - Gary Jules}
+
+\includegraphics[width=10.8cm]{madw1jpg}
+
+\includegraphics[width=10.8cm]{madw2jpg}
