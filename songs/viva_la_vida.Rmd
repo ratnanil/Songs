@@ -66,6 +66,10 @@ Chorus
 C - D - Bm - Em              and fading...
 Oooooh Oooooh Oooooh
 
+```
 
 
+
+```{r, out.width = "30%"}
+fretboard_plot2("b","m")
 ```

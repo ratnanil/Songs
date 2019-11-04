@@ -77,3 +77,13 @@ And you know that you will trust her
 For she's touched your perfect body 
 with her mind 
 ```
+
+
+```{r, out.width = "60%"}
+
+a <- fretboard_plot2("f#","m")
+b <- fretboard_plot2("g#","m")
+
+plot_grid(a, b)
+```
+

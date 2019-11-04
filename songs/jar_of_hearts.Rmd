@@ -70,3 +70,16 @@ Gm                     D
 Who do you think you are? 
 
 ```
+
+
+```{r, out.width = "60%"}
+
+grid.arrange(
+  fretboard_plot2("g","m"),
+  fretboard_plot2("b","m"),
+  fretboard_plot2("f#","M"),nrow = 1
+)
+
+
+```
+
