@@ -79,11 +79,7 @@ with her mind
 ```
 
 
-```{r, out.width = "60%"}
-
-a <- fretboard_plot2("f#","m")
-b <- fretboard_plot2("g#","m")
-
-plot_grid(a, b)
+```{r}
+plot_chords(list("F#m" = "244222", "G#m" = "466444"))
 ```
 

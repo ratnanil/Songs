@@ -104,6 +104,6 @@ D Cadd9 G   D Cadd9 G   D Cadd9 G   D Cadd9 G
 ```
 
 
-```{r, out.width = "30%"}
-fretboard_plot2("b","m")
+```{r}
+plot_chords(list("Cadd9" = "x32030"))
 ```

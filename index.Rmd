@@ -23,23 +23,31 @@ suppressMessages(library(purrr))
 suppressMessages(library(ggplot2))
 suppressMessages(library(stringr))
 suppressMessages(library(gridExtra))
+suppressMessages(library(cowplot))
 
-guitarChords <- guitarChords %>%
-  mutate(
-    fretboard2 = map(fretboard,~as.vector(str_split_fixed(.x,";",7))[1:6]),
-    mute = map(fretboard2,~.x == "x"),
-    fretboard2 = map(fretboard2,~as.integer(ifelse(.x=="x" | .x == "o",0,.x)))
-    )
 
-fretboard_plot2 <- function(chord_root, chord_id, nr = 1,fret_range = NULL,show_tuning = FALSE,labels = NULL){
-  chords <- guitarChords %>%
-    dplyr::filter(root == chord_root & id == chord_id) %>%
-    dplyr::slice(nr)
+plot_chords <- function(chords){
   
-  chord_name <- paste0(toupper(chord_root),ifelse(chord_id == "M","",chord_id))
+  # Get the maximum fret-delta of all chords
+  delta_max <- map_int(chords,function(x){
+    v <- suppressWarnings(as.integer(str_split(x,"",simplify = TRUE)))
+    max(v,na.rm = TRUE)-min(v, na.rm = TRUE)
+  }) %>%
+    max()
   
-  fretboard_plot(6:1,chords$fretboard2[[1]],labels = labels, mute = chords$mute[[1]], fret_range = fret_range,show_tuning = show_tuning) +
-    labs(tag = chord_name)
+  plots <- imap(chords,function(x,y){
+    v <- min(suppressWarnings(as.integer(str_split(x,"",simplify = TRUE))),na.rm = TRUE)
+    
+    plot_chord(x,
+               labels = NULL,
+               fret_range = c(v,v+delta_max),
+               point_size = 4,
+               label_size = 3)+ 
+      labs(tag = y)
+    })
+  plot_grid(plotlist = plots,ncol = 4)
 }
+plot_chords(list("Bm" = "x24431", "Gm" = "355333", "F#" = "244322"))
+
 ```
 
