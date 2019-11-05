@@ -1,5 +1,5 @@
 --- 
-title: "Guitar Songbook"
+title: "Songs"
 author: "Nils Ratnaweera"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -11,9 +11,9 @@ description: "My Songbook"
 <!-- # Allgemein -->
 
 
-![](info.jpg)
+![](rhi3.png)
 ```{r, include=FALSE}
-knitr::opts_chunk$set(echo=FALSE, warning=FALSE)
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, dev.args=list(bg = "transparent"))
 ```
 
 ```{r}
@@ -43,11 +43,16 @@ plot_chords <- function(chords){
                fret_range = c(v,v+delta_max),
                point_size = 4,
                label_size = 3)+ 
-      labs(tag = y)
+      labs(tag = y) +
+      theme(
+        panel.background = element_rect(fill = "transparent"), # bg of the panel
+        plot.background = element_rect(fill = "transparent", color = NA), # bg of the plot
+      )
     })
   plot_grid(plotlist = plots,ncol = 4)
 }
-plot_chords(list("Bm" = "x24431", "Gm" = "355333", "F#" = "244322"))
+
+
 
 ```
 
