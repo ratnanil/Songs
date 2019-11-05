@@ -10,12 +10,12 @@ Am	         Fmaj7	   C	            G
 Morning comes in paradise, morning comes in light,
 Am	     Fmaj7	   C	  G
 Still I must obey, still I must invite.
-\chorus}
+
            Am	       Fmaj7	       C	   G
 If there's anything to say, if there's anything to do,
            Am	     Fmaj7	  C	       G
 If there's any other way, I'll do anything for you.
-\normal}
+
 I was dressed embarrassment. 
 I was dressed in wine. 
 If you had a part of me, will you take you're time? 
@@ -31,8 +31,4 @@ If you have a father or if you haven't one,
 I'll do anything for you (4x)
 
 I did everything for you (repeat.. about 8x)
-
-
-
-
 ```
