@@ -10,7 +10,7 @@ link-citations: yes
 
 ![](rhi3.png)
 
-Some songs, selected by me. Version `r Sys.time()`. 
+A collection of hand picked songs. This book is hosted as an online version on https://ratnanil.github.io/Songs/ and includes pdf / epub versions (click on the download symbol). Edits and feedback can be made via the [github repo](https://github.com/ratnanil/songs). The current version was rendered on `r Sys.time()`. 
 
 ```{r, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, warning=FALSE, dev.args=list(bg = "transparent"))
@@ -49,7 +49,7 @@ plot_chords <- function(chords){
                labels = NULL,
                fret_range = c(v,v+delta_max), # so that all chords span the same nr of frets
                point_size = 4,
-               label_size = 3)+ 
+               label_size = 3) + 
       labs(tag = y) +
       theme(
         panel.background = element_rect(fill = "transparent"), # The theme 
@@ -88,7 +88,6 @@ for (song in songs){
 ```
 
 # Selected Songs
-
 
 ## Wagon Wheel - Old Clow Medicine Show
 
@@ -165,7 +164,7 @@ plot_chords(list("Bm" = "224432",
                  "Em" = "779987",
                  "A7" = "575655",
                  "D" = "557775",
-                 "G7" = "353633"))
+                 "G7" = "353433"))
 
 ```
 

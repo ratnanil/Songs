@@ -2,7 +2,7 @@ book_filename: "Guitar_Songbook"
 delete_merged_file: true
 output_dir: docs
 download: ["pdf", "epub"]
-edit: https://github.com/ratnanil/songbook/edit/master/%s
+edit: https://github.com/ratnanil/songs/edit/master/%s
 language:
   ui:
     chapter_name: ""

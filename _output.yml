@@ -1,7 +1,8 @@
 bookdown::gitbook:
   css: style.css
   split_by: section
-  sharing: null
+  config:
+    sharing: null
 bookdown::pdf_book:
   keep_tex: no
 bookdown::epub_book: 
