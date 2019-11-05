@@ -1,5 +1,5 @@
 --- 
-title: ""
+title: "Songs"
 author: "Nils Ratnaweera"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -14,7 +14,10 @@ link-citations: yes
 knitr::opts_chunk$set(echo=FALSE, warning=FALSE, dev.args=list(bg = "transparent"))
 ```
 
-```{r}
+```{r, echo = FALSE}
+
+file.create("docs/.nojekyll")
+
 suppressMessages(library(tabr))
 suppressMessages(library(dplyr))
 suppressMessages(library(purrr))
