@@ -159,6 +159,16 @@ plot_chords(list("Bm" = "x24432", "Gm" = "355333", "F#" = "244322"))
 ```{r child = 'songs_md/all_the_world_is_green.md'}
 ```
 
+During the chorus:
+```{r}
+plot_chords(list("Bm" = "224432",
+                 "Em" = "779987",
+                 "A7" = "575655",
+                 "D" = "557775",
+                 "G7" = "353633"))
+
+```
+
 
 # Guitar Classics
 
