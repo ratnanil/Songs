@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "locale": "de_CH",
+  "platform": "3.6.0",
+  "metadata": {
+    "appmode": "static",
+    "primary_rmd": null,
+    "primary_html": "index.html",
+    "content_category": null,
+    "has_parameters": false
+  },
+  "packages": null,
+  "files": {
+    ".nojekyll": {
+      "checksum": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "all-the-world-is-green-tom-waits.html": {
+      "checksum": "360cc69d002409d5b785a8e00268d5a7"
+    },
+    "alls-wo-mir-id-finger-chunnt-mani-matter.html": {
+      "checksum": "afa3c080027a158d740c20575ef4a757"
+    },
+    "am-weihnachtsbaume-die-lichter-brennen.html": {
+      "checksum": "6556b2a6062c704a3141af2ac0621209"
+    },
+    "arabisch-mani-matter.html": {
+      "checksum": "8a63084476a24ee7f7dd1c5f131ba7e0"
+    },
+    "bergvagabunden.html": {
+      "checksum": "9758c8d314bae598a0d42b8f2f716fb8"
+    },
+    "bim-coiffeur-mani-matter.html": {
+      "checksum": "77baf957184bbf5e0f32f89e89fbc36f"
+    },
+    "blowing-in-the-wind-bob-dylan.html": {
+      "checksum": "f5cf96bcd9231598aeeb13b9b18f1827"
+    },
+    "boulevard-of-broken-dreams-green-day.html": {
+      "checksum": "97fa0b1bced0c5b61d479d1f9ab003e3"
+    },
+    "build-me-up-buttercup-the-foundations.html": {
+      "checksum": "ccb6e30bc93b88b279ecf77e66f48683"
+    },
+    "calafornia-dreaming.html": {
+      "checksum": "0da2a67dc21bfc5abc4167d7cf9471f2"
+    },
+    "dance-me-to-the-end-of-love-leonard-cohen.html": {
+      "checksum": "d8ec35ad97a649711ad58dd856dee5e7"
+    },
+    "das-testament-sarah-lesch.html": {
+      "checksum": "987a2ce0f58f94ab3576510caf3fcbb8"
+    },
+    "der-traum-vom-fliegen-alexandra.html": {
+      "checksum": "7e50de58bac735862dc59b89591a8b10"
+    },
+    "dr-alpeflug-mani-matter.html": {
+      "checksum": "208c9a676522aaae23900012706d10c2"
+    },
+    "dr-wecker-mani-matter.html": {
+      "checksum": "71bf970c11cdc330efee00cd6c65c203"
+    },
+    "dust-in-the-wind-kansas.html": {
+      "checksum": "eb88e00450fca192497707188b4212e0"
+    },
+    "ein-bett-im-kornfeld.html": {
+      "checksum": "be4add2ec386067ed5b83b9e7278fbad"
+    },
+    "eskimo-mani-matter.html": {
+      "checksum": "636476264499d2916b1faebf95971584"
+    },
+    "for-the-windows-in-paradise-sufjan-stevens.html": {
+      "checksum": "c251ec41127e4f4c7caa662865d0a223"
+    },
+    "guitar-classics.html": {
+      "checksum": "9df72559a9dd73420f432bece119db65"
+    },
+    "Guitar_Songbook.epub": {
+      "checksum": "169850eac709ccdc6a95688d643867da"
+    },
+    "Guitar_Songbook.pdf": {
+      "checksum": "9feb295051e922a7fb6e796e3af27012"
+    },
+    "Guitar_Songbook_files/figure-html/unnamed-chunk-11-1.png": {
+      "checksum": "7ee8959a0a15cf1b17beb36c03d043f7"
+    },
+    "Guitar_Songbook_files/figure-html/unnamed-chunk-28-1.png": {
+      "checksum": "2f7a0d3d3c01e30e8cb53b18648a9fd4"
+    },
+    "Guitar_Songbook_files/figure-html/unnamed-chunk-30-1.png": {
+      "checksum": "2f7a0d3d3c01e30e8cb53b18648a9fd4"
+    },
+    "Guitar_Songbook_files/figure-html/unnamed-chunk-6-1.png": {
+      "checksum": "c2c2b6962557c147653d3b88be4c3b19"
+    },
+    "Guitar_Songbook_files/figure-html/unnamed-chunk-8-1.png": {
+      "checksum": "c2c2b6962557c147653d3b88be4c3b19"
+    },
+    "Guitar_Songbook_files/figure-html/unnamed-chunk-9-1.png": {
+      "checksum": "7ee8959a0a15cf1b17beb36c03d043f7"
+    },
+    "hallelujah-leonard-cohen.html": {
+      "checksum": "142ca3c7ea1effda6b31660b539a409a"
+    },
+    "heidi-mani-matter.html": {
+      "checksum": "563ff694ee99f5d14d39c54a80914566"
+    },
+    "hemmige-mani-matter.html": {
+      "checksum": "b9755adf77a024ec007d0403c4fbd032"
+    },
+    "heute-hier-morgen-dort-hannes-wader.html": {
+      "checksum": "8e4fb42f1fd469cac6363b321d820142"
+    },
+    "i-will-follow-you-deathcab-for-cutie.html": {
+      "checksum": "1347afd1495c11cad291664e366594d8"
+    },
+    "ihr-kinderleit-kommet.html": {
+      "checksum": "70e9d7cda4643cea9b14c3bc2ccfd86b"
+    },
+    "index.html": {
+      "checksum": "038f11cc3ff3110d03a9619191845d38"
+    },
+    "jar-of-hearts-christina-perri.html": {
+      "checksum": "a24e07433d7626e4b2f83f48f23ab542"
+    },
+    "kaspar-reinhard-mey.html": {
+      "checksum": "8d9701e8c4ff1a22c0718cde291ce72d"
+    },
+    "kinder-so-kleine-hande.html": {
+      "checksum": "3427487529aca3767bb371bf1452c341"
+    },
+    "kommet-ihr-hirten.html": {
+      "checksum": "d41f9a7f83e589338c36ba51fb93a1da"
+    },
+    "leise-rieselt-der-schnee.html": {
+      "checksum": "017ae471b715c532cf0c68db85c567bf"
+    },
+    "lemon-tree-fools-garden.html": {
+      "checksum": "9f124f2d969ed630c372b577cb486942"
+    },
+    "libs/gitbook-2.6.7/css/fontawesome/fontawesome-webfont.ttf": {
+      "checksum": "b06871f281fee6b241d60582ae9369b9"
+    },
+    "libs/gitbook-2.6.7/css/plugin-bookdown.css": {
+      "checksum": "47d2ab46c435be24b407aa0c92b4d610"
+    },
+    "libs/gitbook-2.6.7/css/plugin-clipboard.css": {
+      "checksum": "e4a3bdc1e3d5590f47cbac67976f3961"
+    },
+    "libs/gitbook-2.6.7/css/plugin-fontsettings.css": {
+      "checksum": "76af8c23a8138a4b66aa6959ca5c3a8e"
+    },
+    "libs/gitbook-2.6.7/css/plugin-highlight.css": {
+      "checksum": "467fbe4b6b5a4b88fdd75c463f8626ec"
+    },
+    "libs/gitbook-2.6.7/css/plugin-search.css": {
+      "checksum": "0d7a6bb6a50e00c7358cf61027f099f0"
+    },
+    "libs/gitbook-2.6.7/css/plugin-table.css": {
+      "checksum": "8cb82f94ce1446fa4bafe7a3933e6c65"
+    },
+    "libs/gitbook-2.6.7/css/style.css": {
+      "checksum": "11f13a161c95d0e8257d673dc27f9251"
+    },
+    "libs/gitbook-2.6.7/js/app.min.js": {
+      "checksum": "7fa8a214bc682ff4aaf434bc342c0a8f"
+    },
+    "libs/gitbook-2.6.7/js/clipboard.min.js": {
+      "checksum": "be72101c8c16ba95fd8b69760d5ebc56"
+    },
+    "libs/gitbook-2.6.7/js/jquery.highlight.js": {
+      "checksum": "999424d32e03b9857098d2c7f53928c2"
+    },
+    "libs/gitbook-2.6.7/js/lunr.js": {
+      "checksum": "fbc747c6143aabb39b0ea7c0524b7057"
+    },
+    "libs/gitbook-2.6.7/js/plugin-bookdown.js": {
+      "checksum": "fbd43df757f068e8b6ed75d972772c17"
+    },
+    "libs/gitbook-2.6.7/js/plugin-clipboard.js": {
+      "checksum": "a30f95fcd3fde10637ace1fb691b7475"
+    },
+    "libs/gitbook-2.6.7/js/plugin-fontsettings.js": {
+      "checksum": "c69e5565f16ccb8560ee353e6ba4b927"
+    },
+    "libs/gitbook-2.6.7/js/plugin-search.js": {
+      "checksum": "2d4c4d47ba34946b8ebcbe41aa522756"
+    },
+    "libs/gitbook-2.6.7/js/plugin-sharing.js": {
+      "checksum": "723416fb0154ce96e35ce1ec56992afa"
+    },
+    "libs/jquery-2.2.3/jquery.min.js": {
+      "checksum": "33cabfa15c1060aaa3d207c653afb1ee"
+    },
+    "mad-world-gary-jules.html": {
+      "checksum": "75975223fd24a29623920c3510796a91"
+    },
+    "marys-bornchild.html": {
+      "checksum": "cce4c8b3a828e6cb1a16510bc96459b1"
+    },
+    "mundart-und-deutsch.html": {
+      "checksum": "92cb91afe5d7bcc3bdaf6019464c53ef"
+    },
+    "new-slang-the-shins.html": {
+      "checksum": "a7bc9d7ca3fb4437c126db36fbe1c11c"
+    },
+    "oh-come-all-ye-faithful.html": {
+      "checksum": "a6e6926625f0774d0b84b40ab89c3304"
+    },
+    "oh-du-frohliche.html": {
+      "checksum": "6e326729cb469dcf6c7c3ad8b424ddba"
+    },
+    "oh-holy-night.html": {
+      "checksum": "f34cafd0e9b913c9f6243893bc32aad1"
+    },
+    "oh-tannenbaum.html": {
+      "checksum": "50b8b5b8d4f3b81e3228f2d96f98cb0c"
+    },
+    "rhi3.png": {
+      "checksum": "726ba016561454821a04557dd87e7463"
+    },
+    "search_index.json": {
+      "checksum": "dab823b507795488846cb5e5415782cd"
+    },
+    "selected-songs.html": {
+      "checksum": "eb4aa82c94c8804a5f18bc073c4e79c7"
+    },
+    "sie-hort-musik-nur-wenn-sie-laut-ist-herbert-gronemeyer.html": {
+      "checksum": "92ad686c9b651ceb635a798ef2c7fb99"
+    },
+    "silent-night.html": {
+      "checksum": "fe605a0be28ee93c66fb6e073e629951"
+    },
+    "snuuni-tramm-mani-matter.html": {
+      "checksum": "0a5cf80efc25d0ef2183c92908b65251"
+    },
+    "sound-of-silence-simon-garfunkel.html": {
+      "checksum": "e3715f55ab486121c3c8766b2bbae2b2"
+    },
+    "streets-of-london-ralph-mctell.html": {
+      "checksum": "debb10dbba43485af08b137794584090"
+    },
+    "style.css": {
+      "checksum": "4c36609db65d45d090290755fb60ec9c"
+    },
+    "susser-die-glocken-nie-klingen.html": {
+      "checksum": "e8229bb3c6ae4a96c361a45819fdb681"
+    },
+    "suzanne-leonard-cohen.html": {
+      "checksum": "448efd60bad3b7bfdda393c3a9c9e490"
+    },
+    "sweet-home-alabama-lynyrd-skynyrd.html": {
+      "checksum": "4aebf67a7bb0487759fde26a8b7fb0a4"
+    },
+    "szundholzli-mani-matter.html": {
+      "checksum": "3ffc475f6d5f18a4fb489766c2073974"
+    },
+    "the-first-noel.html": {
+      "checksum": "836b6f316742773e0d592ccf3366d641"
+    },
+    "the-house-of-the-rising-sun.html": {
+      "checksum": "652b8f41c2d3355d52711c6e75e9dc29"
+    },
+    "viva-la-vida-coldplay.html": {
+      "checksum": "4fc1a9731fe0cc1ab5476ab8d0e025fe"
+    },
+    "wagon-wheel-old-clow-medicine-show.html": {
+      "checksum": "a7f97849b9056b258dac7fa89e84139f"
+    },
+    "weihnachtslieder.html": {
+      "checksum": "61fb98a4cb2cebce34f82722819087a4"
+    },
+    "where-have-all-the-flowers-gone-peter-paul-and-mary.html": {
+      "checksum": "ac50f097cd78b6eb49da83eb3b178b79"
+    },
+    "wind-of-change-scorpions.html": {
+      "checksum": "0f839703990b3af6ecd72eb432187403"
+    }
+  },
+  "users": null
+}
