@@ -19,7 +19,6 @@ knitr::opts_chunk$set(echo=FALSE, warning=FALSE, dev.args=list(bg = "transparent
 
 
 ```{r, echo = FALSE, include=FALSE}
-
 file.create("docs/.nojekyll")
 
 suppressMessages(library(tabr))
@@ -29,10 +28,12 @@ suppressMessages(library(ggplot2))
 suppressMessages(library(stringr))
 suppressMessages(library(gridExtra))
 suppressMessages(library(cowplot))
+```
 
 
+```{r}
+# A wrapper around tabr::plot_chord() which allows multiple chords and styles them in my specific way (4 columns, transparent background etc.)
 plot_chords <- function(chords){
-  
   # Get the maximum fret-delta of all chords
   delta_max <- map_int(chords,function(x){
     v <- suppressWarnings(as.integer(str_split(x,"",simplify = TRUE)))
@@ -40,23 +41,28 @@ plot_chords <- function(chords){
   }) %>%
     max()
   
+  # Make a list of all chord plots
   plots <- imap(chords,function(x,y){
     v <- min(suppressWarnings(as.integer(str_split(x,"",simplify = TRUE))),na.rm = TRUE)
     
     plot_chord(x,
                labels = NULL,
-               fret_range = c(v,v+delta_max),
+               fret_range = c(v,v+delta_max), # so that all chords span the same nr of frets
                point_size = 4,
                label_size = 3)+ 
       labs(tag = y) +
       theme(
-        panel.background = element_rect(fill = "transparent"), # bg of the panel
+        panel.background = element_rect(fill = "transparent"), # The theme 
         plot.background = element_rect(fill = "transparent", color = NA), # bg of the plot
       )
     })
   plot_grid(plotlist = plots,ncol = 4)
 }
+```
 
+
+```{r}
+# Transform all songs in songs_txt into markdown files
 
 songs <- list.files("songs_txt/",pattern = ".txt",full.names = T)
 
@@ -65,14 +71,10 @@ for (song in songs){
   
   song_md <- str_replace(song_bn,".txt",".md")
   
-  song_rl <- readLines(song)
-  
-  
   fileConn<-file(paste0("songs_md/",song_md))
-  
 
-  
-  song_rl %>%
+  # TODO: specify encodings, apperentyl there was an issue with the "a" in vis-a-vis
+  readLines(song) %>%
     map(~paste0(.x,"\\")) %>%
     str_replace_all("\\s","&nbsp;") %>%
     str_replace_all("\\*","\\\\*") %>%
@@ -82,8 +84,6 @@ for (song in songs){
   close.connection(fileConn)
   
 }
-
-
 
 ```
 
@@ -105,12 +105,9 @@ for (song in songs){
 ```{r child = 'songs_md/suzanne.md'}
 ```
 
-
 ```{r}
 plot_chords(list("F#m" = "244222", "G#m" = "466444"))
 ```
-
-
 
 ## New Slang - The Shins
 
