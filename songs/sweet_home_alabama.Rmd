@@ -104,6 +104,3 @@ D Cadd9 G   D Cadd9 G   D Cadd9 G   D Cadd9 G
 ```
 
 
-```{r}
-plot_chords(list("Cadd9" = "x32030"))
-```

@@ -72,7 +72,4 @@ Who do you think you are?
 ```
 
 
-```{r}
-plot_chords(list("Bm" = "x24432", "Gm" = "355333", "F#" = "244322"))
-```
 

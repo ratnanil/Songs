@@ -79,7 +79,4 @@ with her mind
 ```
 
 
-```{r}
-plot_chords(list("F#m" = "244222", "G#m" = "466444"))
-```
 
