@@ -1,20 +1,24 @@
 --- 
 title: "Songs"
-author: "Nils Ratnaweera"
-date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 link-citations: yes
 ---
 
-# Songs {-}
+# About {-}
+
 
 ![](rhi3.png)
+
+Some songs, selected by me. Version `r Sys.time()`. 
+
 ```{r, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, warning=FALSE, dev.args=list(bg = "transparent"))
 ```
 
-```{r, echo = FALSE}
+
+
+```{r, echo = FALSE, include=FALSE}
 
 file.create("docs/.nojekyll")
 
