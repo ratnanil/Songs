@@ -1,11 +1,19 @@
-book_filename: "Guitar_Songbook"
+book_filename: "Songs"
 delete_merged_file: true
 output_dir: docs
 download: ["pdf", "epub"]
 edit: https://github.com/ratnanil/songs/edit/master/%s
+url: "https://ratnanil.github.io/Songs/"
+github-repo: "ratnanil/songs"
+cover-image: "misc/title.png"
+favicon: "music-favicon.png"
 language:
   ui:
     chapter_name: ""
 rmd_files: [
   "index.Rmd"
 ]
+fontsize: 10pt
+papersize: a4paper
+geometry: "left=4cm, right=3cm, top=2.5cm, bottom=2.5cm"
+subparagraph: true

@@ -1,0 +1,7 @@
+% Starts each section (##) on a new page
+% https://tex.stackexchange.com/questions/9497/start-new-page-with-each-section
+\let\stdsection\section
+\renewcommand\section{\clearpage\stdsection}
+
+% Needs latex_engine: xelatex in _output.yml. Doesn't work yet.
+\usepackage{fontspec}

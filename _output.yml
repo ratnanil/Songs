@@ -4,7 +4,11 @@ bookdown::gitbook:
   config:
     sharing: null
 bookdown::pdf_book:
-  keep_tex: no
+  keep_tex: yes
+  includes:
+    in_header: misc/preamble.tex
+    before_body: misc/titlepage.tex
+  latex_engine: xelatex
 bookdown::epub_book: 
   default
 
