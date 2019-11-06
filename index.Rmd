@@ -1,5 +1,5 @@
 --- 
-title: "S"
+title: ""
 site: bookdown::bookdown_site
 documentclass: book
 link-citations: yes
@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo=FALSE, warning=FALSE, dev.args=list(bg = "transparent
 output <- knitr::opts_knit$get("rmarkdown.pandoc.to")# html / latex / docx
 
 if(output == "html"){
-  pander::pandoc.header("Songs",1)
+  pander::pandoc.header("Songs {-}",1)
   pander::pandoc.image("misc/title.png")
 }
 
@@ -194,12 +194,12 @@ plot_chords(list("Bm" = "224432",
 ```{r child = 'songs_md/wind_of_change.md'}
 ```
 
-## Calafornia Dreaming
+## Calafornia Dreaming - The Mamas \& The Papas
 
 ```{r child = 'songs_md/calafornia_dreaming.md'}
 ```
 
-## The House of the Rising Sun
+## The House of the Rising Sun - The Animals
 
 ```{r child = 'songs_md/house_of_the_rising_sun.md'}
 ```

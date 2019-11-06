@@ -1,4 +1,4 @@
-F&nbsp;&nbsp;Dm&nbsp;&nbsp;F&nbsp;&nbsp;Dm\*&nbsp;&nbsp;Am\*&nbsp;&nbsp;G\*&nbsp;&nbsp;C!\
+F&nbsp;&nbsp;Dm&nbsp;&nbsp;F&nbsp;&nbsp;Dm\*&nbsp;&nbsp;Am\*&nbsp;&nbsp;G&nbsp;Am&nbsp;G&nbsp;C&nbsp;&nbsp;C!\
 \
 C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dm\
 I&nbsp;follow&nbsp;the&nbsp;Moskva\

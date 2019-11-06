@@ -1,10 +1,17 @@
+Am\
 S'sy&nbsp;zwee&nbsp;Fründen&nbsp;im&nbsp;ne&nbsp;Sportflugzüg\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E\
 En&nbsp;Alpeflug&nbsp;ga&nbsp;mache\
 Flügen&nbsp;ufe&nbsp;zu&nbsp;de&nbsp;Gipflen&nbsp;und\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Am\
 Z'dürab&nbsp;de&nbsp;Gletscher&nbsp;nache\
+\
 Hinde&nbsp;sitzt&nbsp;dr&nbsp;Passagier\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dm\
 Dä&nbsp;wo&nbsp;stüüret,&nbsp;dä&nbsp;sitzt&nbsp;vor\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Am\
 Und&nbsp;es&nbsp;ratteret&nbsp;und&nbsp;brummet\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Am\
 Um&nbsp;sen&nbsp;ume&nbsp;dr&nbsp;Motor\
 \
 Da&nbsp;rüeft&nbsp;dä,&nbsp;wo&nbsp;hinde&nbsp;sitzt:\
