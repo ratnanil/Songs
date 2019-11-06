@@ -5,7 +5,6 @@ download: ["pdf", "epub"]
 edit: https://github.com/ratnanil/songs/edit/master/%s
 url: "https://ratnanil.github.io/Songs/"
 github-repo: "ratnanil/songs"
-cover-image: "misc/title.png"
 favicon: "music-favicon.png"
 language:
   ui:

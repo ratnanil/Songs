@@ -3,6 +3,8 @@ bookdown::gitbook:
   split_by: section
   config:
     sharing: null
+    fontsettings:
+      theme: night
 bookdown::pdf_book:
   keep_tex: yes
   includes:
