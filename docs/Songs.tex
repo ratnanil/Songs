@@ -23,6 +23,7 @@
 }{}
 \usepackage{hyperref}
 \hypersetup{unicode=true,
+            pdftitle={S},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
@@ -72,9 +73,9 @@
 
 \setlength{\droptitle}{-2em}
 
-  \title{}
-    \pretitle{\vspace{\droptitle}}
-  \posttitle{}
+  \title{S}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
     \author{}
     \preauthor{}\postauthor{}
     \date{}
@@ -85,14 +86,11 @@
 \let\stdsection\section
 \renewcommand\section{\clearpage\stdsection}
 
-% Needs 
+% Needs latex_engine: xelatex in _output.yml. Doesn't work yet.
 \usepackage{fontspec}
-\setmainfont{Courier New}
-\setromanfont{Courier New}
-\setsansfont{Courier New}
-\setmonofont{Courier New}
 
 \begin{document}
+\maketitle
 
 %\newgeometry{tmargin=1.5cm,lmargin=2.5cm,rmargin=2.5cm,bmargin=0.5cm} %verbose
 
@@ -131,7 +129,7 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-A collection of hand picked songs. This book is hosted as an online version on \url{https://ratnanil.github.io/Songs/} and includes pdf / epub versions (click on the download symbol). Edits and feedback can be made via the \href{https://github.com/ratnanil/songs}{github repo}. The current version was rendered on 2019-11-06 13:45:51.
+A collection of hand picked songs. This book is hosted as an online version on \url{https://ratnanil.github.io/Songs/} and includes pdf / epub versions (click on the download symbol). Edits and feedback can be made via the \href{https://github.com/ratnanil/songs}{github repo}. The current version was rendered on 2019-11-06 20:08:14.
 
 \hypertarget{selected-songs}{%
 \chapter{Selected Songs}\label{selected-songs}}
