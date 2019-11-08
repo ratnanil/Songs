@@ -5,7 +5,7 @@ bookdown::gitbook:
     sharing: null
     fontsettings:
       theme: night
-      size: 2
+      size: 1
 bookdown::pdf_book:
   keep_tex: yes
   includes:
