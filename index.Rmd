@@ -239,6 +239,13 @@ plot_chords(list("Bm" = "224432",
 plot_chords(list("Cadd9" = "x32030"))
 ```
 
+
+## Moring has Broken - Cat Stevens
+
+```{r child = 'songs_md/morning_has_broken.md'}
+```
+
+
 # Mundart und Deutsch
 
 
