@@ -6,7 +6,7 @@ output: html_document
 
 Run the following line in the console:
 ```{r, eval = FALSE}
-rmarkdown::render("test_individual_song.Rmd")
+rmarkdown::render("testfolder/test_individual_song.Rmd","html_document",output_dir = "testfolder/")
 ```
 
 ```{r setup, include=FALSE}
@@ -14,7 +14,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-## Moring has Broken - Cat Stevens
+## Title
 
-```{r child = 'songs_md/morning_has_broken.md'}
+```{r child = '../songs_md/heute_hier_morgen_dort.md'}
+
 ```

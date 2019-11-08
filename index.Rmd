@@ -81,7 +81,7 @@ for (song in songs){
   fileConn<-file(paste0("songs_md/",song_md))
 
   # TODO: specify encodings, apperentyl there was an issue with the "a" in vis-a-vis
-  readLines(song) %>%
+  readLines(song, warn = FALSE) %>%
     map(~paste0(.x,"\\")) %>%
     str_replace_all("\\s","&nbsp;") %>%
     str_replace_all("\\*","\\\\*") %>%
@@ -335,6 +335,8 @@ plot_chords(list("Cadd9" = "x32030"))
 ```
 
 ## Heute hier morgen dort - Hannes Wader
+
+<!-- Akkrode wären auch in dasDING vorhanden -->
 
 ```{r child = 'songs_md/heute_hier_morgen_dort.md'}
 ```
