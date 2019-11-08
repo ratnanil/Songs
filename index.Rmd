@@ -346,8 +346,12 @@ plot_chords(list("Cadd9" = "x32030"))
 
 ## Annies Song - John Denver
 
+```{r child = 'songs_md/annies_song.md'}
+```
 
-```{r child = 'songs_md/you_fill_up_my_senses.md'}
+## Hurt - Johnny Cash
+
+```{r child = 'songs_md/hurt.md'}
 ```
 
 

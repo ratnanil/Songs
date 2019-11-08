@@ -17,5 +17,4 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Title
 
 ```{r child = '../songs_md/heute_hier_morgen_dort.md'}
-
 ```
