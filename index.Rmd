@@ -1,5 +1,6 @@
 --- 
 title: ""
+pagetitle: "Songs"
 site: bookdown::bookdown_site
 documentclass: book
 link-citations: yes
@@ -178,6 +179,8 @@ plot_chords(list("Bm" = "224432",
 
 # Guitar Classics
 
+![](misc/skull.png)
+
 
 ## Lemon Tree - Fool's Garden
 
@@ -234,20 +237,27 @@ plot_chords(list("Bm" = "224432",
 ```{r child = 'songs_md/sweet_home_alabama.md'}
 ```
 
-
 ```{r}
 plot_chords(list("Cadd9" = "x32030"))
 ```
-
 
 ## Moring has Broken - Cat Stevens
 
 ```{r child = 'songs_md/morning_has_broken.md'}
 ```
 
+## Annies Song - John Denver
+
+```{r child = 'songs_md/annies_song.md'}
+```
+
+## Hurt - Johnny Cash
+
+```{r child = 'songs_md/hurt.md'}
+```
+
 
 # Mundart und Deutsch
-
 
 ## Kinder - So kleine Hände
 
@@ -339,19 +349,6 @@ plot_chords(list("Cadd9" = "x32030"))
 <!-- Akkrode wären auch in dasDING vorhanden -->
 
 ```{r child = 'songs_md/heute_hier_morgen_dort.md'}
-```
-
-
-
-
-## Annies Song - John Denver
-
-```{r child = 'songs_md/annies_song.md'}
-```
-
-## Hurt - Johnny Cash
-
-```{r child = 'songs_md/hurt.md'}
 ```
 
 
