@@ -436,7 +436,7 @@ plot_chords(list("Cadd9" = "x32030"))
 
 ## Streets of London - Ralph McTell
 
-### Tabs
+[Youtube Video](https://youtu.be/AeR_tI47gZY)
 
 ![](notes_and_tabs/streets_of_london_1.png)
 ![](notes_and_tabs/streets_of_london_2.png)
@@ -451,11 +451,3 @@ plot_chords(list("Cadd9" = "x32030"))
 ![](notes_and_tabs/streets_of_london_11.png)
 ![](notes_and_tabs/streets_of_london_12.png)
 ![](notes_and_tabs/streets_of_london_13.png)
-
-### Video
-
-```{r}
-knitr::include_url("https://youtu.be/AeR_tI47gZY")
-```
-
-
