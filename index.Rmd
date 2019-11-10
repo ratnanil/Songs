@@ -252,6 +252,11 @@ plot_chords(list("Cadd9" = "x32030"))
 ```{r child = 'songs_md/annies_song.md'}
 ```
 
+```{r}
+plot_chords(list("Dsus4" = "xx0233"))
+```
+
+
 ## Hurt - Johnny Cash
 
 ```{r child = 'songs_md/hurt.md'}
