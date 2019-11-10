@@ -64,6 +64,7 @@ plot_chords <- function(chords){
         plot.background = element_rect(fill = "transparent", color = NA), # bg of the plot
       )
     })
+  chordnames <- map(chords, ~.x[2])
   plot_grid(plotlist = plots,ncol = 4)
 }
 ```
@@ -414,4 +415,47 @@ plot_chords(list("Cadd9" = "x32030"))
 
 ```{r child = 'songs_md/kommet_ihr_hirten.md'}
 ```
+
+
+# Notes and Tabs
+
+## Mad World - Gary Jules
+
+![](notes_and_tabs/mad_world_1.png)
+![](notes_and_tabs/mad_world_2.png)
+
+## All My Loving - The Beatles
+
+![](notes_and_tabs/allmy_loving_s1.png)
+![](notes_and_tabs/allmy_loving_s2.png)
+
+## Godfather Theme
+
+![](notes_and_tabs/godfather_theme_S1.png)
+![](notes_and_tabs/godfather_theme_S2.png)
+
+## Streets of London - Ralph McTell
+
+### Tabs
+
+![](notes_and_tabs/streets_of_london_1.png)
+![](notes_and_tabs/streets_of_london_2.png)
+![](notes_and_tabs/streets_of_london_3.png)
+![](notes_and_tabs/streets_of_london_4.png)
+![](notes_and_tabs/streets_of_london_5.png)
+![](notes_and_tabs/streets_of_london_6.png)
+![](notes_and_tabs/streets_of_london_7.png)
+![](notes_and_tabs/streets_of_london_8.png)
+![](notes_and_tabs/streets_of_london_9.png)
+![](notes_and_tabs/streets_of_london_10.png)
+![](notes_and_tabs/streets_of_london_11.png)
+![](notes_and_tabs/streets_of_london_12.png)
+![](notes_and_tabs/streets_of_london_13.png)
+
+### Video
+
+```{r}
+knitr::include_url("https://youtu.be/AeR_tI47gZY")
+```
+
 
