@@ -1,13 +1,3 @@
-capo&nbsp;on&nbsp;5th&nbsp;OR&nbsp;6th&nbsp;fret\
-\
-Intro\
-|------------------------------------------|\
-|------------------------------------------|\
-|-7/5--7-5-7--4/5-4--5-4-5--2/4-2--4-2-4-2-|\
-|-9/7--9-7-9--5/7-5--7-5-7--4/5-4--5-4-5-4-|\
-|------------------------------------------|\
-|------------------------------------------|&nbsp;&nbsp;Em..\
-\
 Am&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em\
 Dance&nbsp;me&nbsp;to&nbsp;your&nbsp;beauty&nbsp;with&nbsp;a&nbsp;burning&nbsp;violin\
 Am&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em\
