@@ -2,7 +2,7 @@
 G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Am&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;\
 Long&nbsp;time&nbsp;ago&nbsp;in&nbsp;Bethlehem,&nbsp;so&nbsp;the&nbsp;Holy&nbsp;Bible&nbsp;says,&nbsp;&nbsp;\
 G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Am&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;\
-Mary`s&nbsp;boychild,&nbsp;Jesus&nbsp;Christ,&nbsp;was&nbsp;born&nbsp;on&nbsp;Christmas&nbsp;Day.&nbsp;\
+Mary's&nbsp;boychild,&nbsp;Jesus&nbsp;Christ,&nbsp;was&nbsp;born&nbsp;on&nbsp;Christmas&nbsp;Day.&nbsp;\
 \
 CHORUS:\
 G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Em&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Am&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;\
@@ -56,12 +56,12 @@ and&nbsp;man&nbsp;will&nbsp;live&nbsp;forever&nbsp;more&nbsp;because&nbsp;of&nbs
 G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Am&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;\
 And&nbsp;then&nbsp;they&nbsp;found&nbsp;a&nbsp;little&nbsp;nook,&nbsp;in&nbsp;a&nbsp;stable&nbsp;all&nbsp;forlorn.&nbsp;\
 G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Am&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;\
-And&nbsp;in&nbsp;a&nbsp;manger,&nbsp;cold&nbsp;and&nbsp;dark,&nbsp;Mary`s&nbsp;little&nbsp;boy&nbsp;was&nbsp;born.\
+And&nbsp;in&nbsp;a&nbsp;manger,&nbsp;cold&nbsp;and&nbsp;dark,&nbsp;Mary's&nbsp;little&nbsp;boy&nbsp;was&nbsp;born.\
 \
 G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Am&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;\
 Long&nbsp;time&nbsp;ago&nbsp;in&nbsp;Bethlehem,&nbsp;so&nbsp;the&nbsp;Holy&nbsp;Bible&nbsp;says,&nbsp;&nbsp;\
 G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Am&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;\
-Mary`s&nbsp;boychild,&nbsp;Jesus&nbsp;Christ,&nbsp;was&nbsp;born&nbsp;on&nbsp;Christmas&nbsp;Day.&nbsp;\
+Mary's&nbsp;boychild,&nbsp;Jesus&nbsp;Christ,&nbsp;was&nbsp;born&nbsp;on&nbsp;Christmas&nbsp;Day.&nbsp;\
 \
 &nbsp;&nbsp;\
 CHORUS:\
