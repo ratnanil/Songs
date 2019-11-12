@@ -1,22 +1,27 @@
+{title: All the World is Green}
+{artist: Tom Waits}
 
 Bm              Em    A7              D
 I fell into the ocean  and you became my wife
-G7          (F#7)                            Bm
+G7                                           Bm
  I risked it all against the sea to have a better life
            Em               A7           D
 Marie you are the wild blue sky, men do foolish things
-G7             (F#7)                       Bm
+G7                                         Bm
  You turn kings into beggars and beggars into kings
 
-Chorus:
+{start_of_chorus}
+
    G                    D  
 Pretend that you owe me nothing      
     A7               D
 and all the world is green
 G                      D         
  We can bring back the old days again     
-     A7               D  D/a(A#m)
+     A7               D
 when all the world is green
+
+{end_of_chorus}
 
 The face forgives the mirror
 The worm forgives the plow
@@ -38,5 +43,5 @@ On a blade of grass
 The dew will settle on our graves
 When all the world is green
 
-Play Chorus, Solo and repeat last verse
+{Comment: Play chorus, solo, repeat last verse}
 

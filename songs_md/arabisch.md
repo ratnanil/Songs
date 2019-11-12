@@ -1,9 +1,3 @@
-2/4\
-|Am\_\_\_\_\_\_|\_\_\_\_\_\_\_\_|\_\_\_\_\_\_\_\_|\_\_\_\_\_\_\_\_|\
-|Am\_\_\_\_\_\_|\_\_\_\_\_\_\_\_|\_\_\_\_\_\_\_\_|\_\_\_\_\_\_\_\_|\
-|Dm\_\_\_\_\_\_|\_\_\_\_\_\_\_\_|Am\_\_\_\_\_\_|\_\_\_\_\_\_\_\_|\
-|E\_\_\_\_\_\_\_|\_\_\_\_\_\_\_\_|Am\_\_\_\_\_\_|\
-\
 Dr&nbsp;Sidi&nbsp;Abdel&nbsp;Assar&nbsp;vo&nbsp;El&nbsp;Hama\
 Het&nbsp;mal&nbsp;am&nbsp;Morge&nbsp;früe&nbsp;no&nbsp;im&nbsp;Pijama\
 Ir&nbsp;Strass&nbsp;vor&nbsp;dr&nbsp;Moschee\

@@ -1,0 +1,73 @@
+{title: Sweet Home Alabama}
+{artist: Lynyrd Skynyrd}
+
+{start_of_grid}
+e|-------------------------3-|
+B|-----3---------3---------3-|
+G|-------2----------0------0-|  x4
+D|-0-0---------------------0-|     
+A|----------3-3------------2-|
+E|---------------------3-3-3-|
+{end_of_grid}
+
+[D] [Cadd9]       [G]
+Big wheels keep on turning
+[D]     [Cadd9]        [G]
+Carry me home to see my kin
+[D]    [Cadd9]         [G]
+Singing songs about the south land
+[D]     [Cadd9]        [G]                           
+I miss 'ole' 'bamy once again and I think it's a sin
+
+[D]             [Cadd9]          [G]
+Well I heard Mr. Young sing about her
+[D]             [Cadd9]      [G]
+Well I heard old Neil put her down
+[D]             [Cadd9]    [G]
+Well I hope Neil Young will remember
+[D]       [Cadd9]            [G]               
+[A]outhern man don’t need him around, anyhow
+
+[Chorus]
+
+{start_of_chorus}
+[D]  [Cadd9] [G]   [D]       [Cadd9]      [G]        
+Sweet home Alabama, where the skies are so blue
+[D]  [Cadd9] [G]   [D]       [Cadd9]       [G]     
+Sweet home Alabama, lord I’m coming home to you.
+{end_of_chorus}
+
+[F]
+[D]add9[G]
+[D]add9[G]
+
+[D]      [Cadd9]           [G]      [F] [C] [D]
+In Birmingham they love the Gov'nor, boo-hoo-hoo
+[D]       [Cadd9]           [G]
+Now we all did what we could do
+[D]      [Cadd9]     [G]
+Now watergate doesn't bother me
+[D]      [Cadd9]          [G]
+Does you conscience bother you, (now tell the truth!)
+
+{chorus}
+
+[D][Cadd9]                   [G]
+Now Muscle Shoals has got the Swappers
+[D]             [Cadd9]                 [G]
+And they've been known to pick a song or two (yes we do)
+[D]      [Cadd9]       [G]
+Lord they get me off so much
+[D]         [Cadd9]            [G]   
+They pick me up when I'm feeling blue, Now how about you?
+
+{chorus}
+
+[D]  [Cadd9] [G]     
+Sweet home Alabama (Oh sweet home baby)
+[D]      [Cadd9]      [G]   
+Where the skies are so blue (And the governor's true)
+[D]  [Cadd9] [G]
+Sweet Home Alabama, (Lord, yeah)
+[D]      [Cadd9]        [G]
+Lord, I'm coming home to you

@@ -1,0 +1,18 @@
+p.song span {
+  display: none;
+}
+p.song.show-chords p {
+  line-height:2.3em;
+  margin-bottom:2em;
+}
+p.song.show-chords span {
+  position: relative;
+  top: -1em;
+  display:inline-block;
+  width: 0;
+  overflow:visible;
+  text-shadow:#CCC -1px 1px;
+  color:#00F;
+  font-weight:bold;
+  font-family:Arial, Helvetica, sans-serif;
+}

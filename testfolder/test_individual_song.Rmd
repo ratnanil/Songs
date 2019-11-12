@@ -1,32 +1,22 @@
 ---
 title: "Untitled"
-output: html_document
+output: 
+  html_document:
+    css: style.css
 ---
 
 
 Run the following line in the console:
 ```{r, eval = FALSE}
 rmarkdown::render("testfolder/test_individual_song.Rmd","html_document",output_dir = "testfolder/")
-  ```
+```
+  
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
-Em..\
-```{}
-|------------------------------------------|\
-|------------------------------------------|\
-|-7/5--7-5-7--4/5-4--5-4-5--2/4-2--4-2-4-2-|\
-|-9/7--9-7-9--5/7-5--7-5-7--4/5-4--5-4-5-4-|\
-|------------------------------------------|\
-|------------------------------------------|\
-```
-
-
-
 ## Title
 
-```{r child = '../songs_md/dance_me_to_the_end_of_love.md'}
+```{r child = '../songs_md2/all_the_world_is_green.txt'}
 ```
