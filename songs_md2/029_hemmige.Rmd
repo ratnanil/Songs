@@ -1,6 +1,6 @@
 ## Hemmige - Mani Matter
 \
-```{}
+```
 |Em______|Am______|D7______|G_______|\
 |________|H7______|Em______|H7______|\
 ```
@@ -31,9 +31,10 @@ Und s'chäm es hübsches Meiteli derhär\
 Jitz luege mir doch höchstens chly uf d'Bei\
 Wil mir Hemmige hei\
 \
-Letzte Strophe:\
+```
 |Em______|Am______|D7______|G_______|\
 |________|H7______|Em__H7__|Em______| \
+```
 \
 Und we me gseht, was hütt dr Mönschheit droht\
 So gseht me würklech schwarz, nid nume rot\

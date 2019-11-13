@@ -1,4 +1,5 @@
-## 
+## Winds of Change - Scorpions
+\
 <p class='song show-chords'><span class='chord'>F</span><span class='chord'>Dm</span><span class='chord'>F</span> <span class='chord'>Dm</span>  <span class='chord'>Am</span> <span class='chord'>G</span><span class='chord'>Am</span><span class='chord'>G</span><span class='chord'>C</span>  C</p>
 \
 <p class='song show-chords'><span class='chord'>C</span>I follow the Moskva</p>

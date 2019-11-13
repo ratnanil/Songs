@@ -1,10 +1,10 @@
 ## Bim Coiffeur - Mani Matter
 \
 \
-```{}
+```
 |C_______|____Am__|Dm______|____G7__|\
 |C_______|____Am__|Dm______|G7______|\
-{end_of_grid}\
+```
 \
 Bim Coiffeur bin i gsässe vor em Spiegel, luege dry\
 Und gseh dert drinn e Spiegel wo ar Wand isch vis-a-vis\
@@ -28,8 +28,7 @@ Grad hundert Müüler mit ufgange win e Männerchor\
 ```
 |C_______|____Am__|Dm______|____G7__|\
 |C_______|____Am__|Dm__G7__|____C___| \
-\
-{end_of_grid}\
+```
 \
 I ha d'Serviette vo mer grissen, ungschore sofort\
 Das Coiffeurgschäft verla mit paar entschuldigende Wort\

@@ -119,7 +119,7 @@ chordpro_environment_all <- function(string){
 
 ```{r}
 dirs <- list.dirs("songs_cho/",full.names = TRUE)
-
+# dir <- dirs[4]
 rmd_file_nr = 0
 for (dir in dirs){
   yml <- list.files(dir,pattern = "(.yaml|.yml)",full.names = TRUE)
@@ -138,9 +138,12 @@ for (dir in dirs){
     paste("#",meta$title) %>%
       writeLines(fileConn)
     
+    close.connection(fileConn)
+    
     # Todo: include mdchecksums to track changes in files
     
     songs <- list.files(dir, pattern = ".txt",full.names = TRUE)
+    song <- songs[4]
     songs_bn <- basename(songs)
     
     # gives each file an arbitary number 
@@ -210,11 +213,9 @@ for (dir in dirs){
       song_modified[chordpro_environment_l$verse[1]] <- ""
       song_modified[chordpro_environment_l$verse[2]] <- ""
       
-      song_modified[chordpro_environment_l$tab[1]] <- "```{}"
-      song_modified[chordpro_environment_l$tab[2]] <- "```"
+      song_modified[chordpro_environment_l$tab] <- "```"
       
-      song_modified[chordpro_environment_l$grid[1]] <- "```{}"
-      song_modified[chordpro_environment_l$grid[2]] <- "```"
+      song_modified[chordpro_environment_l$grid] <- "```"
     
       
       # Add the class "show-chords" to lines with chords
