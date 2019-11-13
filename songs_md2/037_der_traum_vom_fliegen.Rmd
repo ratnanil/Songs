@@ -1,11 +1,11 @@
 ## Der Traum vom Fliegen - Alexandra
 \
 \
-```{}\
+```{}
 Am__|D___|Am__|D___|\
 {end_of_grid}\
 \
-```\
+```
 Am___|D___|G___|C___|D___|G_Am_|____|\
 D___|G___|C___|D___|G_Am_|____|\
 F___|G___|C___|__G_|Am___|D_F_|\

@@ -1,7 +1,7 @@
 ## Bim Coiffeur - Mani Matter
 \
 \
-```{}\
+```{}
 |C_______|____Am__|Dm______|____G7__|\
 |C_______|____Am__|Dm______|G7______|\
 {end_of_grid}\
@@ -25,7 +25,7 @@ Vor Chlupf han i mys Muul ufgscperrt, da sy im Korridor\
 Grad hundert Müüler mit ufgange win e Männerchor\
 <p class='song show-chords'><span class='chord'>E</span>Es metaphysischs Grusle het mi packt im Coiffeurgstüel</p>
 \
-```\
+```
 |C_______|____Am__|Dm______|____G7__|\
 |C_______|____Am__|Dm__G7__|____C___| \
 \

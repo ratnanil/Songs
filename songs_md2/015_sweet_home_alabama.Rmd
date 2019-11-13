@@ -1,13 +1,13 @@
 ## Sweet Home Alabama - Lynyrd Skynyrd
 \
-```{}\
+```{}
 e|-------------------------3-|\
 B|-----3---------3---------3-|\
 G|-------2----------0------0-|  x4\
 D|-0-0---------------------0-|     \
 A|----------3-3------------2-|\
 E|---------------------3-3-3-|\
-```\
+```
 \
 <p class='song show-chords'><span class='chord'>D</span>Big <span class='chord'>Cadd9</span>wheels keep on<span class='chord'>G</span> turning</p>
 <p class='song show-chords'><span class='chord'>D</span>Carry me<span class='chord'>Cadd9</span> home to see my<span class='chord'>G</span> kin</p>

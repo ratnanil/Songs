@@ -51,7 +51,7 @@ Ah-Ah Ah-Ah Ah-Ah   Ahhh-Ah\
 haaa-ah  Ah-Ah Ah-Ah  I walk alone, I walk a...\
 \
 \
-```{}\
+```{}
 <p class='song show-chords'><span class='chord'>C</span>G]<span class='chord'>D</span><span class='chord'>Em</span></p>
 <p class='song show-chords'><span class='chord'>C</span>G]<span class='chord'>D</span><span class='chord'>Em</span></p>
 <p class='song show-chords'><span class='chord'>C</span>G]<span class='chord'>D</span><span class='chord'>Em</span></p>
@@ -64,7 +64,7 @@ Where the city sleeps, and I'm the only one and I walk a...\
 \
 {chorus}\
 \
-```\
+```
 <p class='song show-chords'><span class='chord'>Em</span>C]<span class='chord'>D</span> [A/C#] <span class='chord'>G</span> [D#5]</p>
 <p class='song show-chords'><span class='chord'>Em</span>C]<span class='chord'>D</span> [A/C#] <span class='chord'>G</span> [D#5]</p>
 <p class='song show-chords'><span class='chord'>Em</span>C]<span class='chord'>D</span> [A/C#] <span class='chord'>G</span> [D#5]</p>

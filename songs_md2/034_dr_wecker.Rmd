@@ -1,10 +1,10 @@
 ## Dr Wecker - Mani Matter
 \
 \
-```{}\
+```{}
 |C_______|________|F______|________|\
 |G_______|________|C_______|________|\
-```\
+```
 \
 Leider geit ir Nacht my wecker\
 Immer füf Minute vor\
