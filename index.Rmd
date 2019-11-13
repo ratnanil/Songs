@@ -6,9 +6,6 @@ documentclass: book
 link-citations: yes
 ---
 
-
-
-
 ```{r, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE, warning=FALSE, dev.args=list(bg = "transparent"))
 ```
@@ -42,7 +39,7 @@ test <- TRUE
 ```
 
 
-```{r, eval = !test}
+```{r}
 # A wrapper around tabr::plot_chord() which allows multiple chords and styles them in my specific way (4 columns, transparent background etc.)
 plot_chords <- function(chords){
   # Get the maximum fret-delta of all chords
@@ -73,402 +70,147 @@ plot_chords <- function(chords){
 ```
 
 
-```{r, eval = !test}
+```{r}
 # Transform all songs in songs_txt into markdown files
 
-songs <- list.files("songs_txt/",pattern = ".txt",full.names = T)
+
+addchord <- function(string,pos,chord){
+  paste0(substr(string, 1, pos-1), chord, substr(string, pos, nchar(string)))
+}
+
+chordpro_meta <- function(string,metatag){
+    regexpression <- paste0("\\{",metatag,":\\s(.+)\\}")
+    meta_bool <- str_detect(string,regexpression)
+    str_replace(string[meta_bool],regexpression, "\\1")
+}
+
+
+  
+  
+  
+  chordpro_meta_all <- function(string){
+    tags <- c("title", "subtitle", "artist", "composer", "lyricist", "copyright", "album", "year", "key", "time", "tempo", "duration", "capo", "meta")
+    out2 <- map(tags, ~chordpro_meta(string,.x))
+    names(out2) <- tags
+    out2
+    }
+  
+  chordpro_meta_remove <- function(string){
+    tags <- c("title", "subtitle", "artist", "composer", "lyricist", "copyright", "album", "year", "key", "time", "tempo", "duration", "capo", "meta")
+    remove <- str_detect(string,paste0("(",paste0("\\{",tags,":",collapse = "|"),")"))
+    string[!remove]
+  }
+  
+chordpro_environment <- function(string,environment_name){
+    start_bool <- str_detect(string,paste0("\\{start_of_",environment_name))
+    end_bool <- str_detect(string,paste0("\\{end_of_",environment_name))
+    c(which(start_bool),which(end_bool))
+}
+
+chordpro_environment_all <- function(string){
+    envs <- c("chorus","verse","tab","grid")
+    out2 <- map(envs, ~chordpro_environment(string,.x))
+    names(out2) <- envs
+    out2
+    }
+```
+
+
+```{r}
+songs <- list.files("songs_cho/", pattern = ".txt",full.names = TRUE)
 
 for (song in songs){
+  
   song_bn <- basename(song)
+  print(song_bn)
   
-  song_md <- str_replace(song_bn,".txt",".md")
+  fileConn<-file(paste0("songs_md2/",str_replace(song_bn,".txt",".Rmd")))
   
-  fileConn<-file(paste0("songs_md/",song_md))
+  song_rl <- song %>%
+    readLines(warn = FALSE)
+    
+  chordlines_bool <- song_rl %>%
+    str_detect("\\[") 
+  
+  # Take only lines where subsequent line is not a chord line
+  chordlines_bool <- chordlines_bool & lead(!chordlines_bool) & lead(str_length(song_rl)>0)
+  
+  songlines_subsequent_bool <- lag(chordlines_bool,1,default = FALSE)
+  
+  chordlines <- song_rl[chordlines_bool]
+  songlines_subsequent <- song_rl[songlines_subsequent_bool]
 
-  # TODO: specify encodings, apperentyl there was an issue with the "a" in vis-a-vis
-  readLines(song, warn = FALSE) %>%
-    map(~paste0(.x,"\\")) %>%
-    str_replace_all("\\s","&nbsp;") %>%
-    str_replace_all("\\*","\\\\*") %>%
-    str_replace_all("\\_","\\\\_") %>%
-    writeLines(fileConn)
+  songlines_new <- map2_chr(chordlines,songlines_subsequent,function(chordline,songline){
+    locs <- str_locate_all(chordline,"\\[\\w+\\]")[[1]]
+    # print(locs)
+
+    delta_acc = 0
+    for(idx in 1:nrow(locs)){
+      # print(idx)
+      start <- locs[idx,1]
+      end <- locs[idx,2]
+      chord <- str_sub(chordline,start,end)
+      
+      start_insert <- start + delta_acc
+      if(idx>1){
+      } else{
+        songline_out <- songline
+      }
+      songline_out <- addchord(songline_out,start_insert,chord)
+      
+      delta_acc <- delta_acc+ (end-start+1)
+      
+    }
+    songline_out
+  })
   
+  song_rl[songlines_subsequent_bool] <- songlines_new
+  
+  
+  song_modified <- song_rl[!chordlines_bool]
+  
+  
+  chordpro_meta_l <- chordpro_meta_all(song_modified)
+
+  song_modified <- chordpro_meta_remove(song_modified)
+  
+  chordpro_environment_l <- chordpro_environment_all(song_modified) 
+  songtitle <- paste(chordpro_meta_l$title,chordpro_meta_l$artist, sep = " - ")
+
+  song_modified[chordpro_environment_l$chorus[1]] <- "**Chorus:**"
+  song_modified[chordpro_environment_l$chorus[2]] <- ""
+  
+  song_modified[chordpro_environment_l$verse[1]] <- ""
+  song_modified[chordpro_environment_l$verse[2]] <- ""
+  
+  song_modified[chordpro_environment_l$tab[1]] <- "```{}"
+  song_modified[chordpro_environment_l$tab[2]] <- "```"
+  
+  song_modified[chordpro_environment_l$grid[1]] <- "```{}"
+  song_modified[chordpro_environment_l$grid[2]] <- "```"
+
+  
+  # Add the class "show-chords" to lines with chords
+  haschords <- str_detect(song_modified,"\\[")
+  song_modified[haschords] <- paste0("<p class='song show-chords'>",song_modified[haschords],"</p>")
+  
+  # Add an extra backslash to lines with no chords to force linebreak
+  song_modified[!haschords] <- paste0(song_modified[!haschords],"\\")
+  
+  song_modified %>%
+    prepend(paste("##", songtitle)) %>% # TODO: add other metadata
+    str_replace_all("(\\[(\\w+)\\])","<span class='chord'>\\2</span>") %>%
+    writeLines(fileConn)
+
   close.connection(fileConn)
   
 }
 
+
+```
+
+```{r}
+
 ```
 
 # Selected Songs
-
-```{r child = 'songs_md2/all_the_world_is_green.txt'}
-```
-
-## Wagon Wheel - Old Clow Medicine Show
-
-```{r child = 'songs_md/wagon_wheel.md', eval = !test}
-```
-
-## Viva la Vida - Coldplay
-
-```{r child = 'songs_md/viva_la_vida.md', eval = !test}
-```
-
-## Suzanne - Leonard Cohen
-
-```{r child = 'songs_md/suzanne.md', eval = !test}
-```
-
-```{r, eval = !test}
-plot_chords(list("F#m" = "244222", "G#m" = "466444"))
-```
-
-## New Slang - The Shins
-
-```{r child = 'songs_md/new_slang.md', eval = !test}
-```
-
-## Jar of Hearts - Christina Perri
-
-```{r child = 'songs_md/jar_of_hearts.md', eval = !test}
-```
-
-```{r, eval = !test}
-plot_chords(list("Bm" = "x24432", "Gm" = "355333", "F#" = "244322"))
-```
-
-
-## I will follow you - Deathcab for Cutie
-
-```{r child = 'songs_md/i_will_follow_you_into_the_dark.md', eval = !test}
-```
-
-## Build me up Buttercup - The Foundations
-
-```{r child = 'songs_md/build_me_up_buttercup.md', eval = !test}
-```
-
-## Hallelujah - Leonard Cohen
-
-```{r child = 'songs_md/hallelujah.md', eval = !test}
-```
-
-## Mad World - Gary Jules
-
-```{r child = 'songs_md/mad_world.md', eval = !test}
-```
-
-## Dance me to the end of Love - Leonard Cohen
-
-capo on 5th OR 6th fret
-
-Intro:
-```{}
-|------------------------------------------|
-|------------------------------------------|
-|-7/5--7-5-7--4/5-4--5-4-5--2/4-2--4-2-4-2-|
-|-9/7--9-7-9--5/7-5--7-5-7--4/5-4--5-4-5-4-|
-|------------------------------------------|
-|------------------------------------------| Em..
-```
-
-
-```{r child = 'songs_md/dance_me_to_the_end_of_love.md', eval = !test}
-```
-
-## For the Windows in Paradise - Sufjan Stevens
-
-```{r child = 'songs_md/windows_in_paradise.md', eval = !test}
-```
-
-## All the World is Green - Tom Waits
-
-```{r child = 'songs_md/all_the_world_is_green.md', eval = !test}
-```
-
-During the chorus:
-```{r, eval = !test}
-plot_chords(list("Bm" = "224432",
-                 "Em" = "779987",
-                 "A7" = "575655",
-                 "D" = "557775",
-                 "G7" = "353433"))
-
-```
-
-
-# Guitar Classics
-
-![](misc/skull.png)
-
-
-## Lemon Tree - Fool's Garden
-
-```{r child = 'songs_md/lemon_tree.md', eval = !test}
-```
-
-## Boulevard of Broken Dreams - Green Day
-
-```{r child = 'songs_md/boulevard_of_broken_dreams.md', eval = !test}
-```
-
-## Wind of Change - Scorpions
-
-```{r child = 'songs_md/wind_of_change.md', eval = !test}
-```
-
-## Calafornia Dreaming - The Mamas \& The Papas
-
-```{r child = 'songs_md/calafornia_dreaming.md', eval = !test}
-```
-
-## The House of the Rising Sun - The Animals
-
-```{r child = 'songs_md/house_of_the_rising_sun.md', eval = !test}
-```
-
-## Blowing in the Wind - Bob Dylan
-
-```{r child = 'songs_md/blowing_in_the_wind.md', eval = !test}
-```
-
-## Streets of London - Ralph McTell
-
-```{r child = 'songs_md/streets_of_london.md', eval = !test}
-```
-
-## Where have all the flowers gone - Peter Paul and Mary
-
-```{r child = 'songs_md/where_have_all_the_flowers_gone.md', eval = !test}
-```
-
-## Sound of Silence - Simon \& Garfunkel
-
-```{r child = 'songs_md/sound_of_silence.md', eval = !test}
-```
-
-## Dust in the Wind - Kansas
-
-```{r child = 'songs_md/dust_in_the_wind.md', eval = !test}
-```
-
-## Sweet Home Alabama - Lynyrd Skynyrd
-
-```{r child = 'songs_md/sweet_home_alabama.md', eval = !test}
-```
-
-```{r, eval = !test}
-plot_chords(list("Cadd9" = "x32030"))
-```
-
-## Moring has Broken - Cat Stevens
-
-```{r child = 'songs_md/morning_has_broken.md', eval = !test}
-```
-
-
-```{r, eval = !test}
-plot_chords(list("Dsus4" = "xx0233"))
-```
-
-
-## Hurt - Johnny Cash
-
-```{r child = 'songs_md/hurt.md', eval = !test}
-```
-
-
-# Mundart und Deutsch
-
-## Kinder - So kleine Hände
-
-```{r child = 'songs_md/so_kleine_haende.md', eval = !test}
-```
-
-## S'Zundhölzli - Mani Matter
-
-```{r child = 'songs_md/s_zundhoelzli.md', eval = !test}
-```
-
-## Heidi - Mani Matter
-
-```{r child = 'songs_md/heidi.md', eval = !test}
-```
-
-## Dr Alpeflug - Mani Matter
-
-```{r child = 'songs_md/dr_alpeflug.md', eval = !test}
-```
-
-## Alls wo mir id Finger chunnt - Mani Matter
-
-
-```{r child = 'songs_md/alls_wo_mir_id_finger_chunnt.md', eval = !test}
-```
-
-## Bim Coiffeur - Mani Matter
-
-```{r child = 'songs_md/bim_coiffeur.md', eval = !test}
-```
-
-## Hemmige - Mani Matter
-
-```{r child = 'songs_md/hemmige.md', eval = !test}
-```
-
-## Dr Wecker - Mani Matter
-
-```{r child = 'songs_md/dr_wecker.md', eval = !test}
-```
-
-## Arabisch - Mani Matter
-
-```{r child = 'songs_md/arabisch.md', eval = !test}
-```
-
-## Eskimo - Mani Matter
-
-```{r child = 'songs_md/eskimo.md', eval = !test}
-```
-
-## S'nüüni Tramm - Mani Matter
-
-```{r child = 'songs_md/nueni_tramm.md', eval = !test}
-```
-
-## Bergvagabunden
-
-```{r child = 'songs_md/bergvagabunden.md', eval = !test}
-```
-
-## Ein Bett im Kornfeld
-
-```{r child = 'songs_md/ein_bett_im_kornfeld.md', eval = !test}
-```
-
-## Der Traum vom Fliegen - Alexandra
-
-```{r child = 'songs_md/der_traum_vom_fliegen.md', eval = !test}
-```
-
-## Das Testament - Sarah Lesch
-
-```{r child = 'songs_md/das_testament.md', eval = !test}
-```
-
-## Sie hört Musik nur wenn sie laut ist - Herbert Grönemeyer
-
-```{r child = 'songs_md/sie_hoert_musik_nur_wenn_sie_laut_ist.md', eval = !test}
-```
-
-## Kaspar - Reinhard Mey
-
-```{r child = 'songs_md/kaspar.md', eval = !test}
-```
-
-## Heute hier morgen dort - Hannes Wader
-
-<!-- Akkrode wären auch in dasDING vorhanden -->
-
-```{r child = 'songs_md/heute_hier_morgen_dort.md', eval = !test}
-```
-
-
-# Weihnachtslieder
-
-
-## Silent Night
-
-```{r child = 'songs_md/silent_night.md', eval = !test}
-```
-
-## Oh Holy Night
-
-```{r child = 'songs_md/oh_holy_night.md', eval = !test}
-```
-
-## Mary's Bornchild
-
-```{r child = 'songs_md/marys_bornchild.md', eval = !test}
-```
-
-## Oh Come all Ye Faithful
-
-```{r child = 'songs_md/oh_come_all_ye_faithful.md', eval = !test}
-```
-
-## The First Noel
-
-```{r child = 'songs_md/the_first_noel.md', eval = !test}
-```
-
-## Leise rieselt der Schnee
-
-```{r child = 'songs_md/leise_rieselt_der_schnee.md', eval = !test}
-```
-
-## Ihr Kinderleit Kommet
-
-```{r child = 'songs_md/ihr_kinderleit_kommet.md', eval = !test}
-```
-
-## Süsser die Glocken nie klingen
-
-```{r child = 'songs_md/suesser_die_glocken_nie_klingen.md', eval = !test}
-```
-
-## Am Weihnachtsbaume die Lichter brennen
-
-```{r child = 'songs_md/am_weihnachtsbaume_die_lichter_brennen.md', eval = !test}
-```
-
-## Oh du Fröhliche
-
-```{r child = 'songs_md/oh_du_froehliche.md', eval = !test}
-```
-
-## Oh Tannenbaum
-
-```{r child = 'songs_md/oh_tannenbaum.md', eval = !test}
-```
-
-## Kommet ihr Hirten
-
-```{r child = 'songs_md/kommet_ihr_hirten.md', eval = !test}
-```
-
-
-# Notes and Tabs
-
-## Mad World - Gary Jules
-
-![](notes_and_tabs/mad_world_1.png)
-![](notes_and_tabs/mad_world_2.png)
-
-## All My Loving - The Beatles
-
-![](notes_and_tabs/allmy_loving_s1.png)
-![](notes_and_tabs/allmy_loving_s2.png)
-
-## Godfather Theme
-
-![](notes_and_tabs/godfather_theme_S1.png)
-![](notes_and_tabs/godfather_theme_S2.png)
-
-## Streets of London - Ralph McTell
-
-[Youtube Video](https://youtu.be/AeR_tI47gZY)
-
-![](notes_and_tabs/streets_of_london_1.png)
-![](notes_and_tabs/streets_of_london_2.png)
-![](notes_and_tabs/streets_of_london_3.png)
-![](notes_and_tabs/streets_of_london_4.png)
-![](notes_and_tabs/streets_of_london_5.png)
-![](notes_and_tabs/streets_of_london_6.png)
-![](notes_and_tabs/streets_of_london_7.png)
-![](notes_and_tabs/streets_of_london_8.png)
-![](notes_and_tabs/streets_of_london_9.png)
-![](notes_and_tabs/streets_of_london_10.png)
-![](notes_and_tabs/streets_of_london_11.png)
-![](notes_and_tabs/streets_of_london_12.png)
-![](notes_and_tabs/streets_of_london_13.png)

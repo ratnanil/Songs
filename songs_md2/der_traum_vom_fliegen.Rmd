@@ -1,0 +1,61 @@
+## Der Traum vom Fliegen - Alexandra
+\
+\
+```{}\
+Am__|D___|Am__|D___|\
+{end_of_grid}\
+\
+```\
+Am___|D___|G___|C___|D___|G_Am_|____|\
+D___|G___|C___|D___|G_Am_|____|\
+F___|G___|C___|__G_|Am___|D_F_|\
+E___|F__G|\
+\
+{end_of_grid}\
+\
+<p class='song show-chords'>Intro:<span class='chord'>Am</span><span class='chord'>D</span><span class='chord'>Am</span><span class='chord'>D</span></p>
+\
+<p class='song show-chords'><span class='chord'>Am</span>An einem <span class='chord'>D</span>Baum</p>
+<p class='song show-chords'><span class='chord'>G</span>In dem Park der<span class='chord'>C</span> grossen Stadt</p>
+<p class='song show-chords'><span class='chord'>D</span>Hing unter tausenden Blät<span class='chord'>G</span>tern e<span class='chord'>Am</span>in Blatt</p>
+<p class='song show-chords'>Sang der Nachtwind<span class='chord'>D</span> in den Bäumen</p>
+<p class='song show-chords'><span class='chord'>G</span>Wiegte sich das<span class='chord'>C</span> Blatt in Träumen</p>
+<p class='song show-chords'><span class='chord'>D</span>Von der weiten<span class='chord'>G</span> herrlichen<span class='chord'>Am</span> Welt</p>
+\
+Refr\
+<p class='song show-chords'><span class='chord'>F</span>Könnt ich nur<span class='chord'>G</span> einmal wie der<span class='chord'>C</span> Win<span class='chord'>G</span>d</p>
+<p class='song show-chords'>Fl<span class='chord'>D</span>ie  <span class='chord'>E</span> gen</p>
+<p class='song show-chords'><span class='chord'>F</span>Mit den<span class='chord'>G</span> Wolken<span class='chord'>C</span> übers Meer</p>
+<p class='song show-chords'>Ach mein<span class='chord'>E</span> Leben<span class='chord'>C</span> gäb ich her</p>
+<p class='song show-chords'>Könnt ich<span class='chord'>G</span> Fl<span class='chord'>F</span>ie <span class='chord'>G</span>  gen</p>
+<p class='song show-chords'>Könnt ich Fl<span class='chord'>F</span>iegen<span class='chord'>D</span></p>
+\
+\
+<p class='song show-chords'><span class='chord'>Am</span>Bald kam der<span class='chord'>D</span> Herbst</p>
+<p class='song show-chords'><span class='chord'>G</span>Gab dem Blatt sein <span class='chord'>C</span>schönstes Kleid</p>
+<p class='song show-chords'><span class='chord'>D</span>Doch es klagte den <span class='chord'>G</span>Wolken sein L<span class='chord'>Am</span>eid:</p>
+<p class='song show-chords'>"Bleiben muss ich <span class='chord'>D</span>und verblühen</p>
+<p class='song show-chords'><span class='chord'>G</span>Könnt ich mit den<span class='chord'>C</span> Schwänen ziehen</p>
+<p class='song show-chords'><span class='chord'>D</span>Dorthin wo der <span class='chord'>G</span>Sommer nie ver<span class='chord'>Am</span>geht..."</p>
+\
+Refr\
+<p class='song show-chords'><span class='chord'>F</span>Da rief der <span class='chord'>G</span>Herbstwind: "Du sollst <span class='chord'>C</span>fliegen! </p>
+<p class='song show-chords'>Fl<span class='chord'>D</span>ie  <span class='chord'>E</span> gen!"<span class='chord'>F</span></p>
+<p class='song show-chords'>Und er<span class='chord'>G</span> riss vom<span class='chord'>C</span> Baum das Blatt</p>
+<p class='song show-chords'>trieb es<span class='chord'>E</span> in die große<span class='chord'>D</span> Stadt</p>
+<p class='song show-chords'>ließ es<span class='chord'>G</span> fli<span class='chord'>G</span>e gen, ließ es</p>
+<p class='song show-chords'>F<span class='chord'>F</span>lie<span class='chord'>Am</span> gen<span class='chord'>D</span></p>
+ \
+<p class='song show-chords'><span class='chord'>Am</span>Kurz war das<span class='chord'>D</span> Glück</p>
+<p class='song show-chords'><span class='chord'>G</span>Müde sank da<span class='chord'>C</span>s Blatt hinab</p>
+<p class='song show-chords'><span class='chord'>D</span>Auf die Straße, sei<span class='chord'>G</span>n regennasse<span class='chord'>Am</span>s Grab</p>
+<p class='song show-chords'>Schon am E<span class='chord'>D</span>nde seines Lebens</p>
+<p class='song show-chords'><span class='chord'>G</span>Rief das kleine<span class='chord'>C</span> Blatt vergebens</p>
+<p class='song show-chords'><span class='chord'>D</span>Zu den stummen <span class='chord'>G</span>Häusern h<span class='chord'>Am</span>inauf:</p>
+<p class='song show-chords'><span class='chord'>F</span>Könnt ich <span class='chord'>C</span>nur e<span class='chord'>G</span>inmal noch im W<span class='chord'>C</span>ind<span class='chord'>E</span></p>
+<p class='song show-chords'>Fl<span class='chord'>D</span>ie   <span class='chord'>E</span> gen!</p>
+<p class='song show-chords'><span class='chord'>F</span>Flög ic<span class='chord'>G</span>h hin z<span class='chord'>C</span>u meinem Baum</p>
+<p class='song show-chords'>Und ver<span class='chord'>E</span>gessen<span class='chord'>C</span> wär der Traum</p>
+<p class='song show-chords'>Vom <span class='chord'>G</span>Flie <span class='chord'>G</span> gen</p>
+<p class='song show-chords'>Vom Fl<span class='chord'>F</span>ie <span class='chord'>Am</span> gen...</p>
+\

@@ -1,0 +1,59 @@
+## The First Noel - 
+\
+<p class='song show-chords'>The<span class='chord'>G</span> first Noe<span class='chord'>D</span>l </p>
+<p class='song show-chords'>the<span class='chord'>C</span> angel did sa<span class='chord'>G</span>y </p>
+<p class='song show-chords'>Was to<span class='chord'>C</span> certain poor </p>
+<p class='song show-chords'><span class='chord'>D</span>Shepards in<span class='chord'>C</span> fields as they<span class='chord'>G</span> lay: </p>
+<p class='song show-chords'>In<span class='chord'>G</span> fields where they l<span class='chord'>D</span>ay</p>
+<p class='song show-chords'>a<span class='chord'>C</span> keeping their<span class='chord'>G</span> sheep</p>
+<p class='song show-chords'>On a<span class='chord'>C</span> cold winter's<span class='chord'>D</span> night that was<span class='chord'>C</span> so<span class='chord'>G</span> deep.</p>
+\
+**Chorus:**\
+<p class='song show-chords'>N<span class='chord'>G</span>oel N<span class='chord'>D</span>oel N<span class='chord'>C</span>oel N<span class='chord'>G</span>oel</p>
+<p class='song show-chords'><span class='chord'>C</span>Born is the<span class='chord'>D</span> King of<span class='chord'>C</span> Isr<span class='chord'>G</span>ael.</p>
+\
+ \
+<p class='song show-chords'>They<span class='chord'>G</span> looked<span class='chord'>D</span> up </p>
+<p class='song show-chords'>and<span class='chord'>C</span> saw a<span class='chord'>G</span> star </p>
+<p class='song show-chords'>Shining<span class='chord'>C</span> in the<span class='chord'>D</span> east be<span class='chord'>C</span>yond them<span class='chord'>G</span> far:</p>
+<p class='song show-chords'>And<span class='chord'>G</span> to the<span class='chord'>D</span> earth </p>
+<p class='song show-chords'>it<span class='chord'>C</span> gave great<span class='chord'>G</span> light</p>
+<p class='song show-chords'>And<span class='chord'>C</span> so it con<span class='chord'>D</span>tinued both<span class='chord'>C</span> day and<span class='chord'>G</span> night. </p>
+\
+{chorus}\
+\
+<p class='song show-chords'>And<span class='chord'>G</span> by the li<span class='chord'>D</span>ght</p>
+<p class='song show-chords'>of <span class='chord'>C</span>that same<span class='chord'>G</span> star </p>
+<p class='song show-chords'>Three<span class='chord'>C</span> wise men<span class='chord'>D</span> came from the<span class='chord'>C</span> country<span class='chord'>G</span> far; </p>
+<p class='song show-chords'>To<span class='chord'>G</span> seek for a<span class='chord'>D</span> King</p>
+<p class='song show-chords'>was<span class='chord'>C</span> their i<span class='chord'>G</span>ntent, </p>
+<p class='song show-chords'>And to<span class='chord'>C</span> follow the<span class='chord'>D</span> star whe<span class='chord'>C</span>rever it<span class='chord'>G</span> went. </p>
+\
+{chorus}\
+\
+<p class='song show-chords'>This<span class='chord'>G</span> star<span class='chord'>D</span> drew </p>
+<p class='song show-chords'>nigh<span class='chord'>C</span> to the north<span class='chord'>G</span>-west; </p>
+<p class='song show-chords'>O'er<span class='chord'>C</span> Bethl<span class='chord'>D</span>ehem it<span class='chord'>C</span> took it's<span class='chord'>G</span> rest, </p>
+<p class='song show-chords'>And<span class='chord'>G</span> there it<span class='chord'>D</span> did</p>
+<p class='song show-chords'>both<span class='chord'>C</span> stop and<span class='chord'>G</span> stay, </p>
+<p class='song show-chords'>Right<span class='chord'>C</span> over the<span class='chord'>D</span> place where<span class='chord'>C</span> Jesus<span class='chord'>G</span> lay. </p>
+\
+{chorus}\
+\
+<p class='song show-chords'>Then<span class='chord'>G</span> entered<span class='chord'>D</span> in</p>
+<p class='song show-chords'>those<span class='chord'>C</span> wise men<span class='chord'>G</span> three, </p>
+<p class='song show-chords'>Fell<span class='chord'>C</span> reverently<span class='chord'>D</span> upon their<span class='chord'>C</span> kne<span class='chord'>G</span>e, </p>
+<p class='song show-chords'>And<span class='chord'>G</span> offered<span class='chord'>D</span> there </p>
+<p class='song show-chords'>in his<span class='chord'>C</span> pr<span class='chord'>G</span>esence </p>
+<p class='song show-chords'>Their<span class='chord'>C</span> gold and<span class='chord'>D</span> myrrh and<span class='chord'>C</span> franki<span class='chord'>G</span>ncense. </p>
+\
+{chorus}\
+\
+<p class='song show-chords'>Then<span class='chord'>G</span> let us<span class='chord'>D</span> all</p>
+<p class='song show-chords'>with<span class='chord'>C</span> one<span class='chord'>G</span> accord  </p>
+<p class='song show-chords'>Sing<span class='chord'>C</span> praises<span class='chord'>D</span> to our<span class='chord'>C</span> heavenly<span class='chord'>G</span> Lord, </p>
+<p class='song show-chords'>That<span class='chord'>G</span> hath<span class='chord'>D</span> made</p>
+<p class='song show-chords'>heaven and<span class='chord'>C</span> earth of<span class='chord'>G</span> nought,</p>
+<p class='song show-chords'>And<span class='chord'>C</span> with his<span class='chord'>D</span> blood<span class='chord'>C</span> mankind has<span class='chord'>G</span> bought. </p>
+\
+{chorus}\

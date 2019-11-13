@@ -1,0 +1,30 @@
+## Oh Come all Ye Faithful - 
+\
+<p class='song show-chords'>O<span class='chord'>G</span> Come All Ye<span class='chord'>D</span> Faithful</p>
+<p class='song show-chords'><span class='chord'>G</span>Joyful and tr<span class='chord'>D</span>iumphant,</p>
+<p class='song show-chords'>O<span class='chord'>Em</span> come ye, O<span class='chord'>D</span> come ye to<span class='chord'>A</span> Bethl<span class='chord'>D</span>ehem.</p>
+<p class='song show-chords'><span class='chord'>G</span>Come and b<span class='chord'>C</span>ehold<span class='chord'>G</span> Him,</p>
+<p class='song show-chords'><span class='chord'>Em</span>Born the<span class='chord'>C</span> King of<span class='chord'>D</span> Angels;</p>
+<p class='song show-chords'>O<span class='chord'>G</span> come, let us adore Him,</p>
+<p class='song show-chords'>O<span class='chord'>G</span> come, let us<span class='chord'>Em</span> adore<span class='chord'>D</span> Him,</p>
+<p class='song show-chords'>O<span class='chord'>Em</span> come, let<span class='chord'>Am</span> us <span class='chord'>D</span>adore<span class='chord'>C</span> Him,</p>
+<p class='song show-chords'><span class='chord'>G</span>Christ the<span class='chord'>G</span> Lord.</p>
+\
+<p class='song show-chords'>O<span class='chord'>G</span> Sing, choirs of<span class='chord'>D</span> angels,</p>
+<p class='song show-chords'><span class='chord'>G</span>Sing in exu<span class='chord'>D</span>ltation,</p>
+<p class='song show-chords'><span class='chord'>Em</span>Sing all ye<span class='chord'>D</span> citizens of<span class='chord'>A</span> Heaven <span class='chord'>D</span>above</p>
+<p class='song show-chords'><span class='chord'>G</span>Glory to<span class='chord'>C</span> God<span class='chord'>Em</span> in the<span class='chord'>D</span> Highest;</p>
+<p class='song show-chords'>O<span class='chord'>G</span> come, let us adore Him,</p>
+<p class='song show-chords'>O<span class='chord'>G</span> come, let us<span class='chord'>Em</span> adore<span class='chord'>D</span> Him,</p>
+<p class='song show-chords'>O<span class='chord'>Em</span> come, let<span class='chord'>Am</span> us <span class='chord'>D</span>adore<span class='chord'>C</span> Him,</p>
+<p class='song show-chords'><span class='chord'>G</span>Christ the<span class='chord'>G</span> Lord.</p>
+\
+<p class='song show-chords'>All<span class='chord'>G</span> Hail! Lord, we<span class='chord'>D</span> greet Thee,</p>
+<p class='song show-chords'><span class='chord'>G</span>Born this happy<span class='chord'>D</span> morning,</p>
+<p class='song show-chords'>O<span class='chord'>Em</span> Jesus! for<span class='chord'>D</span> evermore be<span class='chord'>A</span> Thy name <span class='chord'>D</span>adored.</p>
+<p class='song show-chords'><span class='chord'>G</span>Word of the<span class='chord'>C</span> Father,<span class='chord'>Em</span> now in<span class='chord'>C</span> flesh a<span class='chord'>D</span>ppearing;</p>
+<p class='song show-chords'>O<span class='chord'>G</span> come, let us adore Him,</p>
+<p class='song show-chords'>O<span class='chord'>G</span> come, let us<span class='chord'>Em</span> adore<span class='chord'>D</span> Him,</p>
+<p class='song show-chords'>O<span class='chord'>Em</span> come, let<span class='chord'>Am</span> us <span class='chord'>D</span>adore<span class='chord'>C</span> Him,</p>
+<p class='song show-chords'><span class='chord'>G</span>Christ the<span class='chord'>G</span> Lord.</p>
+\

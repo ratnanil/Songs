@@ -1,4 +1,4 @@
-{title: bergvagabunden}
+{title: Bergvagabunden}
 
 [E]
 Wenn wir erklimmen schwindelnde Höhen,

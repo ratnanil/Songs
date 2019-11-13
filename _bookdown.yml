@@ -2,6 +2,7 @@ book_filename: "Songs"
 delete_merged_file: true
 output_dir: docs
 download: ["pdf"]
+rmd_subdir: ["songs_md2"]
 edit: https://github.com/ratnanil/songs/edit/master/%s
 url: "https://ratnanil.github.io/Songs/"
 github-repo: "ratnanil/songs"
@@ -9,9 +10,6 @@ favicon: "music-favicon.png"
 language:
   ui:
     chapter_name: ""
-rmd_files: [
-  "index.Rmd"
-]
 fontsize: 10pt
 papersize: a4paper
 geometry: "left=4cm, right=3cm, top=2.5cm, bottom=2.5cm"

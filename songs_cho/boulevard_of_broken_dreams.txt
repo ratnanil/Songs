@@ -1,3 +1,5 @@
+{title: Boulevard of Broken Dreams}
+{artist: Green Day}
 
 [Em]     [G]            [D]            [A]           [Em]
 I walk a lonely road, the only one that I have ever known
@@ -60,11 +62,12 @@ Ah-Ah Ah-Ah Ah-Ah   Ahhh-Ah
 haaa-ah  Ah-Ah Ah-Ah  I walk alone, I walk a...
 
 
-[Solo]
+{start_of_grid}
 [C]G][D][Em]
 [C]G][D][Em]
 [C]G][D][Em]
 [C]G][B][B7]
+{end_of_grid}
 
 
 I walk this empty street, on the boulevard of broken dreams
@@ -73,8 +76,9 @@ Where the city sleeps, and I'm the only one and I walk a...
 
 {chorus}
 
-[Outro]
+{start_of_grid}
 [Em]C][D] [A/C#] [G] [D#5]
 [Em]C][D] [A/C#] [G] [D#5]
 [Em]C][D] [A/C#] [G] [D#5]
 [Em]C][D] [A/C#] [G] [D#5]
+{end_of_grid}

@@ -1,0 +1,23 @@
+## Oh Du Fröhliche - 
+\
+<p class='song show-chords'><span class='chord'>C</span>Oh du<span class='chord'>C</span> fröhliche,</p>
+<p class='song show-chords'><span class='chord'>C</span>Oh du<span class='chord'>C</span> selige,</p>
+<p class='song show-chords'><span class='chord'>C</span>Gna - den - bring -<span class='chord'>G</span> en <span class='chord'>Am</span>- de Weih - n<span class='chord'>D7</span>achts - <span class='chord'>G</span>zeit.</p>
+<p class='song show-chords'><span class='chord'>G</span>Welt ging ve<span class='chord'>G7</span>rloren,</p>
+<p class='song show-chords'><span class='chord'>C</span>Christ ward ge -<span class='chord'>C</span> boren,</p>
+<p class='song show-chords'><span class='chord'>Am</span>Freu<span class='chord'>Em</span>___ -<span class='chord'>F</span> e___,<span class='chord'>F</span> freue  dich, oh Chri<span class='chord'>G7</span>stenh<span class='chord'>C</span>eit!</p>
+\
+<p class='song show-chords'><span class='chord'>C</span>Oh du<span class='chord'>C</span> fröhliche,</p>
+<p class='song show-chords'><span class='chord'>C</span>Oh du<span class='chord'>C</span> selige,</p>
+<p class='song show-chords'><span class='chord'>C</span>Gna - den - bring -<span class='chord'>G</span> en <span class='chord'>Am</span>- de Weih - n<span class='chord'>D7</span>achts - <span class='chord'>G</span>zeit.</p>
+<p class='song show-chords'><span class='chord'>G</span>Christ ist e<span class='chord'>G7</span>rschienen,</p>
+<p class='song show-chords'><span class='chord'>C</span>Uns zu ver -<span class='chord'>C</span> sühnen,</p>
+<p class='song show-chords'><span class='chord'>Am</span>Freu<span class='chord'>Em</span>___ -<span class='chord'>F</span> e___,<span class='chord'>F</span> freue  dich, oh Chri<span class='chord'>G7</span>stenh<span class='chord'>C</span>eit!</p>
+\
+<p class='song show-chords'><span class='chord'>C</span>Oh du<span class='chord'>C</span> fröhliche,</p>
+<p class='song show-chords'><span class='chord'>C</span>Oh du<span class='chord'>C</span> selige,</p>
+<p class='song show-chords'><span class='chord'>C</span>Gna - den - bring -<span class='chord'>G</span> en <span class='chord'>Am</span>- de Weih - n<span class='chord'>D7</span>achts - <span class='chord'>G</span>zeit.</p>
+<p class='song show-chords'><span class='chord'>G</span>Himmlische H<span class='chord'>G7</span>eere</p>
+<p class='song show-chords'><span class='chord'>C</span>Jauchzen Dir <span class='chord'>C</span> Ehre,</p>
+<p class='song show-chords'><span class='chord'>Am</span>Freu<span class='chord'>Em</span>___ -<span class='chord'>F</span> e___,<span class='chord'>F</span> freue  dich, oh Chri<span class='chord'>G7</span>stenh<span class='chord'>C</span>eit!</p>
+\

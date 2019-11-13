@@ -1,3 +1,6 @@
+{title: New Slang}
+{artist: The Shins}
+
 [Intro]
 Am[C]F[C]G[C]Am[G]x4
 [C]

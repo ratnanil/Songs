@@ -1,0 +1,56 @@
+## 
+<p class='song show-chords'><span class='chord'>F</span><span class='chord'>Dm</span><span class='chord'>F</span> <span class='chord'>Dm</span>  <span class='chord'>Am</span> <span class='chord'>G</span><span class='chord'>Am</span><span class='chord'>G</span><span class='chord'>C</span>  C</p>
+\
+<p class='song show-chords'><span class='chord'>C</span>I follow the Moskva</p>
+<p class='song show-chords'>Down to Gorky<span class='chord'>C</span> Park</p>
+                 Dm       Am   G  C \
+Listening to the wind of change\
+\
+<p class='song show-chords'><span class='chord'>C</span>An August summer night</p>
+<p class='song show-chords'>Soldiers passing<span class='chord'>C</span> by</p>
+                 Dm       Am   G  C \
+Listening to the wind of change\
+\
+The world is closing in\
+Did you ever think\
+That we could be so close, like brothers\
+\
+The future's in the air\
+I can feel it everywhere\
+Blowing with the wind of change \
+\
+<p class='song show-chords'><span class='chord'>C</span>Take<span class='chord'>G</span> me to the magic of the<span class='chord'>G</span> moment</p>
+<p class='song show-chords'>On a<span class='chord'>C</span> glory<span class='chord'>G</span> night</p>
+<p class='song show-chords'>Where the children of t<span class='chord'>G</span>omorrow dream <span class='chord'>Am</span>away</p>
+<p class='song show-chords'><span class='chord'>F</span>In the wind of c<span class='chord'>G</span>hange</p>
+Walking down the street\
+Distant memories\
+Are buried in the past forever\
+\
+\
+I follow the Moskva\
+Down to Gorky Park\
+Listening to the wind of change\
+Chorus (1st Part):\
+Take me to the magic of the moment\
+On a glory night\
+Where the children of tomorrow share their dreams\
+With you and me\
+\
+Take me to the magic of the moment\
+On a glory night\
+Where the children of tomorrow dream away\
+In the wind of change\
+\
+{start_of_bridge}\
+<p class='song show-chords'><span class='chord'>Am</span>The wind of change blows <span class='chord'>G</span>straight</p>
+<p class='song show-chords'>Into the face of <span class='chord'>Am</span>time</p>
+<p class='song show-chords'>Like a stormwind that will<span class='chord'>G</span> ring</p>
+<p class='song show-chords'>The freedom bell for peace of<span class='chord'>Am</span> mind</p>
+<p class='song show-chords'>Let your balalaika<span class='chord'>C</span> sing</p>
+<p class='song show-chords'>What my guitar wants to<span class='chord'>Em</span> say</p>
+{end_of_bridge}\
+\
+{chorus}\
+{comment: play outro, same as intro}\
+\

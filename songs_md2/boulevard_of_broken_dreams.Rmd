@@ -1,0 +1,71 @@
+## Boulevard of Broken Dreams - Green Day
+\
+<p class='song show-chords'><span class='chord'>Em</span>I walk a <span class='chord'>G</span>lonely road, th<span class='chord'>D</span>e only one that<span class='chord'>A</span> I have ever k<span class='chord'>Em</span>nown</p>
+<p class='song show-chords'>Don't know <span class='chord'>G</span>where it goes,<span class='chord'>D</span> but it's home to<span class='chord'>A</span> me and I walk a<span class='chord'>Em</span>lone</p>
+\
+<p class='song show-chords'><span class='chord'>Em</span>G]<span class='chord'>D</span><span class='chord'>A</span></p>
+\
+I walk this empty street, on the boulevard of broken dreams\
+Where the city sleeps, and I'm the only one and I walk alone\
+\
+\
+<p class='song show-chords'><span class='chord'>Em</span>    <span class='chord'>G</span>   <span class='chord'>D</span>  I walk alon<span class='chord'>A</span>e, I walk al<span class='chord'>Em</span>one.</p>
+<p class='song show-chords'><span class='chord'>Em</span>    <span class='chord'>G</span>   <span class='chord'>D</span>  I walk alon<span class='chord'>A</span>e, I walk a....</p>
+\
+\
+**Chorus:**\
+<p class='song show-chords'><span class='chord'>C</span>    My <span class='chord'>G</span>shadow's the <span class='chord'>D</span>only one that w<span class='chord'>Em</span>alks beside me</p>
+<p class='song show-chords'><span class='chord'>C</span>    My s<span class='chord'>G</span>hallow h<span class='chord'>D</span>eart's the only <span class='chord'>Em</span>thing that's beating</p>
+<p class='song show-chords'><span class='chord'>C</span>    Some<span class='chord'>G</span>times I <span class='chord'>D</span>wish someone out t<span class='chord'>Em</span>here will find me</p>
+<p class='song show-chords'><span class='chord'>C</span>    Till <span class='chord'>G</span>then I <span class='chord'>B7</span>walk alone</p>
+\
+\
+\
+<p class='song show-chords'><span class='chord'>Em</span>Ah-Ah <span class='chord'>G</span>Ah-Ah <span class='chord'>D</span>Ah-Ah   <span class='chord'>A</span>Ahhh-Ah</p>
+<p class='song show-chords'>haaa<span class='chord'>Em</span>-ah  <span class='chord'>G</span>Ah-Ah <span class='chord'>D</span>Ah-Ah   <span class='chord'>A</span>Ah-Ah</p>
+\
+\
+I'm walking down the line\
+That divides me somewhere in my mind\
+On the border line of the edge\
+And where I walk alone\
+\
+\
+<p class='song show-chords'><span class='chord'>Em</span>G]<span class='chord'>D</span><span class='chord'>A</span></p>
+\
+\
+Read between the lines\
+What's fucked up and everything's all right\
+Check my vital signs, to know I'm still alive\
+And I walk alone\
+\
+\
+I walk alone, I walk alone.\
+I walk alone, I walk a....\
+\
+\
+{chorus}\
+\
+\
+Ah-Ah Ah-Ah Ah-Ah   Ahhh-Ah\
+haaa-ah  Ah-Ah Ah-Ah  I walk alone, I walk a...\
+\
+\
+```{}\
+<p class='song show-chords'><span class='chord'>C</span>G]<span class='chord'>D</span><span class='chord'>Em</span></p>
+<p class='song show-chords'><span class='chord'>C</span>G]<span class='chord'>D</span><span class='chord'>Em</span></p>
+<p class='song show-chords'><span class='chord'>C</span>G]<span class='chord'>D</span><span class='chord'>Em</span></p>
+<p class='song show-chords'><span class='chord'>C</span>{end_<span class='chord'>B</span>of_<span class='chord'>B7</span>grid}</p>
+\
+\
+I walk this empty street, on the boulevard of broken dreams\
+Where the city sleeps, and I'm the only one and I walk a...\
+\
+\
+{chorus}\
+\
+```\
+<p class='song show-chords'><span class='chord'>Em</span>C]<span class='chord'>D</span> [A/C#] <span class='chord'>G</span> [D#5]</p>
+<p class='song show-chords'><span class='chord'>Em</span>C]<span class='chord'>D</span> [A/C#] <span class='chord'>G</span> [D#5]</p>
+<p class='song show-chords'><span class='chord'>Em</span>C]<span class='chord'>D</span> [A/C#] <span class='chord'>G</span> [D#5]</p>
+<p class='song show-chords'><span class='chord'>Em</span>{end_o<span class='chord'>D</span>f_grid}<span class='chord'>G</span></p>
