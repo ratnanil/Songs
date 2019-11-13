@@ -1,4 +1,4 @@
-## Oh Du Fröhliche - 
+## Oh Du Fröhliche
 \
 <p class='song show-chords'><span class='chord'>C</span>Oh du<span class='chord'>C</span> fröhliche,</p>
 <p class='song show-chords'><span class='chord'>C</span>Oh du<span class='chord'>C</span> selige,</p>

@@ -1,4 +1,4 @@
-## The First Noel - 
+## The First Noel
 \
 <p class='song show-chords'>The<span class='chord'>G</span> first Noe<span class='chord'>D</span>l </p>
 <p class='song show-chords'>the<span class='chord'>C</span> angel did sa<span class='chord'>G</span>y </p>

@@ -1,4 +1,4 @@
-## Leise rieselt der Schnee - 
+## Leise rieselt der Schnee
 \
 <p class='song show-chords'><span class='chord'>G</span>Leise<span class='chord'>D7</span> rieselt der<span class='chord'>G</span> Schnee,</p>
 <p class='song show-chords'><span class='chord'>C</span>Still und starr liegt der<span class='chord'>G</span> See,</p>

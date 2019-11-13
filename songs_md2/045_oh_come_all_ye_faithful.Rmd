@@ -1,4 +1,4 @@
-## Oh Come all Ye Faithful - 
+## Oh Come all Ye Faithful
 \
 <p class='song show-chords'>O<span class='chord'>G</span> Come All Ye<span class='chord'>D</span> Faithful</p>
 <p class='song show-chords'><span class='chord'>G</span>Joyful and tr<span class='chord'>D</span>iumphant,</p>

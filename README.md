@@ -15,7 +15,7 @@ You'll have to add some markup syntax in the [chordpro](chordpro.org) style.
 - Remove all unintended markup syntax: 
   - \* 
   - \_ (allowed within `*_grid` and `*_tab`)
-  - \[ \] allowed only for chords outside of `*_grid` and `*_tab`
+  - brackets \[ \] are only allowed for chords outside of `*_grid` and `*_tab`
 
 When building the book, these file will be converted to Rmd files. 
 

@@ -1,4 +1,4 @@
-## Silent Night - 
+## Silent Night
 \
 <p class='song show-chords'><span class='chord'>G</span>Silent night! Holy night!<span class='chord'>D</span> All is c<span class='chord'>D7</span>alm a<span class='chord'>G</span>ll is<span class='chord'>G7</span> bright </p>
 <p class='song show-chords'><span class='chord'>C</span>Round yon virgin<span class='chord'>G</span> mother and child<span class='chord'>C</span> Holy infant so<span class='chord'>G</span> tender and mild </p>

@@ -1,4 +1,4 @@
-## Oh Holy Night - 
+## Oh Holy Night
 \
 <p class='song show-chords'><span class='chord'>C</span>O holy night, the<span class='chord'>F</span> stars are brightly<span class='chord'>C</span> shining;</p>
 <p class='song show-chords'>It is the night of the<span class='chord'>G7</span> dear Saviors <span class='chord'>C</span>birth</p>

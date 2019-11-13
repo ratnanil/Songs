@@ -1,4 +1,4 @@
-## Ihr Kinderlein Kommet - 
+## Ihr Kinderlein Kommet
 \
 <p class='song show-chords'>Ihr<span class='chord'>G</span> Kinderlein kommet, oh<span class='chord'>D7</span> kommet doch<span class='chord'>G</span> all!</p>
 <p class='song show-chords'>Zur Krippe her kommet in<span class='chord'>D7</span> Bethlehems<span class='chord'>G</span> Stall,</p>
