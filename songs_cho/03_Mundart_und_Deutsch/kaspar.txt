@@ -2,7 +2,9 @@
 {artist: Reinhard Mey}
 {year: 1992}
 
-[E]A[D][G] [B][E]
+{start_of_grid}
+ E A D  G   B  E 
+{end_of_grid}
 
    [Am]                  [D]
 Sie sagten, er kaeme von Nuernberg her,

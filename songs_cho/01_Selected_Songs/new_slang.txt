@@ -1,9 +1,10 @@
 {title: New Slang}
 {artist: The Shins}
 
-[Intro]
-Am[C]F[C]G[C]Am[G]x4
-[C]
+{start_of_grid}
+Am C F C G C Am G x4
+ C 
+{end_of_grid}
 
 [Am]            [C]            [F]
 Gold teeth and a curse for this town

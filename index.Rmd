@@ -121,6 +121,12 @@ chordpro_environment_all <- function(string){
 dirs <- list.dirs("songs_cho/",full.names = TRUE)
 # dir <- dirs[4]
 rmd_file_nr = 0
+
+for (file in list.files("songs_md2",pattern = ".Rmd",full.names = TRUE)){
+  file.remove(file)
+}
+  
+
 for (dir in dirs){
   yml <- list.files(dir,pattern = "(.yaml|.yml)",full.names = TRUE)
 

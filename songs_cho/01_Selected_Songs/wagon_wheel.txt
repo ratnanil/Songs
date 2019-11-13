@@ -1,5 +1,5 @@
 {title: Wagon Wheel}
-{artist: Old Crow Medicin Show}
+{artist: Old Crow Medicine Show}
 {capo: 2}
 
 [G]                     [D]

@@ -1,6 +1,8 @@
 ## Süsser die Glocken nie klingen - 
 \
-<p class='song show-chords'>D<span class='chord'>G</span>A7<span class='chord'>D</span></p>
+```
+D G A7 D \
+```
 \
 \
 <p class='song show-chords'><span class='chord'>D</span>Süßer die Glocken n<span class='chord'>A</span>ie klingen</p>

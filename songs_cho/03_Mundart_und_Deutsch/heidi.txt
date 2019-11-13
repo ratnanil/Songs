@@ -50,9 +50,11 @@ Mit ihm am Sunntig nach em Spil
 Nei, di Entscheidig, Heidi
 Nei dy Bscheid - i bi enttüüscht
 
-Letzte Strophe:
+{start_of_grid}
 |Am______|Dm__Am__|____F___|____Am__|
 |________|Dm__Am__|E___Am__|E___Am__|
+{end_of_grid}
+
 
 Dadrus han i glehrt, dass hütt
 Nümm so vil erreicht, wär d'Lüt

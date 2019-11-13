@@ -1,8 +1,9 @@
 ## New Slang - The Shins
 \
-<p class='song show-chords'><span class='chord'>Intro</span></p>
-<p class='song show-chords'>Am<span class='chord'>C</span>F<span class='chord'>C</span>G<span class='chord'>C</span>Am<span class='chord'>G</span>x4</p>
-<p class='song show-chords'><span class='chord'>C</span></p>
+```
+Am C F C G C Am G x4\
+ C \
+```
 \
 <p class='song show-chords'><span class='chord'>Am</span>Gold teeth and a<span class='chord'>C</span> curse for this<span class='chord'>F</span> town</p>
 <p class='song show-chords'><span class='chord'>C</span>Were all in my<span class='chord'>G</span> mouth</p>

@@ -40,7 +40,6 @@
 \
 <p class='song show-chords'>Und d<span class='chord'>H7</span>amit betrügt ihr euch<span class='chord'>Em</span> selber denn</p>
 <p class='song show-chords'><span class='chord'>H7</span>Kein Kind ist ein P<span class='chord'>Em</span>roblem</p>
-              \
 <p class='song show-chords'>Und all die F<span class='chord'>H7</span>reigeister, all die S<span class='chord'>Em</span>chulschwänzer</p>
 <p class='song show-chords'>Nur Sym<span class='chord'>Am</span>ptomträger im S<span class='chord'>H7</span>ystem</p>
 \

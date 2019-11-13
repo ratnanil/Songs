@@ -2,7 +2,9 @@
 {artist: Coldplay}
 {capo: 1}
 
-INTRO:[C]-[D]-[G]-[Em]   x2
+{start_of_grid}
+C - D - G - Em 
+{end_of_grid}
 
 (Em)     [C]      [D]
 I used to rule the world
@@ -13,7 +15,9 @@ Now in the morning I sleep alone
          [G]               [Em]
 Sweep the streets I used to own
 
-[C][D]-[G]-[Em]   x2
+{start_of_grid}
+C - D - G - Em    x2
+{end_of_grid}
 
 I used to roll the dice 
 Feel the fear in my enemy's eyes 
@@ -41,7 +45,6 @@ Once you go there was never, never an honest word
         [Bm]             [Em]
 That was when I ruled the world
 
-[C][D]-[G]-[Em]   x2
 {end_of_chours}
 
 It was the wicked and wild wind 
@@ -56,15 +59,6 @@ Oh who would ever want to be king?
 
 {chorus}
 
-[C][Em]x3
-[D]2
 
-[C][D]-[G]-[Em]   x2
-(Ohhhhh Ohhh Ohhh)
-
-{chorus}
-
-[C][D]-[Bm]-[Em]             and fading...
-Oooooh Oooooh Oooooh
 
 

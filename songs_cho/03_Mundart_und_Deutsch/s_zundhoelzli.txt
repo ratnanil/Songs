@@ -1,5 +1,11 @@
+{title: Zundhölzli}
+{artist: Mani Matter}
+
+{start_of_grid}
 |C________|G7_______|Am_______|E________|
 |F________|C________|F______G7|C________|
+{end_of_grid}
+
 
 I han es Zündhölzli azündt
 Und das het e Flamme gäh
@@ -51,8 +57,6 @@ Und das het e Flamme gäh
 Und i ha für d'Zigarette
 Welle Füür vom Hölzli näh
 Aber ds Hölzli isch dervo-
-Gspickt und uf e Teppich cho -
+Gspickt und uf e Teppich cho 
 Gottseidank dass i's vom 
 Teppich wider furt ha gno
-
-

@@ -10,10 +10,9 @@ Am___|D___|G___|C___|D___|G_Am_|____|\
 D___|G___|C___|D___|G_Am_|____|\
 F___|G___|C___|__G_|Am___|D_F_|\
 E___|F__G|\
-\
 ```
 \
-<p class='song show-chords'>Intro:<span class='chord'>Am</span><span class='chord'>D</span><span class='chord'>Am</span><span class='chord'>D</span></p>
+{comment: play intro}\
 \
 <p class='song show-chords'><span class='chord'>Am</span>An einem <span class='chord'>D</span>Baum</p>
 <p class='song show-chords'><span class='chord'>G</span>In dem Park der<span class='chord'>C</span> grossen Stadt</p>

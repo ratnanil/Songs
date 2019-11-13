@@ -6,16 +6,18 @@ I walk a lonely road, the only one that I have ever known
            [G]           [D]              [A]             [Em]
 Don't know where it goes, but it's home to me and I walk alone
 
-[Em]G][D][A]
+{start_of_grid}
+ Em G  D  A 
+{end_of_grid}
 
 I walk this empty street, on the boulevard of broken dreams
 Where the city sleeps, and I'm the only one and I walk alone
 
 
 [Em][G][D]          [A]         [Em]
-         I walk alone, I walk alone.
+.........I walk alone, I walk alone.
 [Em][G][D]          [A]
-         I walk alone, I walk a....
+.........I walk alone, I walk a....
 
 
 {start_of_chorus}
@@ -41,9 +43,9 @@ That divides me somewhere in my mind
 On the border line of the edge
 And where I walk alone
 
-
-[Em]G][D][A]
-
+{start_of_grid}
+Em G  D  A
+{end_of_grid}
 
 Read between the lines
 What's fucked up and everything's all right
@@ -63,10 +65,10 @@ haaa-ah  Ah-Ah Ah-Ah  I walk alone, I walk a...
 
 
 {start_of_grid}
-[C]G][D][Em]
-[C]G][D][Em]
-[C]G][D][Em]
-[C]G][B][B7]
+ C G  D  Em 
+ C G  D  Em 
+ C G  D  Em 
+ C G  B  B7 
 {end_of_grid}
 
 
@@ -77,8 +79,8 @@ Where the city sleeps, and I'm the only one and I walk a...
 {chorus}
 
 {start_of_grid}
-[Em]C][D] [A/C#] [G] [D#5]
-[Em]C][D] [A/C#] [G] [D#5]
-[Em]C][D] [A/C#] [G] [D#5]
-[Em]C][D] [A/C#] [G] [D#5]
+Em C  D   A/C#   G   D#5 
+Em C  D   A/C#   G   D#5 
+Em C  D   A/C#   G   D#5 
+Em C  D   A/C#   G   D#5 
 {end_of_grid}

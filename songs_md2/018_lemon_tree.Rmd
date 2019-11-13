@@ -1,6 +1,8 @@
 ## Lemon Tree - Fools Garden
 \
-<p class='song show-chords'>Intro :<span class='chord'>Em</span>Bm<span class='chord'>Em</span>Bm<span class='chord'>Am</span>Bm<span class='chord'>Em</span></p>
+```
+ Em Bm Em Bm Am Bm Em \
+```
 \
 <p class='song show-chords'><span class='chord'>Em</span>             <span class='chord'>Bm</span></p>
 <p class='song show-chords'>I'm Sitting Here In<span class='chord'>A</span>Boring Room</p>
@@ -24,7 +26,12 @@ Chorus\
 <p class='song show-chords'><span class='chord'>Em</span> I'm Turning Turning Turning Turning<span class='chord'>Bm</span> Turning Around</p>
 <p class='song show-chords'><span class='chord'>C</span>And All That I Can<span class='chord'>A</span> See Is Just another <span class='chord'>D</span>Lemon-tree</p>
 \
-<p class='song show-chords'>        <span class='chord'>Em</span> dadad<span class='chord'>Em</span>a....<span class='chord'>Am</span><span class='chord'>Em</span></p>
+\
+{start_of_bridge}\
+ Em Bm Em Bm Am Bm Em \
+ dadada....\
+{end_of_bridge}\
+\
 \
 I'm Sitting Here I Miss The Power\
 I'd Like To Go Out Taking a Shower\
@@ -32,8 +39,8 @@ But There's a Heavy Cloud Inside My Head\
 I Feel So Tired Put Myself Into Bed\
 Where Nothing Ever Happens - And I Wonder\
 \
-<p class='song show-chords'>Isolation -<span class='chord'>Em</span> Is Not Good For Me</p>
-<p class='song show-chords'><span class='chord'>D</span>Isolation -<span class='chord'>G</span> I Don't Want To Sit On a Lemon-tree</p>
+<p class='song show-chords'><span class='chord'>B</span>Isolation - <span class='chord'>Em</span>Is Not Good For Me</p>
+<p class='song show-chords'><span class='chord'>D</span>Isolation -<span class='chord'>G</span> I Don't Want To <span class='chord'>B</span>Sit On a Lemon-tree</p>
 \
 I'm Steppin' Around In a Desert Of Joy\
 Baby Anyhow I'll Get Another Toy\

@@ -1,7 +1,8 @@
 ## House of the Rising Sun - The Animals
 \
-\
-<p class='song show-chords'>INTRO- <span class='chord'>Am</span>, <span class='chord'>C</span>, <span class='chord'>D</span>, <span class='chord'>F</span>, <span class='chord'>Am</span>, <span class='chord'>E</span>, <span class='chord'>Am</span>,<span class='chord'>E</span></p>
+```
+INTRO-  Am, C, D, F, Am, E, Am , E \
+```
 \
 <p class='song show-chords'>There<span class='chord'>Am</span> is a<span class='chord'>C</span> house in<span class='chord'>D</span> New Orleans<span class='chord'>F</span></p>
 <p class='song show-chords'>They<span class='chord'>Am</span> call the<span class='chord'>C</span> Risin'<span class='chord'>E</span> Sun<span class='chord'>E7</span></p>
@@ -13,8 +14,9 @@ She sewed my new blue jeans.\
 My father was a gamblin' man\
 Down in New Orleans.\
 \
-(Passing chords)\
-<p class='song show-chords'><span class='chord'>C</span>, <span class='chord'>D</span>, <span class='chord'>F</span>, <span class='chord'>Am</span>, <span class='chord'>E</span>, <span class='chord'>Am</span>,<span class='chord'>E</span></p>
+```
+ C, D, F, Am, E, Am , E \
+```
 \
 Now, the only thing a gambler needs\
 Is a suitcase and a trunk\

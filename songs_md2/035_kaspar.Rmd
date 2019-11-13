@@ -1,6 +1,8 @@
 ## Kaspar - Reinhard Mey
 \
-<p class='song show-chords'><span class='chord'>E</span>A<span class='chord'>D</span><span class='chord'>G</span> <span class='chord'>B</span><span class='chord'>E</span></p>
+```
+ E A D  G   B  E \
+```
 \
 <p class='song show-chords'>Sie<span class='chord'>Am</span> sagten, er kaeme von <span class='chord'>D</span>Nuernberg her,</p>
 <p class='song show-chords'>und er <span class='chord'>Am</span>spraeche kein Wort.</p>

@@ -1,6 +1,8 @@
 {title: Süsser die Glocken nie klingen}
 
-D[G]A7[D]
+{start_of_grid}
+D G A7 D 
+{end_of_grid}
 
 
 [D]                  [A]

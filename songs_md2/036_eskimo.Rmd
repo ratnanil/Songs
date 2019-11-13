@@ -12,8 +12,7 @@
 <p class='song show-chords'><span class='chord'>Am</span>Doch won er fortissimio<span class='chord'>E</span> gspilt het uf sim<span class='chord'>Am</span> Cembalo</p>
 <p class='song show-chords'><span class='chord'>Em</span>isch en<span class='chord'>Am</span> Iisbä<span class='chord'>Em</span>r in<span class='chord'>Am</span>e cho un<span class='chord'>Em</span>d het n<span class='chord'>Am</span>e zwüsche<span class='chord'>Em</span> d chral<span class='chord'>Am</span>le gno.</p>
 \
-<p class='song show-chords'><span class='chord'>Am</span>                       <span class='chord'>E</span>            <span class='chord'>Am</span></p>
-<p class='song show-chords'><span class='chord'>D</span>unst isch geng es Risiko so isch er ums Lebe cho</p>
+<p class='song show-chords'><span class='chord'>Am</span>Kunst isch geng es Risiko s<span class='chord'>E</span>o isch er ums L<span class='chord'>Am</span>ebe cho</p>
 <p class='song show-chords'><span class='chord'>Em</span>und das<span class='chord'>Am</span> isch d<span class='chord'>Em</span> Moral de<span class='chord'>Am</span>rvo <span class='chord'>Em</span> choufed<span class='chord'>Am</span> nie es<span class='chord'>Em</span> Cemb<span class='chord'>Am</span>alo</p>
 <p class='song show-chords'><span class='chord'>Em</span>süscht geit<span class='chord'>Am</span>s euch gra<span class='chord'>Em</span>d ebeso<span class='chord'>Em</span>  wie de<span class='chord'>Am</span>m arm<span class='chord'>Em</span>e Es<span class='chord'>Am</span>kimo</p>
 <p class='song show-chords'><span class='chord'>Em</span>wo in<span class='chord'>Am</span> Grönlan<span class='chord'>Em</span>d einisc<span class='chord'>Am</span>h so<span class='chord'>Em</span>  truuri<span class='chord'>Am</span>g isch um<span class='chord'>Em</span>s leb<span class='chord'>Am</span>e cho.</p>
