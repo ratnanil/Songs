@@ -211,7 +211,8 @@ for (dir in dirs){
       song_modified <- chordpro_meta_remove(song_modified)
       
       chordpro_environment_l <- chordpro_environment_all(song_modified) 
-      songtitle <- paste(chordpro_meta_l$title,chordpro_meta_l$artist, sep = " - ")
+      songtitle <- ifelse(length(chordpro_meta_l$artist)>0,paste(chordpro_meta_l$title,chordpro_meta_l$artist, sep = " - "),chordpro_meta_l$title)
+        
     
       song_modified[chordpro_environment_l$chorus[1]] <- "**Chorus:**"
       song_modified[chordpro_environment_l$chorus[2]] <- ""
