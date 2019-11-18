@@ -1,5 +1,11 @@
 {title: Dr Alpeflug}
 {artist: Mani Matter}
+{time: 4/4}
+
+{start_of_grid}
+Am____|___E__|______|___Am_|
+______|___Dm_|___E__|Am____|
+{end_of_grid}
 
 [Am]
 S'sy zwee Fründen im ne Sportflugzüg
