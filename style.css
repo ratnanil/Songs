@@ -18,3 +18,7 @@ p.song.show-chords span {
   overflow:visible;
   word-wrap:normal;
 }
+
+code {
+  background: #980b4a
+}

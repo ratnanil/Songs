@@ -1,13 +1,13 @@
 ## Dust in the Wind - Kansas
 \
-```
+```{class.source='chordgrid'}
 e|-----------|\
 B|-1-------1-|\
 G|-----0-----|\
 D|---2-------|\
 A|-3-----3---|\
 E|-----------|\
-```
+```{class.source='chordgrid'}
 \
 \
 <p class='song show-chords'>I<span class='chord'>C</span> close my e<span class='chord'>Am</span>yes on<span class='chord'>G</span>ly for a moment and a mo<span class='chord'>Am</span>ment´s gone.</p>

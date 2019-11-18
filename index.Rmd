@@ -220,9 +220,12 @@ for (dir in dirs){
       song_modified[chordpro_environment_l$verse[1]] <- ""
       song_modified[chordpro_environment_l$verse[2]] <- ""
       
-      song_modified[chordpro_environment_l$tab] <- "```"
+      song_modified[chordpro_environment_l$tab] <- "```{class.source='chordgrid'}" # todo: only add thsi to the first instance
       
       song_modified[chordpro_environment_l$grid] <- "```"
+      
+      song_modified[chordpro_environment_l$bridge] <- "```"
+
     
       
       # Add the class "show-chords" to lines with chords

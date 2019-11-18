@@ -45,14 +45,14 @@ Because we'll hold each other soon\
 <p class='song show-chords'><span class='chord'>Am</span>If there's no one beside <span class='chord'>C</span>you, when your <span class='chord'>E</span>soul em<span class='chord'>Am</span>barks</p>
 <p class='song show-chords'><span class='chord'>F</span>Then I will follow you into the<span class='chord'>C</span> dark</p>
 \
-```
+```{class.source='chordgrid'}
 E---------------------|\
 B---1---1--------1----|\
 G---2---2--------2----|\
 D---0---0--------2----|\
 A---3---2----0---0----|\
 E---------------------|\
-```
+```{class.source='chordgrid'}
 \
 <p class='song show-chords'><span class='chord'>F</span>Then I will follow you into the<span class='chord'>C</span> dark</p>
 \
