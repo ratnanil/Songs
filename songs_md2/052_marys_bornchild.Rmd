@@ -1,40 +1,51 @@
 ## Marys Bornchild
+```
 \
-<p class='song show-chords'><span class='chord'>G</span>Long time ago in<span class='chord'>C</span> Bethl<span class='chord'>Am</span>ehem, so the<span class='chord'>D</span> Holy Bible<span class='chord'>G</span> says,  </p>
-<p class='song show-chords'><span class='chord'>G</span>Mary's boychild,<span class='chord'>C</span> Jesus<span class='chord'>Am</span> Christ, was<span class='chord'>G</span> born on<span class='chord'>D</span> Christmas<span class='chord'>G</span> Day. </p>
+G_____|C__Am_|D____|G_____|\
+G_____|C__Am_|D____|G_____|\
+```
+\
+Long time ago in Bethlehem, so the Holy Bible says,  \
+Mary's boychild, Jesus Christ, was born on Christmas Day. \
+\
+\
+```
+G__C__|D__G___|Em_Am_|D____|\
+G_____|C__Am__|G__D__|G____|\
+```
 \
 **Chorus:**\
-<p class='song show-chords'><span class='chord'>G</span>Hark now!<span class='chord'>C</span> Hear the<span class='chord'>D</span> Angels<span class='chord'>G</span> sing, a<span class='chord'>Em</span> King was<span class='chord'>Am</span> born t<span class='chord'>D</span>oday, </p>
-<p class='song show-chords'>and<span class='chord'>G</span> man will live fo<span class='chord'>C</span>rever<span class='chord'>Am</span> more b<span class='chord'>G</span>ecause of<span class='chord'>D</span> Christmas<span class='chord'>G</span> Day. </p>
+Hark now! Hear the Angels sing, a King was born today, \
+and man will live forever more because of Christmas Day. \
 \
 \
-<p class='song show-chords'><span class='chord'>G</span>While shepherds watch their<span class='chord'>C</span> flocks by<span class='chord'>Am</span> night, </p>
-<p class='song show-chords'>they see a<span class='chord'>D</span> bright new shining<span class='chord'>G</span> star. </p>
-<p class='song show-chords'>They hear a choir<span class='chord'>C</span> sing a<span class='chord'>Am</span> song,  </p>
-<p class='song show-chords'>the music<span class='chord'>G</span> seemed to<span class='chord'>D</span> come from <span class='chord'>G</span>afar.  </p>
+While shepherds watch their flocks by night, \
+they see a bright new shining star. \
+They hear a choir sing a song,  \
+the music seemed to come from afar.  \
   \
 {chorus} \
 \
-<p class='song show-chords'><span class='chord'>G</span>Now Joseph and his<span class='chord'>C</span> wife,<span class='chord'>Am</span> Mary, came to<span class='chord'>D</span> Bethlehem that<span class='chord'>G</span> night. </p>
-<p class='song show-chords'><span class='chord'>G</span>They found no place to<span class='chord'>C</span> bear the<span class='chord'>Am</span> child,  </p>
-<p class='song show-chords'>not a<span class='chord'>G</span> single<span class='chord'>D</span> room was in<span class='chord'>G</span> sight.      </p>
+Now Joseph and his wife, Mary, came to Bethlehem that night. \
+They found no place to bear the child,  \
+not a single room was in sight.      \
   \
 {chorus}\
 \
-<p class='song show-chords'><span class='chord'>G</span>Trumpets<span class='chord'>C</span> sound and<span class='chord'>D</span> Angels<span class='chord'>G</span> sing..<span class='chord'>Em</span>.listen to<span class='chord'>Am</span> what they<span class='chord'>D</span> say, </p>
-<p class='song show-chords'><span class='chord'>D</span>that<span class='chord'>G</span> man will live fo<span class='chord'>C</span>rever<span class='chord'>Am</span> more b<span class='chord'>G</span>ecause of<span class='chord'>D</span> Christmas<span class='chord'>G</span> Day. </p>
+Trumpets sound and Angels sing...listen to what they say, \
+that man will live forever more because of Christmas Day. \
 \
 {chorus}\
 {chorus}\
   \
-<p class='song show-chords'><span class='chord'>G</span>And then they found a<span class='chord'>C</span> little<span class='chord'>Am</span> nook, in a<span class='chord'>D</span> stable all fo<span class='chord'>G</span>rlorn. </p>
-<p class='song show-chords'><span class='chord'>G</span>And in a manger,<span class='chord'>C</span> cold and<span class='chord'>Am</span> dark, Mary's<span class='chord'>G</span> little<span class='chord'>D</span> boy was<span class='chord'>G</span> born.</p>
+And then they found a little nook, in a stable all forlorn. \
+And in a manger, cold and dark, Mary's little boy was born.\
 \
-<p class='song show-chords'><span class='chord'>G</span>Long time ago in<span class='chord'>C</span> Bethl<span class='chord'>Am</span>ehem, so the<span class='chord'>D</span> Holy Bible<span class='chord'>G</span> says,  </p>
-<p class='song show-chords'><span class='chord'>G</span>Mary's boychild,<span class='chord'>C</span> Jesus<span class='chord'>Am</span> Christ, was<span class='chord'>G</span> born on<span class='chord'>D</span> Christmas<span class='chord'>G</span> Day. </p>
+Long time ago in Bethlehem, so the Holy Bible says,  \
+Mary's boychild, Jesus Christ, was born on Christmas Day. \
 \
   \
 {chorus}\
 \
-<p class='song show-chords'><span class='chord'>G</span>Trumpets<span class='chord'>C</span> sound and<span class='chord'>D</span> Angels<span class='chord'>G</span> sing..<span class='chord'>Em</span>.listen to<span class='chord'>Am</span> what they<span class='chord'>D</span> say, </p>
-<p class='song show-chords'><span class='chord'>D</span>that<span class='chord'>G</span> man will live fo<span class='chord'>C</span>rever<span class='chord'>Am</span> more b<span class='chord'>G</span>ecause of<span class='chord'>D</span> Christmas<span class='chord'>G</span> Day.</p>
+Trumpets sound and Angels sing...listen to what they say, \
+that man will live forever more because of Christmas Day.\

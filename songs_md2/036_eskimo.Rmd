@@ -1,7 +1,7 @@
 ## Eskimo - Mani Matter
 \
 <p class='song show-chords'><span class='chord'>Am</span>Kenned ihr das Gschichtli scho<span class='chord'>E</span> vu dem arme<span class='chord'>Am</span> Eskimo,</p>
-<p class='song show-chords'><span class='chord'>Em</span>wo in<span class='chord'>Am</span> Grönlan<span class='chord'>Em</span>d einisc<span class='chord'>Am</span>h so <span class='chord'>Em</span>  truuri<span class='chord'>Am</span>g isch um<span class='chord'>Em</span>s Leb<span class='chord'>Am</span>e cho.</p>
+<p class='song show-chords'><span class='chord'>Em</span>wo in<span class='chord'>Am</span> Grönlan<span class='chord'>Em</span>d einisc<span class='chord'>Am</span>h so <span class='chord'>Em</span>truurig <span class='chord'>Am</span>isch ums <span class='chord'>Em</span>Lebe <span class='chord'>Am</span>cho.</p>
 \
 <p class='song show-chords'><span class='chord'>Am</span>Er hät dank em Radi<span class='chord'>E</span>o freud ar Musi<span class='chord'>Am</span>g übercho</p>
 <p class='song show-chords'><span class='chord'>Em</span>und het<span class='chord'>Am</span> denkt das<span class='chord'>Em</span> chan i<span class='chord'>Am</span> o  <span class='chord'>Em</span> so isch<span class='chord'>Am</span> er is<span class='chord'>Em</span> unglüc<span class='chord'>Am</span>k cho.</p>
@@ -14,7 +14,7 @@
 \
 <p class='song show-chords'><span class='chord'>Am</span>Kunst isch geng es Risiko s<span class='chord'>E</span>o isch er ums L<span class='chord'>Am</span>ebe cho</p>
 <p class='song show-chords'><span class='chord'>Em</span>und das<span class='chord'>Am</span> isch d<span class='chord'>Em</span> Moral de<span class='chord'>Am</span>rvo <span class='chord'>Em</span> choufed<span class='chord'>Am</span> nie es<span class='chord'>Em</span> Cemb<span class='chord'>Am</span>alo</p>
-<p class='song show-chords'><span class='chord'>Em</span>süscht geit<span class='chord'>Am</span>s euch gra<span class='chord'>Em</span>d ebeso<span class='chord'>Em</span>  wie de<span class='chord'>Am</span>m arm<span class='chord'>Em</span>e Es<span class='chord'>Am</span>kimo</p>
+<p class='song show-chords'><span class='chord'>Em</span>süscht geit<span class='chord'>Am</span>s euch gra<span class='chord'>Em</span>d eb<span class='chord'>Am</span>eso  <span class='chord'>Em</span>wie dem <span class='chord'>Am</span>arme <span class='chord'>Em</span>Eski<span class='chord'>Am</span>mo</p>
 <p class='song show-chords'><span class='chord'>Em</span>wo in<span class='chord'>Am</span> Grönlan<span class='chord'>Em</span>d einisc<span class='chord'>Am</span>h so<span class='chord'>Em</span>  truuri<span class='chord'>Am</span>g isch um<span class='chord'>Em</span>s leb<span class='chord'>Am</span>e cho.</p>
 \
 \

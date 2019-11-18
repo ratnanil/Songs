@@ -1,7 +1,8 @@
 ## Lemon Tree - Fools Garden
 \
 ```
- Em Bm Em Bm Am Bm Em \
+Em__|Bm__|Em__|Bm__|\
+Am__|Bm__|Em__|Bm_E|\
 ```
 \
 <p class='song show-chords'><span class='chord'>Em</span>             <span class='chord'>Bm</span></p>
@@ -9,7 +10,7 @@
 <p class='song show-chords'><span class='chord'>Em</span>It's Just Another Rainy Sunday<span class='chord'>Bm</span> Afternoon</p>
 <p class='song show-chords'><span class='chord'>Em</span>I'm Wasting My Time I Got<span class='chord'>Bm</span> Nothing To Do</p>
 <p class='song show-chords'><span class='chord'>Em</span>I'm Hanging Around I'm<span class='chord'>Bm</span> Waiting For You</p>
-<p class='song show-chords'>But<span class='chord'>Am</span> Nothing Ever Happens<span class='chord'>Bm</span> - And I<span class='chord'>Em</span> Wonder</p>
+<p class='song show-chords'>But<span class='chord'>Am</span> Nothing Ever Happens<span class='chord'>Bm</span> - And I<span class='chord'>Em</span> Wond<span class='chord'>Bm</span>er<span class='chord'>Em</span></p>
 \
 I'm Driving Around In My Car\
 I'm Driving Too Fast I'm Driving Too Far\

@@ -1,5 +1,10 @@
 ## Dr Alpeflug - Mani Matter
 \
+```
+Am____|___E__|______|___Am_|\
+______|___Dm_|___E__|Am____|\
+```
+\
 <p class='song show-chords'><span class='chord'>Am</span>S'sy zwee Fründen im ne Sportflugzüg</p>
 <p class='song show-chords'>En Alpeflug ga <span class='chord'>E</span>mache</p>
 \

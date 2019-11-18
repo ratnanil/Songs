@@ -117,7 +117,7 @@ chordpro_environment_all <- function(string){
 ```
 
 
-```{r}
+```{r, eval = FALSE}
 dirs <- list.dirs("songs_cho/",full.names = TRUE)
 # dir <- dirs[4]
 rmd_file_nr = 0
@@ -220,7 +220,7 @@ for (dir in dirs){
       song_modified[chordpro_environment_l$verse[1]] <- ""
       song_modified[chordpro_environment_l$verse[2]] <- ""
       
-      song_modified[chordpro_environment_l$tab] <- "```{class.source='chordgrid'}" # todo: only add thsi to the first instance
+      song_modified[chordpro_environment_l$tab] <- "```" 
       
       song_modified[chordpro_environment_l$grid] <- "```"
       

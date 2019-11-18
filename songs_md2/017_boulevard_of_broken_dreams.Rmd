@@ -4,7 +4,7 @@
 <p class='song show-chords'>Don't know <span class='chord'>G</span>where it goes,<span class='chord'>D</span> but it's home to<span class='chord'>A</span> me and I walk a<span class='chord'>Em</span>lone</p>
 \
 ```
- Em G  D  A \
+Em__|G___|D___|A___| \
 ```
 \
 I walk this empty street, on the boulevard of broken dreams\
@@ -67,9 +67,4 @@ Where the city sleeps, and I'm the only one and I walk a...\
 \
 {chorus}\
 \
-```
-Em C  D   A/C#   G   D#5 \
-Em C  D   A/C#   G   D#5 \
-Em C  D   A/C#   G   D#5 \
-Em C  D   A/C#   G   D#5 \
-```
+\
