@@ -33,7 +33,7 @@ Und s'chäm es hübsches Meiteli derhär
 Jitz luege mir doch höchstens chly uf d'Bei
 Wil mir Hemmige hei
 
-{start_of_grid}
+{start_of_grid: Abschluss}
 |Em______|Am______|D7______|G_______|
 |________|H7______|Em__H7__|Em______| 
 {end_of_grid}

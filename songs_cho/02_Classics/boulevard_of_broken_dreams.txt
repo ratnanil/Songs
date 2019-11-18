@@ -7,7 +7,7 @@ I walk a lonely road, the only one that I have ever known
 Don't know where it goes, but it's home to me and I walk alone
 
 {start_of_grid}
- Em G  D  A 
+Em__|G___|D___|A___| 
 {end_of_grid}
 
 I walk this empty street, on the boulevard of broken dreams
@@ -78,9 +78,4 @@ Where the city sleeps, and I'm the only one and I walk a...
 
 {chorus}
 
-{start_of_grid}
-Em C  D   A/C#   G   D#5 
-Em C  D   A/C#   G   D#5 
-Em C  D   A/C#   G   D#5 
-Em C  D   A/C#   G   D#5 
-{end_of_grid}
+
