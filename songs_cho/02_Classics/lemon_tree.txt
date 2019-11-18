@@ -3,7 +3,8 @@
 {year: 1996}
 
 {start_of_grid}
- Em Bm Em Bm Am Bm Em 
+Em__|Bm__|Em__|Bm__|
+Am__|Bm__|Em__|Bm_E|
 {end_of_grid}
 
 [Em]             [Bm]
@@ -14,7 +15,7 @@ It's Just Another Rainy Sunday Afternoon
 I'm Wasting My Time I Got Nothing To Do
 [Em]                  [Bm]
 I'm Hanging Around I'm Waiting For You
-   [Am]                 [Bm]    [Em]
+   [Am]                 [Bm]    [Em] [Bm][Em]
 But Nothing Ever Happens - And I Wonder
 
 I'm Driving Around In My Car
