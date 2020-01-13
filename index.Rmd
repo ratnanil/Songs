@@ -36,7 +36,7 @@ suppressMessages(library(gridExtra))
 suppressMessages(library(cowplot))
 suppressMessages(library(yaml))
 
-test <- TRUE
+test <- FALSE
 ```
 
 
@@ -87,21 +87,20 @@ chordpro_meta <- function(string,metatag){
 
 
   
+
   
-  
-  chordpro_meta_all <- function(string){
-    tags <- c("title", "subtitle", "artist", "composer", "lyricist", "copyright", "album", "year", "key", "time", "tempo", "duration", "capo", "meta")
-    out2 <- map(tags, ~chordpro_meta(string,.x))
-    names(out2) <- tags
+chordpro_meta_all <- function(string, remove = FALSE){
+  chordpro_tags <- c("title", "subtitle", "artist", "composer", "lyricist", "copyright", "album", "year", "key", "time", "tempo", "duration", "capo", "meta")  
+  if(!remove){
+    out2 <- map(chordpro_tags, ~chordpro_meta(string,.x))
+    names(out2) <- chordpro_tags
     out2
-    }
-  
-  chordpro_meta_remove <- function(string){
-    tags <- c("title", "subtitle", "artist", "composer", "lyricist", "copyright", "album", "year", "key", "time", "tempo", "duration", "capo", "meta")
-    remove <- str_detect(string,paste0("(",paste0("\\{",tags,":",collapse = "|"),")"))
+  } else{
+    remove <- str_detect(string,paste0("(",paste0("\\{",chordpro_tags,":",collapse = "|"),")"))
     string[!remove]
+    }
   }
-  
+
 chordpro_environment <- function(string,environment_name){
     start_bool <- str_detect(string,paste0("\\{start_of_",environment_name))
     end_bool <- str_detect(string,paste0("\\{end_of_",environment_name))
@@ -122,9 +121,7 @@ dirs <- list.dirs("songs_cho/",full.names = TRUE)
 # dir <- dirs[4]
 rmd_file_nr = 0
 
-for (file in list.files("songs_md2",pattern = ".Rmd",full.names = TRUE)){
-  file.remove(file)
-}
+for (file in list.files("songs_md2",pattern = ".Rmd",full.names = TRUE)){file.remove(file)}
   
 
 for (dir in dirs){
@@ -149,11 +146,9 @@ for (dir in dirs){
     # Todo: include mdchecksums to track changes in files
     
     songs <- list.files(dir, pattern = ".txt",full.names = TRUE)
-    song <- songs[4]
-    songs_bn <- basename(songs)
-    
+      
     # gives each file an arbitary number 
-    songs_numeric <- map_dbl(songs_bn,~mean(utf8ToInt(.x)))
+    songs_numeric <- map_dbl(basename(songs),~mean(utf8ToInt(.x)))
     names(songs_numeric) <- songs
     songs_numeric <- sort(songs_numeric)
     songs <- names(songs_numeric)
@@ -208,7 +203,7 @@ for (dir in dirs){
       
       chordpro_meta_l <- chordpro_meta_all(song_modified)
     
-      song_modified <- chordpro_meta_remove(song_modified)
+      song_modified <- chordpro_meta_all(song_modified,remove = TRUE)
       
       chordpro_environment_l <- chordpro_environment_all(song_modified) 
       songtitle <- ifelse(length(chordpro_meta_l$artist)>0,paste(chordpro_meta_l$title,chordpro_meta_l$artist, sep = " - "),chordpro_meta_l$title)
