@@ -3,13 +3,15 @@
 {time: 4/4}
 
 {start_of_grid}
-Am____|___E__|______|___Am_|
-______|___Dm_|___E__|Am____|
+Am____|______|______|E7____|
+______|______|______|Am____|
+______|______|______|Dm____|
+______|Am____|E7____|Am____|
 {end_of_grid}
 
-[Am]
+          [Am]
 S'sy zwee Fründen im ne Sportflugzüg
-               [E]
+               [E7]
 En Alpeflug ga mache
 
 Flügen ufe zu de Gipflen und
@@ -21,7 +23,7 @@ Hinde sitzt dr Passagier
 Dä wo stüüret, dä sitzt vor
                     [Am]
 Und es ratteret und brummet
-      [E]    [Am]
+      [E]      [Am]
 Um sen ume dr Motor
 
 Da rüeft dä, wo hinde sitzt:
