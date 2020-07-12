@@ -12,5 +12,5 @@ language:
     chapter_name: ""
 fontsize: 10pt
 papersize: a4paper
-geometry: "left=4cm, right=3cm, top=2.5cm, bottom=2.5cm"
+geometry: "left=1cm, right=1cm, top=1cm, bottom=1cm"
 subparagraph: true
