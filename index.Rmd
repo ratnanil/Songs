@@ -253,16 +253,45 @@ for (dir in dirs){
           writeLines(fileConn)
       
         close.connection(fileConn)
-      } else{ 
-        # do this instead of the fancy css / html stuff
-        song_meta <- str_match(song_rl, "\\{(\\w+):\\s(.+)\\}")
-        artist_row <- which(song_meta[,2] == "artist")
-        artist <- song_meta[artist_row,3]
-        title_row <- which(song_meta[,2] == "title")
-        title <- song_meta[title_row,3]
-        song_rl <- song_rl[-c(artist_row,title_row)]
+      } else{ # do this instead of the fancy css / html stuff
         
-        song_header <- paste("##",title,"-",artist)
+        # Get all metadata which include tags
+        song_meta <- str_match(song_rl, "\\{(\\w+):\\s(.+)\\}")
+        
+        # Get all metadata without tags
+        song_meta2 <- str_match(song_rl, "\\{(\\w+)\\}")
+        
+        starts_or_ends <- which(apply(song_meta2, 1, function(x)str_detect(x[2],"start_of_|end_of_")))
+        
+        stopifnot(length(starts_or_ends) %%2 == 0) # must be an even number
+        
+        # for now, just replace this information with code starts/ends
+        song_rl[starts_or_ends] <- "```"
+        
+        
+        song_meta_dfr <- map_dfr(c("title","artist","year"), function(x){
+          row <- which(song_meta[,2] == x)
+          value = song_meta[row,3]
+          tibble(tag = x, row = row,value = value)
+        })
+        
+        
+        song_rl <- song_rl[-c(song_meta_dfr$row)]
+        
+        song_header <- paste(
+          "##",
+          song_meta_dfr$value[song_meta_dfr$tag == "title"],
+          "-",
+          song_meta_dfr$value[song_meta_dfr$tag == "artist"],
+          ifelse(length(song_meta_dfr$tag == "year")>0,
+                 paste0(
+                   " (",
+                   song_meta_dfr$value[song_meta_dfr$tag == "year"],
+                   ")"
+                 )
+                 ,"")
+          )
+        
         song_rl <- c(song_header,"```",song_rl,"```")
         
         rmd_file_nr <- rmd_file_nr+1

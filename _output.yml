@@ -6,10 +6,10 @@ bookdown::gitbook:
     fontsettings:
       theme: night
       size: 0
-#bookdown::pdf_book:
-#  keep_tex: yes
-#  includes:
-#    in_header: misc/preamble.tex
-#    before_body: misc/titlepage.tex
-#  latex_engine: xelatex
+bookdown::pdf_book:
+  keep_tex: yes
+  includes:
+    in_header: misc/preamble.tex
+    before_body: misc/titlepage.tex
+  latex_engine: xelatex
 
