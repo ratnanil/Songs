@@ -122,7 +122,8 @@ dirs <- list.dirs("songs_cho/",full.names = TRUE)
 rmd_file_nr = 0
 
 for (file in list.files("songs_md2",pattern = ".Rmd",full.names = TRUE)){file.remove(file)}
-  
+for (file in list.files("songs_md3",pattern = ".Rmd",full.names = TRUE)){file.remove(file)}
+
 
 for (dir in dirs){
   yml <- list.files(dir,pattern = "(.yaml|.yml)",full.names = TRUE)
@@ -136,7 +137,14 @@ for (dir in dirs){
     
     dir_bn <- basename(dir)
     
-    fileConn<-file(paste0("songs_md2/",rmd_file_nr_chr,dir_bn,".Rmd"))
+    usecss = FALSE
+    
+    if(usecss){
+      fileConn<-file(paste0("songs_md2/",rmd_file_nr_chr,dir_bn,".Rmd"))
+
+    }else{
+      fileConn<-file(paste0("songs_md3/",rmd_file_nr_chr,dir_bn,".Rmd"))
+    }
     
     paste("#",meta$title) %>%
       writeLines(fileConn)
@@ -159,90 +167,111 @@ for (dir in dirs){
       
       song_rl <- song %>%
         readLines(warn = FALSE)
+      
+      
+      if(usecss){
+        chordlines_bool <- song_rl %>%
+          str_detect("\\[") 
         
-      chordlines_bool <- song_rl %>%
-        str_detect("\\[") 
+        # Take only lines where subsequent line is not a chord line
+        chordlines_bool <- chordlines_bool & lead(!chordlines_bool) & lead(str_length(song_rl)>0)
+        
+        songlines_subsequent_bool <- lag(chordlines_bool,1,default = FALSE)
+        
+        chordlines <- song_rl[chordlines_bool]
+        songlines_subsequent <- song_rl[songlines_subsequent_bool]
       
-      # Take only lines where subsequent line is not a chord line
-      chordlines_bool <- chordlines_bool & lead(!chordlines_bool) & lead(str_length(song_rl)>0)
+        songlines_new <- map2_chr(chordlines,songlines_subsequent,function(chordline,songline){
+          locs <- str_locate_all(chordline,"\\[\\w+\\]")[[1]]
+          # print(locs)
       
-      songlines_subsequent_bool <- lag(chordlines_bool,1,default = FALSE)
-      
-      chordlines <- song_rl[chordlines_bool]
-      songlines_subsequent <- song_rl[songlines_subsequent_bool]
-    
-      songlines_new <- map2_chr(chordlines,songlines_subsequent,function(chordline,songline){
-        locs <- str_locate_all(chordline,"\\[\\w+\\]")[[1]]
-        # print(locs)
-    
-        delta_acc = 0
-        for(idx in 1:nrow(locs)){
-          # print(idx)
-          start <- locs[idx,1]
-          end <- locs[idx,2]
-          chord <- str_sub(chordline,start,end)
-          
-          start_insert <- start + delta_acc
-          if(idx>1){
-          } else{
-            songline_out <- songline
+          delta_acc = 0
+          for(idx in 1:nrow(locs)){
+            # print(idx)
+            start <- locs[idx,1]
+            end <- locs[idx,2]
+            chord <- str_sub(chordline,start,end)
+            
+            start_insert <- start + delta_acc
+            if(idx>1){
+            } else{
+              songline_out <- songline
+            }
+            songline_out <- addchord(songline_out,start_insert,chord)
+            
+            delta_acc <- delta_acc+ (end-start+1)
+            
           }
-          songline_out <- addchord(songline_out,start_insert,chord)
-          
-          delta_acc <- delta_acc+ (end-start+1)
-          
-        }
-        songline_out
-      })
-      
-      song_rl[songlines_subsequent_bool] <- songlines_new
-      
-      
-      song_modified <- song_rl[!chordlines_bool]
-      
-      
-      chordpro_meta_l <- chordpro_meta_all(song_modified)
-    
-      song_modified <- chordpro_meta_all(song_modified,remove = TRUE)
-      
-      chordpro_environment_l <- chordpro_environment_all(song_modified) 
-      songtitle <- ifelse(length(chordpro_meta_l$artist)>0,paste(chordpro_meta_l$title,chordpro_meta_l$artist, sep = " - "),chordpro_meta_l$title)
+          songline_out
+        })
         
-    
-      song_modified[chordpro_environment_l$chorus[1]] <- "**Chorus:**"
-      song_modified[chordpro_environment_l$chorus[2]] <- ""
+        song_rl[songlines_subsequent_bool] <- songlines_new
+        
+        
+        song_modified <- song_rl[!chordlines_bool]
+        
+        
+        chordpro_meta_l <- chordpro_meta_all(song_modified)
       
-      song_modified[chordpro_environment_l$verse[1]] <- ""
-      song_modified[chordpro_environment_l$verse[2]] <- ""
+        song_modified <- chordpro_meta_all(song_modified,remove = TRUE)
+        
+        chordpro_environment_l <- chordpro_environment_all(song_modified) 
+        songtitle <- ifelse(length(chordpro_meta_l$artist)>0,paste(chordpro_meta_l$title,chordpro_meta_l$artist, sep = " - "),chordpro_meta_l$title)
+          
       
-      song_modified[chordpro_environment_l$tab] <- "```" 
+        song_modified[chordpro_environment_l$chorus[1]] <- "**Chorus:**"
+        song_modified[chordpro_environment_l$chorus[2]] <- ""
+        
+        song_modified[chordpro_environment_l$verse[1]] <- ""
+        song_modified[chordpro_environment_l$verse[2]] <- ""
+        
+        song_modified[chordpro_environment_l$tab] <- "```" 
+        
+        song_modified[chordpro_environment_l$grid] <- "```"
+        
+        song_modified[chordpro_environment_l$bridge] <- "```"
+  
       
-      song_modified[chordpro_environment_l$grid] <- "```"
+        
+        # Add the class "show-chords" to lines with chords
+        haschords <- str_detect(song_modified,"\\[")
+        song_modified[haschords] <- paste0("<p class='song show-chords'>",song_modified[haschords],"</p>")
+        
+        codechunk <- str_detect(song_modified,"```")
+        
+        # Add an extra backslash to lines with no chords to force linebreak
+        song_modified[!haschords & !codechunk] <- paste0(song_modified[!haschords & !codechunk],"\\")
+        
+        rmd_file_nr <- rmd_file_nr+1
+        rmd_file_nr_chr <- paste0(str_pad(rmd_file_nr,3,pad = "0"),"_")
+        
+        fileConn<-file(paste0("songs_md2/",paste0(rmd_file_nr_chr, str_replace(song_bn,".txt",".Rmd"))))
+        
+        song_modified %>%
+          prepend(paste("##", songtitle)) %>% # TODO: add other metadata
+          str_replace_all("(\\[(\\w+)\\])","<span class='chord'>\\2</span>") %>%
+          writeLines(fileConn)
       
-      song_modified[chordpro_environment_l$bridge] <- "```"
-
-    
-      
-      # Add the class "show-chords" to lines with chords
-      haschords <- str_detect(song_modified,"\\[")
-      song_modified[haschords] <- paste0("<p class='song show-chords'>",song_modified[haschords],"</p>")
-      
-      codechunk <- str_detect(song_modified,"```")
-      
-      # Add an extra backslash to lines with no chords to force linebreak
-      song_modified[!haschords & !codechunk] <- paste0(song_modified[!haschords & !codechunk],"\\")
-      
-      rmd_file_nr <- rmd_file_nr+1
-      rmd_file_nr_chr <- paste0(str_pad(rmd_file_nr,3,pad = "0"),"_")
-      
-      fileConn<-file(paste0("songs_md2/",paste0(rmd_file_nr_chr, str_replace(song_bn,".txt",".Rmd"))))
-      
-      song_modified %>%
-        prepend(paste("##", songtitle)) %>% # TODO: add other metadata
-        str_replace_all("(\\[(\\w+)\\])","<span class='chord'>\\2</span>") %>%
-        writeLines(fileConn)
-    
-      close.connection(fileConn)
+        close.connection(fileConn)
+      } else{ 
+        # do this instead of the fancy css / html stuff
+        song_meta <- str_match(song_rl, "\\{(\\w+):\\s(.+)\\}")
+        artist_row <- which(song_meta[,2] == "artist")
+        artist <- song_meta[artist_row,3]
+        title_row <- which(song_meta[,2] == "title")
+        title <- song_meta[title_row,3]
+        song_rl <- song_rl[-c(artist_row,title_row)]
+        
+        song_header <- paste("##",title,"-",artist)
+        song_rl <- c(song_header,"```",song_rl,"```")
+        
+        rmd_file_nr <- rmd_file_nr+1
+        rmd_file_nr_chr <- paste0(str_pad(rmd_file_nr,3,pad = "0"),"_")
+        
+        fileConn<-file(paste0("songs_md3/",paste0(rmd_file_nr_chr, str_replace(song_bn,".txt",".Rmd"))))
+        
+        writeLines(song_rl,fileConn)
+      }
       
     }
     
