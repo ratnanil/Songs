@@ -1,25 +1,77 @@
 
 # About
 
-This is a song book containing chords and lyrics of selected songs. 
+This is a song book containing chords and lyrics of selected songs, generated using R, RMarkdown and Bookdown.
 
-# Adding new songs
+# FAQ
 
-The default way of adding new songs is adding the plain text file (\*.txt) into a subfolder of the songs_cho folder. The subfolder needs to contain a \*.yml file with the title of the chapter (without this yaml file, the data within the subfolder is ignored). The title will be used to generate a level 1 header of the same name.
+## How do I request new songs?
 
-You'll have to add some markup syntax in the [chordpro](chordpro.org) style.
+Submit a request via [an issue](https://github.com/ratnanil/Songs/issues). If you add multiple songs to in request, you can use the tickbox list (see below):
 
-- Title (`{title: XY}`, obligatory)
-- Wrap all overline chords with brackets (e.g. `[G]`) *but keep the chords on a seperate line (not inline)*
-- Wrap grids with the appropriate directive (`{start_of_grid}` / `{end_of_grid}`)
-- Remove all unintended markup syntax: 
-  - \* 
-  - \_ (allowed within `*_grid` and `*_tab`)
-  - brackets \[ \] are only allowed for chords outside of `*_grid` and `*_tab`
+```
+- [ ] Song1
+- [ ] Song2
+``` 
 
-When building the book, these file will be converted to Rmd files. 
+## How do I add a new chapter into the book?
 
-# Adding chords to songs
+Create a subfolder in the `songs_cho` folder. Create a file named `meta.yml` containing the title of the chapter. E.g.
 
-The project includes the library `tabr`, which generates beautiful chord diagrams from vectors with the `plot_chord` function. I've written a rapper around this function named `plot_chords` (note the `s`) which takes a named list `list(chordname = chordspec)` and draws a grid with ca. 4 columns (empty columns when less than 4 chords). 
+```
+title: Selected Songs
+```
+
+## How do I add a new song?
+
+Add a plain text file (mysong.txt) into one of the subfolders of `songs_cho`. Generating the (html- / pdf-) outputs is an custom implementation of the [chordpro](https://www.chordpro.org/)-markup syntax. For example, each song *needs* a title element (`{title: XY}`), a artist information is recommended.
+
+
+## What are the basiscs of the [chordpro](https://www.chordpro.org/)-markup syntax?
+
+A *normal* chordpro song looks something like this. HOWEVER: In my implementation, the chords are placed *over* the song text, *not* inline! And, they do not necessarly need to be wrapped in brackets (\[ and \])
+
+```
+# A simple ChordPro song.
+
+{title: Swing Low Sweet Chariot}
+
+{start_of_chorus}
+Swing [D]low, sweet [G]chari[D]ot,
+Comin’ for to carry me [A7]home.
+Swing [D7]low, sweet [G]chari[D]ot,
+Comin’ for to [A7]carry me [D]home.
+{end_of_chorus}
+
+I [D]looked over Jordan, and [G]what did I [D]see,
+Comin’ for to carry me [A7]home.
+A [D]band of angels [G]comin’ after [D]me,
+Comin’ for to [A7]carry me [D]home.
+
+{comment: Chorus}
+```
+
+In addition, there are a number of so called "directives" that can be added to a song. These are described here: https://www.chordpro.org/chordpro/chordpro-directives/, but only a small portion are currently implemented.
+
+## Which directives are implemented?
+
+- [x] Title
+- [x] Artist
+
+
+## Are there any special character that are not allowed?
+
+Yes, and I'm glad you asked! Following characters are not allowed:
+
+- \* 
+- \_ [^1]
+- \[ and \]
+
+These character is of course allowed within chordpro directives
+
+## How do I add chords to songs?
+
+This feature is currently not active. 
+
+~The project includes the library `tabr`, which generates beautiful chord diagrams from vectors with the `plot_chord` function. I've written a rapper around this function named `plot_chords` (note the `s`) which takes a named list `list(chordname = chordspec)` and draws a grid with ca. 4 columns (empty columns when less than 4 chords).~
 
