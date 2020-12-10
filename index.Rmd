@@ -41,6 +41,9 @@ test <- FALSE
 
 
 ```{r}
+
+
+
 # A wrapper around tabr::plot_chord() which allows multiple chords and styles them in my specific way (4 columns, transparent background etc.)
 plot_chords <- function(chords){
   # Get the maximum fret-delta of all chords
@@ -116,14 +119,17 @@ chordpro_environment_all <- function(string){
 ```
 
 
-```{r, eval = FALSE}
+```{r}
+
+library(yaml)
+library(stringr)
 dirs <- list.dirs("songs_cho/",full.names = TRUE)
 # dir <- dirs[4]
 rmd_file_nr = 0
 
-for (file in list.files("songs_md2",pattern = ".Rmd",full.names = TRUE)){file.remove(file)}
-for (file in list.files("songs_md3",pattern = ".Rmd",full.names = TRUE)){file.remove(file)}
-
+for (folder in c("songs_md2","songs_md3")){
+  for (file in list.files(folder,pattern = ".Rmd",full.names = TRUE)){file.remove(file)}
+}
 
 for (dir in dirs){
   yml <- list.files(dir,pattern = "(.yaml|.yml)",full.names = TRUE)
@@ -162,6 +168,7 @@ for (dir in dirs){
     songs <- names(songs_numeric)
     
     for (song in songs){
+      print(song)
   
       song_bn <- basename(song)
       
@@ -259,9 +266,10 @@ for (dir in dirs){
         song_meta <- str_match(song_rl, "\\{(\\w+):\\s(.+)\\}")
         
         # Get all metadata without tags
-        song_meta2 <- str_match(song_rl, "\\{(\\w+)\\}")
+        song_meta2 <- str_match(song_rl, "\\{(\\w+)") # todo: add end of bracket
         
         starts_or_ends <- which(apply(song_meta2, 1, function(x)str_detect(x[2],"start_of_|end_of_")))
+        
         
         stopifnot(length(starts_or_ends) %%2 == 0) # must be an even number
         
@@ -278,12 +286,15 @@ for (dir in dirs){
         
         song_rl <- song_rl[-c(song_meta_dfr$row)]
         
-        song_header <- paste(
+        song_header <- paste0(
           "##",
           song_meta_dfr$value[song_meta_dfr$tag == "title"],
-          "-",
           song_meta_dfr$value[song_meta_dfr$tag == "artist"],
-          ifelse(length(song_meta_dfr$tag == "year")>0,
+          ifelse("artist" %in% song_meta_dfr$tag,
+                 paste0(" - ",song_meta_dfr$value[song_meta_dfr$tag == "artist"]),
+                 ""
+                 ),
+          ifelse("year" %in% song_meta_dfr$tag,
                  paste0(
                    " (",
                    song_meta_dfr$value[song_meta_dfr$tag == "year"],
@@ -300,6 +311,7 @@ for (dir in dirs){
         fileConn<-file(paste0("songs_md3/",paste0(rmd_file_nr_chr, str_replace(song_bn,".txt",".Rmd"))))
         
         writeLines(song_rl,fileConn)
+        close(fileConn)
       }
       
     }
