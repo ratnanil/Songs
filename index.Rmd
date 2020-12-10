@@ -274,7 +274,7 @@ for (dir in dirs){
         stopifnot(length(starts_or_ends) %%2 == 0) # must be an even number
         
         # for now, just replace this information with code starts/ends
-        song_rl[starts_or_ends] <- "```"
+        # song_rl[starts_or_ends] <- "```"
         
         
         song_meta_dfr <- map_dfr(c("title","artist","year"), function(x){
@@ -287,7 +287,7 @@ for (dir in dirs){
         song_rl <- song_rl[-c(song_meta_dfr$row)]
         
         song_header <- paste0(
-          "##",
+          "## ",
           song_meta_dfr$value[song_meta_dfr$tag == "title"],
           song_meta_dfr$value[song_meta_dfr$tag == "artist"],
           ifelse("artist" %in% song_meta_dfr$tag,
