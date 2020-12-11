@@ -14,6 +14,11 @@ Submit a request via [an issue](https://github.com/ratnanil/Songs/issues). If yo
 - [ ] Song2
 ``` 
 
+## How do I add a new song?
+
+Add a plain text file (mysong.txt) into one of the subfolders of `songs_cho`. Generating the (html- / pdf-) outputs is an custom implementation of the [chordpro](https://www.chordpro.org/)-markup syntax. For example, each song *needs* a title element (`{title: XY}`), a artist information is recommended.
+
+
 ## How do I add a new chapter into the book?
 
 Create a subfolder in the `songs_cho` folder. Create a file named `meta.yml` containing the title of the chapter. E.g.
@@ -21,10 +26,6 @@ Create a subfolder in the `songs_cho` folder. Create a file named `meta.yml` con
 ```
 title: Selected Songs
 ```
-
-## How do I add a new song?
-
-Add a plain text file (mysong.txt) into one of the subfolders of `songs_cho`. Generating the (html- / pdf-) outputs is an custom implementation of the [chordpro](https://www.chordpro.org/)-markup syntax. For example, each song *needs* a title element (`{title: XY}`), a artist information is recommended.
 
 
 ## What are the basiscs of the [chordpro](https://www.chordpro.org/)-markup syntax?
@@ -74,4 +75,9 @@ These character is of course allowed within chordpro directives
 This feature is currently not active. 
 
 ~The project includes the library `tabr`, which generates beautiful chord diagrams from vectors with the `plot_chord` function. I've written a rapper around this function named `plot_chords` (note the `s`) which takes a named list `list(chordname = chordspec)` and draws a grid with ca. 4 columns (empty columns when less than 4 chords).~
+
+
+## I added songs, how can I compile the html / pdf output?
+
+Basically, the book is complied in an R Session. This is now automated with a github action, so that the book (html and pdf) is recomplied at every push.
 
