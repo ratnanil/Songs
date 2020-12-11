@@ -7,6 +7,41 @@ library(stringr)
 library(gridExtra)
 library(cowplot)
 library(yaml)
+library(tabr)
+library(yaml)
+library(stringr)
+
+################################################################################
+## Add chords to songs #########################################################
+################################################################################
+
+# A wrapper around tabr::plot_chord() which allows multiple chords and styles them in my specific way (4 columns, transparent background etc.)
+plot_chords <- function(chords){
+  # Get the maximum fret-delta of all chords
+  delta_max <- map_int(chords,function(x){
+    v <- suppressWarnings(as.integer(str_split(x,"",simplify = TRUE)))
+    max(v,na.rm = TRUE)-min(v, na.rm = TRUE)
+  }) %>%
+    max()
+  
+  # Make a list of all chord plots
+  plots <- imap(chords,function(x,y){
+    v <- min(suppressWarnings(as.integer(str_split(x,"",simplify = TRUE))),na.rm = TRUE)
+    
+    plot_chord(x,
+               labels = NULL,
+               fret_range = c(v,v+delta_max), # so that all chords span the same nr of frets
+               point_size = 4,
+               label_size = 3) + 
+      labs(tag = y) +
+      theme(
+        panel.background = element_rect(fill = "transparent"), # The theme 
+        plot.background = element_rect(fill = "transparent", color = NA), # bg of the plot
+      )
+  })
+  chordnames <- map(chords, ~.x[2])
+  plot_grid(plotlist = plots,ncol = 4)
+}
 
 addchord <- function(string,pos,chord){
   paste0(substr(string, 1, pos-1), chord, substr(string, pos, nchar(string)))
@@ -47,18 +82,21 @@ chordpro_environment_all <- function(string){
   out2
 }
 
-library(yaml)
-library(stringr)
-dirs <- list.dirs("songs_cho/",full.names = TRUE)
-# dir <- dirs[4]
-rmd_file_nr = 0
+################################################################################
+## Songs to RMarkdown ##########################################################
+################################################################################
+
+dirs <- list.dirs("01_songs_input",full.names = TRUE)
 
 for (folder in c("songs_md2","songs_md3")){
   for (file in list.files(folder,pattern = ".Rmd",full.names = TRUE)){file.remove(file)}
 }
 
+
+rmd_file_nr = 0
 for (dir in dirs){
   yml <- list.files(dir,pattern = "(.yaml|.yml)",full.names = TRUE)
+  
   
   
   
@@ -71,19 +109,12 @@ for (dir in dirs){
     
     usecss = FALSE
     
-    if(usecss){
-      fileConn<-file(paste0("songs_md2/",rmd_file_nr_chr,dir_bn,".Rmd"))
-      
-    }else{
-      fileConn<-file(paste0("songs_md3/",rmd_file_nr_chr,dir_bn,".Rmd"))
-    }
+    fileConn<-file(paste0("02_songs_output/",rmd_file_nr_chr,dir_bn,".Rmd"))
     
     paste("#",meta$title) %>%
       writeLines(fileConn)
     
     close.connection(fileConn)
-    
-    # Todo: include mdchecksums to track changes in files
     
     songs <- list.files(dir, pattern = ".txt",full.names = TRUE)
     
@@ -188,52 +219,77 @@ for (dir in dirs){
         close.connection(fileConn)
       } else{ # do this instead of the fancy css / html stuff
         
+        
+        start_and_ends <- c("chorus","verse","bridge","tab","grid")
+        
+        
+        
+        start_end_res <- str_match(song_rl,paste0("\\{(start|end)_of_(",paste(start_and_ends,collapse = "|"),"):?\\s?(.+)?\\}"))
+    
+        
+        start_labels <-  ifelse(start_and_end_res[,2] == "start",str_to_title(paste0(str_replace(start_and_end_res[,3],"grid","chords"), ifelse(!is.na(start_and_end_res[,4]),paste0(" (",start_and_end_res[,4],")"),""))),NA)
+        
+        
+        
         # Get all metadata which include tags
-        song_meta <- str_match(song_rl, "\\{(\\w+):\\s(.+)\\}")
+        # song_meta <- str_match(song_rl, "\\{(\\w+):\\s(.+)\\}")
         
         # Get all metadata without tags
-        song_meta2 <- str_match(song_rl, "\\{(\\w+)") # todo: add end of bracket
+        # song_meta2 <- str_match(song_rl, "\\{(\\w+)") # todo: add end of bracket
         
-        starts_or_ends <- which(apply(song_meta2, 1, function(x)str_detect(x[2],"start_of_|end_of_")))
+        # starts_or_ends <- which(apply(song_meta2, 1, function(x)str_detect(x[2],"start_of_|end_of_")))
         
         
-        stopifnot(length(starts_or_ends) %%2 == 0) # must be an even number
+        # stopifnot(length(starts_or_ends) %%2 == 0) # must be an even number
         
         # for now, just replace this information with code starts/ends
         # song_rl[starts_or_ends] <- "```"
         
         
-        song_meta_dfr <- map_dfr(c("title","artist","year"), function(x){
-          row <- which(song_meta[,2] == x)
-          value = song_meta[row,3]
-          tibble(tag = x, row = row,value = value)
-        })
+        meta_data_tags <- c("title", "subtitle", "artist", "composer", "lyricist", "copyright", "album", "year", "key", "time", "tempo", "duration", "capo", "meta")
+        
+        meta_data_directives <- str_match(song_rl, paste0("\\{(",paste(meta_data_tags,collapse = "|"),"):\\s(.+)\\}"))
+        
+        meta_data_lines <- !is.na(meta_data_directives[,1])
+        
+        meta_data_directives <- meta_data_directives[meta_data_lines,]
+        
+        meta_data_directives <- map(meta_data_directives[,3],~.x) %>%
+          magrittr::set_names(meta_data_directives[,2])
+        
+        # song_meta_dfr <- map_dfr(c("title","artist","year"), function(x){
+        #   row <- which(song_meta[,2] == x)
+        #   value = song_meta[row,3]
+        #   tibble(tag = x, row = row,value = value)
+        # })
         
         
-        song_rl <- song_rl[-c(song_meta_dfr$row)]
+        song_rl <- song_rl[-c(which(meta_data_lines))]
         
         song_header <- paste0(
           "## ",
-          song_meta_dfr$value[song_meta_dfr$tag == "title"],
-          ifelse("artist" %in% song_meta_dfr$tag,
-                 paste0(" - ",song_meta_dfr$value[song_meta_dfr$tag == "artist"]),
+          meta_data_directives["title"],
+          ifelse("artist" %in% names(meta_data_directives),
+                 paste0(" - ",meta_data_directives["artist"]),
                  ""
           ),
-          ifelse("year" %in% song_meta_dfr$tag,
+          ifelse("year" %in% names(meta_data_directives),
                  paste0(
                    " (",
-                   song_meta_dfr$value[song_meta_dfr$tag == "year"],
+                   meta_data_directives["year"],
                    ")"
                  )
                  ,"")
         )
         
-        song_rl <- c(song_header,"```",song_rl,"```")
+        data.frame(meta_data_directives)
+        
+        song_rl <- c(song_header,"", "```",song_rl,"```")
         
         rmd_file_nr <- rmd_file_nr+1
         rmd_file_nr_chr <- paste0(str_pad(rmd_file_nr,3,pad = "0"),"_")
         
-        fileConn<-file(paste0("songs_md3/",paste0(rmd_file_nr_chr, str_replace(song_bn,".txt",".Rmd"))))
+        fileConn<-file(paste0("02_songs_output//",paste0(rmd_file_nr_chr, str_replace(song_bn,".txt",".Rmd"))))
         
         writeLines(song_rl,fileConn)
         close(fileConn)
