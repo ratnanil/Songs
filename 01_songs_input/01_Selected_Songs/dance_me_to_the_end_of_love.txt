@@ -1,5 +1,5 @@
 {title: Dance me to the end of Love}
-{artist: Leonard Cohan}
+{artist: Leonard Cohen}
 
 [Am]                          [Em]
 Dance me to your beauty with a burning violin

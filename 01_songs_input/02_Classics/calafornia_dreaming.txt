@@ -1,4 +1,4 @@
-{title: Calafornia Dreaming}
+{title: California Dreaming}
 {artist: the Mamas and the Papas}
 
 
