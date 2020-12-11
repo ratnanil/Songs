@@ -215,7 +215,6 @@ for (dir in dirs){
         song_header <- paste0(
           "## ",
           song_meta_dfr$value[song_meta_dfr$tag == "title"],
-          song_meta_dfr$value[song_meta_dfr$tag == "artist"],
           ifelse("artist" %in% song_meta_dfr$tag,
                  paste0(" - ",song_meta_dfr$value[song_meta_dfr$tag == "artist"]),
                  ""
