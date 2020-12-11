@@ -28,7 +28,7 @@ title: Selected Songs
 ```
 
 
-## What are the basiscs of the [chordpro](https://www.chordpro.org/)-markup syntax?
+## What are the basics of the [chordpro](https://www.chordpro.org/)-markup syntax?
 
 A *normal* chordpro song looks something like this. HOWEVER: In my implementation, the chords are placed *over* the song text, *not* inline! And, they do not necessarly need to be wrapped in brackets (\[ and \])
 
@@ -56,23 +56,38 @@ In addition, there are a number of so called "directives" that can be added to a
 
 ## Which directives are implemented?
 
-- [x] Title
-- [x] Artist
+Most ["Meta-data directives" and "Environment directives"](https://www.chordpro.org/chordpro/chordpro-directives/) (with the exception of [`meta`](https://www.chordpro.org/chordpro/directives-meta/)) as listed below. In addition to these existing meta-data directives, I've created a custom directive `{source: some source}` to specify the soure of the chords / lyrics.
 
-I had implemented other directives in the past, which is why you might find them in some of the older additions. Currently, these directives are simply ignored.
+- [x] title
+- [x] subtitle
+- [x] artist
+- [x] composer
+- [x] lyricist
+- [x] copyright
+- [x] album
+- [x] year
+- [x] key
+- [x] time
+- [x] tempo
+- [x] duration
+- [x] capo 
 
 
-## Are there any special character that are not allowed?
+[Environment directives](https://www.chordpro.org/chordpro/directives-env/) (only the "long forms", the short forms are not implemented)
 
-No, currently not.
+- [x] start_of_chorus
+- [x] end_of_chorus
+- [ ] chorus
+- [x] start_of_verse
+- [x] end_of_verse
+- [x] start_of_bridge
+- [x] end_of_bridge
+- [x] start_of_tab
+- [x] end_of_tab
+- [x] start_of_grid
+- [x] end_of_grid
 
-~Yes, and I'm glad you asked! Following characters are not allowed:~
-
-~- \* ~
-~- \_ [^1]~
-~- \[ and \]~
-
-These character is of course allowed within chordpro directives
+As in the chordpro specification, all environment directives may include an optional label to identify the section. For example: `{start_of_verse: Verse 1}` The label must not include special characters and be seperated from the `:` with a space.
 
 ## How do I add chords to songs?
 
@@ -83,5 +98,5 @@ This feature is currently not active.
 
 ## I added songs, how can I compile the html / pdf output?
 
-Basically, the book is complied in an R Session. This is now automated with a github action, so that the book (html and pdf) is recomplied at every push.
+Basically, the book is complied in an R Session. This is now automated with a [github action](https://github.com/ratnanil/Songs/actions), so that the book (html and pdf) is recomplied at every push.
 

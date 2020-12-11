@@ -60,7 +60,7 @@ chordpro_meta <- function(string,metatag){
 
 
 chordpro_meta_all <- function(string, remove = FALSE){
-  chordpro_tags <- c("title", "subtitle", "artist", "composer", "lyricist", "copyright", "album", "year", "key", "time", "tempo", "duration", "capo", "meta")  
+  chordpro_tags <- c("title", "subtitle", "artist", "composer", "lyricist", "copyright", "album", "year", "key", "time", "tempo", "duration", "capo")  
   if(!remove){
     out2 <- map(chordpro_tags, ~chordpro_meta(string,.x))
     names(out2) <- chordpro_tags
