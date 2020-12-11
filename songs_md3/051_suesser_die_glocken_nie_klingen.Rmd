@@ -1,0 +1,62 @@
+## Süsser die Glocken nie klingen
+```
+
+{start_of_grid}
+D G A7 D 
+{end_of_grid}
+
+
+[D]                  [A]
+Süßer die Glocken nie klingen
+[A7]                [D]
+als zu der Weihnachtszeit.
+                     [G]
+S'ist als ob Engelein singen
+[D]       [A7]        [D]
+wieder von Frieden und Freud'.
+[A7]     [D]       [A7]    [D]
+Wie sie gesungen in seliger Nacht.
+[A7]     [D]       [A7]    [D]
+Wie sie gesungen in seliger Nacht.
+           [D7]     [G]   E7
+Glocken mit heiligem Klang,
+[D]        [A7]    [D]
+klinget die Erde entlang!
+
+ 
+[D]                   [A]
+Oh, wenn die Glocken erklingen,
+[A7]                          [D]
+schnell sie das Christkindlein hört;
+                        [G]
+tut sich vom Himmel dann schwingen
+[D]     [A7]       [D]
+eilet hernieder zur Erd'.
+[A7]      [D]        [A7]        [D]
+Segnet den Vater, die Mutter, das Kind.
+[A7]      [D]        [A7]        [D]
+Segnet den Vater, die Mutter, das Kind.
+           [D7]     [G]   E7
+Glocken mit heiligem Klang,
+[D]        [A7]    [D]
+klinget die Erde entlang!
+
+
+[D]                   [A]
+Klinget mit lieblichem Schalle
+[A7]               [D]
+über die Meere noch weit,
+                      [G]
+daß sich erfreuen doch alle
+[D]    [A7]      [D]
+seliger Weihnachtszeit.
+[A7]   [D]          [A7]    [D]
+Alle aufjauchzen mit einem Gesang.
+[A7]   [D]          [A7]    [D]
+Alle aufjauchzen mit einem Gesang.
+           [D7]     [G]   E7
+Glocken mit heiligem Klang,
+[D]        [A7]    [D]
+klinget die Erde entlang!
+
+```
