@@ -16,7 +16,7 @@ Submit a request via [an issue](https://github.com/ratnanil/Songs/issues). If yo
 
 ## How do I add a new song?
 
-Add a plain text file (mysong.txt) into one of the subfolders of `songs_cho`. Generating the (html- / pdf-) outputs is an custom implementation of the [chordpro](https://www.chordpro.org/)-markup syntax. For example, each song *needs* a title element (`{title: XY}`), a artist information is recommended.
+Add a plain text file (mysong.txt) into one of the subfolders of `01_songs_input`. Generating the (html- / pdf-) outputs is an custom implementation of the [chordpro](https://www.chordpro.org/)-markup syntax. For example, each song *needs* a title element (`{title: XY}`), artist information (`{artist: XY}`) and source (`{source: XY}`) is recommended.
 
 
 ## How do I add a new chapter into the book?
