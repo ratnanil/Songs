@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+.book.font-family-0 {font-family: "Roboto Mono";}
+.book.font-family-1 {font-family: "Roboto Mono";}
+
+
+p.song span {
+  display: none;
+}
+p.song.show-chords p {
+  line-height:2.3em;
+  margin-bottom:2em;
+}
+p.song.show-chords span {
+  position: relative;
+  top: -1em;
+  display:inline-block;
+  width: 0;
+  overflow:visible;
+  word-wrap:normal;
+}
+
+code {
+  background: #980b4a
+}
