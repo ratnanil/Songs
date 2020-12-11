@@ -1,6 +1,8 @@
 {title: Lemon Tree}
 {artist: Fools Garden}
 {year: 1996}
+{tempo: 115 bpm}
+{capo: 1}
 
 {start_of_grid}
 Em__|Bm__|Em__|Bm__|
