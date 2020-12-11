@@ -59,14 +59,18 @@ In addition, there are a number of so called "directives" that can be added to a
 - [x] Title
 - [x] Artist
 
+I had implemented other directives in the past, which is why you might find them in some of the older additions. Currently, these directives are simply ignored.
+
 
 ## Are there any special character that are not allowed?
 
-Yes, and I'm glad you asked! Following characters are not allowed:
+No, currently not.
 
-- \* 
-- \_ [^1]
-- \[ and \]
+~Yes, and I'm glad you asked! Following characters are not allowed:~
+
+~- \* ~
+~- \_ [^1]~
+~- \[ and \]~
 
 These character is of course allowed within chordpro directives
 
