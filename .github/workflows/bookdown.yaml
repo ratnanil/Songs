@@ -40,7 +40,8 @@ jobs:
         run: |
           R -e 'install.packages("renv")'
           R -e 'renv::restore()'
-          
+          R -e 'tinytex::install_tinytex()'
+
       - name: Build songfiles
         run: Rscript build_songs.R
 
