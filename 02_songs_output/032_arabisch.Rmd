@@ -3,16 +3,20 @@
            
 -----  ----
 time   2/4 
+capo   2   
 -----  ----
 
 
 ```
-
 Chords:
-  |Am______|________|________|________|
-  |Am______|________|________|________|
-  |Dm______|________|Am______|________|
-  |E_______|________|Am______|________|
+  |Am______|________|
+  |________|________|
+  |Am______|________|
+  |________|________|
+  |Dm______|________|
+  |Am______|________|
+  |E_______|________|
+  |Am______|________|
 
 Dr Sidi Abdel Assar vo El Hama
 Het mal am Morge früe no im Pijama
@@ -34,8 +38,7 @@ Und drunder chan i dir sen uf ke Fall la
 
 Da het dr Abdel Assar gseit: O Sidi
 Uf sone tüüre Handel gang i nid y
-Isch furt, het gly druf scho
-[E]illigeri gno
+Isch furt, het gly druf scho, e billigeri gno
 Wo nid so schön isch gsy, drfür e gschydi
 
 Doch wenn es Nacht wird über der Sahara
