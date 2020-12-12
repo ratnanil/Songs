@@ -96,6 +96,7 @@ for (file in list.files("02_songs_output",pattern = ".Rmd",full.names = TRUE)){f
 dirs <- list.dirs("01_songs_input",full.names = TRUE)
 
 rmd_file_nr = 0
+footer_i = 0
 for (dir in dirs){
   yml <- list.files(dir,pattern = "(.yaml|.yml)",full.names = TRUE)
   
@@ -267,6 +268,11 @@ for (dir in dirs){
        
         song_rl <- song_rl[-which(meta_data_lines)]
         
+        if("source" %in% names(meta_data_directives)){
+          footer_i = footer_i+1
+          
+          footer_tag <- paste0("[^",footer_i,"]")
+          }
         song_header <- paste0(
           "## ",
           meta_data_directives["title"],
@@ -281,12 +287,12 @@ for (dir in dirs){
                    ")"
                  )
                  ,""),
-          ifelse("source" %in% names(meta_data_directives),"[^1]","")
+          ifelse("source" %in% names(meta_data_directives),footer_tag,"")
         )
         
         song_rl <- c(song_header,
                      "",
-                     ifelse("source" %in% names(meta_data_directives),paste0("[^1]: ",meta_data_directives$source),""), 
+                     ifelse("source" %in% names(meta_data_directives),paste0(footer_tag,": ",meta_data_directives$source),""), 
                      "",
                      "```",
                      song_rl,
