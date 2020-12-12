@@ -1,5 +1,6 @@
 # Transform all songs in songs_txt into markdown files
 
+library(tinytex)
 library(dplyr)
 library(purrr)
 library(ggplot2)
