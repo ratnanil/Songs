@@ -46,7 +46,10 @@ jobs:
 
       - name: Build site
         run: Rscript -e 'bookdown::render_book("index.Rmd", quiet = TRUE)'
+      
+      - name: Build site (pdf)
         run: Rscript -e "rmarkdown::render_site(output_format = 'bookdown::pdf_book', encoding = 'UTF-8')"
+        
       - name: Commit everything
         run: |
           git config --local user.email "action@github.com"
