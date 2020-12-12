@@ -16,7 +16,7 @@ Submit a request via [an issue](https://github.com/ratnanil/Songs/issues). If yo
 
 ## How do I add a new song?
 
-Add a plain text file (mysong.txt) into one of the subfolders of `01_songs_input`. Generating the (html- / pdf-) outputs is an custom implementation of the [chordpro](https://www.chordpro.org/)-markup syntax. For example, each song *needs* a title element (`{title: XY}`), artist information (`{artist: XY}`) and source (`{source: XY}`) is recommended.
+Add a plain text file (mysong.txt) into one of the subfolders of `01_songs_input`. Generating the (html- / pdf-) outputs is an custom implementation of the [chordpro](https://www.chordpro.org/)-markup syntax. For example, each song *needs* a title element (`{title: XY}`), artist information (`{artist: XY}`) and source (`{source: XY}`) are recommended.
 
 
 ## How do I add a new chapter into the book?
@@ -56,7 +56,7 @@ In addition, there are a number of so called "directives" that can be added to a
 
 ## Which directives are implemented?
 
-Most ["Meta-data directives" and "Environment directives"](https://www.chordpro.org/chordpro/chordpro-directives/) (with the exception of [`meta`](https://www.chordpro.org/chordpro/directives-meta/)) as listed below. In addition to these existing meta-data directives, I've created a custom directive `{source: some source}` to specify the soure of the chords / lyrics.
+Most [Meta-data and Environment directives](https://www.chordpro.org/chordpro/chordpro-directives/) as listed below. 
 
 - [x] title
 - [x] subtitle
@@ -70,22 +70,24 @@ Most ["Meta-data directives" and "Environment directives"](https://www.chordpro.
 - [x] time
 - [x] tempo
 - [x] duration
-- [x] capo 
+- [x] capo
+- [ ] ~meta~
+- [x] *custom directive*: source
 
 
-[Environment directives](https://www.chordpro.org/chordpro/directives-env/) (only the "long forms", the short forms are not implemented)
+[Environment directives](https://www.chordpro.org/chordpro/directives-env/) (only the "long forms" are implemented, not the short forms)
 
-- [x] start_of_chorus
-- [x] end_of_chorus
-- [ ] chorus
-- [x] start_of_verse
-- [x] end_of_verse
-- [x] start_of_bridge
-- [x] end_of_bridge
-- [x] start_of_tab
-- [x] end_of_tab
-- [x] start_of_grid
-- [x] end_of_grid
+- [x] `{start_of_chorus}`
+- [x] `{end_of_chorus}`
+- [ ] ~`{chorus}`~
+- [x] `{start_of_verse}`
+- [x] `{end_of_verse}`
+- [x] `{start_of_bridge}`
+- [x] `{end_of_bridge}`
+- [x] `{start_of_tab}`
+- [x] `{end_of_tab}`
+- [x] `{start_of_grid}`
+- [x] `{end_of_grid}`
 
 As in the chordpro specification, all environment directives may include an optional label to identify the section. For example: `{start_of_verse: Verse 1}` The label must not include special characters and be seperated from the `:` with a space.
 
