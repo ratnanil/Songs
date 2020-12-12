@@ -1,0 +1,28 @@
+
+# Glossary
+
+## By Title 
+
+```{r,results='asis', message=FALSE, warning=FALSE}
+library(dplyr)
+library(purrr)
+library(pander)
+library(knitr)
+
+meta_data <- read.csv("02_songs_output/meta_data.csv") 
+
+meta_data %>%
+  arrange(title) %>%
+  transmute(title = paste0("[",title,"](",label,")"),artist) %>%
+  kable(escape = FALSE)
+```
+
+## By Artist
+
+```{r,results='asis', message=FALSE, warning=FALSE}
+meta_data %>%
+  arrange(artist) %>%
+  transmute(artist, title = paste0("[",title,"](",label,")")) %>%
+  kable(escape = FALSE)
+```
+

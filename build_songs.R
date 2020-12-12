@@ -97,6 +97,9 @@ dirs <- list.dirs("01_songs_input",full.names = TRUE)
 
 rmd_file_nr = 0
 footer_i = 0
+
+meta_data_directives_all = list()
+song_i = 0
 for (dir in dirs){
   yml <- list.files(dir,pattern = "(.yaml|.yml)",full.names = TRUE)
   
@@ -127,7 +130,9 @@ for (dir in dirs){
     songs_numeric <- sort(songs_numeric)
     songs <- names(songs_numeric)
     
+    
     for (song in songs){
+      song_i = song_i + 1
       print(song)
       
       song_bn <- basename(song)
@@ -185,6 +190,9 @@ for (dir in dirs){
         
         footer_tag <- paste0("[^",footer_i,"]")
       }
+      
+      song_tag <- str_remove(str_to_lower(paste0("#",str_replace_all(str_remove(str_remove(song, "01_songs_input/"),"\\.txt"), "/|_","-"))),"\\d{2}-")
+      
       song_header <- paste0(
         "## ",
         meta_data_directives["title"],
@@ -199,7 +207,8 @@ for (dir in dirs){
                  ")"
                )
                ,""),
-        ifelse("source" %in% names(meta_data_directives),footer_tag,"")
+        ifelse("source" %in% names(meta_data_directives),footer_tag,""),
+        paste0(" {",song_tag,"}")
       )
       
       song_rl <- c(song_header,
@@ -229,12 +238,22 @@ for (dir in dirs){
       
       writeLines(song_rl,fileConn)
       close(fileConn)
+      
+      meta_data_directives["label"] <- song_tag
+      meta_data_directives_all[[song_i]] <- meta_data_directives
     }
+    
+  
     
   }
   
+  
 }
 
+map_dfr(meta_data_directives_all,~as.data.frame(.x)) %>%
+  write.csv("02_songs_output/meta_data.csv")
 
+
+file.copy("01_songs_input/999_glossary.Rmd","02_songs_output/999_glossary.Rmd",overwrite = TRUE)
 
 
