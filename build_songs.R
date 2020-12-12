@@ -88,6 +88,7 @@ chordpro_environment_all <- function(string){
 ## Songs to RMarkdown ##########################################################
 ################################################################################
 
+if(dir.exists("02_songs_output")){dir.create("02_songs_output")}
 
 for (file in list.files("02_songs_output",pattern = ".Rmd",full.names = TRUE)){file.remove(file)}
 
