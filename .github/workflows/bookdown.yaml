@@ -46,6 +46,18 @@ jobs:
 
       - name: Build site
         run: Rscript -e 'bookdown::render_book("index.Rmd", quiet = TRUE)'
+        
+      - name: Commit pdf
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add docs/Songs.pdf
+          git commit -m "update PDF version of the book"
+          
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install npm
         uses: actions/setup-node@v1
