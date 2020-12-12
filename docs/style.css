@@ -2,23 +2,17 @@
 .book.font-family-0 {font-family: "Roboto Mono";}
 .book.font-family-1 {font-family: "Roboto Mono";}
 
-
-p.song span {
-  display: none;
-}
-p.song.show-chords p {
-  line-height:2.3em;
-  margin-bottom:2em;
-}
-p.song.show-chords span {
-  position: relative;
-  top: -1em;
-  display:inline-block;
-  width: 0;
-  overflow:visible;
-  word-wrap:normal;
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal pre,
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code {
+  background: #1c1f2b;
+  border-color: #1c1f2b;
 }
 
-code {
-  background: #980b4a
+.book.color-theme-1 .book-body .page-wrapper .page-inner section.normal pre,
+.book.color-theme-1 .book-body .page-wrapper .page-inner section.normal code {
+  background: #f3eacb;
+  border-color: #f3eacb;
 }
+
+
+
