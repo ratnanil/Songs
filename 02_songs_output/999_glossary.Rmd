@@ -11,18 +11,35 @@ library(knitr)
 
 meta_data <- read.csv("02_songs_output/meta_data.csv") 
 
-meta_data %>%
+meta_data2 <- meta_data %>%
   arrange(title) %>%
-  transmute(title = paste0("[",title,"](",label,")"),artist) %>%
-  kable(escape = FALSE)
+  transmute(title = paste0("[",title,"](",label,")"),artist)
+if(opts_knit$get("rmarkdown.pandoc.to") == "html"){
+   meta_data2%>%
+    kable(escape = FALSE)
+} else{
+  meta_data2 %>%
+    pmap_chr(function(title,artist){paste0(title,ifelse(!is.na(artist),paste0(" (",artist,")"),""))}) %>%
+    pander::pandoc.list()
+}
+
 ```
 
 ## By Artist
 
 ```{r,results='asis', message=FALSE, warning=FALSE}
-meta_data %>%
+
+meta_data2 <- meta_data %>%
+  filter(!is.na(artist)) %>%
   arrange(artist) %>%
-  transmute(title = paste0("[",title,"](",label,")"),artist) %>%
+  transmute(artist, title = paste0("[",title,"](",label,")"))
+if(opts_knit$get("rmarkdown.pandoc.to") == "html"){
+   meta_data2%>%
   kable(escape = FALSE)
+} else{
+  meta_data2 %>%
+    pmap_chr(function(artist,title){paste0(artist," ", title)}) %>%
+    pander::pandoc.list()
+}
 ```
 
