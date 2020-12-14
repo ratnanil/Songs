@@ -91,20 +91,26 @@ chordpro_environment_all <- function(string){
 
 
 songbookdownyaml <- read_yaml("_songbookdown.yml")
+bookdownyaml <- read_yaml("_bookdown.yml")
 
-outputdir <- songbookdownyaml$outputdir
+rmd_subdir <- bookdownyaml$rmd_subdir
 inputdir <- songbookdownyaml$inputdir
 subfolders <- songbookdownyaml$subfolders
 
-if(!dir.exists(outputdir)){dir.create(outputdir)}
 
-for (file in list.files(outputdir,pattern = ".Rmd",full.names = TRUE)){file.remove(file)}
+
+if(!dir.exists(rmd_subdir)){dir.create(rmd_subdir)}
+
+for (file in list.files(rmd_subdir,full.names = TRUE)){file.remove(file)}
+
+
+npad <- ceiling(log10(length(list.files(inputdir,recursive = TRUE))))
 
 
 rmd_file_nr = 0
 footer_i = 0
 
-meta_data_directives_all = list()
+songs_meta_data = list()
 song_i = 0
 for (dir_i in seq_along(subfolders)){
   
@@ -112,10 +118,10 @@ for (dir_i in seq_along(subfolders)){
   dir <- names(subfolders)[dir_i]
   
   rmd_file_nr <- rmd_file_nr+1
-  rmd_file_nr_chr <- paste0(str_pad(rmd_file_nr,3,pad = "0"),"_")
+  rmd_file_nr_chr <- paste0(str_pad(rmd_file_nr,npad,pad = "0"),"_")
   
   
-  fileConn<-file(paste0(outputdir,"/",rmd_file_nr_chr, dir_bn,".Rmd"))
+  fileConn<-file(paste0(rmd_subdir,"/",rmd_file_nr_chr, dir,".Rmd"))
   
   paste("#",meta$title) %>%
     writeLines(fileConn)
@@ -191,7 +197,16 @@ for (dir_i in seq_along(subfolders)){
       footer_tag <- paste0("[^",footer_i,"]")
     }
     
-    song_tag <- str_remove(str_to_lower(paste0("#",str_replace_all(str_remove(str_remove(song, "01_songs_input/"),"\\.txt"), "/|_","-"))),"\\d{2}-")
+    
+    song_tag <- song %>%
+      str_remove(paste0(inputdir,"/")) %>%
+      str_remove("\\.txt") %>%
+      str_remove("^\\d+") %>%
+      str_remove("^_") %>%
+      str_replace_all("/|_","-") %>%
+      paste0("#",.) %>%
+      str_to_lower()
+    
     
     song_header <- paste0(
       "## ",
@@ -232,15 +247,20 @@ for (dir_i in seq_along(subfolders)){
     }
     
     rmd_file_nr <- rmd_file_nr+1
-    rmd_file_nr_chr <- paste0(str_pad(rmd_file_nr,3,pad = "0"),"_")
+    rmd_file_nr_chr <- paste0(str_pad(rmd_file_nr,npad,pad = "0"),"_")
     
-    fileConn<-file(paste0("02_songs_output//",paste0(rmd_file_nr_chr, str_replace(song_bn,".txt",".Rmd"))))
+    rmd_file_name <- paste(rmd_subdir,paste0(rmd_file_nr_chr, str_replace(song_bn,".txt",".Rmd")),sep = "/")
+    fileConn<-file(rmd_file_name)
     
     writeLines(song_rl,fileConn)
     close(fileConn)
     
-    meta_data_directives["label"] <- song_tag
-    meta_data_directives_all[[song_i]] <- meta_data_directives
+    song_meta_data <- meta_data_directives
+    song_meta_data["label"] <- song_tag
+    song_meta_data["source"] <- song
+    song_meta_data["rmd_file"] <- rmd_file_name
+    
+    songs_meta_data[[song_i]] <- song_meta_data
   }
   
   
@@ -250,9 +270,50 @@ for (dir_i in seq_along(subfolders)){
 
 
 
-map_dfr(meta_data_directives_all,~as.data.frame(.x)) %>%
-  write.csv("02_songs_output/meta_data.csv")
+songs_meta_data_df <- map_dfr(songs_meta_data,~as.data.frame(.x))
 
-file.copy("01_songs_input/999_glossary.Rmd","02_songs_output/999_glossary.Rmd",overwrite = TRUE)
+write.csv(songs_meta_data_df, paste(rmd_subdir,"meta_data.csv",sep = "/"))
+
+rmd_file_nr <- rmd_file_nr+1
+rmd_file_nr_chr <- paste0(str_pad(rmd_file_nr,npad,pad = "0"),"_")
+
+glossary_html <- paste0(rmd_subdir,"/",rmd_file_nr_chr,"glossary.html")
+glossary_pdf <- paste0(rmd_subdir,"/",rmd_file_nr_chr,"glossary.tex")
+
+songs_meta_data_df %>%
+  arrange(title) %>%
+  transmute(Title = paste0("[",title,"](",label,")"),Artist = artist) %>% 
+  kable(format = "html", escape = FALSE) %>%
+  writeLines(glossary_html)
+
+
+songs_meta_data_df %>%
+  arrange(title) %>%
+  transmute(Title = title, Artist = artist, Page = paste0("\\pageref{",str_remove(label,"#"),"}")) %>%
+  kable(format = "latex",escape = FALSE,align = c("l","l","r"),longtable = TRUE,booktabs  = TRUE) %>%
+  writeLines(glossary_pdf)
+
+
+c("# Glossary",
+  "```{r, echo = FALSE}",
+  "library(knitr)",
+  "output_type <- knitr::opts_knit$get('rmarkdown.pandoc.to')",
+  "```",
+  "",
+  "## By title",
+  "",
+  paste0("```{r, eval= (output_type == 'html'),results='asis',child = '",glossary_html,"'}"),
+  "```",
+  "",
+  paste0("```{r, eval= (output_type == 'pdf'),results='asis',child = '",glossary_pdf,"'}"),
+  "```",
+  ""
+  ) %>%
+  writeLines(paste0(rmd_subdir,"/",rmd_file_nr_chr,"glossary.Rmd"))
+
+
+
+
+
 
 

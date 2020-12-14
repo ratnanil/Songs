@@ -45,11 +45,14 @@ jobs:
       - name: Build songfiles
         run: Rscript build_songs.R
 
-      - name: Build site
-        run: Rscript -e 'bookdown::render_book("index.Rmd", quiet = TRUE)'
+      - name: Build site (html)
+        run: Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::gitbook")'
       
       - name: Build site (pdf)
-        run: Rscript -e "rmarkdown::render_site(output_format = 'bookdown::pdf_book', encoding = 'UTF-8')"
+        run: Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::pdf_book")'
+        
+      - name: Replace the edit Links
+        run: Rscript replace_editlink.R
         
       - name: Commit everything
         run: |

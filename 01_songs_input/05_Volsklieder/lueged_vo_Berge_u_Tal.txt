@@ -1,5 +1,5 @@
 {title: Lueget vo Berge u Tal}
-{artist: J.A. Henne & F. Huber}
+{artist: J.A. Henne und F. Huber}
 
 {source: https://als.wikipedia.org/wiki/Text:Volkslieder/Lueget_vo_Berg_und_Tal}
 

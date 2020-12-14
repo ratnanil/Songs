@@ -1,0 +1,14 @@
+# Glossary
+
+
+```{r, echo = FALSE}
+library(knitr)
+output_type <- knitr::opts_knit$get("rmarkdown.pandoc.to")
+```
+
+## By title
+
+```{r,eval= (output_type == "html"),child = "glossary_html.Rmd", results='asis'}
+
+```
+

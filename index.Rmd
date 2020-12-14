@@ -23,7 +23,6 @@ if(output == "html"){
 A collection of hand picked songs. This book is hosted as an online version on https://ratnanil.github.io/Songs/ and includes pdf / epub versions (click on the download symbol). Edits and feedback can be made via the [github repo](https://github.com/ratnanil/songs). The current version was rendered on `r Sys.time()`. 
 
 
-
 ```{r, include=FALSE}
 # file.create("docs/.nojekyll")
 

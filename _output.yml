@@ -15,4 +15,6 @@ bookdown::pdf_book:
   papersize: a5
   geometry: margin=10mm
   documentclass: book
+bookdown::html_book:
+  css: toc.css
 
