@@ -21,10 +21,15 @@ Add a plain text file (mysong.txt) into one of the subfolders of `01_songs_input
 
 ## How do I add a new chapter into the book?
 
-Create a subfolder in the `songs_cho` folder. Create a file named `meta.yml` containing the title of the chapter. E.g.
+Create a subfolder in the `01_songs_input` folder. Add the name of the folder to `subfolders:` in `_songbookdown.yml` and add a title.
 
 ```
-title: Selected Songs
+subfolders: 
+  mynewfolder:
+    title: The title of the new chapter (required) 
+    description: |
+      An optional description
+      that can span over muliple lines
 ```
 
 
