@@ -2,7 +2,7 @@ book_filename: "Songs"
 delete_merged_file: true
 output_dir: docs
 download: ["pdf"]
-rmd_subdir: ["02_songs_output"]
+rmd_subdir: "02_songs_output"
 edit: https://github.com/ratnanil/songs/edit/master/%s
 url: "https://ratnanil.github.io/Songs/"
 github-repo: "ratnanil/songs"
