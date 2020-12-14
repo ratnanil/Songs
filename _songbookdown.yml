@@ -1,0 +1,19 @@
+inputdir: 01_songs_input
+subfolders: 
+  01_Selected_Songs:
+    title: Nils selected Songs
+    description: |
+      A selection of songs from Nils
+  02_Classics:
+    title: Guitar Classics
+    description: |
+      Some guitar classics that we should learn
+  03_Mundart_und_Deutsch:
+    title: Mundart und Deutsch
+  04_Weihnachten:
+    title: Weihnachtslieder
+  05_Volsklieder:
+    title: Volkslieder
+    
+    
+    
