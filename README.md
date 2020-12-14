@@ -30,6 +30,8 @@ subfolders:
     description: |
       An optional description
       that can span over muliple lines
+      (currently this description is not used anywhere,
+      but will be implemented in the near future)
 ```
 
 
