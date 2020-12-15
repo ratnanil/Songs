@@ -2,8 +2,8 @@
 {artist: The Animals}
 {year: 1964}
 
-{start_of_grid}
-INTRO-  Am, C, D, F, Am, E, Am , E 
+{start_of_grid: INTRO}
+Am, C, D, F, Am, E, Am , E 
 {end_of_grid}
 
      [Am] [C]      [D]         [F]
