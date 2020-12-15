@@ -53,9 +53,22 @@
 "52","Ihr Kinderlein Kommet",NA,"#weihnachten-ihr-kinderleit-kommet","01_songs_input/04_Weihnachten/ihr_kinderleit_kommet.txt","02_songs_output/56_ihr_kinderleit_kommet.Rmd",NA,NA,NA,NA
 "53","Silent Night - Stille Nacht",NA,"#weihnachten-silent-night","01_songs_input/04_Weihnachten/silent_night.txt","02_songs_output/57_silent_night.Rmd","0",NA,NA,"3/4"
 "54","Kommet ihr Hirten",NA,"#weihnachten-kommet-ihr-hirten","01_songs_input/04_Weihnachten/kommet_ihr_hirten.txt","02_songs_output/58_kommet_ihr_hirten.Rmd",NA,NA,NA,NA
-"55","im Aargau sind zwöi Liebi","anonym","#volsklieder-im-aargau","01_songs_input/05_Volsklieder/im_Aargau.txt","02_songs_output/60_im_Aargau.Rmd",NA,NA,NA,NA
-"56","Lueget vo Berge u Tal","J.A. Henne und F. Huber","#volsklieder-lueged-vo-berge-u-tal","01_songs_input/05_Volsklieder/lueged_vo_Berge_u_Tal.txt","02_songs_output/61_lueged_vo_Berge_u_Tal.Rmd",NA,NA,NA,NA
-"57","Es Burebüebli","vo Bern","#volsklieder-es-burebuebli","01_songs_input/05_Volsklieder/es_Burebuebli.txt","02_songs_output/62_es_Burebuebli.Rmd",NA,NA,NA,NA
-"58","Vreneli vo Guggisberg / S isch äben e Mönsch uf Aerde","anonym","#volsklieder-guggisberg","01_songs_input/05_Volsklieder/Guggisberg.txt","02_songs_output/63_Guggisberg.Rmd",NA,NA,NA,NA
-"59","Bergvagabunden",NA,"#volsklieder-bergvagabunden","01_songs_input/05_Volsklieder/bergvagabunden.txt","02_songs_output/64_bergvagabunden.Rmd",NA,NA,NA,NA
-"60","Vo Luzern gäge Wäggis zue","Johann Lüthi","#volsklieder-vo-luzern","01_songs_input/05_Volsklieder/vo_Luzern.txt","02_songs_output/65_vo_Luzern.Rmd",NA,NA,NA,NA
+"55","im Aargau sind zwöi Liebi","anonym","#volkslieder-im-aargau","01_songs_input/05_Volkslieder/im_Aargau.txt","02_songs_output/60_im_Aargau.Rmd",NA,NA,NA,NA
+"56","Lueget vo Berge u Tal","J.A. Henne und F. Huber","#volkslieder-lueged-vo-berge-u-tal","01_songs_input/05_Volkslieder/lueged_vo_Berge_u_Tal.txt","02_songs_output/61_lueged_vo_Berge_u_Tal.Rmd",NA,NA,NA,NA
+"57","Es Burebüebli","vo Bern","#volkslieder-es-burebuebli","01_songs_input/05_Volkslieder/es_Burebuebli.txt","02_songs_output/62_es_Burebuebli.Rmd",NA,NA,NA,NA
+"58","Vreneli vo Guggisberg / S isch äben e Mönsch uf Aerde","anonym","#volkslieder-guggisberg","01_songs_input/05_Volkslieder/Guggisberg.txt","02_songs_output/63_Guggisberg.Rmd",NA,NA,NA,NA
+"59","De blogeti Hansli",NA,"#volkslieder-de-blogeti-hansli","01_songs_input/05_Volkslieder/de_blogeti_hansli.txt","02_songs_output/64_de_blogeti_hansli.Rmd",NA,NA,NA,NA
+"60","Bergvagabunden",NA,"#volkslieder-bergvagabunden","01_songs_input/05_Volkslieder/bergvagabunden.txt","02_songs_output/65_bergvagabunden.Rmd",NA,NA,NA,NA
+"61","Gang rüef de Brune",NA,"#volkslieder-gang-ruef-de-bruune","01_songs_input/05_Volkslieder/gang_ruef_de_bruune.txt","02_songs_output/66_gang_ruef_de_bruune.Rmd",NA,NA,NA,NA
+"62","Alles fahrt Ski",NA,"#volkslieder-alles-fahrt-ski","01_songs_input/05_Volkslieder/alles_fahrt_ski.txt","02_songs_output/67_alles_fahrt_ski.Rmd",NA,NA,NA,NA
+"63","Vo Luzern gäge Wäggis zue","Johann Lüthi","#volkslieder-vo-luzern","01_songs_input/05_Volkslieder/vo_Luzern.txt","02_songs_output/68_vo_Luzern.Rmd",NA,NA,NA,NA
+"64","Lied des Zigeuners","ean Portier und Dietmar Janz","#volkslieder-ich-kenne-europas-zonen","01_songs_input/05_Volkslieder/ich_kenne_europas_zonen.txt","02_songs_output/69_ich_kenne_europas_zonen.Rmd",NA,NA,NA,NA
+"65","Lustig ist das Zigeunerleben","anonym","#volkslieder-lustig-ist-das-zigeunerleben","01_songs_input/05_Volkslieder/lustig_ist_das_zigeunerleben.txt","02_songs_output/70_lustig_ist_das_zigeunerleben.Rmd",NA,NA,NA,NA
+"66","Det äne am Bergli",NA,"#kinderlieder-det-aenet-am-bergli","01_songs_input/06_Kinderlieder/det_aenet_am_bergli.txt","02_songs_output/72_det_aenet_am_bergli.Rmd",NA,NA,NA,NA
+"67","S'isch mer alles eis Ding",NA,"#kinderlieder-isch-mer-alles-eis-ding","01_songs_input/06_Kinderlieder/isch_mer_alles_eis_ding.txt","02_songs_output/73_isch_mer_alles_eis_ding.Rmd",NA,NA,NA,NA
+"68","Ds Hippygspängstli","Peter Reber","#kinderlieder-hippi-gspaengstli","01_songs_input/06_Kinderlieder/Hippi_gspaengstli.txt","02_songs_output/74_Hippi_gspaengstli.Rmd",NA,NA,NA,NA
+"69","S'Ramseiers wei go grase",NA,"#kinderlieder-ramseiers-wei-go-grase","01_songs_input/06_Kinderlieder/ramseiers_wei_go_grase.txt","02_songs_output/75_ramseiers_wei_go_grase.Rmd",NA,NA,NA,NA
+"70",NA,NA,"#kinderlieder-traaeumli","01_songs_input/06_Kinderlieder/traaeumli.txt","02_songs_output/76_traaeumli.Rmd",NA,NA,NA,NA
+"71","Min Vater isch en Appezeller",NA,"#kinderlieder-min-vatter-isch-en-appizaeller","01_songs_input/06_Kinderlieder/min_vatter_isch_en_appizaeller.txt","02_songs_output/77_min_vatter_isch_en_appizaeller.Rmd",NA,NA,NA,NA
+"72","Vo Luzern of Wäggis zue",NA,"#kinderlieder-vo-luzern-gege-weggis","01_songs_input/06_Kinderlieder/vo_luzern_gege_weggis.txt","02_songs_output/78_vo_luzern_gege_weggis.Rmd",NA,NA,NA,NA
+"73","S'Vogellisi","Peter Wackel","#kinderlieder-vogellisi","01_songs_input/06_Kinderlieder/vogellisi.txt","02_songs_output/79_vogellisi.Rmd",NA,NA,NA,NA
