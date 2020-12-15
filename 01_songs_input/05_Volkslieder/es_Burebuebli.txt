@@ -3,6 +3,9 @@
 
 {source: https://als.wikipedia.org/wiki/Text:Volkslieder/Es_Bureb%C3%BCebli}
 
+Strophe: C G7 C G7 C F C G7 C
+Refrain: C G7 C G7 C F C G7 C
+
 Es Burebüebli mahn i nid, das gseht me mir wohl a, juhe,
 Es Burebüebli mahn i nid, das gseht me mir wohl a
 Fidiri, fidira, fidirallala, fidirallala, la rallala,
