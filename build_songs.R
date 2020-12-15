@@ -128,7 +128,7 @@ for (dir_i in seq_along(subfolders)){
   
   close.connection(fileConn)
   
-  songs <- list.files(paste(inputdir,dir,sep = "/"), pattern = ".txt",full.names = TRUE)
+  songs <- list.files(file.path(inputdir,dir), pattern = ".txt",full.names = TRUE)
   
   # gives each file an arbitary number 
   songs_numeric <- map_dbl(basename(songs),~mean(utf8ToInt(.x)))
@@ -198,14 +198,7 @@ for (dir_i in seq_along(subfolders)){
     }
     
     
-    song_tag <- song %>%
-      str_remove(paste0(inputdir,"/")) %>%
-      str_remove("\\.txt") %>%
-      str_remove("^\\d+") %>%
-      str_remove("^_") %>%
-      str_replace_all("/|_","-") %>%
-      paste0("#",.) %>%
-      str_to_lower()
+    song_tag <- paste0("song", song_i)
     
     
     song_header <- paste0(
@@ -249,7 +242,7 @@ for (dir_i in seq_along(subfolders)){
     rmd_file_nr <- rmd_file_nr+1
     rmd_file_nr_chr <- paste0(str_pad(rmd_file_nr,npad,pad = "0"),"_")
     
-    rmd_file_name <- paste(rmd_subdir,paste0(rmd_file_nr_chr, str_replace(song_bn,".txt",".Rmd")),sep = "/")
+    rmd_file_name <- file.path(rmd_subdir,paste0(rmd_file_nr_chr, str_replace(song_bn,".txt",".Rmd")))
     fileConn<-file(rmd_file_name)
     
     writeLines(song_rl,fileConn)
@@ -272,7 +265,7 @@ for (dir_i in seq_along(subfolders)){
 
 songs_meta_data_df <- map_dfr(songs_meta_data,~as.data.frame(.x))
 
-write.csv(songs_meta_data_df, paste(rmd_subdir,"meta_data.csv",sep = "/"))
+write.csv(songs_meta_data_df, file.path(rmd_subdir,"meta_data.csv"))
 
 rmd_file_nr <- rmd_file_nr+1
 rmd_file_nr_chr <- paste0(str_pad(rmd_file_nr,npad,pad = "0"),"_")
