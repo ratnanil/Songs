@@ -1,6 +1,5 @@
-{title: Silent Night - Stille Nacht}
+{title: Silent Night}
 {time: 3/4}
-{capo: 0}
 
 
 {start_of_grid}
@@ -24,25 +23,4 @@ Silent night! Holy night! Son of God love's pure light
 Radiant beams from thy holy face With the dawn of redeeming grace
 Jesus lord at thy birth! Jesus lord at thy birth! 
 
-
-Stille Nacht! Heilige Nacht!
-Alles schläft, einsam wacht
-nur das traute hoch heilige Paar.
-"Holder Knabe im lockigen Haar
-schlaf in himmlischer Ruh'
-schlaf in himmlischer Ruh'!
-
-Stille Nacht! Heilige Nacht!
-Hirten erst, kundgemacht!
-durch der Engel Halleluja
-tönt es laut von Fern' und Nah:
-Christ, der Retter ist da!
-Christ, der Retter ist da!
-
-Stille Nacht! Heilige Nacht!
-Gottes Sohn, o wie lacht
-lieb' aus deinem göttlichen Mund
-da uns schlägt die rettende Stund':
-Christ in deiner Geburt.
-Christ in deiner Geburt.
 
