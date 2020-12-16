@@ -12,7 +12,7 @@ bookdown::pdf_book:
     in_header: misc/preamble.tex
     before_body: misc/titlepage.tex
   latex_engine: xelatex
-  papersize: a5
+  papersize: a4
   geometry: margin=10mm
   documentclass: book
 bookdown::html_book:

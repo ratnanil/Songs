@@ -270,22 +270,43 @@ write.csv(songs_meta_data_df, file.path(rmd_subdir,"meta_data.csv"))
 rmd_file_nr <- rmd_file_nr+1
 rmd_file_nr_chr <- paste0(str_pad(rmd_file_nr,npad,pad = "0"),"_")
 
-glossary_html <- paste0(rmd_subdir,"/",rmd_file_nr_chr,"glossary.html")
-glossary_pdf <- paste0(rmd_subdir,"/",rmd_file_nr_chr,"glossary.tex")
+glossary1_html <- paste0(rmd_subdir,"/",rmd_file_nr_chr,"glossary1.html")
+glossary1_pdf <- paste0(rmd_subdir,"/",rmd_file_nr_chr,"glossary1.tex")
 
 songs_meta_data_df %>%
   arrange(title) %>%
   transmute(Title = paste0("[",title,"](",label,")"),Artist = artist) %>% 
   kable(format = "html", escape = FALSE) %>%
-  writeLines(glossary_html)
+  writeLines(glossary1_html)
 
 
 songs_meta_data_df %>%
   arrange(title) %>%
   transmute(Title = title, Artist = artist, Page = paste0("\\pageref{",str_remove(label,"#"),"}")) %>%
   kable(format = "latex",escape = FALSE,align = c("l","l","r"),longtable = TRUE,booktabs  = TRUE) %>%
-  writeLines(glossary_pdf)
+  writeLines(glossary1_pdf)
 
+
+glossary2_html <- paste0(rmd_subdir,"/",rmd_file_nr_chr,"glossary2.html")
+glossary2_pdf <- paste0(rmd_subdir,"/",rmd_file_nr_chr,"glossary2.tex")
+
+songs_meta_data_df %>%
+  arrange(artist) %>%
+  filter(!is.na(artist)) %>%
+  transmute(Artist = artist, Title = paste0("[",title,"](",label,")")) %>% 
+  kable(format = "html", escape = FALSE) %>%
+  writeLines(glossary2_html)
+
+
+songs_meta_data_df %>%
+  arrange(title) %>%
+  filter(!is.na(artist)) %>%
+  mutate(label = str_remove(label,"#")) %>%
+  transmute(Artist = artist, Title = paste0("\\hyperref[",label,"]{",title,"}"), Page = paste0("\\pageref{",label,"}")) %>%
+  kable(format = "latex",escape = FALSE,align = c("l","l","r"),longtable = TRUE,booktabs  = TRUE) %>%
+  writeLines(glossary2_pdf)
+
+# \hyperref[sec:intro]{Appendix~\ref*{sec:intro}}
 
 c("# Glossary",
   "```{r, echo = FALSE}",
@@ -293,14 +314,21 @@ c("# Glossary",
   "output_type <- knitr::opts_knit$get('rmarkdown.pandoc.to')",
   "```",
   "",
-  "## By title",
+  "## By Title",
   "",
-  paste0("```{r, eval= (output_type == 'html'),results='asis',child = '",glossary_html,"'}"),
+  paste0("```{r, eval= (output_type == 'html'),results='asis',child = '",glossary1_html,"'}"),
   "```",
   "",
-  paste0("```{r, eval= (output_type == 'pdf'),results='asis',child = '",glossary_pdf,"'}"),
+  paste0("```{r, eval= (output_type == 'latex'),results='asis',child = '",glossary1_pdf,"'}"),
   "```",
-  ""
+  "",
+  "## By Artist",
+  "",
+  paste0("```{r, eval= (output_type == 'html'),results='asis',child = '",glossary2_html,"'}"),
+  "```",
+  "",
+  paste0("```{r, eval= (output_type == 'latex'),results='asis',child = '",glossary2_pdf,"'}"),
+  "```"
   ) %>%
   writeLines(paste0(rmd_subdir,"/",rmd_file_nr_chr,"glossary.Rmd"))
 

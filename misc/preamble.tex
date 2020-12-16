@@ -5,3 +5,27 @@
 
 % Needs latex_engine: xelatex in _output.yml. Doesn't work yet.
 \usepackage{fontspec}
+
+\setmainfont{Arial}
+
+\usepackage{geometry}
+ \geometry{
+ a5paper,
+ left=10mm,
+ right=10mm,
+ top=15mm,
+ bottom=10mm
+ }
+ 
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{}
+\fancyhead[RE,LO]{\leftmark}
+\fancyfoot[CE,CO]{}
+\fancyfoot[LE,RO]{\thepage}
+
+% \renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
