@@ -59,27 +59,27 @@ Comin’ for to [A7]carry me [D]home.
 {comment: Chorus}
 ```
 
-In addition, there are a number of so called "directives" that can be added to a song. These are described here: https://www.chordpro.org/chordpro/chordpro-directives/, but only a small portion are currently implemented.
+In addition, there are a number of so called "directives" that can be added to a song. These are described here: https://www.chordpro.org/chordpro/chordpro-directives/, not all are currently implemented.
 
 ## Which directives are implemented?
 
 Most [Meta-data and Environment directives](https://www.chordpro.org/chordpro/chordpro-directives/) as listed below. 
 
-- [x] title
-- [x] subtitle
-- [x] artist
-- [x] composer
-- [x] lyricist
-- [x] copyright
-- [x] album
-- [x] year
-- [x] key
-- [x] time
-- [x] tempo
-- [x] duration
-- [x] capo
-- [ ] ~meta~
-- [x] *custom directive*: source
+- [x] `{title: ...}`
+- [x] `{subtitle: ...}`
+- [x] `{artist: ...}`
+- [x] `{composer: ...}`
+- [x] `{lyricist: ...}`
+- [x] `{copyright: ...}`
+- [x] `{album: ...}`
+- [x] `{year: ...}`
+- [x] `{key: ...}`
+- [x] `{time: ...}`
+- [x] `{tempo: ...}`
+- [x] `{duration: ...}`
+- [x] `{capo: ...}`
+- [ ] ~`{meta: name value}`~
+- [x] *custom directive*: `{source: ...}` (usually a URL)
 
 
 [Environment directives](https://www.chordpro.org/chordpro/directives-env/) (only the "long forms" are implemented, not the short forms)
@@ -96,7 +96,7 @@ Most [Meta-data and Environment directives](https://www.chordpro.org/chordpro/ch
 - [x] `{start_of_grid}`
 - [x] `{end_of_grid}`
 
-As in the chordpro specification, all environment directives may include an optional label to identify the section. For example: `{start_of_verse: Verse 1}` The label must not include special characters and be seperated from the `:` with a space.
+As in the chordpro specification, all environment directives may include an optional label to identify the section. For example: `{start_of_verse: Verse 1}` The label should not include special characters and must be seperated from the `:` with a space.
 
 ## How do I add chords to songs?
 
