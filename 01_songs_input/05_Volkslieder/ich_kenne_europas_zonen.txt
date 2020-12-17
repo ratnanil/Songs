@@ -1,5 +1,5 @@
 {title: Lied des Zigeuners}
-{artist: ean Portier und Dietmar Janz}
+{artist: Jean Portier und Dietmar Janz}
 
 {source: https://angerweit.tikon.ch/lieder/jugendbewegung/europaszonen.pdf}
 
@@ -10,11 +10,11 @@ H7                      Em
 Die Händel der großen Nationen
     H7                Em
 der Klassen und Konfessionen
-    Em              H7          Em   
+                    H7          Em   
 sind für mich nur großer Beschiss
     G          G/h        C        G
 Ich bin ein gemeiner, zerlumpter Zigeuner
-    G                       D    A   D
+    G                       D    A
 ich habe keine Heimat, kein Geld
          C              D7     G
 nur mein Pferd und die sonnige Welt
