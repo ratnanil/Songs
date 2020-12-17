@@ -89,6 +89,23 @@ chordpro_environment_all <- function(string){
 ## Songs to RMarkdown ##########################################################
 ################################################################################
 
+# Takes a vector of characters strings and a directives tags and returns a named 
+# list of directive-values as well as a vector of indices of positions where these
+# where detected.
+
+match_directives <- function(lines,tags){
+  mat <- str_match(lines, paste0("\\{(",paste(tags,collapse = "|"),"):\\s(.+)\\}"))
+  rows <- !is.na(mat[,1])
+  
+  mat <- mat[rows,,drop=FALSE]
+  
+  lis <- map(mat[,3],~.x) %>%
+    magrittr::set_names(mat[,2])
+  
+  lis[["row_indices"]] <- which(rows)
+  
+  lis
+}
 
 songbookdownyaml <- read_yaml("_songbookdown.yml")
 bookdownyaml <- read_yaml("_bookdown.yml")
@@ -96,7 +113,7 @@ bookdownyaml <- read_yaml("_bookdown.yml")
 rmd_subdir <- bookdownyaml$rmd_subdir
 inputdir <- songbookdownyaml$inputdir
 subfolders <- songbookdownyaml$subfolders
-
+output_dir <- bookdownyaml$output_dir
 
 
 if(!dir.exists(rmd_subdir)){dir.create(rmd_subdir)}
@@ -177,19 +194,14 @@ for (dir_i in seq_along(subfolders)){
     }
     
     
-    meta_data_tags <- c("title", "subtitle", "artist", "composer", "lyricist", "copyright", "album", "year", "key", "time", "tempo", "duration", "capo", "meta","source")
+    meta_data_tags <- c("title", "subtitle", "artist", "composer", "lyricist", "copyright", "album", "year", "key", "time", "tempo", "duration", "capo", "meta","source","pdf","image")
     
-    meta_data_directives <- str_match(song_rl, paste0("\\{(",paste(meta_data_tags,collapse = "|"),"):\\s(.+)\\}"))
+    meta_data_directives <- match_directives(song_rl, meta_data_tags)
     
-    meta_data_lines <- !is.na(meta_data_directives[,1])
+    song_rl <- song_rl[-c(meta_data_directives$row_indices)]
     
-    meta_data_directives <- meta_data_directives[meta_data_lines,,drop=FALSE]
+    meta_data_directives[["row_indices"]] <- NULL
     
-    meta_data_directives <- map(meta_data_directives[,3],~.x) %>%
-      magrittr::set_names(meta_data_directives[,2])
-    
-    
-    song_rl <- song_rl[-which(meta_data_lines)]
     
     if("source" %in% names(meta_data_directives)){
       footer_i = footer_i+1
@@ -219,16 +231,24 @@ for (dir_i in seq_along(subfolders)){
       paste0(" {",song_tag,"}")
     )
     
+    
+    pdf_chunk <- if ("pdf" %in% names(meta_data_directives)) {
+      
+      pdf_path <- file.path(output_dir,meta_data_directives$pdf)
+      c("```{r, eval = TRUE,results='asis'}",paste0("cat('<embed src=\"",meta_data_directives$pdf,"\" width=\"100%\" height=\"800\" type=\"application/pdf\">')"), "```")
+    } else{""}
+    
+    
     song_rl <- c(song_header,
                  "",
                  ifelse("source" %in% names(meta_data_directives),paste0(footer_tag,": ",meta_data_directives$source),""), 
                  "",
-                 "```",
-                 song_rl,
-                 "```")
+                 ifelse(length(song_rl)>1,c("```", song_rl,"```"),""),
+                 pdf_chunk
+                 )
     
     
-    meta_data_directives_other <- meta_data_directives[!names(meta_data_directives) %in% c("title","artist","year","source")]
+    meta_data_directives_other <- meta_data_directives[!names(meta_data_directives) %in% c("title","artist","year","source","pdf","image")]
     
     if(length(meta_data_directives_other)>0){
       meta_pander <- meta_data_directives_other %>%
