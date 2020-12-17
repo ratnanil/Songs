@@ -243,7 +243,9 @@ for (dir_i in seq_along(subfolders)){
                  "",
                  ifelse("source" %in% names(meta_data_directives),paste0(footer_tag,": ",meta_data_directives$source),""), 
                  "",
-                 ifelse(length(song_rl)>1,c("```", song_rl,"```"),""),
+                 "```", 
+                 song_rl,
+                 "```",
                  pdf_chunk
                  )
     
