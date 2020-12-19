@@ -1,5 +1,8 @@
 {title: The First Noel}
 
+{capo: 0}
+{time: 3/4}
+
    [G]       [D] 
 The first Noel 
    [C]          [G]
