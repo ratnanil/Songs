@@ -1,4 +1,4 @@
-{title: Where have all the flowers Gone?}
+{title: Sag mir wo die Blumen sind}
 {artist: Pete Seeger}
 {source: https://tabs.ultimate-guitar.com/tab/pete-seeger/sag-mir-wo-die-blumen-sind-chords-1449912}
 
