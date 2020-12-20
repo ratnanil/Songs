@@ -1,4 +1,6 @@
 {title: Süsser die Glocken nie klingen}
+{capo: 5}
+{time: 3/4}
 
 {start_of_grid}
 D G A7 D 
