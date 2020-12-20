@@ -1,5 +1,6 @@
 {title: Stille Nacht}
 {time: 3/4}
+{capo: 0} 
 
 
 {start_of_grid}
