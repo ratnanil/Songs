@@ -1,0 +1,36 @@
+{title: Gloria - Engel haben Himmelslieder}
+
+{source: https://www.liederkiste.com/index.php?s=engel-haben-himmelslieder&l=de}
+{time: 4/4}
+
+{start_of_grid}
+
+|G_____|D__G__|
+|______|D__G__|
+
+{end_of_grid}
+
+
+G           D      G
+Engel haben Himmelslieder
+                D      G
+auf den Feldern angestimmt
+G              D     G
+Echo hallt vom Berge wider,
+              D        G
+dass es jedes Ohr vernimmt.
+
+G   D e a D
+Glo---------ria in excelsis Deo!
+
+Hirten, was ist euch begegnet,
+dass ihr so voll Jubel seid?
+Gott hat euch die Welt gesegnet:
+Christ erschien der Erdenzeit.
+Gloria in excelsis Deo!
+
+Er gibt allen Menschen Frieden,
+die des guten Willens sind.
+Freude wurde uns beschieden
+durch ein neugebornes Kind.
+Gloria in excelsis Deo!
