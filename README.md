@@ -123,7 +123,7 @@ The outputs are compiled in an R Sesseion, which is automated with a [github act
 To merge branch `branch1` from remote `origin`:
 
 ```
-
+git diff ...origin/branch1 # to check the differences between the master and the branch
 git fetch origin branch1
 git checkout master # if you aren't on master branch yet
 git merge origin/branch1
