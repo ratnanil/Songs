@@ -321,7 +321,7 @@ songs_meta_data_df %>%
 
 
 songs_meta_data_df %>%
-  arrange(title) %>%
+  arrange(artist) %>%
   filter(!is.na(artist)) %>%
   mutate(label = str_remove(label,"#")) %>%
   transmute(Artist = artist, Title = paste0("\\hyperref[",label,"]{",title,"}"), Page = paste0("\\pageref{",label,"}")) %>%
