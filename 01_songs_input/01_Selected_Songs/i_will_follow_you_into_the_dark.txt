@@ -1,6 +1,9 @@
-{title: I will follow you into the Dark}
-{artist: Death Cab for Cutie}
-{capo: 5}
+---
+title: I will follow you into the Dark
+artist: Death Cab for Cutie
+capo: '5'
+
+---
 
 [C]
 Love of mine

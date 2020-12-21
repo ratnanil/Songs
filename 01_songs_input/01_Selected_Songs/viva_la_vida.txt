@@ -1,6 +1,9 @@
-{title: Viva la Vida}
-{artist: Coldplay}
-{capo: 1}
+---
+title: Viva la Vida
+artist: Coldplay
+capo: '1'
+
+---
 
 {start_of_grid}
 C - D - G - Em 

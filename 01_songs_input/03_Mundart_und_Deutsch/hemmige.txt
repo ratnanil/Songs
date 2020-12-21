@@ -1,7 +1,10 @@
-{title: Hemmige}
-{artist: Mani Matter}
-{capo: 1}
-{time: 4/4}
+---
+title: Hemmige
+artist: Mani Matter
+capo: '1'
+time: 4/4
+
+---
 {start_of_grid}
 |Em______|Am______|D7______|G_______|
 |________|H7______|Em______|H7______|

@@ -1,7 +1,10 @@
-{title: Vo Luzern gäge Wäggis zue}
-{artist: Johann Lüthi}
+---
+title: Vo Luzern gäge Wäggis zue
+artist: Johann Lüthi
+source: https://als.wikipedia.org/wiki/Text:Volkslieder/Vo_Luzern_uf_W%C3%A4ggis_zue
 
-{source: https://als.wikipedia.org/wiki/Text:Volkslieder/Vo_Luzern_uf_W%C3%A4ggis_zue}
+---
+
 
 
 Vo Luzern gage Wäggis zue,

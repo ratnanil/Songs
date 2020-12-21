@@ -1,4 +1,7 @@
-{title: Oh Holy Night}
+---
+title: Oh Holy Night
+
+---
 
 [C]              [F]                [C]
 O holy night, the stars are brightly shining;

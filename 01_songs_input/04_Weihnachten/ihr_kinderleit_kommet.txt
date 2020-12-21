@@ -1,5 +1,8 @@
-{title: Ihr Kinderlein Kommet}
-{capo: 2}
+---
+title: Ihr Kinderlein Kommet
+capo: '2'
+
+---
 
    [G]                   [D7]        [G]    
 Ihr Kinderlein kommet, oh kommet doch all!

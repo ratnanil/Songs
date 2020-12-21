@@ -1,7 +1,10 @@
-{title: Heidi}
-{artist: Mani Matter}
+---
+title: Heidi
+artist: Mani Matter
+time: 4/8
 
-{time: 4/8}
+---
+
 {start_of_grid}
 |Am______|Dm__Am__|____F___|____Am__|
 |________|Dm__Am__|E___Am__|____E7__|

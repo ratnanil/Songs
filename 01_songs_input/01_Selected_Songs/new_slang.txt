@@ -1,5 +1,8 @@
-{title: New Slang}
-{artist: The Shins}
+---
+title: New Slang
+artist: The Shins
+
+---
 
 {start_of_grid}
 Am C F C G C Am G x4

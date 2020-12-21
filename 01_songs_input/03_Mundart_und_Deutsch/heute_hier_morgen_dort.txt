@@ -1,5 +1,8 @@
-{title: Heute hier morgen Dort}
-{artist: Hannes Wader}
+---
+title: Heute hier morgen Dort
+artist: Hannes Wader
+
+---
 
      [G]                        [C]        [G]
 Heute hier, morgen dort bin kaum da muß ich fort

@@ -1,6 +1,9 @@
-{title: House of the Rising Sun}
-{artist: The Animals}
-{year: 1964}
+---
+title: House of the Rising Sun
+artist: The Animals
+year: '1964'
+
+---
 
 {start_of_grid: INTRO}
 Am, C, D, F, Am, E, Am , E 

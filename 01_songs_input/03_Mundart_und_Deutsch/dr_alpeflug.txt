@@ -1,6 +1,9 @@
-{title: Dr Alpeflug}
-{artist: Mani Matter}
-{time: 4/4}
+---
+title: Dr Alpeflug
+artist: Mani Matter
+time: 4/4
+
+---
 
 {start_of_grid}
 Am____|______|______|E7____|

@@ -1,5 +1,8 @@
-{title: Sie Hört Musik nur wenn sie Laut ist}
-{artist: Herberg Grönemeyer}
+---
+title: Sie Hört Musik nur wenn sie Laut ist
+artist: Herberg Grönemeyer
+
+---
 
 [Gm]                                 [F#]
 Sie sitzt den ganzen Tag auf ihrer Fensterbank

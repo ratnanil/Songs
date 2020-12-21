@@ -1,6 +1,9 @@
-{title: Wagon Wheel}
-{artist: Old Crow Medicine Show}
-{capo: 2}
+---
+title: Wagon Wheel
+artist: Old Crow Medicine Show
+capo: '2'
+
+---
 
 [G]                     [D]
 Headed down south to the land of the pines

@@ -1,7 +1,10 @@
-{title: Dr Wecker}
-{artist: Mani Matter}
+---
+title: Dr Wecker
+artist: Mani Matter
+time: 4/8
 
-{time: 4/8}
+---
+
 
 {start_of_grid}
 |C_______|________|F______|________|

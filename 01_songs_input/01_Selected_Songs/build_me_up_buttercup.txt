@@ -1,5 +1,8 @@
-{title: Build me up Buttercup}
-{artist: The Foundations}
+---
+title: Build me up Buttercup
+artist: The Foundations
+
+---
 
 
 {start_of_chorus}

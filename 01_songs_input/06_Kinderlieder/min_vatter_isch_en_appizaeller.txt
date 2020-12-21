@@ -1,5 +1,8 @@
-{title: Min Vater isch en Appezeller}
-{source: https://www.brauchtumschweiz.ch/volkslieder-mundart/min-vater-isch-en-appezeller}
+---
+title: Min Vater isch en Appezeller
+source: https://www.brauchtumschweiz.ch/volkslieder-mundart/min-vater-isch-en-appezeller
+
+---
 
 Strophe: A E
 

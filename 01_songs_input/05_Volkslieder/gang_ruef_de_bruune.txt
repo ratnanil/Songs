@@ -1,6 +1,9 @@
-{title: Gang rüef de Brune}
+---
+title: Gang rüef de Brune
+source: https://www.brauchtumschweiz.ch/volkslieder-mundart/gang-rueef-de-brune
 
-{source: https://www.brauchtumschweiz.ch/volkslieder-mundart/gang-rueef-de-brune}
+---
+
 
 
 G D G D G

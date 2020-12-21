@@ -1,5 +1,8 @@
-{title: Boulevard of Broken Dreams}
-{artist: Green Day}
+---
+title: Boulevard of Broken Dreams
+artist: Green Day
+
+---
 
 [Em]     [G]            [D]            [A]           [Em]
 I walk a lonely road, the only one that I have ever known

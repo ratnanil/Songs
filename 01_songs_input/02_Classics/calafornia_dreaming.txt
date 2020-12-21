@@ -1,5 +1,8 @@
-{title: California Dreaming}
-{artist: the Mamas and the Papas}
+---
+title: California Dreaming
+artist: the Mamas and the Papas
+
+---
 
 
     NC/(Em)          [Am]      [G]        [F]

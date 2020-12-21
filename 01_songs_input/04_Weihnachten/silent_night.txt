@@ -1,5 +1,8 @@
-{title: Silent Night}
-{time: 3/4}
+---
+title: Silent Night
+time: 3/4
+
+---
 
 
 {start_of_grid}

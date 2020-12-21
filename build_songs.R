@@ -93,7 +93,12 @@ chordpro_environment_all <- function(string){
 # list of directive-values as well as a vector of indices of positions where these
 # where detected.
 
-match_directives <- function(lines,tags){
+match_directives <- function(lines,
+                             tags = c("title", "subtitle", "artist", "composer", "lyricist", "copyright", "album", "year", "key", "time", "tempo", "duration", "capo", "meta","source","pdf","image"),
+                             include_indices = TRUE
+                             ){
+  require(stringr)
+  require(purrr)
   mat <- str_match(lines, paste0("\\{(",paste(tags,collapse = "|"),"):\\s(.+)\\}"))
   rows <- !is.na(mat[,1])
   
@@ -102,9 +107,23 @@ match_directives <- function(lines,tags){
   lis <- map(mat[,3],~.x) %>%
     magrittr::set_names(mat[,2])
   
-  lis[["row_indices"]] <- which(rows)
+  if(include_indices) lis[["row_indices"]] <- which(rows)
   
   lis
+}
+
+# Gets the position of the yaml inline header by searching for the first 
+# two occurences of "---"
+yaml_headerpos <- function(input){
+  which(str_detect(input, "---"))[1:2]
+}
+
+# reads the inline / header yaml
+read_yamlheader <- function(input,isfile = TRUE){
+  if(isfile) input <- readLines(input)
+  start_stop <- yaml_headerpos(input)
+  yamldata <- yaml.load(input[(start_stop[1]+1):(start_stop[2]-1)])
+  yamldata
 }
 
 songbookdownyaml <- read_yaml("_songbookdown.yml")
@@ -193,14 +212,14 @@ for (dir_i in seq_along(subfolders)){
       song_rl <- song_rl[-start_end_idx$end]
     }
     
+    meta_data_directives <- read_yamlheader(song_rl,FALSE)
+    # meta_data_directives <- match_directives(song_rl)
     
-    meta_data_tags <- c("title", "subtitle", "artist", "composer", "lyricist", "copyright", "album", "year", "key", "time", "tempo", "duration", "capo", "meta","source","pdf","image")
+    # song_rl <- song_rl[-c(meta_data_directives$row_indices)]
+    start_stop <- yaml_headerpos(song_rl)
+    song_rl <- song_rl[-(start_stop[1]:start_stop[2])]
     
-    meta_data_directives <- match_directives(song_rl, meta_data_tags)
-    
-    song_rl <- song_rl[-c(meta_data_directives$row_indices)]
-    
-    meta_data_directives[["row_indices"]] <- NULL
+    # meta_data_directives[["row_indices"]] <- NULL
     
     
     if("source" %in% names(meta_data_directives)){

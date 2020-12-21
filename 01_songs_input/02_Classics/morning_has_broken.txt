@@ -1,5 +1,8 @@
-{title: Moring has broken}
-{artist: Cat Stevens}
+---
+title: Moring has broken
+artist: Cat Stevens
+
+---
 
            [C]   Dm [G]            [F]  [C]
 Morning has brok-en, like the first morn-ing

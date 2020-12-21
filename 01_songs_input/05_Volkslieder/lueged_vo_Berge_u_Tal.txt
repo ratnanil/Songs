@@ -1,7 +1,10 @@
-{title: Lueget vo Berge u Tal}
-{artist: J.A. Henne und F. Huber}
+---
+title: Lueget vo Berge u Tal
+artist: J.A. Henne und F. Huber
+source: https://als.wikipedia.org/wiki/Text:Volkslieder/Lueget_vo_Berg_und_Tal
 
-{source: https://als.wikipedia.org/wiki/Text:Volkslieder/Lueget_vo_Berg_und_Tal}
+---
+
 
 Lueget, vo Bärg und Tal
 flieht scho de Sunnestrahl

@@ -1,7 +1,10 @@
-{title: Es Burebüebli}
-{artist: vo Bern}
+---
+title: Es Burebüebli
+artist: vo Bern
+source: https://als.wikipedia.org/wiki/Text:Volkslieder/Es_Bureb%C3%BCebli
 
-{source: https://als.wikipedia.org/wiki/Text:Volkslieder/Es_Bureb%C3%BCebli}
+---
+
 
 Strophe: C G7 C G7 C F C G7 C
 Refrain: C G7 C G7 C F C G7 C

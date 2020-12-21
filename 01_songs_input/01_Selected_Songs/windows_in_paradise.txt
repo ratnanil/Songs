@@ -1,6 +1,9 @@
-{title: For the Windows in Paradise}
-{artist: Sufjan Stevens}
-{year: 2003}
+---
+title: For the Windows in Paradise
+artist: Sufjan Stevens
+year: '2003'
+
+---
 
 [Am]         Fmaj7    [C]             [G]
 I have called you children, I have called you son,

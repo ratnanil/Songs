@@ -1,7 +1,10 @@
-{title: Where have all the flowers Gone?}
-{artist: Peter Seeger}
-{year: 1962}
-{source: https://www.guitartabs.cc/tabs/p/pete_seeger/sag_mir_wo_die_blumen_sind_crd_ver_2.html}
+---
+title: Where have all the flowers Gone?
+artist: Peter Seeger
+year: '1962'
+source: https://www.guitartabs.cc/tabs/p/pete_seeger/sag_mir_wo_die_blumen_sind_crd_ver_2.html
+
+---
 
 
 C                  Am            F          G

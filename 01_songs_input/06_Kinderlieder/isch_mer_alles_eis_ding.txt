@@ -1,5 +1,8 @@
-{title: S'isch mer alles eis Ding}
-{source: https://www.brauchtumschweiz.ch/volkslieder-mundart/s-isch-mer-alles-eis-ding}
+---
+title: S'isch mer alles eis Ding
+source: https://www.brauchtumschweiz.ch/volkslieder-mundart/s-isch-mer-alles-eis-ding
+
+---
 
 C G7 C C F C G7 C
 

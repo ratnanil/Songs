@@ -1,5 +1,8 @@
-{title: Suzanne}
-{artist: Leonard Cohen}
+---
+title: Suzanne
+artist: Leonard Cohen
+
+---
 
 [E]              
 Suzanne takes you down

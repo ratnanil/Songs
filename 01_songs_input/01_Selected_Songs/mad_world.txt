@@ -1,6 +1,9 @@
-{title: Mad World}
-{artist: Gary Jules}
-{year: 2001}
+---
+title: Mad World
+artist: Gary Jules
+year: '2001'
+
+---
 
 All around me are familiar faces
 Worn out places, worn out faces

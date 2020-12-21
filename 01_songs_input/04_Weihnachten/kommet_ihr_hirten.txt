@@ -1,4 +1,7 @@
-{title: Kommet ihr Hirten}
+---
+title: Kommet ihr Hirten
+
+---
 
 Intro: [G]G][D][G][G][G][D][G]
 

@@ -1,5 +1,8 @@
-{title: S'Träumli}
-{source: https://www.brauchtumschweiz.ch/volkslieder-mundart/s-traeumli}
+---
+title: S'Träumli
+source: https://www.brauchtumschweiz.ch/volkslieder-mundart/s-traeumli
+
+---
 
 Strophe: E H7 A H7 E H7
 Refrain: E H7 E

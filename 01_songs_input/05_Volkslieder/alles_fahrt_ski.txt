@@ -1,5 +1,8 @@
-{title: Alles fahrt Ski}
-{source: https://www.brauchtumschweiz.ch/volkslieder-mundart/alles-fahrt-ski}
+---
+title: Alles fahrt Ski
+source: https://www.brauchtumschweiz.ch/volkslieder-mundart/alles-fahrt-ski
+
+---
 
 Alles fahrt Schi, alles fahrt Schi, Schi fahrt die ganzi Nation. 
 Alles fahrt Schi, alles fahrt Schi, d’Mamme, der Bappe, der Sohn. 

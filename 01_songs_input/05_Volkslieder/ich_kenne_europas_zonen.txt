@@ -1,7 +1,10 @@
-{title: Lied des Zigeuners}
-{artist: Jean Portier und Dietmar Janz}
+---
+title: Lied des Zigeuners
+artist: Jean Portier und Dietmar Janz
+source: https://angerweit.tikon.ch/lieder/jugendbewegung/europaszonen.pdf
 
-{source: https://angerweit.tikon.ch/lieder/jugendbewegung/europaszonen.pdf}
+---
+
 
     Em
 ich kenne Europas Zonen

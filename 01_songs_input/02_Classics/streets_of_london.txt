@@ -1,6 +1,9 @@
-{title: Streets of London}
-{artist: Ralph McTell}
-{year: 1967}
+---
+title: Streets of London
+artist: Ralph McTell
+year: '1967'
+
+---
 
 [C]              [G]      [Am]               [Em]
 Have you seen the old man, in the closed-down market

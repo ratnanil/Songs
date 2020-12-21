@@ -1,5 +1,8 @@
-{title: Zundhölzli}
-{artist: Mani Matter}
+---
+title: Zundhölzli
+artist: Mani Matter
+
+---
 
 {start_of_grid}
 |C________|G7_______|Am_______|E________|

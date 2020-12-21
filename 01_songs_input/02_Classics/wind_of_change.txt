@@ -1,6 +1,9 @@
-{title: Winds of Change}
-{artist: Scorpions}
-{year: 1991}
+---
+title: Winds of Change
+artist: Scorpions
+year: '1991'
+
+---
 
 {start_of_grid}
  F  Dm  F   Dm Am   G  Am  G  C   C

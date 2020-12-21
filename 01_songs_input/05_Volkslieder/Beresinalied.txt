@@ -1,8 +1,11 @@
-{title: Unser Leben gleicht der Reise / Beresinalied }
-{artist: Thomas Legler}
-{year: 1812}
+---
+title: 'Unser Leben gleicht der Reise / Beresinalied '
+artist: Thomas Legler
+year: '1812'
+source: http://ingeb.org/Lieder/unserleb.html
 
-{source: http://ingeb.org/Lieder/unserleb.html}
+---
+
 
 Unser Leben gleicht der Reise
 Eines Wandrers in der Nacht;

@@ -1,7 +1,10 @@
-{title: S'Nüüni Tramm}
-{artist: Mani Matter}
+---
+title: S'Nüüni Tramm
+artist: Mani Matter
+time: 4/8
 
-{time: 4/8}
+---
+
 {start_of_grid}
 |Am_______|________|________|________|
 |_________|________|________|________|

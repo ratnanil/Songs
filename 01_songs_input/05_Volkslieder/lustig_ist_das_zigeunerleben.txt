@@ -1,6 +1,9 @@
-{title: Lustig ist das Zigeunerleben}
-{artist: anonym}
-{source: https://www.volksliederarchiv.de/lustig-ist-das-zigeunerleben/}
+---
+title: Lustig ist das Zigeunerleben
+artist: anonym
+source: https://www.volksliederarchiv.de/lustig-ist-das-zigeunerleben/
+
+---
 
 Lustig ist das Zigeunerleben, Faria, faria, ho
 Brauchen dem Kaiser kein Zins zu geben, Faria, faria, ho

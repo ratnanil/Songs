@@ -1,8 +1,11 @@
-{title: Der Traum vom Fliegen}
-{artist: Alexandra}
-{year: 1968}
+---
+title: Der Traum vom Fliegen
+artist: Alexandra
+year: '1968'
+capo: '0'
+
+---
 {temp: 8/8}
-{capo: 0}
 
 {start_of_grid: Intro}
 Am____|D_____|Am____|D_____|

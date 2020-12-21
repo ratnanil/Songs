@@ -1,5 +1,8 @@
-{title: Eskimo}
-{artist: Mani Matter}
+---
+title: Eskimo
+artist: Mani Matter
+
+---
 
 [Am]                          [E]         [Am]
 Kenned ihr das Gschichtli scho vu dem arme Eskimo,

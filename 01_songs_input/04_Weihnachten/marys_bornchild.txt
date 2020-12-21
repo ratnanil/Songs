@@ -1,6 +1,9 @@
-{title: Marys Bornchild}
-{capo: 0}
-{time: 6/6}
+---
+title: Marys Bornchild
+capo: '0'
+time: 6/6
+
+---
 {start_of_grid: Verse}
 
 G_____|C__Am_|D____|G_____|

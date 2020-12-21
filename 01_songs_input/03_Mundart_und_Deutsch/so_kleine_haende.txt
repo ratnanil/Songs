@@ -1,5 +1,8 @@
-{title: Kinder - Sind so kleine Hände}
-{artist: Bettina Wegner}
+---
+title: Kinder - Sind so kleine Hände
+artist: Bettina Wegner
+
+---
 
 {start_of_grid}
 Am______|Dm______|E________|Am______|

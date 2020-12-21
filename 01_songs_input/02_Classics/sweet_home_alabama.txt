@@ -1,5 +1,8 @@
-{title: Sweet Home Alabama}
-{artist: Lynyrd Skynyrd}
+---
+title: Sweet Home Alabama
+artist: Lynyrd Skynyrd
+
+---
 
 {start_of_tab}
 e|-------------------------3-|

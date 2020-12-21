@@ -1,7 +1,10 @@
-{title: Vreneli vo Guggisberg / S isch äben e Mönsch uf Aerde}
-{artist: anonym}
+---
+title: Vreneli vo Guggisberg / S isch äben e Mönsch uf Aerde
+artist: anonym
+source: https://als.wikipedia.org/wiki/Text:Volkslieder/S_isch_%C3%A4ben_e_M%C3%B6nsch_uf_Aerde
 
-{source: https://als.wikipedia.org/wiki/Text:Volkslieder/S_isch_%C3%A4ben_e_M%C3%B6nsch_uf_Aerde}
+---
+
 
 S isch äben e Mönsch uf Aerde, Simelibärg!
 Und ds Vreneli ab em Guggisberg

@@ -1,4 +1,7 @@
-{title: Oh Come all Ye Faithful}
+---
+title: Oh Come all Ye Faithful
+
+---
 
  [G]         [D]
 O Come All Ye Faithful

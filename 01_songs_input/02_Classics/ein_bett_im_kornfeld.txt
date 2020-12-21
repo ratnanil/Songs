@@ -1,5 +1,8 @@
-{title: Ein Bett im Kornfeld}
-{artist: Jürgen Drews}
+---
+title: Ein Bett im Kornfeld
+artist: Jürgen Drews
+
+---
 
 [D]
 Sommerabend über blühendem Land.

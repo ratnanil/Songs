@@ -1,5 +1,8 @@
-{title: Jar of Hearts}
-{artist: Christina Perri}
+---
+title: Jar of Hearts
+artist: Christina Perri
+
+---
 
 [Bm]                         [D]
 I know I can't take one more step towards you

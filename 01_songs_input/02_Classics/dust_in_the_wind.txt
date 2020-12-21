@@ -1,5 +1,8 @@
-{title: Dust in the Wind}
-{artist: Kansas}
+---
+title: Dust in the Wind
+artist: Kansas
+
+---
 
 {start_of_tab}
 e|-----------|

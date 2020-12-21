@@ -1,7 +1,10 @@
-{title: Bim Coiffeur}
-{artist: Mani Matter}
+---
+title: Bim Coiffeur
+artist: Mani Matter
+time: 4/4
 
-{time: 4/4}
+---
+
 
 {start_of_grid}
 |C_______|____Am__|Dm______|____G7__|

@@ -1,5 +1,8 @@
-{title: Det äne am Bergli}
-{source: https://www.brauchtumschweiz.ch/volkslieder-mundart/det-aene-am-bergli}
+---
+title: Det äne am Bergli
+source: https://www.brauchtumschweiz.ch/volkslieder-mundart/det-aene-am-bergli
+
+---
 
 Griffe: A E A E A
 

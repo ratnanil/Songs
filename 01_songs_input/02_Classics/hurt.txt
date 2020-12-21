@@ -1,5 +1,8 @@
-{title: Hurt}
-{artist: Johnny Cash}
+---
+title: Hurt
+artist: Johnny Cash
+
+---
 
 [Am][C]     [D]   [Am]     [C]    [D]     [Am]
    I hurt myself today   to see if I still feel
