@@ -1,5 +1,6 @@
 {title: Am Weihnachtsbaum die Lichter brennen}
-
+{capo: 3}
+{time: 4/4}
 
 [G]                    [C]      [G]
 [Am]eihnachtsbaume die Lichter brennen,
