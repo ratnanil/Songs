@@ -7,12 +7,19 @@ This is a song book containing chords and lyrics of selected songs, generated us
 
 ## How do I request new songs?
 
+### Option 1 (if you are not familiar with git):
+
 Submit a request via [an issue](https://github.com/ratnanil/Songs/issues). If you add multiple songs to in request, you can use the tickbox list (see below):
 
 ```
 - [ ] Song1
 - [ ] Song2
 ``` 
+
+### Option 2 (you *are* familiar with git):
+
+Fork the repo and make a pull request with your additions
+
 
 ## How do I add a new song?
 
@@ -107,5 +114,19 @@ This feature is currently not active.
 
 ## I added songs, how can I compile the html / pdf output?
 
-Basically, the book is complied in an R Session. This is now automated with a [github action](https://github.com/ratnanil/Songs/actions), so that the book (html and pdf) is recomplied at every push.
+The outputs are compiled in an R Sesseion, which is automated with a [github action](https://github.com/ratnanil/Songs/actions). Outputs (html and pdf) are recomplied at every push.
+
+
+## I am a maintainer: How do I merge pull requests?
+
+
+To merge branch `branch1` from remote `origin`:
+
+```
+
+git fetch origin branch1
+git checkout master # if you aren't on master branch yet
+git merge origin/branch1
+
+```
 
