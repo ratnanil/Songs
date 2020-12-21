@@ -6,12 +6,14 @@
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code {
   background: #1c1f2b;
   border-color: #1c1f2b;
+  line-height: 1; /* this line is redundant  */
 }
 
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal pre,
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal code {
   background: #f3eacb;
   border-color: #f3eacb;
+  line-height: 1; /* this line is redundant  */
 }
 
 
