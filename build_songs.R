@@ -137,6 +137,13 @@ create_songtitle <- function(title,song_tag,artist = NULL,level = 2){
   )
 }
 
+# trims leading and/or trailing elements that are equal to "compare"
+trim_lines <- function(char_vec, compare = ""){
+  leading <- cumsum(char_vec != compare) == 0
+  trailing <- rev(cumsum(rev(char_vec) != compare)) == 0
+  char_vec[!(leading | trailing)]
+}
+
 create_songtitle(meta_data_directives["title"],song_tag,meta_data_directives["artist"])
 
 songbookdownyaml <- read_yaml("_songbookdown.yml")
@@ -190,65 +197,92 @@ for (dir_i in seq_along(subfolders)){
     song_i = song_i + 1
     print(song)
     
-    song_bn <- basename(song)
     
     song_rl <- song %>%
       readLines(warn = FALSE)
     
-    start_and_ends <- c("chorus","verse","bridge","tab","grid")
-    
-    
-    
-    start_end_res <- str_match(song_rl,paste0("\\{(start|end)_of_(",paste(start_and_ends,collapse = "|"),"):?\\s?(.+)?\\}"))
-    
-    start_end_idx <- list(start = which(start_end_res[,2] == "start"),
-                          end = which(start_end_res[,2] == "end"))
-    
-    if(length(start_end_idx$start)>0){
-      pmap(start_end_idx, function(start,end){
-        song_rl[start:end] <<- paste0("  ",song_rl[start:end])
-        song_rl
-      })
-      
-      start_labels <-  ifelse(start_end_res[,2] == "start",
-                              str_to_title(paste0(str_replace(start_end_res[,3],"grid","chords"), ifelse(!is.na(F),paste0(" (",start_end_res[,4],")"),""))),NA)
-      
-      song_rl[start_end_idx$start] <- str_to_title(paste0(
-        str_replace(start_end_res[start_end_idx$start,3],"grid","chords"),
-        ifelse(!is.na(start_end_res[start_end_idx$start,4]),
-               paste0(" (",start_end_res[start_end_idx$start,4],")"),
-               ""
-        ),
-        ":"
-      )) 
-      
-      song_rl <- song_rl[-start_end_idx$end]
-    }
-    
     meta_data_directives <- read_yamlheader(song_rl,FALSE)
-
+    
     start_stop <- yaml_headerpos(song_rl)
     song_rl <- song_rl[-(start_stop[1]:start_stop[2])]
+    
+    
+    song_rl <- c("",trim_lines(song_rl, ""))
+    
+    split(song_rl, cumsum(song_rl == "")) %>%
+      map(function(song_part){
+        song_part <- trim_lines(song_part)
+        part_class <- str_match(song_part[1],"\\{start_of_(\\w+)\\}")[,2]
+        out <- if(all(song_part ==  "{bridge}")){
+          "play bridge"
+        } else if(all(song_part ==  "{chorus}")){
+          "play chorus"
+        } else if(is.na(part_class)){
+          c(
+            "```",
+            song_part,
+            "```"
+          )
+        } else{
+          c(
+            paste0("```{class='",part_class,"'}"),
+            song_part[2:(length(song_part)-1)],
+            "```"
+          )
+        }
+        c(out,"")
+      }) %>%
+      unlist() %>%
+      set_names(NULL) -> song_rl
+    
+    # start_and_ends <- c("chorus","verse","bridge","tab","grid")
+    
+    
+    # start_end_res <- str_match(song_rl,paste0("\\{(start|end)_of_(",paste(start_and_ends,collapse = "|"),"):?\\s?(.+)?\\}"))
+    # 
+    # start_end_idx <- list(start = which(start_end_res[,2] == "start"),
+    #                       end = which(start_end_res[,2] == "end"))
+    # 
+    # 
+    # 
+    # if(length(start_end_idx$start)>0){
+    #   pmap(start_end_idx, function(start,end){
+    #     song_rl[start:end] <<- paste0("  ",song_rl[start:end])
+    #     song_rl
+    #   })
+      
+      # start_labels <-  ifelse(start_end_res[,2] == "start",
+                              # str_to_title(paste0(str_replace(start_end_res[,3],"grid","chords"), ifelse(!is.na(F),paste0(" (",start_end_res[,4],")"),""))),NA)
+      
+      # song_rl[start_end_idx$start] <- str_to_title(paste0(
+      #   str_replace(start_end_res[start_end_idx$start,3],"grid","chords"),
+      #   ifelse(!is.na(start_end_res[start_end_idx$start,4]),
+      #          paste0(" (",start_end_res[start_end_idx$start,4],")"),
+      #          ""
+      #   ),
+      #   ":"
+      # )) 
+      
+      # song_rl <- song_rl[-start_end_idx$end]
+    # }
     
     
     song_tag <- paste0("#song", song_i)
 
     song_header <- create_songtitle(meta_data_directives$title,song_tag,meta_data_directives$artist)
     
-    pdf_chunk <- if ("pdf" %in% names(meta_data_directives)) {
-      
-      pdf_path <- file.path(output_dir,meta_data_directives$pdf)
-      c("```{r, eval = TRUE,results='asis'}",paste0("cat('<embed src=\"",meta_data_directives$pdf,"\" width=\"100%\" height=\"800\" type=\"application/pdf\">')"), "```")
-    } else{""}
+    # pdf_chunk <- if ("pdf" %in% names(meta_data_directives)) {
+    #   
+    #   pdf_path <- file.path(output_dir,meta_data_directives$pdf)
+    #   c("```{r, eval = TRUE,results='asis'}",paste0("cat('<embed src=\"",meta_data_directives$pdf,"\" width=\"100%\" height=\"800\" type=\"application/pdf\">')"), "```")
+    # } else{""}
     
     
     song_rl <- c(song_header,
                  "",
-                 "```", 
-                 song_rl,
-                 "```",
-                 pdf_chunk
+                 song_rl
                  )
+    
     
     
     meta_data_directives_other <- meta_data_directives[!names(meta_data_directives) %in% c("title","artist","pdf","image")]
@@ -264,6 +298,8 @@ for (dir_i in seq_along(subfolders)){
     
     rmd_file_nr <- rmd_file_nr+1
     rmd_file_nr_chr <- paste0(str_pad(rmd_file_nr,npad,pad = "0"),"_")
+    
+    song_bn <- basename(song)
     
     rmd_file_name <- file.path(rmd_subdir,paste0(rmd_file_nr_chr, str_replace(song_bn,".txt",".Rmd")))
     fileConn<-file(rmd_file_name)
