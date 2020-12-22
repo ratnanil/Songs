@@ -126,6 +126,19 @@ read_yamlheader <- function(input,isfile = TRUE){
   yamldata
 }
 
+# Creates the song's chapter name
+create_songtitle <- function(title,song_tag,artist = NULL,level = 2){
+  paste0(
+    paste(rep("#",level),collapse = ""),
+    " ",
+    title,
+    ifelse(is.null(artist),"",paste0(" - ",artist)),
+    paste0(" {",song_tag,"}")
+  )
+}
+
+create_songtitle(meta_data_directives["title"],song_tag,meta_data_directives["artist"])
+
 songbookdownyaml <- read_yaml("_songbookdown.yml")
 bookdownyaml <- read_yaml("_bookdown.yml")
 
@@ -213,43 +226,14 @@ for (dir_i in seq_along(subfolders)){
     }
     
     meta_data_directives <- read_yamlheader(song_rl,FALSE)
-    # meta_data_directives <- match_directives(song_rl)
-    
-    # song_rl <- song_rl[-c(meta_data_directives$row_indices)]
+
     start_stop <- yaml_headerpos(song_rl)
     song_rl <- song_rl[-(start_stop[1]:start_stop[2])]
     
-    # meta_data_directives[["row_indices"]] <- NULL
-    
-    
-    if("source" %in% names(meta_data_directives)){
-      footer_i = footer_i+1
-      
-      footer_tag <- paste0("[^",footer_i,"]")
-    }
-    
     
     song_tag <- paste0("#song", song_i)
-    
-    
-    song_header <- paste0(
-      "## ",
-      meta_data_directives["title"],
-      ifelse("artist" %in% names(meta_data_directives),
-             paste0(" - ",meta_data_directives["artist"]),
-             ""
-      ),
-      ifelse("year" %in% names(meta_data_directives),
-             paste0(
-               " (",
-               meta_data_directives["year"],
-               ")"
-             )
-             ,""),
-      ifelse("source" %in% names(meta_data_directives),footer_tag,""),
-      paste0(" {",song_tag,"}")
-    )
-    
+
+    song_header <- create_songtitle(meta_data_directives$title,song_tag,meta_data_directives$artist)
     
     pdf_chunk <- if ("pdf" %in% names(meta_data_directives)) {
       
@@ -260,8 +244,6 @@ for (dir_i in seq_along(subfolders)){
     
     song_rl <- c(song_header,
                  "",
-                 ifelse("source" %in% names(meta_data_directives),paste0(footer_tag,": ",meta_data_directives$source),""), 
-                 "",
                  "```", 
                  song_rl,
                  "```",
@@ -269,7 +251,7 @@ for (dir_i in seq_along(subfolders)){
                  )
     
     
-    meta_data_directives_other <- meta_data_directives[!names(meta_data_directives) %in% c("title","artist","year","source","pdf","image")]
+    meta_data_directives_other <- meta_data_directives[!names(meta_data_directives) %in% c("title","artist","pdf","image")]
     
     if(length(meta_data_directives_other)>0){
       meta_pander <- meta_data_directives_other %>%
@@ -277,7 +259,7 @@ for (dir_i in seq_along(subfolders)){
         knitr::kable(col.names = c("",""),format = "pandoc") 
       
       
-      song_rl <- c(song_rl[1:2],meta_pander,song_rl[3:length(song_rl)])
+      song_rl <- c(song_rl,"",meta_pander)
     }
     
     rmd_file_nr <- rmd_file_nr+1
