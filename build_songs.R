@@ -144,8 +144,6 @@ trim_lines <- function(char_vec, compare = ""){
   char_vec[!(leading | trailing)]
 }
 
-create_songtitle(meta_data_directives["title"],song_tag,meta_data_directives["artist"])
-
 songbookdownyaml <- read_yaml("_songbookdown.yml")
 bookdownyaml <- read_yaml("_bookdown.yml")
 
