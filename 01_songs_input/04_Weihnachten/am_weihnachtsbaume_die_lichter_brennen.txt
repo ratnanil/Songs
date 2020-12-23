@@ -6,7 +6,7 @@ time: 4/4
 ---
 
 [G]                    [C]      [G]
-[Am]eihnachtsbaume die Lichter brennen,
+Am Weihnachtsbaume die Lichter brennen,
               [Am]      [D]      [G]
 Wie glänzt er festlich, lieb und mild,
 [G]             [D]            [G]
@@ -46,7 +46,7 @@ Dem braunen, wie dem weißen Haar!
 
    [G]             [C]      [G]
 Zu guten Menschen, die sich lieben,
-       [Am]     [D]      [G]
+       [Am]              [D]   [G]
 Schickt uns der Herr als Boten aus,
 [G]           [D]              [G]
 Und seid Ihr treu und fromm geblieben,
