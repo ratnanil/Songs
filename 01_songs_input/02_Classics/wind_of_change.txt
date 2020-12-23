@@ -74,5 +74,6 @@ What my guitar wants to say
 {end_of_bridge}
 
 {chorus}
+
 {comment: play outro, same as intro}
 
