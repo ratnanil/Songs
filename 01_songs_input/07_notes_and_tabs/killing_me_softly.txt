@@ -1,6 +1,5 @@
 ---
 title: Killing me softly
 pdf: notes_and_tabs/Killing Me Softly.pdf
-
 ---
 
