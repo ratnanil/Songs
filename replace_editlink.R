@@ -13,12 +13,7 @@ songbookdownyaml <- read_yaml("_songbookdown.yml")
 edit <- bookdownyaml$edit
 output_dir <- bookdownyaml$output_dir
 
-
-
 if(!is.null(edit)){
-  
-
-  
   edit2 <- str_remove(edit, "%s")
   
   list.files(output_dir,".html",full.names = TRUE)
