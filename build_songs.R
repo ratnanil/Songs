@@ -57,42 +57,18 @@ chordpro_meta <- function(string,metatag){
 }
 
 
-
-
-
-chordpro_meta_all <- function(string, remove = FALSE){
-  chordpro_tags <- c("title", "subtitle", "artist", "composer", "lyricist", "copyright", "album", "year", "key", "time", "tempo", "duration", "capo")  
-  if(!remove){
-    out2 <- map(chordpro_tags, ~chordpro_meta(string,.x))
-    names(out2) <- chordpro_tags
-    out2
-  } else{
-    remove <- str_detect(string,paste0("(",paste0("\\{",chordpro_tags,":",collapse = "|"),")"))
-    string[!remove]
-  }
-}
-
-chordpro_environment <- function(string,environment_name){
-  start_bool <- str_detect(string,paste0("\\{start_of_",environment_name))
-  end_bool <- str_detect(string,paste0("\\{end_of_",environment_name))
-  c(which(start_bool),which(end_bool))
-}
-
-chordpro_environment_all <- function(string){
-  envs <- c("chorus","verse","tab","grid")
-  out2 <- map(envs, ~chordpro_environment(string,.x))
-  names(out2) <- envs
-  out2
-}
-
 ################################################################################
 ## Songs to RMarkdown ##########################################################
 ################################################################################
 
+
+## Functions ###################################################################
+
+
 # Gets the position of the yaml inline header by searching for the first 
 # two occurences of "---"
 yaml_headerpos <- function(input){
-  which(str_detect(input, "---"))[1:2]
+  which(str_detect(input, "---+"))[1:2]
 }
 
 # reads the inline / header yaml
@@ -120,6 +96,14 @@ trim_lines <- function(char_vec, compare = ""){
   trailing <- rev(cumsum(rev(char_vec) != compare)) == 0
   char_vec[!(leading | trailing)]
 }
+
+mypad <- function(input, by){
+  paste0(str_pad(input,by,pad = "0"),"_")
+}
+
+
+## Loop ########################################################################
+
 
 songbookdownyaml <- read_yaml("_songbookdown.yml")
 bookdownyaml <- read_yaml("_bookdown.yml")
@@ -149,7 +133,7 @@ for (dir_i in seq_along(subfolders)){
   dir <- names(subfolders)[dir_i]
   
   rmd_file_nr <- rmd_file_nr+1
-  rmd_file_nr_chr <- paste0(str_pad(rmd_file_nr,npad,pad = "0"),"_")
+  rmd_file_nr_chr <- mypad(rmd_file_nr, npad)
   
   
   fileConn<-file(paste0(rmd_subdir,"/",rmd_file_nr_chr, dir,".Rmd"))
@@ -176,7 +160,7 @@ for (dir_i in seq_along(subfolders)){
     song_rl <- song %>%
       readLines(warn = FALSE)
     
-    meta_data_directives <- read_yamlheader(song_rl,FALSE)
+    meta_data_directives <- map(read_yamlheader(song_rl,FALSE),as.character)
     
     start_stop <- yaml_headerpos(song_rl)
     song_rl <- song_rl[-(start_stop[1]:start_stop[2])]
@@ -232,7 +216,7 @@ for (dir_i in seq_along(subfolders)){
     }
     
     rmd_file_nr <- rmd_file_nr+1
-    rmd_file_nr_chr <- paste0(str_pad(rmd_file_nr,npad,pad = "0"),"_")
+    rmd_file_nr_chr <- mypad(rmd_file_nr,npad)
     
     song_bn <- basename(song)
     
@@ -242,7 +226,7 @@ for (dir_i in seq_along(subfolders)){
     writeLines(song_rl,fileConn)
     close(fileConn)
     
-    song_meta_data <- map(meta_data_directives,as.character)
+    song_meta_data <- meta_data_directives
     song_meta_data["label"] <- song_tag
     song_meta_data["source"] <- song
     song_meta_data["rmd_file"] <- rmd_file_name
@@ -262,7 +246,7 @@ songs_meta_data_df <- map_dfr(songs_meta_data,~as.data.frame(.x))
 write.csv(songs_meta_data_df, file.path(rmd_subdir,"meta_data.csv"))
 
 rmd_file_nr <- rmd_file_nr+1
-rmd_file_nr_chr <- paste0(str_pad(rmd_file_nr,npad,pad = "0"),"_")
+rmd_file_nr_chr <- mypad(rmd_file_nr,npad)
 
 glossary1_html <- songs_meta_data_df %>%
   arrange(title) %>%
