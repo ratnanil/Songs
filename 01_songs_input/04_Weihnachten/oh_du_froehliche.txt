@@ -1,6 +1,7 @@
 ---
 title: Oh Du Fröhliche
 source: https://tabs.ultimate-guitar.com/tab/3454490
+capo: 3
 
 ---
 
