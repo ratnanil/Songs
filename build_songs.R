@@ -89,29 +89,6 @@ chordpro_environment_all <- function(string){
 ## Songs to RMarkdown ##########################################################
 ################################################################################
 
-# Takes a vector of characters strings and a directives tags and returns a named 
-# list of directive-values as well as a vector of indices of positions where these
-# where detected.
-
-match_directives <- function(lines,
-                             tags = c("title", "subtitle", "artist", "composer", "lyricist", "copyright", "album", "year", "key", "time", "tempo", "duration", "capo", "meta","source","pdf","image"),
-                             include_indices = TRUE
-                             ){
-  require(stringr)
-  require(purrr)
-  mat <- str_match(lines, paste0("\\{(",paste(tags,collapse = "|"),"):\\s(.+)\\}"))
-  rows <- !is.na(mat[,1])
-  
-  mat <- mat[rows,,drop=FALSE]
-  
-  lis <- map(mat[,3],~.x) %>%
-    magrittr::set_names(mat[,2])
-  
-  if(include_indices) lis[["row_indices"]] <- which(rows)
-  
-  lis
-}
-
 # Gets the position of the yaml inline header by searching for the first 
 # two occurences of "---"
 yaml_headerpos <- function(input){
@@ -233,61 +210,21 @@ for (dir_i in seq_along(subfolders)){
       unlist() %>%
       set_names(NULL) -> song_rl
     
-    # start_and_ends <- c("chorus","verse","bridge","tab","grid")
-    
-    
-    # start_end_res <- str_match(song_rl,paste0("\\{(start|end)_of_(",paste(start_and_ends,collapse = "|"),"):?\\s?(.+)?\\}"))
-    # 
-    # start_end_idx <- list(start = which(start_end_res[,2] == "start"),
-    #                       end = which(start_end_res[,2] == "end"))
-    # 
-    # 
-    # 
-    # if(length(start_end_idx$start)>0){
-    #   pmap(start_end_idx, function(start,end){
-    #     song_rl[start:end] <<- paste0("  ",song_rl[start:end])
-    #     song_rl
-    #   })
-      
-      # start_labels <-  ifelse(start_end_res[,2] == "start",
-                              # str_to_title(paste0(str_replace(start_end_res[,3],"grid","chords"), ifelse(!is.na(F),paste0(" (",start_end_res[,4],")"),""))),NA)
-      
-      # song_rl[start_end_idx$start] <- str_to_title(paste0(
-      #   str_replace(start_end_res[start_end_idx$start,3],"grid","chords"),
-      #   ifelse(!is.na(start_end_res[start_end_idx$start,4]),
-      #          paste0(" (",start_end_res[start_end_idx$start,4],")"),
-      #          ""
-      #   ),
-      #   ":"
-      # )) 
-      
-      # song_rl <- song_rl[-start_end_idx$end]
-    # }
-    
-    
     song_tag <- paste0("#song", song_i)
 
     song_header <- create_songtitle(meta_data_directives$title,song_tag,meta_data_directives$artist)
-    
-    # pdf_chunk <- if ("pdf" %in% names(meta_data_directives)) {
-    #   
-    #   pdf_path <- file.path(output_dir,meta_data_directives$pdf)
-    #   c("```{r, eval = TRUE,results='asis'}",paste0("cat('<embed src=\"",meta_data_directives$pdf,"\" width=\"100%\" height=\"800\" type=\"application/pdf\">')"), "```")
-    # } else{""}
-    
-    
+  
     song_rl <- c(song_header,
                  "",
                  song_rl
                  )
     
-    
-    
+  
     meta_data_directives_other <- meta_data_directives[!names(meta_data_directives) %in% c("title","artist","pdf","image")]
     
     if(length(meta_data_directives_other)>0){
       meta_pander <- meta_data_directives_other %>%
-        imap_dfr(~data.frame(key = .y,val = .x)) %>%
+        imap_dfr(~data.frame(key = .y,val = as.character(.x))) %>%
         knitr::kable(col.names = c("",""),format = "pandoc") 
       
       
@@ -305,7 +242,7 @@ for (dir_i in seq_along(subfolders)){
     writeLines(song_rl,fileConn)
     close(fileConn)
     
-    song_meta_data <- meta_data_directives
+    song_meta_data <- map(meta_data_directives,as.character)
     song_meta_data["label"] <- song_tag
     song_meta_data["source"] <- song
     song_meta_data["rmd_file"] <- rmd_file_name
