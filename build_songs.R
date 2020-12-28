@@ -13,6 +13,19 @@ library(stringr)
 library(magrittr)
 library(knitr)
 library(yaml)
+library(glue)
+
+library(diffr)
+
+diffr_lines <- function(left,right){
+  require(diffr)
+  file1 = tempfile()
+  writeLines(left, con = file1)
+  file2 = tempfile()
+  writeLines(right, con = file2)
+  diffr(file1, file2, before = "left", after = "right")
+}
+
 
 ################################################################################
 ## Add chords to songs #########################################################
@@ -102,6 +115,32 @@ mypad <- function(input, by){
 }
 
 
+create_glossary <- function(df, sortcol, output_type){
+  df <- df[order(df[,sortcol]),]
+  if(output_type == "html"){
+    df <- transmute(df, Title = glue::glue("[{title}]({label})"), Artist = artist)
+    kableExtra::kable(df, format = "html",escape = FALSE)
+  } else if (output_type == "latex") {
+    df <- transmute(df, Title = title, Artist = artist, Page = glue::glue("\\pageref{{{str_remove(label,'#')}}}"))
+    kable(df, format = "latex",escape = FALSE,align = c("l","l","r"),longtable = TRUE,booktabs  = TRUE)
+  }
+}
+
+glossary_chunk <- function(output_type,glossary){
+  c(
+    "",
+    glue::glue("```{{asis, echo = (output_type == '{output_type}')}}"),
+    glossary,
+    "```",
+    ""
+  )
+}
+
+glossary_chunk_full <- function(df, sortcol, output_type){
+  glossary <- create_glossary(df, sortcol, output_type)
+  glossary_chunk(output_type,glossary)
+}
+
 ## Loop ########################################################################
 
 
@@ -119,8 +158,7 @@ if(!dir.exists(rmd_subdir)){dir.create(rmd_subdir)}
 for (file in list.files(rmd_subdir,full.names = TRUE)){file.remove(file)}
 
 
-npad <- ceiling(log10(length(list.files(inputdir,recursive = TRUE))))
-
+npad <- ceiling(log10(length(list.files(inputdir,recursive = TRUE))+1))
 
 rmd_file_nr = 0
 footer_i = 0
@@ -133,15 +171,9 @@ for (dir_i in seq_along(subfolders)){
   dir <- names(subfolders)[dir_i]
   
   rmd_file_nr <- rmd_file_nr+1
-  rmd_file_nr_chr <- mypad(rmd_file_nr, npad)
   
-  
-  fileConn<-file(paste0(rmd_subdir,"/",rmd_file_nr_chr, dir,".Rmd"))
-  
-  paste("#",meta$title) %>%
-    writeLines(fileConn)
-  
-  close.connection(fileConn)
+  writeLines(paste("#",meta$title),
+             file.path(rmd_subdir,glue::glue("{mypad(rmd_file_nr, npad)}{dir}.Rmd")))
   
   songs <- list.files(file.path(inputdir,dir), pattern = ".txt",full.names = TRUE)
   
@@ -216,16 +248,13 @@ for (dir_i in seq_along(subfolders)){
     }
     
     rmd_file_nr <- rmd_file_nr+1
-    rmd_file_nr_chr <- mypad(rmd_file_nr,npad)
     
     song_bn <- basename(song)
     
-    rmd_file_name <- file.path(rmd_subdir,paste0(rmd_file_nr_chr, str_replace(song_bn,".txt",".Rmd")))
-    fileConn<-file(rmd_file_name)
+    rmd_file_name <- file.path(rmd_subdir,paste0(mypad(rmd_file_nr,npad), str_replace(song_bn,".txt",".Rmd")))
     
-    writeLines(song_rl,fileConn)
-    close(fileConn)
-    
+    writeLines(song_rl,rmd_file_name)
+
     song_meta_data <- meta_data_directives
     song_meta_data["label"] <- song_tag
     song_meta_data["source"] <- song
@@ -233,12 +262,7 @@ for (dir_i in seq_along(subfolders)){
     
     songs_meta_data[[song_i]] <- song_meta_data
   }
-  
-  
-  
 }
-
-
 
 
 songs_meta_data_df <- map_dfr(songs_meta_data,~as.data.frame(.x))
@@ -246,65 +270,18 @@ songs_meta_data_df <- map_dfr(songs_meta_data,~as.data.frame(.x))
 write.csv(songs_meta_data_df, file.path(rmd_subdir,"meta_data.csv"))
 
 rmd_file_nr <- rmd_file_nr+1
-rmd_file_nr_chr <- mypad(rmd_file_nr,npad)
-
-glossary1_html <- songs_meta_data_df %>%
-  arrange(title) %>%
-  transmute(Title = paste0("[",title,"](",label,")"),Artist = artist) %>% 
-  kable(format = "html", escape = FALSE)
-
-
-glossary1_pdf <- songs_meta_data_df %>%
-  arrange(title) %>%
-  transmute(Title = title, Artist = artist, Page = paste0("\\pageref{",str_remove(label,"#"),"}")) %>%
-  kable(format = "latex",escape = FALSE,align = c("l","l","r"),longtable = TRUE,booktabs  = TRUE)
-
-glossary2_html <- songs_meta_data_df %>%
-  arrange(artist) %>%
-  filter(!is.na(artist)) %>%
-  transmute(Artist = artist, Title = paste0("[",title,"](",label,")")) %>% 
-  kable(format = "html", escape = FALSE)
-
-
-glossary2_pdf <- songs_meta_data_df %>%
-  arrange(artist) %>%
-  filter(!is.na(artist)) %>%
-  mutate(label = str_remove(label,"#")) %>%
-  transmute(Artist = artist, Title = paste0("\\hyperref[",label,"]{",title,"}"), Page = paste0("\\pageref{",label,"}")) %>%
-  kable(format = "latex",escape = FALSE,align = c("l","l","r"),longtable = TRUE,booktabs  = TRUE)
-# \hyperref[sec:intro]{Appendix~\ref*{sec:intro}}
 
 c("# Glossary",
+  "",
   "```{r, echo = FALSE}",
-  "library(knitr)",
   "output_type <- knitr::opts_knit$get('rmarkdown.pandoc.to')",
   "```",
   "",
   "## By Title",
-  "",
-  paste0("```{asis, echo = (output_type == 'html')}"),
-  glossary1_html,
-  "```",
-  "",
-  paste0("```{asis, echo = (output_type == 'latex')}"),
-  glossary1_pdf,
-  "```",
-  "",
+  glossary_chunk_full(songs_meta_data_df, "title", "html"),
+  glossary_chunk_full(songs_meta_data_df, "title", "latex"),
   "## By Artist",
-  "",
-  paste0("```{asis, echo = (output_type == 'html')}"),
-  glossary2_html,
-  "```",
-  "",
-  paste0("```{asis, echo = (output_type == 'latex')}"),
-  glossary2_pdf,
-  "```"
-  ) %>%
-  writeLines(paste0(rmd_subdir,"/",rmd_file_nr_chr,"glossary.Rmd"))
-
-
-
-
-
-
-
+  glossary_chunk_full(songs_meta_data_df, "artist", "html"),
+  glossary_chunk_full(songs_meta_data_df, "artist", "latex")
+) %>%
+  writeLines(paste0(rmd_subdir,"/",mypad(rmd_file_nr,npad),"glossary.Rmd"))
