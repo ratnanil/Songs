@@ -15,18 +15,6 @@ library(knitr)
 library(yaml)
 library(glue)
 
-library(diffr)
-
-diffr_lines <- function(left,right){
-  require(diffr)
-  file1 = tempfile()
-  writeLines(left, con = file1)
-  file2 = tempfile()
-  writeLines(right, con = file2)
-  diffr(file1, file2, before = "left", after = "right")
-}
-
-
 ################################################################################
 ## Add chords to songs #########################################################
 ################################################################################
