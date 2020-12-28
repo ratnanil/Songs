@@ -3,7 +3,7 @@
 
 This is a song book containing chords and lyrics of selected songs, generated using R, RMarkdown and Bookdown.
 
-# FAQ (for users)
+# FAQ for users
 
 ## How do I request new songs?
 
@@ -39,7 +39,7 @@ It's alright
 ...
 ```
 
-A `title` is requied, `artist` and `source` are recommended. Here is a list of typical metadata added to the header:
+You can add any metadata in this form, and this data will be displayed in a tabular fashion at the end of the song. Some keywords have a special meaning: E.g. a `title` is required and used to build the songs's header. `title` and `artist` are used in the glossary, and mentioning the `source` is recommened. Here's a list of keywords that are used in the chord-pro syntax:
 
 - `title:`
 - `subtitle:`
@@ -126,8 +126,8 @@ To merge branch `branch1` from remote `origin`:
 
 ```
 git diff ...origin/branch1 # to check the differences between the master and the branch
-git fetch origin branch1
-git checkout master # if you aren't on master branch yet
+git fetch origin branch1   # I don't know why this is necessary, it seems to work without
+git checkout master        # if you aren't on master branch yet
 git merge origin/branch1
 ```
 
