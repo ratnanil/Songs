@@ -19,10 +19,10 @@ if(!is.null(edit)){
   list.files(output_dir,".html",full.names = TRUE)
   
   songs_meta_data_df %>%
-    mutate(html_file = file.path(output_dir,str_replace(basename(rmd_file),"\\.Rmd","\\.html"))) %>%
-    select(html_file,rmd_file,source) %>%
+    mutate(html_file = file.path(output_dir,str_replace(basename(rmd_file_name),"\\.Rmd","\\.html"))) %>%
+    select(html_file,rmd_file_name,fullpath) %>%
     # slice(1) %->% c(html_file,rmd_file,source)
-    pmap(function(html_file,rmd_file,source){
+    pmap(function(html_file,rmd_file_name,fullpath){
       file_exists = file.exists(html_file)
       
       if(file_exists){
@@ -31,7 +31,7 @@ if(!is.null(edit)){
         html_rl <- html_file %>%
           readLines()
         
-        html_rl <- str_replace(html_rl, paste0(edit2,rmd_file), paste0(edit2,source))
+        html_rl <- str_replace(html_rl, paste0(edit2,rmd_file_name), paste0(edit2,fullpath))
         
         writeLines(html_rl,html_file)
       } else{
