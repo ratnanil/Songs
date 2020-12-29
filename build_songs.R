@@ -274,7 +274,7 @@ allfiles$lines <- map2(allfiles$lines,metadata_other_dfr2, function(song_rl,any_
   if(any_nonempty[[1]]){
     meta_pander <- any_nonempty[[2]] %>%
       imap_dfr(~data.frame(key = .y,val = .x)) %>%
-      filter(!is.na(.x))
+      filter(!is.na(.x)) %>%
       knitr::kable(col.names = c("",""),format = "pandoc")
     c(song_rl,"",meta_pander)
   } else{
