@@ -2,17 +2,9 @@
 
 library(dplyr)
 library(purrr)
-library(ggplot2)
-library(stringr)
-library(gridExtra)
-library(cowplot)
 library(yaml)
-library(tabr)
-library(yaml)
-library(stringr)
 library(magrittr)
 library(knitr)
-library(yaml)
 library(glue)
 
 
