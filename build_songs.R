@@ -6,7 +6,8 @@ library(yaml)
 library(magrittr)
 library(knitr)
 library(glue)
-
+library(stringr)
+library(tidyr)
 
 
 
@@ -61,14 +62,23 @@ mypad <- function(input, by){
 }
 
 
-create_glossary <- function(df, sortcol, output_type){
-  df <- df[order(df[,sortcol]),]
+create_glossary <- function(df, output_type){
   if(output_type == "html"){
-    df <- transmute(df, Title = glue::glue("[{title}]({song_tag})"), Artist = artist)
-    kableExtra::kable(df, format = "html",escape = FALSE)
+    df %>%
+      transmute(value = glue::glue("[{value}]({song_tag})")) %>%
+      kableExtra::kable(format = "html",escape = FALSE,col.names = c(""))
   } else if (output_type == "latex") {
-    df <- transmute(df, Title = title, Artist = artist, Page = glue::glue("\\pageref{{{str_remove(song_tag,'#')}}}"))
-    kable(df, format = "latex",escape = FALSE,align = c("l","l","r"),longtable = TRUE,booktabs  = TRUE)
+    df %>%
+      mutate(
+        value = str_replace(value,"\\*(.+)\\*","\\\\emph\\{\\1\\}"),
+        song_tag = str_remove(song_tag,"#"),
+      ) %>%
+      pmap_chr(function(song_tag,value){
+        
+        pagenumber <- paste0("\\pageref{",song_tag,"}")
+        hypervalue <- paste0("\\hyperref[",song_tag,"]{",value,"\\dotfill}")
+        paste0(hypervalue,pagenumber,"\n")
+      })
   }
 }
 
@@ -82,8 +92,8 @@ glossary_chunk <- function(output_type,glossary){
   )
 }
 
-glossary_chunk_full <- function(df, sortcol, output_type){
-  glossary <- create_glossary(df, sortcol, output_type)
+glossary_chunk_full <- function(df, output_type){
+  glossary <- create_glossary(df, output_type)
   glossary_chunk(output_type,glossary)
 }
 
@@ -101,7 +111,9 @@ inputdir <- songbookdownyaml$inputdir
 subfolders <- songbookdownyaml$subfolders
 filetypes <- ifelse(is.null(songbookdownyaml$filetypes),"txt",songbookdownyaml$filetypes)
 
-## Loop ########################################################################
+
+## Create Folders ##############################################################
+
 
 if(!dir.exists(rmd_subdir)){dir.create(rmd_subdir)}
 
@@ -113,16 +125,19 @@ subfolders_dfr <- imap_dfr(subfolders,function(chapter,folder){
 }) %>%
   mutate(i = row_number())
 
+
+## Loop ########################################################################
+
+
 allfiles <- pmap_dfr(subfolders_dfr, function(chapter,folder,i){
   fullpath <- file.path(inputdir,folder) %>%
     list.files(pattern = paste(filetypes,collapse = "|"),full.names = TRUE)
-  
   
   mylines <- map(fullpath, ~readLines(.x,warn = FALSE))
   
   tibble(fullpath = fullpath, 
          folder = folder, chapter = chapter, chapter_i = i, lines = mylines) 
-  }) 
+}) 
 
 
 metadata_dfr <- map_dfr(allfiles$lines, function(x){
@@ -132,12 +147,9 @@ metadata_dfr <- map_dfr(allfiles$lines, function(x){
     mutate_all(~as.character(.))
 })
 
-# Stop if any of the metadatatags are in allfiles 
-stopifnot(!any(colnames(metadata_dfr) %in% colnames(allfiles)))
-
 allfiles <- cbind(allfiles,metadata_dfr)
 
-npad1 <- ceiling(log10(length(subfolders)+1)) # +1 for the glossary
+npad1 <- (length(subfolders)+1) %>% log10() %>% ceiling()
 npad2 <- allfiles %>% split(.$folder) %>% map_int(nrow) %>% max() %>% log10() %>% ceiling()
 
 
@@ -148,47 +160,42 @@ allfiles <- allfiles %>%
   mutate(
     i_file = row_number(),
     rmd_file_prefix = paste0(mypad(chapter_i,npad1),mypad(i_file,npad2))
-    ) %>%
+  ) %>%
   select(-c(i_file,chapter_i,sortval))
 
 
 allfiles$lines <- map(allfiles$lines,function(song_rl){
   remove_yamlheader(song_rl,FALSE)
 })
-
-# Make sure that the first verse / chorus ect starts with an empty line
+# Make sure that the first verse / chorus etc starts with an empty line
 # and the last ends with an empty line
 allfiles$lines <- map(allfiles$lines,function(song_rl){
   c("",trim_lines(song_rl, ""))
 })
 
-# wraps each verse/chorus etc with a chunk. todo: simplify this
+# wraps each verse/chorus etc with a chunk. 
 allfiles$lines <- map(allfiles$lines,function(song_rl){
-split(song_rl, cumsum(song_rl == "")) %>%
-  map(function(song_part){
-    song_part <- trim_lines(song_part)
-    part_class <- str_match(song_part[1],"\\{start_of_(\\w+)\\}")[,2]
-    out <- if(all(song_part ==  "{bridge}")){
-      "play bridge"
-    } else if(all(song_part ==  "{chorus}")){
-      "play chorus"
-    } else if(is.na(part_class)){
-      c(
-        "```",
-        song_part,
-        "```"
-      )
-    } else{
-      c(
-        paste0("```{class='",part_class,"'}"),
-        song_part[2:(length(song_part)-1)],
-        "```"
-      )
-    }
-    c(out,"")
-  }) %>%
-  unlist() %>%
-  set_names(NULL)
+  split(song_rl, cumsum(song_rl == "")) %>%
+    map(function(song_part){
+      print(song_part)
+      song_part <- trim_lines(song_part)
+      directives_regex <- "\\{(start|end)_of_(\\w+)\\}" # todo: implement {start_of_verse: verse 1}
+      directivepos <- str_detect(song_part,directives_regex)
+      part_class <- unique(str_match(song_part[directivepos],directives_regex)[,3])
+      part_class <- ifelse(is.na(part_class),"",paste0(", class = '",part_class,"'"))
+      part_class = "" # todo: remove this line and maby test engines?
+      song_part <- song_part[!directivepos]
+      if(length(song_part)>0){
+        c(
+          paste0("```{",part_class,"}"),
+          song_part,
+          "```",
+          ""
+        )
+      }
+    }) %>%
+    unlist() %>%
+    set_names(NULL)
 })
 
 
@@ -198,6 +205,9 @@ allfiles <- allfiles %>%
   mutate(
     song_i = row_number(),
     song_tag = paste0("#song",song_i),
+  ) %>%
+  rowwise() %>%
+  mutate(
     song_header = create_songtitle(title,song_tag,artist)
   )
 
@@ -212,7 +222,6 @@ allfiles$lines <- map2(allfiles$lines,allfiles$song_header,function(song_rl,song
 
 
 metadata_other_dfr <- allfiles[,colnames(metadata_dfr)[!colnames(metadata_dfr) %in% c("title","artist")]]
-# meta_data_directives_other <- meta_data_directives[!names(meta_data_directives) %in% c("title","artist","pdf","image")]
 
 
 # This is quite an ugly hack, at least give some better names
@@ -256,12 +265,27 @@ subfolders_dfr %>%
   mutate(filename = paste0(mypad(i,npad1),mypad(0,npad2),folder,".Rmd")) %>%
   select(chapter,filename) %>%
   pmap(function(chapter,filename){
-  writeLines(paste("#",chapter),
-             file.path(rmd_subdir,filename))
-})
+    writeLines(paste("#",chapter),
+               file.path(rmd_subdir,filename))
+  })
 
 
 glossary_filename <- paste0(mypad(max(subfolders_dfr$i) + 1,npad1),mypad(0,npad2),"glossary.Rmd")
+
+
+glossary_keywords <- c("title", "subtitle", "artist", "composer", "lyricist", "album")
+glossary_keywords <- glossary_keywords[glossary_keywords %in% colnames(allfiles)]
+glossary_df <- allfiles[,c(glossary_keywords,"song_tag")] %>%
+  pivot_longer(-c(song_tag,title)) %>%
+  filter(!is.na(value)) %>%
+  mutate(
+    title = paste0("*",title,"*"),
+    value = paste0(value, " - ",title)
+    ) %>%
+  select(-name) %>%
+  pivot_longer(c(title,value)) %>%
+  select(-name) %>%
+  arrange(str_remove(value,"\\*"))
 
 c("# Glossary",
   "",
@@ -269,11 +293,7 @@ c("# Glossary",
   "output_type <- knitr::opts_knit$get('rmarkdown.pandoc.to')",
   "```",
   "",
-  "## By Title",
-  glossary_chunk_full(allfiles, "title", "html"),
-  glossary_chunk_full(allfiles, "title", "latex"),
-  "## By Artist",
-  glossary_chunk_full(allfiles, "artist", "html"),
-  glossary_chunk_full(allfiles, "artist", "latex")
+  glossary_chunk_full(glossary_df, "html"),
+  glossary_chunk_full(glossary_df, "latex")
 ) %>%
   writeLines(file.path(rmd_subdir,glossary_filename))
