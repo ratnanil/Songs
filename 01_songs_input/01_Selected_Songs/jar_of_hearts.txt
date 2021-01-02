@@ -1,6 +1,7 @@
 ---
 title: Jar of Hearts
 artist: Christina Perri
+album: lovestrong
 
 ---
 
