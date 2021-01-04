@@ -5,6 +5,7 @@ Suggests:
   bookdown,
   tinytex,
   pander,
-  remotes
+  remotes,
+  songbookdown
 Remotes:
   ratnanil/songbookdown
