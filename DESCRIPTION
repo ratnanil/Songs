@@ -6,6 +6,4 @@ Suggests:
   tinytex,
   pander,
   remotes,
-  songbookdown
 Remotes:
-  ratnanil/songbookdown
