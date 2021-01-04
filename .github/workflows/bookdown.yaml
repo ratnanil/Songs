@@ -43,7 +43,7 @@ jobs:
           R -e 'tinytex::install_tinytex()'
 
       - name: Build songfiles
-        run: Rscript build_songs.R
+        run: R -e 'songbookdown::create_inputfiles()'
 
       - name: Build site (html)
         run: Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::gitbook")'
