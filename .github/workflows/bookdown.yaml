@@ -56,7 +56,7 @@ jobs:
         run: Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::pdf_book")'
         
       - name: Replace the edit Links
-        run: Rscript replace_editlink.R
+        run: R -e 'songbookdown::replace_edit_url()'
         
       # - name: Commit everything
       #   run: |
