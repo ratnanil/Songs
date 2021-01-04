@@ -40,10 +40,12 @@ jobs:
         run: |
           R -e 'install.packages("renv")'
           R -e 'renv::restore()'
+          R -e 'devtools::install_github("ratnanil/songbookdown")'
           R -e 'tinytex::install_tinytex()'
 
       - name: Build songfiles
-        run: R -e 'songbookdown::create_inputfiles()'
+        run: |
+          R -e 'songbookdown::create_inputfiles()'
 
       - name: Build site (html)
         run: Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::gitbook")'
