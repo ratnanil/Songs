@@ -10,6 +10,7 @@ imports:
   glue,
   stringr,
   tidyr,
-  tinytex
+  tinytex,
+  remotes
 Remotes:
   ratnanil/songbookdown

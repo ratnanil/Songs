@@ -42,6 +42,7 @@ jobs:
           R -e 'renv::restore()'
           R -e 'install.packages("tinytex")'
           R -e 'tinytex::install_tinytex()'
+          R -e 'remotes::install_github("ratnanil/songbookdown")'
 
       - name: Build songfiles
         run: |
