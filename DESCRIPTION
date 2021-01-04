@@ -9,6 +9,7 @@ imports:
   knitr,
   glue,
   stringr,
-  tidyr
+  tidyr,
+  tinytex
 Remotes:
   ratnanil/songbookdown
