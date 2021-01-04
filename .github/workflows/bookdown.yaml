@@ -1,10 +1,13 @@
+name: bookdown
+
+
 on:
   push:
     branches:
       - main
       - master
 
-name: bookdown
+  workflow_dispatch:
 
 jobs:
   build:
