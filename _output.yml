@@ -16,5 +16,6 @@ bookdown::pdf_book:
   geometry: margin=10mm
   documentclass: book
 bookdown::html_book:
+  toc: yes
   css: toc.css
 
