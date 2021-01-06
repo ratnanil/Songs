@@ -110,27 +110,4 @@ This feature is currently not active.
 The outputs are compiled in an R Sesseion, which is automated with a [github action](https://github.com/ratnanil/Songs/actions). Outputs (html and pdf) are recomplied at every push.
 
 
-# FAQ for Devs
-
-## How do I build the book locally?
-
-If you are a linux user, check the [github action workflow](./github/workflows/bookdown.yaml) for a full example. But basically, the following steps are necessary:
-
-1. get the necessary packages with `renv::restore()`
-2. install tinytex with `tinytex::install_tinytex()`
-3. build the book
-
-## How do I merge pull requests?
-
-
-To merge branch `branch1` from remote `origin`:
-
-```
-git diff ...origin/branch1 # to check the differences between the master and the branch
-git fetch origin branch1   # I don't know why this is necessary, it seems to work without
-git checkout master        # if you aren't on master branch yet
-git merge origin/branch1
-```
-
-
 
