@@ -71,7 +71,9 @@ jobs:
           netlify deploy --prod --dir docs
           
       - name: Build site (gitbook-html)
-        run: Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::html_book")'
+        run: | 
+          Rscript -e 'for (file in list.files("docs/",full.names = TRUE,recursive = TRUE)){file.remove(file)}'
+          Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::html_book")'
         
       - name: Deploy to Netlify (Example Page)
         # NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID added in the repo's secrets
