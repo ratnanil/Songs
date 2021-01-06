@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6c3457cf-c9c2-40c2-8b7f-87e36e897d5f/deploy-status)](https://app.netlify.com/sites/nils-songs/deploys)
 
 # About
 
