@@ -49,7 +49,7 @@ jobs:
         run: |
           R -e 'songbookdown::create_inputfiles()'
 
-      - name: Build site (html)
+      - name: Build site (gitbook-html)
         run: Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::gitbook")'
       
       - name: Build site (pdf)
@@ -57,23 +57,11 @@ jobs:
         
       - name: Replace the edit Links
         run: R -e 'songbookdown::replace_edit_url()'
-        
-      # - name: Commit everything
-      #   run: |
-      #     git config --local user.email "action@github.com"
-      #     git config --local user.name "GitHub Action"
-      #     git add -A
-      #     git commit -m "update PDF version of the book"
-      #     
-      # - name: Push changes
-      #   uses: ad-m/github-push-action@master
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install npm
         uses: actions/setup-node@v1
 
-      - name: Deploy to Netlify
+      - name: Deploy to Netlify (Main Page)
         # NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID added in the repo's secrets
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
@@ -81,3 +69,16 @@ jobs:
         run: |
           npm install netlify-cli -g
           netlify deploy --prod --dir docs
+          
+      - name: Build site (gitbook-html)
+        run: Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::html_book")'
+        
+      - name: Deploy to Netlify (Example Page)
+        # NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID added in the repo's secrets
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_2ID }}
+        run: |
+          netlify deploy --prod --dir docs
+          
+        
