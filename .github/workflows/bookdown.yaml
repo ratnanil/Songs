@@ -72,7 +72,7 @@ jobs:
           
       - name: Build site (gitbook-html)
         run: | 
-          Rscript -e 'for (file in list.files("docs/",full.names = TRUE,recursive = TRUE)){file.remove(file)}'
+          #Rscript -e 'for (file in list.files("docs/",full.names = TRUE,recursive = TRUE)){file.remove(file)}'
           Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::html_book")'
         
       - name: Deploy to Netlify (Example Page)
