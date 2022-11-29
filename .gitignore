@@ -1,6 +1,2 @@
-packrat/lib*/
-.Rproj.user
-.Rhistory
-02_songs_output/
-docs/
+_book/
 /.quarto/
