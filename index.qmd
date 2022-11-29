@@ -1,5 +1,3 @@
-# Songs {#title .unnumbered}
+# Welcome {#title .unnumbered}
 
-
-
-A collection of hand picked songs. This book is hosted as an online version on http://songs.ratnaweera.net/ and includes a pdf version (click on the download symbol). Edits and feedback can be made via the [github repo](https://github.com/ratnanil/songs). 
+A collection of hand picked songs. This book is hosted as an online version on <http://songs.ratnaweera.net/> and includes a pdf version (click on the download symbol). Edits and feedback can be made via the [github repo](https://github.com/ratnanil/songs). 

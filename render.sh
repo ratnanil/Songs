@@ -1,1 +1,0 @@
-quarto render -f markdown+hard_line_breaks
