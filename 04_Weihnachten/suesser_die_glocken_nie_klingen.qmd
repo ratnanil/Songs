@@ -5,9 +5,9 @@ time: 3/4
 
 ---
 
-{start_of_grid}
+:::{.grid}
 D G A7 D 
-{end_of_grid}
+:::
 
 
 [D]                  [A]

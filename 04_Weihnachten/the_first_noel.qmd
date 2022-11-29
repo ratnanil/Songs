@@ -21,12 +21,12 @@ a keeping their sheep
     [C]           [D]            [C][G] 
 On a cold winter's night that was so deep.
 
-{start_of_chorus}
+:::{.chorus}
  [G]  [D]  [C]  [G]
 Noel Noel Noel Noel
 [C]        [D]     [C] [G]
 Born is the King of Israel.
-{end_of_chorus}
+:::
  
     [G]    [D]  
 They looked up 

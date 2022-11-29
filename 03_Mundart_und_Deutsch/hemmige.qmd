@@ -5,10 +5,10 @@ capo: '1'
 time: 4/4
 
 ---
-{start_of_grid}
+:::{.grid}
 |Em______|Am______|D7______|G_______|
 |________|H7______|Em______|H7______|
-{end_of_grid}
+:::
 
 
 S'git Lüt, die würden alletwäge nie
@@ -39,7 +39,7 @@ Wil mir Hemmige hei
 {start_of_grid: Abschluss}
 |Em______|Am______|D7______|G_______|
 |________|H7______|Em__H7__|Em______| 
-{end_of_grid}
+:::
 
 Und we me gseht, was hütt dr Mönschheit droht
 So gseht me würklech schwarz, nid nume rot

@@ -6,10 +6,10 @@ time: 4/8
 ---
 
 
-{start_of_grid}
+:::{.grid}
 |C_______|________|F______|________|
 |G_______|________|C_______|________|
-{end_of_grid}
+:::
 
 Leider geit ir Nacht my wecker
 Immer füf Minute vor

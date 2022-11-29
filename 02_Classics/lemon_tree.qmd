@@ -7,10 +7,10 @@ capo: '1'
 
 ---
 
-{start_of_grid}
+:::{.grid}
 Em__|Bm__|Em__|Bm__|
 Am__|Bm__|Em__|Bm_E|
-{end_of_grid}
+:::
 
 [Em]             [Bm]
 I'm Sitting Here In[A]Boring Room
@@ -44,10 +44,10 @@ I'm Turning My Head Up And Down
 And All That I Can See Is Just another Lemon-tree
 
 
-{start_of_bridge}
+:::{.bridge}
  Em Bm Em Bm Am Bm Em 
  dadada....
-{end_of_bridge}
+:::
 
 
 I'm Sitting Here I Miss The Power

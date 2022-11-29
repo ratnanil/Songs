@@ -11,11 +11,11 @@ Det äne am Bergli, det schtat e wiessi Geiss.
 I ha si welle mälche, da haut sie mer eis.
 
 
-{start_of_chorus}
+:::{.chorus}
 
 Hole duli, duli, duli, hole duli, duli, duli, duli
 hole duli, duli, duli, hole duli, duli, duli, duli
-{end_of_chorus}
+:::
 
 Sie hät mer eis g’haue, das tuet mer so weh.
 Jetzt mälch i miner Läbtig, kei wiessi Geiss meh’.

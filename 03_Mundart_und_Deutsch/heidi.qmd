@@ -5,11 +5,11 @@ time: 4/8
 
 ---
 
-{start_of_grid}
+:::{.grid}
 |Am______|Dm__Am__|____F___|____Am__|
 |________|Dm__Am__|E___Am__|____E7__|
 |C_______|G7______|C_______|G7__C___|
-{end_of_grid}
+:::
 
 Är wohnt a dr glyche Gass
 Und i bi mit dir i d'Klass
@@ -53,10 +53,10 @@ Mit ihm am Sunntig nach em Spil
 Nei, di Entscheidig, Heidi
 Nei dy Bscheid - i bi enttüüscht
 
-{start_of_grid}
+:::{.grid}
 |Am______|Dm__Am__|____F___|____Am__|
 |________|Dm__Am__|E___Am__|E___Am__|
-{end_of_grid}
+:::
 
 
 Dadrus han i glehrt, dass hütt

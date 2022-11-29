@@ -14,7 +14,7 @@ In his eyes you see no pride, and held loosely by his side
 [F]        [C]             [G7]        [C]
 yesterday's papers, telling yesterday's news
 
-{start_of_chorus}
+:::{.chorus}
      [F]         [Em]            [C]  [G7]   [Am]
     So how can you tell me, you're lo - ne - ly
 [D7]         [D7]                   [G]    [G7]
@@ -23,7 +23,7 @@ yesterday's papers, telling yesterday's news
 Let me take you by the hand, and lead you through the streets of London
 [F]            [C]           [G7]                 [C]    [C]
   I'll show you something, to make you change your mind
-{end_of_chorus}
+:::
 
 Have you seen the old gal, who walks the streets of London
 dirt in her hair, and her clothes in rags?

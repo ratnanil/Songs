@@ -63,17 +63,17 @@ Add the rest of the song in plain text. It will be rendered into a monospaced fo
 
 You add further structure to the song in a [chordpro](https://www.chordpro.org) type manner. From the chord pro syntax, the following [environment directives](https://www.chordpro.org/chordpro/directives-env/) are implemented<sup>1</sup>
 
-- [x] `{start_of_chorus}`
-- [x] `{end_of_chorus}`
+- [x] `:::{.chorus}`
+- [x] `:::`
 - [ ] ~`{chorus}`~
-- [x] `{start_of_verse}`
-- [x] `{end_of_verse}`
-- [x] `{start_of_bridge}`
-- [x] `{end_of_bridge}`
-- [x] `{start_of_tab}`
-- [x] `{end_of_tab}`
-- [x] `{start_of_grid}`
-- [x] `{end_of_grid}`
+- [x] `:::{.verse}`
+- [x] `:::`
+- [x] `:::{.bridge}`
+- [x] `:::`
+- [x] `:::{.tab}`
+- [x] `:::`
+- [x] `:::{.grid}`
+- [x] `:::`
 
 
 As in the chordpro specification, all environment directives may include an optional label to identify the section. For example: `{start_of_verse: Verse 1}` The label should not include special characters and must be seperated from the `:` with a space.

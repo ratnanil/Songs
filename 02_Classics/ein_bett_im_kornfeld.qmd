@@ -18,7 +18,7 @@ Und sie sagte: "Ich bedaure dich sehr."
           [A]                                         [D]
 Doch ich lachte und sprach: "Ich brauch keine weichen Daunen"
 
-{start_of_chorus}
+:::{.chorus}
              [G]
 Ein Bett im Kornfeld,
 Das ist immer frei, denn es ist
@@ -37,7 +37,7 @@ Und die Sterne leuchten mir sowieso
 Ein Bett im Kornfeld mach ich mir 
                [D]
 irgendwo ganz alleine.
-{end_of_chorus}
+:::
 
 [D]
 Etwas später lag ihr Fahrrad im 

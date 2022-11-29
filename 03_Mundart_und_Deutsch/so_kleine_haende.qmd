@@ -4,12 +4,12 @@ artist: Bettina Wegner
 
 ---
 
-{start_of_grid}
+:::{.grid}
 Am______|Dm______|E________|Am______|
 Am______|Dm______|E________|Am______|
 C_______|G_______|_________|Am______|
 C_______|G_______|_________|Am______|
-{end_of_grid}
+:::
 
 Sind so kleine Hände, winz’ge Finger dran.
 Darf man nie drauf schlagen, die zerbrechen dann.

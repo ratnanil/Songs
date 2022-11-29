@@ -7,7 +7,7 @@ year: '1964'
 
 {start_of_grid: INTRO}
 Am, C, D, F, Am, E, Am , E 
-{end_of_grid}
+:::
 
      [Am] [C]      [D]         [F]
 There is a house in New Orleans
@@ -23,9 +23,9 @@ She sewed my new blue jeans.
 My father was a gamblin' man
 Down in New Orleans.
 
-{start_of_grid}
+:::{.grid}
  C, D, F, Am, E, Am , E 
-{end_of_grid}
+:::
 
 Now, the only thing a gambler needs
 Is a suitcase and a trunk

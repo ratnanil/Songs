@@ -14,13 +14,13 @@ Mues immer de blogeti Hansli si,
 so lang as i läbe und bi.
 Refrain
 
-{start_of_chorus}
+:::{.chorus}
 Halli, hallo, halli, hallo,
 bi üs gohts immer je länger, je schlimmer.
 Halli, hallo, halli, hallo,
 bis üs gohts immer eso!
 Weitere Strophen
-{end_of_chorus}
+:::
 
 Mi Frau isch siebezähni gsi,
 und i prezis so alt wie si,

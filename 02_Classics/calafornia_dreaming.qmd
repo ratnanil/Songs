@@ -18,12 +18,12 @@ I'd be safe and warm (I'd be safe and warm)
     [G]    [Am]               [E]
 If I was in L.A.  (if I was in L.A.)
 
-{start_of_chorus}
+:::{.chorus}
 [E]          [Am]     [G]       [F]
 California dreamin  (California dreamin')
    [G]    [Am]     [E]
 On such a winter's day
-{end_of_chorus}
+:::
 
 
 [E]            [Am]

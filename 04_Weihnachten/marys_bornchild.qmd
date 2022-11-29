@@ -8,7 +8,7 @@ time: 6/6
 
 G_____|C__Am_|D____|G_____|
 G_____|C__Am_|D____|G_____|
-{end_of_grid}
+:::
 
 Long time ago in Bethlehem, so the Holy Bible says,  
 Mary's boychild, Jesus Christ, was born on Christmas Day. 
@@ -17,12 +17,12 @@ Mary's boychild, Jesus Christ, was born on Christmas Day.
 {start_of_grid: Chorus}
 G__C__|D__G___|Em_Am_|D____|
 G_____|C__Am__|G__D__|G____|
-{end_of_grid}
+:::
 
-{start_of_chorus}
+:::{.chorus}
 Hark now! Hear the Angels sing, a King was born today, 
 and man will live forever more because of Christmas Day. 
-{end_of_chorus}  
+:::  
 
 While shepherds watch their flocks by night, 
 they see a bright new shining star. 

@@ -18,7 +18,7 @@ I learned to live half a life
 [Em]        [D]           [Asus4][A]
 And now you want me one more time
 
-{start_of_chorus}
+:::{.chorus}
 [D]                  [A]
 Who do you think you are?
                        [Bm]
@@ -36,7 +36,7 @@ Don't come back for me
 Gm                   [D]
 Who do you think you are?
 
-{end_of_chorus}
+:::
 
 [Bm]                      [D]
 I hear you're asking all around

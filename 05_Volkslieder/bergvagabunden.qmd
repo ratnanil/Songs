@@ -13,7 +13,7 @@ brennt eine Sehnsucht in uns'rem Herzen,
 die lässt uns nimmermehr in Ruh.
 
 
-{start_of_chorus}
+:::{.chorus}
 
 [A]             [E]
 Herrliche Berge, sonnige Höhen
@@ -24,7 +24,7 @@ Herrliche Berge, sonnige Höhen
 [B7]               [E]
 Bergvagabunden sind wir.
 
-{end_of_chorus}
+:::
 
 
 [E]      

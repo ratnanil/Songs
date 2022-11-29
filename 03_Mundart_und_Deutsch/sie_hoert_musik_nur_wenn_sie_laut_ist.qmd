@@ -19,7 +19,7 @@ Sie weiß nicht, dass der Schnee lautlos auf die Erde fällt,
 merkt nichts vom Klopfen an der Wand.
 
 
-{start_of_chorus}
+:::{.chorus}
 
        [Eb]                [Bb]
 Sie mag Musik nur, wenn sie laut ist,
@@ -36,7 +36,7 @@ wenn der Boden unter den Füßen bebt,
         [Gm]                [F]        [G]
 dann vergisst sie, dass sie taub ist.
 
-{end_of_chorus}
+:::
 
 
 Gm                            [F#]

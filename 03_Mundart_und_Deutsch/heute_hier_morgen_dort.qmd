@@ -13,7 +13,7 @@ hab es selbst so gewählt nie die Jahre gezählt
          [Em]       [D]     [G]
 nie nach gestern und morgen gefragt
 
-{start_of_chorus}
+:::{.chorus}
           [D]                      [C]          [G]
 Manchmal träume ich schwer und dann denk` ich es wär
          [D]                    [C]       [G]
@@ -23,7 +23,7 @@ So vergeht Jahr um Jahr und ist mir längst klar
           [Em]               [D]           [G]
 daß nichts bleibt, daß nichts bleibt wie es war.
 
-{end_of_chorus}
+:::
 
        [G]                          [C]      [G]
 Daß man mich kaum vermißt schon nach Tagen vergißt

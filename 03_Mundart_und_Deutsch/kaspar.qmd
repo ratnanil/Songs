@@ -5,9 +5,9 @@ year: '1992'
 
 ---
 
-{start_of_grid}
+:::{.grid}
  E A D  G   B  E 
-{end_of_grid}
+:::
 
    [Am]                  [D]
 Sie sagten, er kaeme von Nuernberg her,

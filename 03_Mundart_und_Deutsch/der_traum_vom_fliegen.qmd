@@ -9,21 +9,21 @@ capo: '0'
 
 {start_of_grid: Intro}
 Am____|D_____|Am____|D_____|
-{end_of_grid}
+:::
 
 {start_of_grid: Verse}
 Am____|D_____|G_____|C_____|
 D_____|G__A__|Am____|___Dm_|
 ___G__|___C__|___D__|___G__|
 Am____|______|
-{end_of_grid}
+:::
 
 {start_of_grid: Chorus}
 F_____|G_____|C_____|___D__|
 Am____|G__F__|______|E_____|
 F_____|___C__|______|___D__|
 G_____|______|______|Am____|
-{end_of_grid}
+:::
 
 
 An einem Baum

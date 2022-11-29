@@ -5,12 +5,12 @@ time: 4/8
 
 ---
 
-{start_of_grid}
+:::{.grid}
 |Am_______|________|________|________|
 |_________|________|________|________|
 |G7_______|________|________|________|
 |Am_______|________|E_______|Am6+____|
-{end_of_grid}
+:::
 
 Geschter z'Nacht het ds Nüünitram statt hei i ds Depot z'gah
 Plötzlich, niemer weis warum, sys Schinegleis verla

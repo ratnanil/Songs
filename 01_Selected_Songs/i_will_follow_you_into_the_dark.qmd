@@ -19,7 +19,7 @@ Or tunnels to gates of white
 Just our hands clasped so tight
 Waiting for, the hint of a spark 
 
-{start_of_chorus} 
+:::{.chorus} 
   [Am]               [C]     
 If heaven and hell decide,      
           [F]         [C]G
@@ -32,7 +32,7 @@ If there's no one beside you,
 when your soul embarks
 Bb                 Bbm           [F](C root note)
 Then I will follow you into the dark
-{end_of_chorus}
+:::
 
 Catholic school
 As vicious as roman rule
@@ -66,14 +66,14 @@ If there's no one beside you, when your soul embarks
 [F]               Fm           [C]   
 Then I will follow you into the dark
 
-{start_of_tab}
+:::{.tab}
 E---------------------|
 B---1---1--------1----|
 G---2---2--------2----|
 D---0---0--------2----|
 A---3---2----0---0----|
 E---------------------|
-{end_of_tab}
+:::
 
 [F]               Fm           [C]   
 Then I will follow you into the dark

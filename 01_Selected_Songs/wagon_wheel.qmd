@@ -20,7 +20,7 @@ Pickin' me a bouquet of dogwood flowers
 And I'm a hopin' for Raleigh 
 I can see my baby tonight
 
-{start_of_chorus}
+:::{.chorus}
   [G]                 [D]
 So rock me mama like a wagon wheel
 [Em]           [C]
@@ -33,7 +33,7 @@ Rock me mama like the wind and the rain
 Rock me mama like a south-bound train
 [G][D]   [C]
 Hey, mama rock me
-{end_of_chorus}
+:::
 
 Intro
 

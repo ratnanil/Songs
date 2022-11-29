@@ -4,14 +4,14 @@ artist: Kansas
 
 ---
 
-{start_of_tab}
+:::{.tab}
 e|-----------|
 B|-1-------1-|
 G|-----0-----|
 D|---2-------|
 A|-3-----3---|
 E|-----------|
-{end_of_tab}
+:::
 
 
  [C]    G/B [Am]  [G]        Dm           [Am]
@@ -19,10 +19,10 @@ I close my eyes only for a moment and a moment´s gone.
 [C] G/B  [Am]   [G]            Dm         [Am]
 All my dreams pass before my eyes a curiosity.
 
-{start_of_chorus}
+:::{.chorus}
 [D][G]      [Am]  [D]          [G]         [Am]
 Dust in the wind, all we are is dust in the wind.
-{end_of_chorus}
+:::
 
 
 [C]G/B [Am]  [G]            Dm             [Am]

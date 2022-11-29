@@ -5,7 +5,7 @@ time: 2/4
 capo: '2'
 
 ---
-{start_of_grid}
+:::{.grid}
 |Am______|________|
 |________|________|
 |Am______|________|
@@ -14,7 +14,7 @@ capo: '2'
 |Am______|________|
 |E_______|________|
 |Am______|________|
-{end_of_grid}
+:::
 
 Dr Sidi Abdel Assar vo El Hama
 Het mal am Morge früe no im Pijama

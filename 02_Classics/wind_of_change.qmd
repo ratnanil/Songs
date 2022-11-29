@@ -5,9 +5,9 @@ year: '1991'
 
 ---
 
-{start_of_grid}
+:::{.grid}
  F  Dm  F   Dm Am   G  Am  G  C   C
-{end_of_grid}
+:::
 
 [C]            [Dm]
 I follow the Moskva
@@ -58,7 +58,7 @@ On a glory night
 Where the children of tomorrow dream away
 In the wind of change
 
-{start_of_bridge}
+:::{.bridge}
 [Am]                     [G]
 The wind of change blows straight
                  [Am]
@@ -71,7 +71,7 @@ The freedom bell for peace of mind
 Let your balalaika sing
                        [Em]    [E7]
 What my guitar wants to say
-{end_of_bridge}
+:::
 
 {chorus}
 

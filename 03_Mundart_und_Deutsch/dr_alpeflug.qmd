@@ -5,12 +5,12 @@ time: 4/4
 
 ---
 
-{start_of_grid}
+:::{.grid}
 Am____|______|______|E7____|
 ______|______|______|Am____|
 ______|______|______|Dm____|
 ______|Am____|E7____|Am____|
-{end_of_grid}
+:::
 
           [Am]
 S'sy zwee Fründen im ne Sportflugzüg

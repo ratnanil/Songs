@@ -6,10 +6,10 @@ time: 4/4
 ---
 
 
-{start_of_grid}
+:::{.grid}
 |G_____|D__G__|
 |______|D__G__|
-{end_of_grid}
+:::
 
 
 G           D      G

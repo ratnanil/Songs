@@ -22,9 +22,9 @@ Wann wird man je verstehen?
 F             G          C
 Wann wird man je ver- stehen?
 
-{start_of_bridge}
+:::{.bridge}
 -Am  -  F   -   C
-{end_of_bridge}
+:::
 
 C               Am           
 Sag mir, wo die Mädchen sind, 
