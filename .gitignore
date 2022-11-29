@@ -3,3 +3,4 @@ packrat/lib*/
 .Rhistory
 02_songs_output/
 docs/
+/.quarto/

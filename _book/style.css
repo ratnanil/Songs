@@ -2,11 +2,6 @@
   font-family: "My Custom Font";
   src: url(fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf) format("truetype");
 }
-
-#title h1{
-  visibility: hidden;
-}
-
 body { 
   font-family: 'Roboto Mono', monospace; 
 }

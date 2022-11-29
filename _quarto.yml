@@ -1,0 +1,38 @@
+project:
+  type: book
+
+book:
+  title: "Songs"
+  author: "Nils Ratnaweera"
+  downloads: pdf
+  chapters:
+    - index.qmd
+    - part: "Selected Songs"
+      chapters:
+        - 01_Selected_Songs/all_the_world_is_green.qmd
+        - 01_Selected_Songs/build_me_up_buttercup.qmd
+        - 01_Selected_Songs/dance_me_to_the_end_of_love.qmd
+        - 01_Selected_Songs/hallelujah.qmd
+        - 01_Selected_Songs/i_will_follow_you_into_the_dark.qmd
+        - 01_Selected_Songs/jar_of_hearts.qmd
+        - 01_Selected_Songs/mad_world.qmd
+        - 01_Selected_Songs/new_slang.qmd
+        - 01_Selected_Songs/suzanne.qmd
+        - 01_Selected_Songs/viva_la_vida.qmd
+        - 01_Selected_Songs/wagon_wheel.qmd
+        - 01_Selected_Songs/windows_in_paradise.qmd
+format:
+  pdf: 
+    geometry:
+      - left=10mm
+      - top=10mm
+      - right=10mm
+      - bottom=10mm
+    keep-tex: true
+    include-before-body: preable.tex
+    mainfont: FreeMono
+  html:
+    css: style.cssgi
+    theme: darkly
+    
+from: markdown+hard_line_breaks

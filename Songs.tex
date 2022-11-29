@@ -1,0 +1,833 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrreprt}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[]{FreeMono}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[left=10mm,top=10mm,right=10mm,bottom=10mm]{geometry}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Songs},
+  pdfauthor={Nils Ratnaweera},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Songs}
+\author{Nils Ratnaweera}
+\date{}
+
+\begin{document}
+\maketitle
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, breakable, sharp corners, boxrule=0pt, frame hidden, enhanced, borderline west={3pt}{0pt}{shadecolor}]}{\end{tcolorbox}}\fi
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\bookmarksetup{startatroot}
+
+\hypertarget{section}{%
+\chapter{}\label{section}}
+
+\part{Selected Songs}
+
+\hypertarget{all-the-world-is-green}{%
+\chapter{All the World is Green}\label{all-the-world-is-green}}
+
+{[}Bm{]} {[}Em{]} {[}A7{]} {[}D{]}\\
+I fell into the ocean and you became my wife\\
+{[}G7{]} {[}Bm{]}\\
+I risked it all against the sea to have a better life\\
+{[}Em{]} {[}A7{]} {[}D{]}\\
+Marie you are the wild blue sky, men do foolish things\\
+{[}G7{]} {[}Bm{]}\\
+You turn kings into beggars and beggars into kings
+
+\{start\_of\_chorus\}\\
+{[}G{]} {[}D{]}\\
+Pretend that you owe me nothing\\
+{[}A7{]} {[}D{]}\\
+and all the world is green\\
+{[}G{]} {[}D{]}\\
+We can bring back the old days again\\
+{[}A7{]} {[}D{]}\\
+when all the world is green\\
+\{end\_of\_chorus\}
+
+The face forgives the mirror\\
+The worm forgives the plow\\
+The questions begs the answer\\
+Can you forgive me somehow?
+
+Maybe when our story's over\\
+We'll go where it's always spring\\
+The band is playing our song again\\
+And all the world is green {[}Play Chorus{]}
+
+The moon is yellow silver\\
+On the things that summer brings\\
+It's a love you'd kill for\\
+And all the world is green
+
+He's balancing a diamond\\
+On a blade of grass\\
+The dew will settle on our graves\\
+When all the world is green
+
+\{Comment: Play chorus, solo, repeat last verse\}
+
+\hypertarget{build-me-up-buttercup}{%
+\chapter{Build me up Buttercup}\label{build-me-up-buttercup}}
+
+\{start\_of\_chorus\}\\
+Why do you build me up (build me up) Buttercup, baby\\
+Just to let me down (let me down)and mess me around\\
+And then worst of all (worst of all) you never call, baby\\
+When you say you will (say you will) but I love you still\\
+I need you (I need you) more than anyone, darlin'\\
+You know that I have from the start\\
+So build me up (build me up) Buttercup,\\
+don't break my heart\\
+\{end\_of\_chorus\}
+
+``I'll be over at ten'', you told me time and again\\
+But you're late, I wait around and then (bah-dah-dah)\\
+I run to the door, I can't take any more\\
+It's not you, you let me down again
+
+\{start\_of\_bridge\}\\
+(Hey, hey, hey!) Baby, baby, try to find\\
+(Hey, hey, hey!){[}A{]}little time, and I'll make you happy\\
+(Hey, hey, hey!) I'll be home\\
+I'll be beside the phone waiting for you\\
+Ooo-oo-ooo, ooo-oo-ooo\\
+\{end\_of\_bridge\}
+
+\{chorus\}
+
+You were my toy but I could be the boy you adore\\
+If you'd just let me know (bah-dah-dah)\\
+Although you're untrue, I'm attracted to you all the more\\
+Why do I need you so
+
+\{bridge\}
+
+\{chorus\}
+
+\hypertarget{dance-me-to-the-end-of-love}{%
+\chapter{Dance me to the end of
+Love}\label{dance-me-to-the-end-of-love}}
+
+{[}Am{]} {[}Em{]}\\
+Dance me to your beauty with a burning violin\\
+{[}Am{]} {[}Em{]}\\
+Dance me through the panic 'til I'm gathered safely in\\
+{[}Am{]} {[}Em{]}\\
+Lift me like an olive branch and be my homeward dove\\
+{[}B7{]} {[}Em{]}\\
+Dance me to the end of love\\
+{[}B7{]} {[}Em{]}\\
+Dance me to the end of love
+
+Oh let me see your beauty when the witnesses are gone\\
+Let me feel you moving like they do in Babylon\\
+Show me slowly what I only know the limits of\\
+Dance me to the end of love\\
+Dance me to the end of love
+
+Dance me to the wedding now, dance me on and on\\
+Dance me very tenderly and dance me very long\\
+We're both of us beneath our love, we're both of us above\\
+Dance me to the end of love\\
+Dance me to the end of love
+
+Dance me to your beauty with a burning violin\\
+Dance me through the panic till I'm gathered safely in\\
+Touch me with your naked hand or touch me with your glove\\
+Dance me to the end of love (3x)
+
+\{comment: play intro again\}
+
+\hypertarget{hallelujah}{%
+\chapter{Hallelujah}\label{hallelujah}}
+
+Well I heard there was a secret chord\\
+That David played, and it pleased the Lord\\
+But you don't really care for music, do ya?\\
+Well it goes like this\\
+The fourth, the fifth\\
+The minor fall and the major lift\\
+The baffled king composing Hallelujah\\
+Hallelujah (4x)
+
+Well Your faith was strong but you needed proof\\
+You saw her bathing on the roof\\
+Her beauty and the moonlight overthrew you\\
+she tied you to her kitchen chair\\
+And she broke your throne and she cut your hair\\
+And from your lips she drew the Hallelujah\\
+Hallelujah (4x)
+
+Well baby I've been here before\\
+I've seen this room and I've walked this floor\\
+I used to live alone before I knew ya\\
+I've seen your flag on the marble arch\\
+Love is not a victory march\\
+It's a cold and it's a broken Hallelujah\\
+Hallelujah (4x)
+
+Well there was a time when you let me know\\
+What's really going on below\\
+But now you never show that to me do you?\\
+And remember when I moved in you?\\
+And the holy dove was moving too\\
+And every breath we drew was Hallelujah\\
+Hallelujah (4x)
+
+Well maybe there's a God above\\
+But all I've ever learned from love\\
+Was how to shoot somebody who'd OUT DREW YA\\
+And it's not a cry that you hear at night\\
+It's not somebody who's seen in the light\\
+It's a cold and it's a broken Hallelujah\\
+Hallelujah (repeat\ldots{} hold\ldots)
+
+\hypertarget{i-will-follow-you-into-the-dark}{%
+\chapter{I will follow you into the
+Dark}\label{i-will-follow-you-into-the-dark}}
+
+{[}C{]}\\
+Love of mine\\
+\href{D\%20root\%20note}{Am}\\
+Someday you will die\\
+{[}F{]}\\
+But I will be close behind\\
+{[}C{]} {[}G{]}\\
+I will follow, you into the dark
+
+No blinding light\\
+Or tunnels to gates of white\\
+Just our hands clasped so tight\\
+Waiting for, the hint of a spark
+
+\{start\_of\_chorus\}\\
+{[}Am{]} {[}C{]}\\
+If heaven and hell decide,\\
+{[}F{]} {[}C{]}G\\
+that they both are satisfied\\
+{[}Am{]} {[}C{]} G(bar)\\
+Illuminate the ``no's'', on their vacancy signs\\
+{[}Am{]} {[}C{]}\\
+If there's no one beside you,\\
+{[}E{]} {[}Am{]}G\\
+when your soul embarks\\
+Bb Bbm \href{C\%20root\%20note}{F}\\
+Then I will follow you into the dark\\
+\{end\_of\_chorus\}
+
+Catholic school\\
+As vicious as roman rule\\
+I got my knuckles bruised\\
+By a lady in black
+
+And I held my tongue\\
+as she told me ``son, fear is the heart of love.''\\
+So I never went back
+
+\{chorus\}
+
+You and me, have seen everything to see\\
+From Bangkok to Calgary\\
+And the soles of your shoes
+
+Are all worn down, the time for sleep is now\\
+But it's nothing to cry about\\
+Because we'll hold each other soon\\
+{[}Am{]} Fm Fm\\
+in the blackest of rooms
+
+{[}Am{]} {[}C{]}\\
+If heaven and hell decide,\\
+{[}F{]} {[}C{]}G\\
+that they both are satisfied\\
+{[}Am{]} {[}C{]} G(bar)\\
+Illuminate the ``no's'', on their vacancy signs\\
+{[}Am{]} {[}C{]} {[}E{]} {[}Am{]}G\\
+If there's no one beside you, when your soul embarks\\
+{[}F{]} Fm {[}C{]}\\
+Then I will follow you into the dark
+
+\{start\_of\_tab\}\\
+E---------------------\textbar{}\\
+B---1---1--------1----\textbar{}\\
+G---2---2--------2----\textbar{}\\
+D---0---0--------2----\textbar{}\\
+A---3---2----0---0----\textbar{}\\
+E---------------------\textbar{}\\
+\{end\_of\_tab\}
+
+{[}F{]} Fm {[}C{]}\\
+Then I will follow you into the dark
+
+\hypertarget{jar-of-hearts}{%
+\chapter{Jar of Hearts}\label{jar-of-hearts}}
+
+{[}Bm{]} {[}D{]}\\
+I know I can't take one more step towards you\\
+{[}A{]} {[}Em{]}\\
+'Cause all thats waiting is regret\\
+{[}Bm{]} {[}D{]}\\
+And don't you know I'm not your ghost anymore\\
+{[}A{]} {[}G{]}\\
+You lost the love I loved the most\\
+{[}Em{]} {[}D{]} {[}A{]}\\
+I learned to live half a life\\
+{[}Em{]} {[}D{]} {[}Asus4{]}{[}A{]}\\
+And now you want me one more time
+
+\{start\_of\_chorus\}\\
+{[}D{]} {[}A{]}\\
+Who do you think you are?\\
+{[}Bm{]}\\
+Running 'round leaving scars\\
+{[}G{]}\\
+Collecting a jar of hearts\\
+Gm {[}D{]}\\
+Tearing love apart\\
+{[}D{]} {[}A{]}\\
+You're gonna catch a cold\\
+{[}Bm{]}\\
+From the ice inside your soul\\
+{[}G{]}\\
+Don't come back for me\\
+Gm {[}D{]}\\
+Who do you think you are?
+
+\{end\_of\_chorus\}
+
+{[}Bm{]} {[}D{]}\\
+I hear you're asking all around\\
+{[}A{]} {[}Em{]}\\
+If I am anywhere to be found\\
+{[}Bm{]} {[}D{]}\\
+But I have grown too strong\\
+{[}A{]} {[}G{]}\\
+To ever fall back in your arms\\
+{[}Em{]} {[}D{]} {[}A{]}\\
+I've learned to live half a life\\
+{[}Em{]} {[}D{]} {[}Asus4{]}{[}A{]}\\
+And now you want me one more time
+
+\{chorus\}
+
+{[}Bm{]} {[}F\#{]} {[}D{]} {[}E{]}\\
+It took so long just to feel alright\\
+{[}Bm{]} {[}F\#{]} {[}D{]} {[}E{]}\\
+Remember how to put back the light in my eyes\\
+{[}Bm{]} {[}F\#{]} {[}D{]} {[}E{]}\\
+I wish I had missed the first time that we kissed\\
+{[}Bm{]} {[}F\#{]} {[}D{]} {[}E{]}\\
+'Cause you broke all your promises\\
+{[}G{]}\\
+And now you're back\\
+{[}F\#{]}\\
+You don't get to get me back
+
+\{chorus\}
+
+\{comment: (\ldots Don't come back at all) x2\}
+
+Gm {[}D{]}\\
+Who do you think you are?\\
+Gm {[}D{]}\\
+Who do you think you are?\\
+Gm {[}D{]}\\
+Who do you think you are?
+
+\hypertarget{mad-world}{%
+\chapter{Mad World}\label{mad-world}}
+
+All around me are familiar faces\\
+Worn out places, worn out faces\\
+Bright and early for their daily races\\
+Going nowhere, going nowhere\\
+Their tears are filling up their glasses\\
+No expression, no expression\\
+Hide my head, I want to drown my sorrow\\
+No tomorrow, no tomorrow
+
+And I find it kinda funny, I find it kinda sad\\
+The dreams in which I'm dying are the best I've ever had\\
+I find it hard to tell you, I find it hard to take\\
+When people run in circles it's a very very\\
+Mad world, mad world
+
+Children waiting for the day, they feel good\\
+Happy birthday, happy birthday\\
+Made to feel the way that every child should\\
+Sit and listen, sit and listen
+
+Went to school and I was very nervous\\
+No one knew me, no one knew me\\
+Hello teacher, tell me what's my lesson\\
+Look right through me, look right through me
+
+And I find it kinda funny, I find it kinda sad\\
+The dreams in which I'm dying are the best I've ever had\\
+I find it hard to tell you, I find it hard to take\\
+When people run in circles it's a very very\\
+Mad world, mad world\\
+Enlarge your world\\
+Mad world
+
+\hypertarget{new-slang}{%
+\chapter{New Slang}\label{new-slang}}
+
+\{start\_of\_grid\}\\
+Am C F C G C Am G x4\\
+C\\
+\{end\_of\_grid\}
+
+{[}Am{]} {[}C{]} {[}F{]}\\
+Gold teeth and a curse for this town\\
+{[}C{]} {[}G{]}\\
+Were all in my mouth\\
+{[}C{]} {[}F{]} {[}Am{]} {[}G{]}\\
+Only I don't know how they got out, dear\\
+{[}Am{]} {[}C{]} {[}F{]}\\
+Turn me back into the pet\\
+{[}C{]} {[}G{]}\\
+I was when we met\\
+{[}C{]} {[}F{]} {[}Am{]} {[}G{]}\\
+I was happier then with no mind set
+
+\{start\_of\_chorus\}\\
+{[}G{]} {[}C{]}\\
+And if you'd a took to me like\\
+{[}F{]} {[}C{]} {[}G{]}\\
+A gull takes to the wind\\
+{[}G{]} {[}C{]}\\
+Well, I'd a jumped from my tree\\
+{[}F{]} {[}C{]} {[}F{]} {[}C{]}\\
+And I'd a danced like the king of the eyesores\\
+{[}F{]} {[}C{]} {[}G{]}\\
+And the rest of our lives would'a fared well\\
+\{end\_of\_chorus\}
+
+{[}Am{]} {[}C{]} {[}F{]}\\
+New slang when you notice the stripes\\
+{[}C{]} {[}G{]}\\
+The dirt in your fries\\
+{[}C{]} {[}F{]}\\
+Hope it's right when you die\\
+{[}Am{]}{[}G{]}\\
+Old and bo..ny\\
+{[}Am{]} {[}C{]} {[}F{]}\\
+Dawn breaks like a bull through the hall\\
+{[}C{]} {[}G{]}\\
+Never should'a called\\
+{[}C{]} {[}F{]}\\
+But my heads to the wall\\
+{[}Am{]}{[}G{]}\\
+And I'm lonely
+
+\{chorus\}
+
+{[}Am{]} {[}C{]} {[}F{]}\\
+God speed all the baker's at dawn\\
+{[}C{]} {[}G{]}\\
+May they all cut their thumbs\\
+{[}C{]} {[}F{]}\\
+And bleed into their buns\\
+{[}Am{]} {[}G{]}\\
+'Till they melt away
+
+\{start\_of\_chorus: Chorus 2\}\\
+{[}G{]} {[}C{]}\\
+I'm looking in on the good life\\
+{[}F{]} {[}C{]} {[}G{]}\\
+I might be doomed never to find\\
+{[}C{]}\\
+Without a trust or flaming fields\\
+{[}F{]} {[}C{]} {[}G{]}\\
+{[}Am{]} too dumb to refine?\\
+{[}C{]}\\
+And if you'd a took to me like\\
+{[}F{]} {[}C{]} {[}F{]} {[}C{]}\\
+Well I'd a danced like the queen of the eyesores\\
+{[}F{]} {[}C{]} {[}G{]}\\
+And the rest of our lives would'a fared well\\
+\{end\_of\_chorus\}
+
+\hypertarget{suzanne}{%
+\chapter{Suzanne}\label{suzanne}}
+
+{[}E{]}\\
+Suzanne takes you down\\
+to her place by the river\\
+{[}F\#m{]}\\
+You can hear the boats go by,\\
+you can spend the night beside herw\\
+{[}E{]}\\
+And you know that she's half crazy\\
+but that's why you want to be there\\
+G\#m\\
+And she feeds you tea and oranges\\
+{[}A{]}\\
+that come all the way from China\\
+{[}E{]}\\
+And just when you mean to tell\\
+{[}F\#m{]}\\
+her that you have no love to give her\\
+{[}E{]}\\
+Then she gets you on her wavelength\\
+{[}F\#m{]}\\
+And she lets the river answer\\
+{[}E{]}\\
+that you've always been her lover\\
+{[}G\#m{]}\\
+And you want to travel with her\\
+{[}A{]}\\
+And you want to travel blind\\
+{[}E{]}\\
+And you know that she will trust you\\
+{[}F\#m{]}\\
+For you've touched her perfect body\\
+{[}E{]}\\
+with your mind
+
+And Jesus was a sailor\\
+when He walked upon the water\\
+And He spent a long time watching\\
+from his lonely wooden tower\\
+And when He knew for certain\\
+only drowning men could see Him\\
+He said, ``All men will be sailors\\
+then until the sea shall free them''\\
+But He Himself was broken\\
+long before the sky would open\\
+Forsaken, almost human,\\
+He sank beneath your wisdom like a stone
+
+And you want to travel with him\\
+And you want to travel blind\\
+And you think maybe you'll trust him\\
+For he's touched your perfect body\\
+with his mind
+
+Suzanne takes your hand,\\
+and she leads you to the river\\
+She is wearing rags and feathers\\
+from Salvation Army counters\\
+And the sun pours down like honey\\
+on our lady of the harbor\\
+And she shows you where to look\\
+among the garbage and the flowers\\
+There are heroes in the seaweed,\\
+there are children in the morning\\
+They are leaning out for love\\
+and they will lean that way forever\\
+while Suzanne holds the mirror
+
+And you want to travel with her\\
+And you want to travel blind\\
+And you know that you will trust her\\
+For she's touched your perfect body\\
+with her mind
+
+\hypertarget{viva-la-vida}{%
+\chapter{Viva la Vida}\label{viva-la-vida}}
+
+\{start\_of\_grid\}\\
+C - D - G - Em\\
+\{end\_of\_grid\}
+
+(Em) {[}C{]} {[}D{]}\\
+I used to rule the world\\
+{[}G{]} {[}Em{]}\\
+Seas would rise when I gave the word\\
+{[}C{]} {[}D{]}\\
+Now in the morning I sleep alone\\
+{[}G{]} {[}Em{]}\\
+Sweep the streets I used to own
+
+\{start\_of\_grid\}\\
+C - D - G - Em x2\\
+\{end\_of\_grid\}
+
+I used to roll the dice\\
+Feel the fear in my enemy's eyes\\
+Listen as the crowd would sing\\
+``Now the old king is dead! Long live the king!''
+
+One minute I held the key\\
+Next the walls were closed on me\\
+And I discovered that my castles stand\\
+Upon pillars of salt and pillars of sand
+
+\{start\_of\_chorus\}\\
+{[}C{]} {[}D{]}\\
+I hear Jerusalem bells are ringing\\
+{[}G{]} {[}Em{]}\\
+Roman Cavalry choirs are singing\\
+{[}C{]} {[}D{]}\\
+Be my mirror, my sword, and shield\\
+{[}G{]} {[}Em{]}\\
+My missionaries in a foreign field\\
+{[}C{]} {[}D{]}\\
+For some reason I can't explain\\
+{[}G{]} {[}Em{]} {[}C{]} {[}D{]}\\
+Once you go there was never, never an honest word\\
+{[}Bm{]} {[}Em{]}\\
+That was when I ruled the world
+
+\{end\_of\_chorus\}
+
+It was the wicked and wild wind\\
+Blew down the doors to let me in\\
+Shattered windows and the sound of drums\\
+People couldn't believe what I'd become
+
+Revolutionaries wait\\
+For my head on a silver plate\\
+Just a puppet on a lonely string\\
+Oh who would ever want to be king?
+
+\{chorus\}
+
+\hypertarget{wagon-wheel}{%
+\chapter{Wagon Wheel}\label{wagon-wheel}}
+
+{[}G{]} {[}D{]}\\
+Headed down south to the land of the pines\\
+{[}Em{]} {[}C{]}\\
+And I'm thumbin' my way into North Caroline\\
+{[}G{]}\\
+Starin' up the road\\
+{[}D{]} {[}C{]}\\
+And pray to God I see headlights
+
+I made it down the coast in seventeen hours\\
+Pickin' me a bouquet of dogwood flowers\\
+And I'm a hopin' for Raleigh\\
+I can see my baby tonight
+
+\{start\_of\_chorus\}\\
+{[}G{]} {[}D{]}\\
+So rock me mama like a wagon wheel\\
+{[}Em{]} {[}C{]}\\
+Rock me mama anyway you feel\\
+{[}G{]}{[}D{]} {[}C{]}\\
+Hey, mama rock me\\
+{[}G{]} {[}D{]}\\
+Rock me mama like the wind and the rain\\
+{[}Em{]} {[}C{]}\\
+Rock me mama like a south-bound train\\
+{[}G{]}{[}D{]} {[}C{]}\\
+Hey, mama rock me\\
+\{end\_of\_chorus\}
+
+Intro
+
+Runnin' from the cold up in New England\\
+I was born to be a fiddler in an old-time stringband\\
+My baby plays the guitar\\
+I pick a banjo now
+
+Oh, the North country winters keep a gettin' me now\\
+Lost my money playin' poker so I had to up and leave\\
+But I ain't a turnin' back\\
+To livin' that old life no more
+
+\{chorus\}
+
+Walkin' to the south out of Roanoke\\
+I caught a trucker out of Philly\\
+Had a nice long toke\\
+But he's a headed west from the Cumberland Gap\\
+To Johnson City, Tennessee
+
+And I gotta get a move on before the sun\\
+I hear my baby callin' my name\\
+And I know that she's the only one\\
+And if I die in Raleigh\\
+At least I will die free
+
+\{chorus\}
+
+\hypertarget{for-the-windows-in-paradise}{%
+\chapter{For the Windows in
+Paradise}\label{for-the-windows-in-paradise}}
+
+{[}Am{]} Fmaj7 {[}C{]} {[}G{]}\\
+I have called you children, I have called you son,\\
+{[}Am{]} Fmaj7 {[}C{]} {[}G{]}\\
+What is there to answer when I'm the only one?\\
+{[}Am{]} Fmaj7 {[}C{]} {[}G{]}\\
+Morning comes in paradise, morning comes in light,\\
+{[}Am{]} Fmaj7 {[}C{]} {[}G{]}\\
+Still I must obey, still I must invite.
+
+\begin{verbatim}
+      [Am]       Fmaj7       [C]  [G]
+\end{verbatim}
+
+If there's anything to say, if there's anything to do,\\
+{[}Am{]} Fmaj7 {[}C{]} {[}G{]}\\
+If there's any other way, I'll do anything for you.
+
+I was dressed embarrassment.\\
+I was dressed in wine.\\
+If you had a part of me, will you take you're time?\\
+Even if I come back, even if I die\\
+Is there some idea to replace my life?
+
+Like a father to impress;\\
+Like a mother's mourning dress,\\
+If you ever make a mess, I'll do anything for you
+
+I have called you preacher; I have called you son.\\
+If you have a father or if you haven't one,\\
+I'll do anything for you (4x)
+
+I did everything for you (repeat.. about 8x)
+
+
+
+\end{document}
