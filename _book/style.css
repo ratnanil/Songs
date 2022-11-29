@@ -1,7 +1,0 @@
-@font-face {
-  font-family: "My Custom Font";
-  src: url(fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf) format("truetype");
-}
-body { 
-  font-family: 'Roboto Mono', monospace; 
-}
