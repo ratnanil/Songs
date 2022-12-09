@@ -19,7 +19,7 @@ Sie weiß nicht, dass der Schnee lautlos auf die Erde fällt,
 merkt nichts vom Klopfen an der Wand.
 
 
-:::{.chorus}
+:::{.song-chorus}
 
        [Eb]                [Bb]
 Sie mag Musik nur, wenn sie laut ist,

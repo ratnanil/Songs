@@ -9,7 +9,7 @@ I walk a lonely road, the only one that I have ever known
            [G]           [D]              [A]             [Em]
 Don't know where it goes, but it's home to me and I walk alone
 
-:::{.grid}
+:::{.song-grid}
 Em__|G___|D___|A___| 
 :::
 
@@ -23,7 +23,7 @@ Where the city sleeps, and I'm the only one and I walk alone
 .........I walk alone, I walk a....
 
 
-:::{.chorus}
+:::{.song-chorus}
 [C]    [G]          [D]            [Em]
     My shadow's the only one that walks beside me
 [C]     [G]     [D]             [Em]
@@ -46,7 +46,7 @@ That divides me somewhere in my mind
 On the border line of the edge
 And where I walk alone
 
-:::{.grid}
+:::{.song-grid}
 Em G  D  A
 :::
 
@@ -67,7 +67,7 @@ Ah-Ah Ah-Ah Ah-Ah   Ahhh-Ah
 haaa-ah  Ah-Ah Ah-Ah  I walk alone, I walk a...
 
 
-:::{.grid}
+:::{.song-grid}
  C G  D  Em 
  C G  D  Em 
  C G  D  Em 

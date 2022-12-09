@@ -4,7 +4,7 @@ artist: The Shins
 
 ---
 
-:::{.grid}
+:::{.song-grid}
 Am C F C G C Am G x4
  C 
 :::
@@ -22,7 +22,7 @@ I was when we met
 [C]          [F]          [Am] [G]
 I was happier then with no mind set
 
-:::{.chorus}
+:::{.song-chorus}
 [G]                   [C]
 And if you'd a took to me like
  [F]  [C]          [G]

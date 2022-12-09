@@ -5,7 +5,7 @@ capo: '1'
 
 ---
 
-:::{.grid}
+:::{.song-grid}
 C - D - G - Em 
 :::
 
@@ -18,7 +18,7 @@ Now in the morning I sleep alone
          [G]               [Em]
 Sweep the streets I used to own
 
-:::{.grid}
+:::{.song-grid}
 C - D - G - Em    x2
 :::
 
@@ -32,7 +32,7 @@ Next the walls were closed on me
 And I discovered that my castles stand 
 Upon pillars of salt and pillars of sand 
 
-:::{.chorus}
+:::{.song-chorus}
  [C]            [D]
 I hear Jerusalem bells are ringing
 [G]          [Em]

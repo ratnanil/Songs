@@ -5,7 +5,7 @@ year: '1992'
 
 ---
 
-:::{.grid}
+:::{.song-grid}
  E A D  G   B  E 
 :::
 

@@ -5,7 +5,7 @@ time: 3/4
 
 ---
 
-:::{.grid}
+:::{.song-grid}
 D G A7 D 
 :::
 

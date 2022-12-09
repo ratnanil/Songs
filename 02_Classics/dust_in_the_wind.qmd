@@ -4,7 +4,7 @@ artist: Kansas
 
 ---
 
-:::{.tab}
+:::{.song-tab}
 e|-----------|
 B|-1-------1-|
 G|-----0-----|
@@ -19,7 +19,7 @@ I close my eyes only for a moment and a moment´s gone.
 [C] G/B  [Am]   [G]            Dm         [Am]
 All my dreams pass before my eyes a curiosity.
 
-:::{.chorus}
+:::{.song-chorus}
 [D][G]      [Am]  [D]          [G]         [Am]
 Dust in the wind, all we are is dust in the wind.
 :::

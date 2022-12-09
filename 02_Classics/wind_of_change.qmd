@@ -5,7 +5,7 @@ year: '1991'
 
 ---
 
-:::{.grid}
+:::{.song-grid}
  F  Dm  F   Dm Am   G  Am  G  C   C
 :::
 
@@ -58,7 +58,7 @@ On a glory night
 Where the children of tomorrow dream away
 In the wind of change
 
-:::{.bridge}
+:::{.song-bridge}
 [Am]                     [G]
 The wind of change blows straight
                  [Am]

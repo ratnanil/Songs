@@ -4,7 +4,7 @@ capo: '0'
 time: 6/6
 
 ---
-:::{.grid} <!--Verse-->
+:::{.song-grid} <!--Verse-->
 
 G_____|C__Am_|D____|G_____|
 G_____|C__Am_|D____|G_____|
@@ -14,12 +14,12 @@ Long time ago in Bethlehem, so the Holy Bible says,
 Mary's boychild, Jesus Christ, was born on Christmas Day. 
 
 
-:::{.grid} <!--Chorus-->
+:::{.song-grid} <!--Chorus-->
 G__C__|D__G___|Em_Am_|D____|
 G_____|C__Am__|G__D__|G____|
 :::
 
-:::{.chorus}
+:::{.song-chorus}
 Hark now! Hear the Angels sing, a King was born today, 
 and man will live forever more because of Christmas Day. 
 :::  

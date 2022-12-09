@@ -5,7 +5,7 @@ year: '1964'
 
 ---
 
-:::{.grid} <!--INTRO-->
+:::{.song-grid} <!--INTRO-->
 Am, C, D, F, Am, E, Am , E 
 :::
 
@@ -23,8 +23,8 @@ She sewed my new blue jeans.
 My father was a gamblin' man
 Down in New Orleans.
 
-:::{.grid}
- C, D, F, Am, E, Am , E 
+:::{.song-grid}
+C, D, F, Am, E, Am , E 
 :::
 
 Now, the only thing a gambler needs

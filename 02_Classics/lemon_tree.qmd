@@ -7,7 +7,7 @@ capo: '1'
 
 ---
 
-:::{.grid}
+:::{.song-grid}
 Em__|Bm__|Em__|Bm__|
 Am__|Bm__|Em__|Bm_E|
 :::
@@ -44,7 +44,7 @@ I'm Turning My Head Up And Down
 And All That I Can See Is Just another Lemon-tree
 
 
-:::{.bridge}
+:::{.song-bridge}
  Em Bm Em Bm Am Bm Em 
  dadada....
 :::

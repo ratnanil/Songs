@@ -4,7 +4,7 @@ artist: Lynyrd Skynyrd
 
 ---
 
-:::{.tab}
+:::{.song-tab}
 e|-------------------------3-|
 B|-----3---------3---------3-|
 G|-------2----------0------0-|  x4
@@ -33,7 +33,7 @@ Well I hope Neil Young will remember
 
 [Chorus]
 
-:::{.chorus}
+:::{.song-chorus}
 [D]  [Cadd9] [G]   [D]       [Cadd9]      [G]        
 Sweet home Alabama, where the skies are so blue
 [D]  [Cadd9] [G]   [D]       [Cadd9]       [G]     

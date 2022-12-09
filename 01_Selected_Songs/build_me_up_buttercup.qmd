@@ -5,7 +5,7 @@ artist: The Foundations
 ---
 
 
-:::{.chorus}
+:::{.song-chorus}
 Why do you build me up (build me up) Buttercup, baby
 Just to let me down (let me down)and mess me around
 And then worst of all (worst of all) you never call, baby
@@ -21,7 +21,7 @@ But you're late, I wait around and then (bah-dah-dah)
 I run to the door, I can't take any more
 It's not you, you let me down again
 
-:::{.bridge}
+:::{.song-bridge}
 (Hey, hey, hey!) Baby, baby, try to find
 (Hey, hey, hey!)[A]little time, and I'll make you happy
 (Hey, hey, hey!) I'll be home

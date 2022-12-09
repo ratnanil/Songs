@@ -5,7 +5,7 @@ time: 4/8
 
 ---
 
-:::{.grid}
+:::{.song-grid}
 |Am______|Dm__Am__|____F___|____Am__|
 |________|Dm__Am__|E___Am__|____E7__|
 |C_______|G7______|C_______|G7__C___|
@@ -53,7 +53,7 @@ Mit ihm am Sunntig nach em Spil
 Nei, di Entscheidig, Heidi
 Nei dy Bscheid - i bi enttüüscht
 
-:::{.grid}
+:::{.song-grid}
 |Am______|Dm__Am__|____F___|____Am__|
 |________|Dm__Am__|E___Am__|E___Am__|
 :::
