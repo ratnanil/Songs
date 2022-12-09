@@ -1,46 +1,6 @@
 project:
   type: book
 
-format:
-  pdf: 
-    documentclass: scrbook
-    geometry:
-      - left=10mm
-      - top=10mm
-      - right=10mm
-      - bottom=10mm
-    keep-tex: true
-    include-before-body: titlepage.tex
-    include-in-header: preamble.tex
-    mainfont: FreeMono
-    cover-image: misc/title.png
-  html:
-    css: style.css
-    theme: darkly
-    
-from: markdown+hard_line_breaks-smart
-# extension "hard_line_breaks" interprets single line breaks as hard line breaks
-# extension "smart" replaces two -- as an emdash, which is not good for tabsformat:
-  pdf: 
-    documentclass: scrbook
-    geometry:
-      - left=10mm
-      - top=10mm
-      - right=10mm
-      - bottom=10mm
-    keep-tex: true
-    include-before-body: titlepage.tex
-    include-in-header: preamble.tex
-    mainfont: FreeMono
-    cover-image: misc/title.png
-  html:
-    css: style.css
-    theme: darkly
-    
-from: markdown+hard_line_breaks-smart
-# extension "hard_line_breaks" interprets single line breaks as hard line breaks
-# extension "smart" replaces two -- as an emdash, which is not good for tabs
-
 book:
   title: "Songs"
   author: "Nils Ratnaweera"
@@ -145,3 +105,23 @@ book:
       - 06_Kinderlieder/det_aenet_am_bergli.md
 
 
+format:
+  pdf: 
+    documentclass: scrbook
+    geometry:
+      - left=10mm
+      - top=10mm
+      - right=10mm
+      - bottom=10mm
+    keep-tex: true
+    include-before-body: titlepage.tex
+    include-in-header: preamble.tex
+    mainfont: FreeMono
+    cover-image: misc/title.png
+  html:
+    css: style.css
+    theme: darkly
+    
+from: markdown+hard_line_breaks-smart
+# extension "hard_line_breaks" interprets single line breaks as hard line breaks
+# extension "smart" replaces two -- as an emdash, which is not good for tabs
