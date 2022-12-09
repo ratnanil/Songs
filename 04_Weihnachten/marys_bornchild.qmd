@@ -4,7 +4,7 @@ capo: '0'
 time: 6/6
 
 ---
-{start_of_grid: Verse}
+:::{.grid} <!--Verse-->
 
 G_____|C__Am_|D____|G_____|
 G_____|C__Am_|D____|G_____|
@@ -14,7 +14,7 @@ Long time ago in Bethlehem, so the Holy Bible says,
 Mary's boychild, Jesus Christ, was born on Christmas Day. 
 
 
-{start_of_grid: Chorus}
+:::{.grid} <!--Chorus-->
 G__C__|D__G___|Em_Am_|D____|
 G_____|C__Am__|G__D__|G____|
 :::

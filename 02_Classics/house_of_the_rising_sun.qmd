@@ -5,7 +5,7 @@ year: '1964'
 
 ---
 
-{start_of_grid: INTRO}
+:::{.grid} <!--INTRO-->
 Am, C, D, F, Am, E, Am , E 
 :::
 

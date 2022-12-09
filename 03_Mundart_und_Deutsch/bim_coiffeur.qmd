@@ -31,7 +31,7 @@ Grad hundert Müüler mit ufgange win e Männerchor
 [E]ännerchor us mir alei, es cheibe gspässigs Gfüel
 Es metaphysischs Grusle het mi packt im Coiffeurgstüel
 
-{start_of_grid: Abschluss}
+:::{.grid} <!--Abschluss-->
 |C_______|____Am__|Dm______|____G7__|
 |C_______|____Am__|Dm__G7__|____C___| 
 :::
