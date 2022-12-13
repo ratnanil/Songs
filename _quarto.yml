@@ -113,7 +113,7 @@ format:
       - top=10mm
       - right=10mm
       - bottom=10mm
-    keep-tex: true
+    keep-tex: false
     include-before-body: titlepage.tex
     include-in-header: preamble.tex
     mainfont: FreeMono
