@@ -5,24 +5,24 @@ year: '1967'
 
 ---
 
-[C]              [G]      [Am]               [Em]
+[C]              [G]      [Am]               [Em]
 Have you seen the old man, in the closed-down market
-[F]           [C]              [D7]     [G7]
+[F]           [C]              [D7]     [G7]
 picking up the papers, with his worn-out shoes?
-[C]            [G]           [Am]             [Em]
+[C]            [G]           [Am]             [Em]
 In his eyes you see no pride, and held loosely by his side
-[F]        [C]             [G7]        [C]
+[F]        [C]             [G7]        [C]
 yesterday's papers, telling yesterday's news
 
 :::{.song-chorus}
-     [F]         [Em]            [C]  [G7]   [Am]
-    So how can you tell me, you're lo - ne - ly
-[D7]         [D7]                   [G]    [G7]
-  and say for you that the sun don't shine?
-[C]            [G]              [Am]                 [Em]
+     [F]         [Em]            [C]  [G7]   [Am]
+    So how can you tell me, you're lo - ne - ly
+[D7]         [D7]                   [G]    [G7]
+  and say for you that the sun don't shine?
+[C]            [G]              [Am]                 [Em]
 Let me take you by the hand, and lead you through the streets of London
-[F]            [C]           [G7]                 [C]    [C]
-  I'll show you something, to make you change your mind
+[F]            [C]           [G7]                 [C]    [C]
+  I'll show you something, to make you change your mind
 :::
 
 Have you seen the old gal, who walks the streets of London
