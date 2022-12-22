@@ -63,7 +63,7 @@ And bleed into their buns
           [Am] [G]
 'Till they melt away
 
-{start_of_chorus: Chorus 2}
+:::{song-chorus}
 [G]                   [C]
 I'm looking in on the good life
           [F]    [C]      [G]
