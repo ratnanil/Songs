@@ -111,10 +111,10 @@ format:
     # by default, scrbook is twosided, which means each chapter must start on an odd page
     classoption: twoside=false 
     geometry:
-      - left=10mm
-      - top=10mm
+      - left=20mm
+      - top=05mm
       - right=10mm
-      - bottom=10mm
+      - bottom=05mm
     keep-tex: true
     include-before-body: titlepage.tex
     include-in-header: preamble.tex
