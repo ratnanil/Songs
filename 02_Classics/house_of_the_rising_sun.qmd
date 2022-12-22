@@ -5,7 +5,8 @@ year: '1964'
 
 ---
 
-:::{.song-grid} <!--INTRO-->
+<!--INTRO-->
+:::{.song-grid}
 Am, C, D, F, Am, E, Am , E 
 :::
 

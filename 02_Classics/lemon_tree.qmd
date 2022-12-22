@@ -8,8 +8,8 @@ capo: '1'
 ---
 
 :::{.song-grid}
-Em__|Bm__|Em__|Bm__|
-Am__|Bm__|Em__|Bm_E|
+Em··|Bm··|Em··|Bm··|
+Am··|Bm··|Em··|Bm·E|
 :::
 
 [Em]             [Bm]

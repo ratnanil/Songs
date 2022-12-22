@@ -10,7 +10,7 @@ I walk a lonely road, the only one that I have ever known
 Don't know where it goes, but it's home to me and I walk alone
 
 :::{.song-grid}
-Em__|G___|D___|A___| 
+Em··|G···|D···|A···| 
 :::
 
 I walk this empty street, on the boulevard of broken dreams

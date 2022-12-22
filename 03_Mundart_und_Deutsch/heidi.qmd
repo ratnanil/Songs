@@ -6,9 +6,9 @@ time: 4/8
 ---
 
 :::{.song-grid}
-|Am______|Dm__Am__|____F___|____Am__|
-|________|Dm__Am__|E___Am__|____E7__|
-|C_______|G7______|C_______|G7__C___|
+|Am······|Dm··Am··|····F···|····Am··|
+|········|Dm··Am··|E···Am··|····E7··|
+|C·······|G7······|C·······|G7··C···|
 :::
 
 Är wohnt a dr glyche Gass
@@ -54,8 +54,8 @@ Nei, di Entscheidig, Heidi
 Nei dy Bscheid - i bi enttüüscht
 
 :::{.song-grid}
-|Am______|Dm__Am__|____F___|____Am__|
-|________|Dm__Am__|E___Am__|E___Am__|
+|Am······|Dm··Am··|····F···|····Am··|
+|········|Dm··Am··|E···Am··|E···Am··|
 :::
 
 

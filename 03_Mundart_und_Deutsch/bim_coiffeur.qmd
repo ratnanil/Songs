@@ -7,8 +7,8 @@ time: 4/4
 
 
 :::{.song-grid}
-|C_______|____Am__|Dm______|____G7__|
-|C_______|____Am__|Dm______|G7______|
+|C·······|····Am··|Dm······|····G7··|
+|C·······|····Am··|Dm······|G7······|
 :::
 
 Bim Coiffeur bin i gsässe vor em Spiegel, luege dry
@@ -31,9 +31,10 @@ Grad hundert Müüler mit ufgange win e Männerchor
 [E]ännerchor us mir alei, es cheibe gspässigs Gfüel
 Es metaphysischs Grusle het mi packt im Coiffeurgstüel
 
-:::{.song-grid} <!--Abschluss-->
-|C_______|____Am__|Dm______|____G7__|
-|C_______|____Am__|Dm__G7__|____C___| 
+<!-- Abschluss -->
+:::{.song-grid}
+|C·······|····Am··|Dm······|····G7··|
+|C·······|····Am··|Dm··G7··|····C···| 
 :::
 
 I ha d'Serviette vo mer grissen, ungschore sofort
