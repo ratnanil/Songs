@@ -1,7 +1,7 @@
 ---
 title: S'Träumli
 source: https://www.brauchtumschweiz.ch/volkslieder-mundart/s-traeumli
-
+youtube: https://youtu.be/ceJCk4mjn94
 ---
 
 Strophe: E H7 A H7 E H7
@@ -31,5 +31,5 @@ Jetzt isch äs plötzli nümme da,
 und du liesch wach im Bett.
 Auf der Gitarre begleiten
 
-https://youtu.be/ceJCk4mjn94
+
 

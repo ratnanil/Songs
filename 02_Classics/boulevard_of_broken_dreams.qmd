@@ -1,20 +1,25 @@
 ---
 title: Boulevard of Broken Dreams
 artist: Green Day
-
 ---
 
-[Em]     [G]            [D]            [A]           [Em]
-I walk a lonely road, the only one that I have ever known
-           [G]           [D]              [A]             [Em]
-Don't know where it goes, but it's home to me and I walk alone
+[Em]     [G]          
+I walk a lonely road, 
+  [D]            [A]           [Em]
+the only one that I have ever known
+           [G]           
+Don't know where it goes,
+[D]              [A]             [Em]
+but it's home to me and I walk alone
 
 :::{.song-grid}
 Em··|G···|D···|A···| 
 :::
 
-I walk this empty street, on the boulevard of broken dreams
-Where the city sleeps, and I'm the only one and I walk alone
+I walk this empty street, 
+on the boulevard of broken dreams
+Where the city sleeps, 
+and I'm the only one and I walk alone
 
 
 [Em][G][D]          [A]         [Em]
@@ -64,7 +69,8 @@ I walk alone, I walk a....
 
 
 Ah-Ah Ah-Ah Ah-Ah   Ahhh-Ah
-haaa-ah  Ah-Ah Ah-Ah  I walk alone, I walk a...
+haaa-ah  Ah-Ah Ah-Ah  
+I walk alone, I walk a...
 
 
 :::{.song-grid}
@@ -75,8 +81,10 @@ haaa-ah  Ah-Ah Ah-Ah  I walk alone, I walk a...
 :::
 
 
-I walk this empty street, on the boulevard of broken dreams
-Where the city sleeps, and I'm the only one and I walk a...
+I walk this empty street, 
+on the boulevard of broken dreams
+Where the city sleeps, 
+and I'm the only one and I walk a...
 
 
 {chorus}

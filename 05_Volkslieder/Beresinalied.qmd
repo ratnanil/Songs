@@ -1,5 +1,5 @@
 ---
-title: 'Unser Leben gleicht der Reise / Beresinalied '
+title: Beresinalied
 artist: Thomas Legler
 year: '1812'
 source: http://ingeb.org/Lieder/unserleb.html

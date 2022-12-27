@@ -1,5 +1,5 @@
 ---
-title: Gloria - Engel haben Himmelslieder
+title: Gloria
 source: https://www.liederkiste.com/index.php?s=engel-haben-himmelslieder&l=de
 time: 4/4
 
