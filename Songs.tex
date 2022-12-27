@@ -36,7 +36,7 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\usepackage[left=20mm,top=05mm,right=10mm,bottom=05mm]{geometry}
+\usepackage[a5paper,left=16mm,top=10mm,right=02mm,bottom=02mm]{geometry}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \setcounter{secnumdepth}{5}
 % Make \paragraph and \subparagraph free-standing
@@ -76,6 +76,10 @@
 \makeatother
 
 \RedeclareSectionCommand[beforeskip=0pt, afterskip=0pt]{chapter}
+
+% https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown
+\let\oldmaketitle\maketitle
+\AtBeginDocument{\let\maketitle\relax}
 \makeatletter
 \makeatother
 \makeatletter
@@ -180,7 +184,11 @@
 \end{titlepage}
 %\restoregeometry
 
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, enhanced, breakable, frame hidden, interior hidden, sharp corners]}{\end{tcolorbox}}\fi
+% https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown
+\let\maketitle\oldmaketitle
+\maketitle
+
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, frame hidden, boxrule=0pt, breakable, sharp corners]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -197,9 +205,9 @@
 \markboth{Welcome}{Welcome}
 
 A collection of hand picked songs. This book is hosted as an online
-version on \url{http://songs.ratnaweera.net/} and includes a pdf version
-(click on the download symbol). Edits and feedback can be made via the
-\href{https://github.com/ratnanil/songs}{github repo}.
+version on \textless ratnaweera.xyz/Songs\textgreater{} and includes a
+pdf version (click on the download symbol). Edits and feedback can be
+made via the \href{https://github.com/ratnanil/songs}{github repo}.
 
 \part{Selected Songs}
 
@@ -1397,19 +1405,21 @@ What my guitar wants to say
 \hypertarget{boulevard-of-broken-dreams}{%
 \chapter{Boulevard of Broken Dreams}\label{boulevard-of-broken-dreams}}
 
-{[}Em{]} ~ ~ {[}G{]} ~ ~ ~ ~ ~ ~{[}D{]} ~ ~ ~ ~ ~ ~{[}A{]} ~ ~ ~ ~ ~
-{[}Em{]}\\
-I walk a lonely road, the only one that I have ever known\\
-\hspace*{0.333em} ~ ~ ~ ~ {[}G{]} ~ ~ ~ ~ ~ {[}D{]} ~ ~ ~ ~ ~ ~ ~{[}A{]}
-~ ~ ~ ~ ~ ~ {[}Em{]}\\
-Don\textquotesingle t know where it goes, but it\textquotesingle s home
-to me and I walk alone
+{[}Em{]} ~ ~ {[}G{]} ~ ~ ~ ~ ~\\
+I walk a lonely road,\\
+\hspace*{0.333em}{[}D{]} ~ ~ ~ ~ ~ ~{[}A{]} ~ ~ ~ ~ ~ {[}Em{]}\\
+the only one that I have ever known\\
+\hspace*{0.333em} ~ ~ ~ ~ {[}G{]} ~ ~ ~ ~ ~\\
+Don\textquotesingle t know where it goes,\\
+{[}D{]} ~ ~ ~ ~ ~ ~ ~{[}A{]} ~ ~ ~ ~ ~ ~ {[}Em{]}\\
+but it\textquotesingle s home to me and I walk alone
 
 Em··\textbar G···\textbar D···\textbar A···\textbar{}
 
-I walk this empty street, on the boulevard of broken dreams\\
-Where the city sleeps, and I\textquotesingle m the only one and I walk
-alone
+I walk this empty street,\\
+on the boulevard of broken dreams\\
+Where the city sleeps,\\
+and I\textquotesingle m the only one and I walk alone
 
 {[}Em{]}{[}G{]}{[}D{]} ~ ~ ~ ~ ~{[}A{]} ~ ~ ~ ~ {[}Em{]}\\
 .........I walk alone, I walk alone.\\
@@ -1451,16 +1461,18 @@ I walk alone, I walk a....
 \{chorus\}
 
 Ah-Ah Ah-Ah Ah-Ah ~ Ahhh-Ah\\
-haaa-ah ~Ah-Ah Ah-Ah ~I walk alone, I walk a...
+haaa-ah ~Ah-Ah Ah-Ah ~\\
+I walk alone, I walk a...
 
 C G ~D ~Em\\
 C G ~D ~Em\\
 C G ~D ~Em\\
 C G ~B ~B7
 
-I walk this empty street, on the boulevard of broken dreams\\
-Where the city sleeps, and I\textquotesingle m the only one and I walk
-a...
+I walk this empty street,\\
+on the boulevard of broken dreams\\
+Where the city sleeps,\\
+and I\textquotesingle m the only one and I walk a...
 
 \{chorus\}
 
@@ -1883,56 +1895,76 @@ Hei si beidi nüt meh gseit
 \hypertarget{heute-hier-morgen-dort}{%
 \chapter{Heute hier morgen Dort}\label{heute-hier-morgen-dort}}
 
-~ ~ {[}G{]} ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~{[}C{]} ~ ~ ~ ~{[}G{]}\\
-Heute hier, morgen dort bin kaum da muß ich fort\\
+~ ~ {[}G{]} ~ ~ ~ ~ ~ ~ ~ ~\\
+Heute hier, morgen dort\\
+\hspace*{0.333em} ~ ~ ~{[}C{]} ~ ~ ~ ~{[}G{]}\\
+bin kaum da muß ich fort\\
 \hspace*{0.333em} ~ ~ ~ ~ ~ ~ ~ ~ ~ {[}Em{]} ~ ~{[}D{]}\\
 hab mich niemals des wegen beklagt\\
-\hspace*{0.333em} ~ ~ {[}G{]} ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ {[}C{]} ~ ~
-~{[}G{]}\\
-hab es selbst so gewählt nie die Jahre gezählt\\
+\hspace*{0.333em} ~ ~ {[}G{]} ~ ~ ~ ~ ~ ~ ~\\
+hab es selbst so gewählt\\
+\hspace*{0.333em} ~ ~ ~ {[}C{]} ~ ~ ~{[}G{]}\\
+nie die Jahre gezählt\\
 \hspace*{0.333em} ~ ~ ~ {[}Em{]} ~ ~ ~ {[}D{]} ~ ~ {[}G{]}\\
 nie nach gestern und morgen gefragt
 
-~ ~ ~ ~ ~{[}D{]} ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~{[}C{]} ~ ~ ~ ~ ~{[}G{]}\\
-Manchmal träume ich schwer und dann denk` ich es wär\\
-\hspace*{0.333em} ~ ~ ~ {[}D{]} ~ ~ ~ ~ ~ ~ ~ ~ ~ ~{[}C{]} ~ ~ ~
-{[}G{]}\\
-Zeit zu bleiben und nun was ganz andres zu tun\\
-\hspace*{0.333em} ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ {[}C{]} ~ ~ ~ ~ ~ ~{[}G{]}\\
-So vergeht Jahr um Jahr und ist mir längst klar\\
-\hspace*{0.333em} ~ ~ ~ ~{[}Em{]} ~ ~ ~ ~ ~ ~ ~ {[}D{]} ~ ~ ~ ~ ~
-{[}G{]}\\
-daß nichts bleibt, daß nichts bleibt wie es war.
+~ ~ ~ ~ ~{[}D{]} ~ ~ ~ ~ ~ ~ ~\\
+Manchmal träume ich schwer\\
+\hspace*{0.333em} ~ ~ ~{[}C{]} ~ ~ ~ ~ ~{[}G{]}\\
+und dann denk` ich es wär\\
+\hspace*{0.333em} ~ ~ ~ {[}D{]} ~ ~ ~ ~ ~ ~\\
+Zeit zu bleiben und nun\\
+\hspace*{0.333em} ~ ~ ~{[}C{]} ~ ~ ~ {[}G{]}\\
+was ganz andres zu tun\\
+\hspace*{0.333em} ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\\
+So vergeht Jahr um Jahr\\
+\hspace*{0.333em} {[}C{]} ~ ~ ~ ~ ~ ~{[}G{]}\\
+und ist mir längst klar\\
+\hspace*{0.333em} ~ ~ ~ ~{[}Em{]} ~ ~\\
+daß nichts bleibt,\\
+\hspace*{0.333em} ~ ~ ~ ~ {[}D{]} ~ ~ ~ ~ ~ {[}G{]}\\
+daß nichts bleibt wie es war.
 
-~ ~ ~ {[}G{]} ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~{[}C{]} ~ ~ ~{[}G{]}\\
-Daß man mich kaum vermißt schon nach Tagen vergißt\\
+~ ~ ~ {[}G{]} ~ ~ ~ ~ ~ ~ ~ ~\\
+Daß man mich kaum vermißt\\
+\hspace*{0.333em} ~ ~ ~ ~{[}C{]} ~ ~ ~{[}G{]}\\
+schon nach Tagen vergißt\\
 \hspace*{0.333em} ~ ~ ~ ~ ~ ~ ~ ~ ~ ~{[}Em{]} ~ ~ ~{[}D{]}\\
 wenn ich längst wieder anders wo bin\\
-\hspace*{0.333em} ~ ~ ~ {[}G{]} ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ {[}C{]} ~ ~ ~
-~ ~{[}G{]}\\
-stört und kümmert mich nicht vielleicht bleibt mein Gesicht\\
+\hspace*{0.333em} ~ ~ ~ {[}G{]} ~ ~ ~ ~ ~ ~ ~ ~\\
+stört und kümmert mich nicht\\
+\hspace*{0.333em} ~ ~ ~ ~ {[}C{]} ~ ~ ~ ~ ~{[}G{]}\\
+vielleicht bleibt mein Gesicht\\
 \hspace*{0.333em} ~ ~ ~{[}Em{]} ~ ~ {[}D{]} ~ ~ ~ ~{[}G{]}\\
 doch dem ein oder andern im Sinn
 
 \{chorus\}
 
-~ ~ ~ ~ ~{[}G{]} ~ ~ ~ ~ ~ ~ ~ ~{[}C{]} ~ ~ ~ ~ ~ ~ {[}G{]}\\
-Fragt mich einer warum ich so bin bleib ich stumm\\
+~ ~ ~ ~ ~{[}G{]} ~ ~ ~ ~ ~\\
+Fragt mich einer warum\\
+\hspace*{0.333em} ~ ~{[}C{]} ~ ~ ~ ~ ~ ~ {[}G{]}\\
+ich so bin bleib ich stumm\\
 \hspace*{0.333em} ~ ~ ~ ~ ~ ~ ~ ~{[}Em{]} ~ ~ ~ ~ ~ {[}D{]}\\
 denn die Antwort darauf fällt mir schwer\\
-\hspace*{0.333em} ~ ~ ~{[}G{]} ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ {[}C{]} ~ ~ ~ ~
-{[}G{]}\\
-denn was neu ist wird alt und was gestern noch galt\\
+\hspace*{0.333em} ~ ~ ~{[}G{]} ~ ~ ~ ~ ~ ~ ~\\
+denn was neu ist wird alt\\
+\hspace*{0.333em} ~ ~ ~ {[}C{]} ~ ~ ~ ~ {[}G{]}\\
+und was gestern noch galt\\
 \hspace*{0.333em} ~ ~ ~ ~ ~{[}Em{]} ~ ~ ~ ~{[}D{]} ~ ~ ~ ~ {[}G{]}\\
 stimmt schon heut oder morgen nicht mehr.
 
-~ ~ ~ ~ ~ {[}D{]} ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~{[}C{]} ~ ~ ~ ~ ~{[}G{]}\\
-Manchmal träume ich schwer und dann denk ich es wär\\
-\hspace*{0.333em} ~ ~ ~ {[}D{]} ~ ~ ~ ~ ~ ~ ~ ~ ~ ~{[}C{]} ~ ~ ~
-{[}G{]}\\
-Zeit zu bleiben und nun was ganz andres zu tun\\
-\hspace*{0.333em} ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ {[}C{]} ~ ~ ~ ~ ~ ~{[}G{]}\\
-So vergeht Jahr um Jahr und ist mir längst klar\\
+~ ~ ~ ~ ~ {[}D{]} ~ ~ ~ ~ ~ ~\\
+Manchmal träume ich schwer\\
+\hspace*{0.333em} ~ ~ ~ ~{[}C{]} ~ ~ ~ ~ ~{[}G{]}\\
+und dann denk ich es wär\\
+\hspace*{0.333em} ~ ~ ~ {[}D{]} ~ ~ ~ ~ ~ ~\\
+Zeit zu bleiben und nun\\
+\hspace*{0.333em} ~ ~ ~{[}C{]} ~ ~ ~ {[}G{]}\\
+was ganz andres zu tun\\
+\hspace*{0.333em} ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\\
+So vergeht Jahr um Jahr\\
+\hspace*{0.333em} {[}C{]} ~ ~ ~ ~ ~ ~{[}G{]}\\
+und ist mir längst klar\\
 \hspace*{0.333em} ~ ~ ~ ~{[}Em{]} ~ ~ ~ ~ ~ ~ ~ {[}D{]} ~ ~ ~ ~ ~
 {[}G{]}\\
 daß nichts bleibt, daß nichts bleibt wie es war.
@@ -2550,40 +2582,59 @@ chunnt}\label{alls-wo-mir-id-finger-chunnt}}
 \textbar Am······\textbar Dm······\textbar G7······\textbar C·······\textbar{}\\
 \textbar Dm······\textbar Am······\textbar E·······\textbar Am······\textbar{}
 
-Am tag won i uf d\textquotesingle Wält bi cho, si hei mers speter
-gseit\\
-Da het my Mueter grad deheim es Suppegschir verheit\\
-Und sider ischs mys herte Los bis a mys Läbesänd\\
-Alls wo mir id Finger chunnt verbricht mer i de Händ
+Am tag won i uf d\textquotesingle Wält bi cho,\\
+si hei mers speter gseit\\
+Da het my Mueter grad deheim\\
+es Suppegschir verheit\\
+Und sider ischs mys herte Los\\
+bis a mys Läbesänd\\
+Alls wo mir id Finger chunnt\\
+verbricht mer i de Händ
 
-I cha mer Müe gäh wi i wott, es nützt mer alles nüt\\
-Was geschter no isch ganz gsy isch i tuusig Bitze hütt\\
-Die Schärbehüüfe won i hinderla, die rede Bänd\\
-Alls wo mir id Finger chunnt verbricht mer i de Händ
+I cha mer Müe gäh wi i wott,\\
+es nützt mer alles nüt\\
+Was geschter no isch ganz gsy\\
+isch i tuusig Bitze hütt\\
+Die Schärbehüüfe won i hinderla,\\
+die rede Bänd\\
+Alls wo mir id Finger chunnt\\
+verbricht mer i de Händ
 
-I han emal es Meitschi gchennt, s\textquotesingle isch truurig aber
-wahr\\
-Es Meitschi ganz us Porzelan mit rabeschwarze Haar\\
-Uf einisch isch es zue mer cho, het gseit: Jitz isch es
-z\textquotesingle Änd\\
-Alls wo mir id Finger chunnt verbricht mer i de Händ
+I han emal es Meitschi gchennt,\\
+s\textquotesingle isch truurig aber wahr\\
+Es Meitschi ganz us Porzelan\\
+mit rabeschwarze Haar\\
+Uf einisch isch es zue mer cho,\\
+het gseit: Jitz isch es z\textquotesingle Änd\\
+Alls wo mir id Finger chunnt\\
+verbricht mer i de Händ
 
-Und won i\textquotesingle s du zum letschten Abschid a mys Härz ha
-trückt\\
-Da han i\textquotesingle s z\textquotesingle fescht umarmet und vor
-Liebi grad erstickt\\
-I has nid äxtra gmacht, dir chöit mers gloube, Sackermänt\\
-Alls wo mir id Finger chunnt verbricht mer i de Händ
+Und won i\textquotesingle s du zum letschten Abschid\\
+a mys Härz ha trückt\\
+Da han i\textquotesingle s z\textquotesingle fescht umarmet\\
+und vor Liebi grad erstickt\\
+I has nid äxtra gmacht,\\
+dir chöit mers gloube, Sackermänt\\
+Alls wo mir id Finger chunnt\\
+verbricht mer i de Händ
 
-Si hei mi vor e Richter gstellt und hei mi geschter ghänkt\\
-Und won i scho bi ghanget, da uf ds Mal, wär hätt das tänkt\\
-Da het dr Strick la gah im allerletschtischte Momänt\\
-Alls wo mir id Finger chunnt verbricht mer i de Händ
+Si hei mi vor e Richter gstellt\\
+und hei mi geschter ghänkt\\
+Und won i scho bi ghanget,\\
+da uf ds Mal, wär hätt das tänkt\\
+Da het dr Strick la gah\\
+im allerletschtischte Momänt\\
+Alls wo mir id Finger chunnt\\
+verbricht mer i de Händ
 
-Und sider blyben i Vagant und mache lieber nüt\\
-Dir wärdet das begryffe, drum syt güetig, liebi Lüt\\
-Und gryffet ou i ds Portmonee und gäht e mildi Spänd\\
-Alls wo mir id Finger chunnt verbricht mer i de Händ
+Und sider blyben i Vagant\\
+und mache lieber nüt\\
+Dir wärdet das begryffe,\\
+drum syt güetig, liebi Lüt\\
+Und gryffet ou i ds Portmonee\\
+und gäht e mildi Spänd\\
+Alls wo mir id Finger chunnt\\
+verbricht mer i de Händ
 
 \hypertarget{kinder---sind-so-kleine-huxe4nde}{%
 \chapter{Kinder - Sind so kleine
@@ -2594,25 +2645,41 @@ Am······\textbar Dm······\textbar E········\textbar Am···
 C·······\textbar G·······\textbar·········\textbar Am······\textbar{}\\
 C·······\textbar G·······\textbar·········\textbar Am······\textbar{}
 
-Sind so kleine Hände, winz'ge Finger dran.\\
-Darf man nie drauf schlagen, die zerbrechen dann.\\
-Sind so kleine Füße, mit so kleinen Zeh'n.\\
-Darf man nie drauf treten, könn' sie sonst nicht gehn.
+Sind so kleine Hände,\\
+winz'ge Finger dran.\\
+Darf man nie drauf schlagen,\\
+die zerbrechen dann.\\
+Sind so kleine Füße,\\
+mit so kleinen Zeh'n.\\
+Darf man nie drauf treten,\\
+könn' sie sonst nicht gehn.
 
-Sind so kleine Ohren; scharf, und ihr erlaubt.\\
-Darf man nie nie zerbrüllen, werden davon taub.\\
-Sind so schöne Münder, sprechen alles aus.\\
-Darf man nie verbieten, kommt sonst nichts mehr raus.
+Sind so kleine Ohren;\\
+scharf, und ihr erlaubt.\\
+Darf man nie nie zerbrüllen,\\
+werden davon taub.\\
+Sind so schöne Münder,\\
+sprechen alles aus.\\
+Darf man nie verbieten,\\
+kommt sonst nichts mehr raus.
 
-Sind so klare Augen, die noch alles sehn.\\
-Darf man nie verbinden, könn' sie nichts verstehn.\\
-Sind so kleine Seelen, offen und ganz frei.\\
-Darf man niemals quälen, geh'n kaputt dabei.
+Sind so klare Augen,\\
+die noch alles sehn.\\
+Darf man nie verbinden,\\
+könn' sie nichts verstehn.\\
+Sind so kleine Seelen,\\
+offen und ganz frei.\\
+Darf man niemals quälen,\\
+geh'n kaputt dabei.
 
-Ist so'n kleines Rückgrad, sieht man fast noch nicht.\\
-Darf man niemals beugen, weil es sonst zerbricht.\\
-Grade, klare Menschen wär'n ein schönes Ziel.\\
-Leute ohne Rückgrad hab'n wir schon zuviel.
+Ist so'n kleines Rückgrad,\\
+sieht man fast noch nicht.\\
+Darf man niemals beugen,\\
+weil es sonst zerbricht.\\
+Grade, klare Menschen\\
+wär'n ein schönes Ziel.\\
+Leute ohne Rückgrad\\
+hab'n wir schon zuviel.
 
 \hypertarget{dr-wecker}{%
 \chapter{Dr Wecker}\label{dr-wecker}}
@@ -3041,17 +3108,23 @@ C···\textbar····\textbar G···\textbar····\textbar{}\\
 D···\textbar D7··\textbar G···\textbar Em··\textbar{}\\
 G···\textbar D···\textbar G···\textbar····\textbar{}
 
-Silent night! Holy night! All is calm all is bright\\
-Round yon virgin mother and child Holy infant so tender and mild\\
-Sleep in heavenly peace! Sleep in heavenly peace!
+Silent night! Holy night!\\
+All is calm all is bright\\
+Round yon virgin mother and child\\
+Holy infant so tender and mild\\
+Sleep in heavenly peace! (2x)
 
-Silent night! Holy night! Shepherds quake at the sight\\
-Glories stream from heaven afar Heavenly hosts sing Hallelujah\\
-Christ the Saviour is born! Christ the Saviour is born!
+Silent night! Holy night!\\
+Shepherds quake at the sight\\
+Glories stream from heaven afar\\
+Heavenly hosts sing Hallelujah\\
+Christ the Saviour is born! (2x)
 
-Silent night! Holy night! Son of God love\textquotesingle s pure light\\
-Radiant beams from thy holy face With the dawn of redeeming grace\\
-Jesus lord at thy birth! Jesus lord at thy birth!
+Silent night! Holy night!\\
+Son of God love\textquotesingle s pure light\\
+Radiant beams from thy holy face\\
+With the dawn of redeeming grace\\
+Jesus lord at thy birth! (2x)
 
 \hypertarget{suxfcsser-die-glocken-nie-klingen}{%
 \chapter{Süsser die Glocken nie
@@ -3435,9 +3508,8 @@ O night divine, O night when Christ was born\\
 {[}G7{]} ~ ~ {[}C{]}F {[}C{]} ~{[}G7{]} ~ ~ ~ ~{[}C{]}\\
 O night, O holy night, O night divine
 
-\hypertarget{gloria---engel-haben-himmelslieder}{%
-\chapter{Gloria - Engel haben
-Himmelslieder}\label{gloria---engel-haben-himmelslieder}}
+\hypertarget{gloria}{%
+\chapter{Gloria}\label{gloria}}
 
 \textbar G·····\textbar D··G··\textbar{}\\
 \textbar······\textbar D··G··\textbar{}
@@ -3566,19 +3638,20 @@ And with his blood mankind has bought.
 
 \part{Volkslieder}
 
-\hypertarget{vreneli-vo-guggisberg-s-isch-uxe4ben-e-muxf6nsch-uf-aerde}{%
-\chapter{Vreneli vo Guggisberg / S isch äben e Mönsch uf
-Aerde}\label{vreneli-vo-guggisberg-s-isch-uxe4ben-e-muxf6nsch-uf-aerde}}
+\hypertarget{vreneli-vo-guggisberg}{%
+\chapter{Vreneli vo Guggisberg}\label{vreneli-vo-guggisberg}}
 
 S isch äben e Mönsch uf Aerde, Simelibärg!\\
 Und ds Vreneli ab em Guggisberg\\
 Und s Simmes Hans-Joggeli än dem Bärg,\\
-S´isch äben ä Mönsch uf Aerde, Dass i möcht bi-n-em si
+S´isch äben ä Mönsch uf Aerde,\\
+Dass i möcht bi-n-em si
 
 U ma-n-er mir nit wärde, Simelibärg!\\
 Und s\textquotesingle Vreneli ab em Guggidbärg,\\
 Und s\textquotesingle{} Simmes Hans-Joggeli änet dem Bärg,\\
-U mah-n-er mir nit wärde, Vor Kummer stirbe-n-i.
+U mah-n-er mir nit wärde,\\
+Vor Kummer stirbe-n-i.
 
 I mines Buells Garte\\
 Und s\textquotesingle Vreneli ab em Guggidbärg,\\
@@ -3588,42 +3661,50 @@ I mines Buelis Garte, da stah zweu Bäumeli.
 S isch äben e Mönsch uf Aerde, Simelibärg!\\
 Und ds Vreneli ab em Guggisberg\\
 Und s Simmes Hans-Joggeli än dem Bärg,\\
-Das eini treit Muschgate, das andri Nägeli.
+Das eini treit Muschgate,\\
+das andri Nägeli.
 
 Muschgate, die si süessi, Simelibärg!\\
 Und ds Vreneli ab em Guggisberg\\
 Und s Simmes Hans-Joggeli än dem Bärg,\\
-Muschgate, die si süessi, u d\textquotesingle Nägeli si räss.
+Muschgate, die si süessi,\\
+u d\textquotesingle Nägeli si räss.
 
 I gabs mim Lieb z\textquotesingle versueche\\
 Und ds Vreneli ab em Guggisberg\\
 Und s Simmes Hans-Joggeli än dem Bärg,\\
-I gabs mim Lieb z\textquotesingle versueche, daßs miner nit vergäß.
+I gabs mim Lieb z\textquotesingle versueche,\\
+daßs miner nit vergäß.
 
 Ha di no nie vergässe\\
 Und ds Vreneli ab em Guggisberg\\
 Und s Simmes Hans-Joggeli än dem Bärg,\\
-Ha di no nie vergässe, ha immer a di dänkt.
+Ha di no nie vergässe,\\
+ha immer a di dänkt.
 
 Es si numeh zweu Jahre\\
 Und ds Vreneli ab em Guggisberg\\
 Und s Simmes Hans-Joggeli än dem Bärg,\\
-Es si numeh zweu Jahre, daß mi han a di ghänkt.
+Es si numeh zweu Jahre,\\
+daß mi han a di ghänkt.
 
 Dört unden i der Tiefi\\
 Und ds Vreneli ab em Guggisberg\\
 Und s Simmes Hans-Joggeli än dem Bärg,\\
-Dört unden i der Tiefi, da steit es Mühlirad.
+Dört unden i der Tiefi,\\
+da steit es Mühlirad.
 
 Das mahlet nüt als Liebi,\\
 Und ds Vreneli ab em Guggisberg\\
 Und s Simmes Hans-Joggeli än dem Bärg,\\
-Das mahlet nüt als Liebi, die Nacht und auch den Tag.
+Das mahlet nüt als Liebi,\\
+die Nacht und auch den Tag.
 
 Das Mühlirad isch broche\\
 Und ds Vreneli ab em Guggisberg\\
 Und s Simmes Hans-Joggeli än dem Bärg,\\
-Das Mühlirad isch broche, mis Lied, des het es End.
+Das Mühlirad isch broche,\\
+mis Lied, des het es End.
 
 \hypertarget{im-aargau-sind-zwuxf6i-liebi}{%
 \chapter{im Aargau sind zwöi Liebi}\label{im-aargau-sind-zwuxf6i-liebi}}
@@ -3688,9 +3769,8 @@ Wärisch du deheime blibe,\\
 So hättisch dis Schätzeli no, no, no,\\
 So hättisch dis Schätzeli no!»
 
-\hypertarget{unser-leben-gleicht-der-reise-beresinalied}{%
-\chapter{Unser Leben gleicht der Reise /
-Beresinalied}\label{unser-leben-gleicht-der-reise-beresinalied}}
+\hypertarget{beresinalied}{%
+\chapter{Beresinalied}\label{beresinalied}}
 
 Unser Leben gleicht der Reise\\
 Eines Wandrers in der Nacht;\\
@@ -3920,63 +4000,111 @@ Drum bliben i ledig bis in den Tod, so het die Lieb es Änd.
 \hypertarget{alles-fahrt-ski}{%
 \chapter{Alles fahrt Ski}\label{alles-fahrt-ski}}
 
-Alles fahrt Schi, alles fahrt Schi, Schi fahrt die ganzi Nation.\\
-Alles fahrt Schi, alles fahrt Schi, d'Mamme, der Bappe, der Sohn.\\
-Es git halt nüt Schöners, juhe, juhe, als Sunneschy, Bärge und Schnee.
+Alles fahrt Schi, alles fahrt Schi,\\
+Schi fahrt die ganzi Nation.\\
+Alles fahrt Schi, alles fahrt Schi,\\
+d'Mamme, der Bappe, der Sohn.\\
+Es git halt nüt Schöners, juhe, juhe,\\
+als Sunneschy, Bärge und Schnee.
 
-'s Grittli mit Keilhose, satte, puderet, gschminkt, parfümiert,\\
-stoht wie ne Kueh uff de Latte, zmitts uff der Piste und friert.
+'s Grittli mit Keilhose, satte,\\
+puderet, gschminkt, parfümiert,\\
+stoht wie ne Kueh uff de Latte,\\
+zmitts uff der Piste und friert.
 
-D'Hänsche hett's Grittli verlore, iskalt sind d'Finger vom Schnee;\\
-`s jommeret halber verfrore: "Wie schön wär's bim Feif-o-Glogg-Tee!"
+D'Hänsche hett's Grittli verlore,\\
+iskalt sind d'Finger vom Schnee;\\
+`s jommeret halber verfrore:\\
+"Wie schön wär's bim Feif-o-Glogg-Tee!"
 
-D'Schilehrer flott demonstriere, Slalom und Sprunglauf im Schuss.\\
-Gli wills der Meier probiere, fliegt wiene Mählsagg uff d'Nuss.\\
-Springe uff d'Syte macht Freude; stolz seit der Lehrer "s'isch guet!"\\
-Druff meint der Meier bescheide: "Der Sytesprung liegt mir im Bluet!"
+D'Schilehrer flott demonstriere,\\
+Slalom und Sprunglauf im Schuss.\\
+Gli wills der Meier probiere,\\
+fliegt wiene Mählsagg uff d'Nuss.\\
+Springe uff d'Syte macht Freude;\\
+stolz seit der Lehrer "s'isch guet!"\\
+Druff meint der Meier bescheide:\\
+"Der Sytesprung liegt mir im Bluet!"
 
-D'Sässelilift bringe d'Pärli uffe ins Bärgrestaurant,\\
-dört sitzt der Köbi und `s Clärli, fröhlig im Liegstuel binand.\\
-`s Clärli tuet salbe und schmiere, `s liegt an der Sunne ganz schlapp;\\
-schüch seit's mit zündroter Bire: "Ich fahr mit em Bähnli durab!"
+D'Sässelilift bringe d'Pärli\\
+uffe ins Bärgrestaurant,\\
+dört sitzt der Köbi und `s Clärli,\\
+fröhlig im Liegstuel binand.\\
+`s Clärli tuet salbe und schmiere,\\
+`s liegt an der Sunne ganz schlapp;\\
+schüch seit's mit zündroter Bire:\\
+"Ich fahr mit em Bähnli durab!"
 
-Zobe bim Tanz seit der Dölfi: "Samba git Vorlag in d'Bei!"\\
-`s Miggi macht mit bis am zwölfi, `s gfallt em, `s möcht gar nümme
-hei.\\
-Schnäll nimmt's en Schluck vo sym Schnäpsli, git dänn im Dölfi der
-Räscht.\\
-Plötzlig seit es zu sym Schätzli: "Ich blib morn der ganz Tag im
-Näscht!"
+Zobe bim Tanz seit der Dölfi:\\
+"Samba git Vorlag in d'Bei!"\\
+`s Miggi macht mit bis am zwölfi,\\
+`s gfallt em, `s möcht gar nümme hei.\\
+Schnäll nimmt's en Schluck vo sym Schnäpsli,\\
+git dänn im Dölfi der Räscht.\\
+Plötzlig seit es zu sym Schätzli:\\
+"Ich blib morn der ganz Tag im Näscht!"
 
 \hypertarget{lueget-vo-berge-u-tal}{%
 \chapter{Lueget vo Berge u Tal}\label{lueget-vo-berge-u-tal}}
 
+D ~ ~ ~ ~ ~A ~ ~ ~ ~D\\
 Lueget, vo Bärg und Tal\\
+\hspace*{0.333em} ~ ~ ~ ~ ~ ~ ~ ~ ~A\\
 flieht scho de Sunnestrahl\\
+D ~ ~ ~ D7 G ~ ~ ~ D\\
 Lueget, uf Aue und Matte\\
+\hspace*{0.333em} ~ ~ D7 ~G ~ ~ ~ D\\
 Wachse die dunkele Schatte\\
+Hm ~ ~ ~ ~ ~ A ~ ~ ~ ~D\\
 D´Sunn uf de Bärge no stoht\\
+\hspace*{0.333em} ~ ~ ~ ~ ~ A ~ ~ ~ ~ ~ ~D\\
+Oh, wie si d\textquotesingle Gletscher so rot\\
+Hm ~ ~ ~ ~ ~ Em ~ ~ ~ ~ ~ D\\
 Oh, wie si d\textquotesingle Gletscher so rot
 
+D ~ ~ ~ ~ ~A ~ ~ ~ ~D\\
 Lueget do aben a See!\\
+\hspace*{0.333em} ~ ~ ~ ~ ~ ~ ~ ~ ~A\\
 Heimezue wändet sich s'Veh;\\
+D ~ ~ ~ D7 G ~ ~ ~ D\\
 Loset, wie d\textquotesingle Glogge, die schöne,\\
+\hspace*{0.333em} ~ ~ D7 ~G ~ ~ ~ D\\
 Fründli vom Moos üs ertöne;\\
+Hm ~ ~ ~ ~ ~ A ~ ~ ~ ~D\\
 Chüehjerglüt, üseri Lust,\\
+\hspace*{0.333em} ~ ~ ~ ~ ~ A ~ ~ ~ ~ ~ ~D\\
+Tuet is so wohl i der Brust.\\
+Hm ~ ~ ~ ~ ~ Em ~ ~ ~ ~ ~ D\\
 Tuet is so wohl i der Brust.
 
+D ~ ~ ~ ~ ~A ~ ~ ~ ~ ~ ~D\\
 Still a de Bärge wird\textquotesingle s Nacht,\\
+\hspace*{0.333em} ~ ~ ~ ~ ~ ~ ~ ~ ~A\\
 Aber der Herrgott, da wacht.\\
+D ~ ~ ~ D7 G ~ ~ ~ D\\
 Gseht der säb Stärnli dört schyne?\\
+\hspace*{0.333em} ~ ~ D7 ~G ~ ~ ~ D\\
 Stärnli, wie bisch du so fryne!\\
+Hm ~ ~ ~ ~ ~ A ~ ~ ~ ~D\\
 Gseht der, am Himmel do stoht\textquotesingle s:\\
+\hspace*{0.333em} ~ ~ ~ ~ ~ A ~ ~ ~ ~ ~ ~D\\
+Stärnli, Gott grüess di, wie goht\textquotesingle s?\\
+Hm ~ ~ ~ ~ ~ Em ~ ~ ~ ~ ~ D\\
 Stärnli, Gott grüess di, wie goht\textquotesingle s?
 
+D ~ ~ ~ ~ ~A ~ ~ ~ ~ ~ ~D\\
 Loset, es seit is: "Gar guet!\\
+\hspace*{0.333em} ~ ~ ~ ~ ~ ~ ~ ~ ~A\\
 Het mi nit Gott i der Huet?\\
+D ~ ~ ~ D7 G ~ ~ ~ D\\
 Fryli, der Vater vo alle\\
+\hspace*{0.333em} ~ ~ D7 ~G ~ ~ ~ D\\
 Lot mi gwüss währli nit falle.\\
+Hm ~ ~ ~ ~ ~ A ~ ~ ~ ~D\\
 Vater im Himmel, dä wacht\\
+\hspace*{0.333em} ~ ~ ~ ~ ~ A ~ ~ ~ ~ ~ ~D\\
+Stärnli, liebs Stärnli, guet Nacht!\\
+Hm ~ ~ ~ ~ ~ Em ~ ~ ~ ~ ~ D\\
 Stärnli, liebs Stärnli, guet Nacht!
 
 \hypertarget{vo-luzern-guxe4ge-wuxe4ggis-zue}{%
@@ -4108,8 +4236,6 @@ Jetzt isch äs plötzli nümme da,\\
 und du liesch wach im Bett.\\
 Auf der Gitarre begleiten
 
-https://youtu.be/ceJCk4mjn94
-
 \hypertarget{min-vater-isch-en-appezeller}{%
 \chapter{Min Vater isch en
 Appezeller}\label{min-vater-isch-en-appezeller}}
@@ -4184,52 +4310,52 @@ https://youtu.be/kyYwMTB6YL8
 
 Der Mond ist aufgegangen\\
 Die goldnen Sternlein prangen\\
-\hspace*{0.333em} ~ Am Himmel hell und klar:\\
+Am Himmel hell und klar:\\
 Der Wald steht schwarz und schweiget,\\
 Und aus den Wiesen steiget\\
-\hspace*{0.333em} ~ Der weiße Nebel wunderbar.
+Der weiße Nebel wunderbar.
 
 Wie ist die Welt so stille,\\
 Und in der Dämmrung Hülle\\
-\hspace*{0.333em} ~ So traulich und so hold!\\
+So traulich und so hold!\\
 Als eine stille Kammer,\\
 Wo ihr des Tages Jammer\\
-\hspace*{0.333em} ~ Verschlafen und vergessen sollt.
+Verschlafen und vergessen sollt.
 
 Seht ihr den Mond dort stehen?\\
 Er ist nur halb zu sehen,\\
-\hspace*{0.333em} ~ Und ist doch rund und schön.\\
+Und ist doch rund und schön.\\
 So sind wohl manche Sachen,\\
 Die wir getrost belachen,\\
-\hspace*{0.333em} ~ Weil unsre Augen sie nicht sehn.
+Weil unsre Augen sie nicht sehn.
 
 Wir stolze Menschenkinder\\
 Sind eitel arme Sünder,\\
-\hspace*{0.333em} ~ Und wissen gar nicht viel;\\
+Und wissen gar nicht viel;\\
 Wir spinnen Luftgespinste,\\
 Und suchen viele Künste,\\
-\hspace*{0.333em} ~ Und kommen weiter von dem Ziel.
+Und kommen weiter von dem Ziel.
 
 Gott, laß uns dein Heil schauen,\\
 Auf nichts vergänglichs trauen,\\
-\hspace*{0.333em} ~ Nicht Eitelkeit uns freun!\\
+Nicht Eitelkeit uns freun!\\
 Laß uns einfältig werden,\\
 Und vor dir hier auf Erden\\
-\hspace*{0.333em} ~ Wie Kinder fromm und fröhlich sein!
+Wie Kinder fromm und fröhlich sein!
 
 Wollst endlich sonder Grämen\\
 Aus dieser Welt uns nehmen\\
-\hspace*{0.333em} ~ Durch einen sanften Tod,\\
+Durch einen sanften Tod,\\
 Und wenn du uns genommen,\\
 Laß uns in Himmel kommen,\\
-\hspace*{0.333em} ~ Du lieber treuer frommer Gott!
+Du lieber treuer frommer Gott!
 
 So legt euch denn, ihr Brüder,\\
 In Gottes Namen nieder!\\
-\hspace*{0.333em} ~ Kalt ist der Abendhauch.\\
+Kalt ist der Abendhauch.\\
 Verschon' uns Gott mit Strafen,\\
 Und laß uns ruhig schlafen,\\
-\hspace*{0.333em} ~ Und unsern kranken Nachbar auch!
+Und unsern kranken Nachbar auch!
 
 \hypertarget{vo-luzern-of-wuxe4ggis-zue}{%
 \chapter{Vo Luzern of Wäggis zue}\label{vo-luzern-of-wuxe4ggis-zue}}

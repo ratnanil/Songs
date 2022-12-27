@@ -1,1 +1,5 @@
 \RedeclareSectionCommand[beforeskip=0pt, afterskip=0pt]{chapter}
+
+% https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown
+\let\oldmaketitle\maketitle
+\AtBeginDocument{\let\maketitle\relax}

@@ -109,12 +109,13 @@ format:
   pdf: 
     documentclass: scrbook
     # by default, scrbook is twosided, which means each chapter must start on an odd page
-    classoption: twoside=false 
+    classoption: twoside=false
     geometry:
-      - left=20mm
-      - top=05mm
-      - right=10mm
-      - bottom=05mm
+      - a5paper
+      - left=16mm
+      - top=10mm
+      - right=02mm
+      - bottom=02mm
     keep-tex: true
     include-before-body: titlepage.tex
     include-in-header: preamble.tex
@@ -123,7 +124,8 @@ format:
   html:
     css: style.css
     theme: darkly
-    
+    linestretch: 1
+    fontsize: 0.8em
 from: markdown+hard_line_breaks-smart
 # extension "hard_line_breaks" interprets single line breaks as hard line breaks
 # extension "smart" replaces two -- as an emdash, which is not good for tabs
