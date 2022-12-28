@@ -6,24 +6,24 @@ year: '1992'
 ---
 
 :::{.song-grid}
- E A D  G   B  E 
+ E A D  G   B  E 
 :::
 
-   [Am]                  [D]
+   [Am]                  [D]
 Sie sagten, er kaeme von Nuernberg her,
-       [Am]
+       [Am]
 und er spraeche kein Wort.
-        [Am]                 [D]   
+        [Am]                 [D]   
 Auf dem Marktplatz standen sie um ihn her
-      [Am]
+      [Am]
 und begafften ihn dort.
-   [C]                            [Am]
-Die einen raunten: Er ist ein Tier!",  
-          [Am] 
+   [C]                            [Am]
+Die einen raunten: Er ist ein Tier!",  
+          [Am] 
 die andern fragten: Was will der hier?",
-[D]                       [G]
+[D]                       [G]
 und dass er sich doch zum Teufel scher'.
-    [C]             E7      [Am]
+    [C]             E7      [Am]
 So jagt ihn doch fort, so jagt ihn doch fort!"
 
 Sein Haar in Straehnen und wirre,

@@ -10,13 +10,13 @@ year: '1964'
 Am, C, D, F, Am, E, Am , E 
 :::
 
-     [Am] [C]      [D]         [F]
+     [Am] [C]      [D]         [F]
 There is a house in New Orleans
-    [Am]     [C]    [E]  [E7]
+    [Am]     [C]    [E]  [E7]
 They call the Risin' Sun
-        [Am]     [C]     [D]         [F]
+        [Am]     [C]     [D]         [F]
 And it's been the ruin of many a poor boy.
-   [Am]   [E]      [Am]
+   [Am]   [E]      [Am]
 And God, I know I'm one.
 
 My mother was a tailor.

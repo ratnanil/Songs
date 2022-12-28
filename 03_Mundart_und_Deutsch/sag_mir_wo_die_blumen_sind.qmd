@@ -5,99 +5,99 @@ source: https://tabs.ultimate-guitar.com/tab/pete-seeger/sag-mir-wo-die-blumen-s
 
 ---
 
-C               Am           
+C               Am           
 Sag mir, wo die Blumen sind, 
-F               G
+F               G
 wo sind sie ge-blie-ben?
-C               Am           
+C               Am           
 Sag mir, wo die Blumen sind, 
-F                G
+F                G
 was ist ge -schehen?
-C               Am           
+C               Am           
 Sag mir, wo die Blumen sind, 
-F                G
+F                G
 Mädchen pflückten sie geschwind.
-F             C                 
-Wann wird man je verstehen?     
-F             G          C
+F             C                 
+Wann wird man je verstehen?     
+F             G          C
 Wann wird man je ver- stehen?
 
 :::{.song-bridge}
--Am  -  F   -   C
+-Am  -  F   -   C
 :::
 
-C               Am           
+C               Am           
 Sag mir, wo die Mädchen sind, 
-F               G
+F               G
 wo sind sie ge-blie-ben?
-C               Am           
+C               Am           
 Sag mir, wo die Blumen sind, 
-F                G
+F                G
 was ist ge -schehen?
-C               Am           
+C               Am           
 Sag mir, wo die Blumen sind, 
-F                G
+F                G
 Männer nahmen sie geschwind.
-F             C                 
-Wann wird man je verstehen?     
-F             G          C
+F             C                 
+Wann wird man je verstehen?     
+F             G          C
 Wann wird man je ver- stehen?
 
 {comment: play bridge}
 
-C               Am           
+C               Am           
 Sag mir, wo die Männer sind, 
-F               G
+F               G
 wo sind sie ge-blie-ben?
-C               Am           
+C               Am           
 Sag mir, wo die Blumen sind, 
-F                G
+F                G
 was ist ge -schehen?
-C               Am           
+C               Am           
 Sag mir, wo die Blumen sind, 
-F                G
+F                G
 Zogen fort, der Krieg beginnt.
-F             C                 
-Wann wird man je verstehen?     
-F             G          C
+F             C                 
+Wann wird man je verstehen?     
+F             G          C
 Wann wird man je ver- stehen?
 
 {comment: play bridge}
 
-C               Am           
+C               Am           
 Sag mir, wo die Soldaten sind, 
-F               G
+F               G
 wo sind sie ge-blie-ben?
-C               Am           
+C               Am           
 Sag mir, wo die Blumen sind, 
-F                G
+F                G
 was ist ge -schehen?
-C               Am           
+C               Am           
 Sag mir, wo die Blumen sind, 
-F                G
+F                G
 Über Gräbern weht der Wind. 
-F             C                 
-Wann wird man je verstehen?     
-F             G          C
+F             C                 
+Wann wird man je verstehen?     
+F             G          C
 Wann wird man je ver- stehen?
 
 {comment: play bridge}
 
-C               Am           
+C               Am           
 Sag mir, wo die Gräber sind, 
-F               G
+F               G
 wo sind sie ge-blie-ben?
-C               Am           
+C               Am           
 Sag mir, wo die Blumen sind, 
-F                G
+F                G
 was ist ge -schehen?
-C               Am           
+C               Am           
 Sag mir, wo die Blumen sind, 
-F                G
+F                G
 Blumen blühen im Sommerwind.
-F             C                 
-Wann wird man je verstehen?     
-F             G          C
+F             C                 
+Wann wird man je verstehen?     
+F             G          C
 Wann wird man je ver- stehen?
 
 

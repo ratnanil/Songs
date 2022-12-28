@@ -3,13 +3,13 @@ title: Boulevard of Broken Dreams
 artist: Green Day
 ---
 
-[Em]     [G]          
+[Em]     [G]          
 I walk a lonely road, 
-  [D]            [A]           [Em]
+  [D]            [A]           [Em]
 the only one that I have ever known
-           [G]           
+           [G]           
 Don't know where it goes,
-[D]              [A]             [Em]
+[D]              [A]             [Em]
 but it's home to me and I walk alone
 
 :::{.song-grid}
@@ -22,28 +22,28 @@ Where the city sleeps,
 and I'm the only one and I walk alone
 
 
-[Em][G][D]          [A]         [Em]
+[Em][G][D]          [A]         [Em]
 .........I walk alone, I walk alone.
-[Em][G][D]          [A]
+[Em][G][D]          [A]
 .........I walk alone, I walk a....
 
 
 :::{.song-chorus}
-[C]    [G]          [D]            [Em]
-    My shadow's the only one that walks beside me
-[C]     [G]     [D]             [Em]
-    My shallow heart's the only thing that's beating
-[C]     [G]     [D]               [Em]
-    Sometimes I wish someone out there will find me
-[C]      [G]    [B7]
-    Till then I walk alone
+[C]    [G]          [D]            [Em]
+    My shadow's the only one that walks beside me
+[C]     [G]     [D]             [Em]
+    My shallow heart's the only thing that's beating
+[C]     [G]     [D]               [Em]
+    Sometimes I wish someone out there will find me
+[C]      [G]    [B7]
+    Till then I walk alone
 :::
 
 
-[Em]  [G]   [D]     [A]
-Ah-Ah Ah-Ah Ah-Ah   Ahhh-Ah
-    [Em] [G]   [D]     [A]
-haaa-ah  Ah-Ah Ah-Ah   Ah-Ah
+[Em]  [G]   [D]     [A]
+Ah-Ah Ah-Ah Ah-Ah   Ahhh-Ah
+    [Em] [G]   [D]     [A]
+haaa-ah  Ah-Ah Ah-Ah   Ah-Ah
 
 
 I'm walking down the line
@@ -52,7 +52,7 @@ On the border line of the edge
 And where I walk alone
 
 :::{.song-grid}
-Em G  D  A
+Em G  D  A
 :::
 
 Read between the lines
@@ -68,16 +68,16 @@ I walk alone, I walk a....
 {chorus}
 
 
-Ah-Ah Ah-Ah Ah-Ah   Ahhh-Ah
-haaa-ah  Ah-Ah Ah-Ah  
+Ah-Ah Ah-Ah Ah-Ah   Ahhh-Ah
+haaa-ah  Ah-Ah Ah-Ah  
 I walk alone, I walk a...
 
 
 :::{.song-grid}
- C G  D  Em 
- C G  D  Em 
- C G  D  Em 
- C G  B  B7 
+ C G  D  Em 
+ C G  D  Em 
+ C G  D  Em 
+ C G  B  B7 
 :::
 
 

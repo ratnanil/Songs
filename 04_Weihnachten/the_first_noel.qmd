@@ -6,99 +6,99 @@ time: 3/4
 ---
 
 
-   [G]       [D] 
+   [G]       [D] 
 The first Noel 
-   [C]          [G]
+   [C]          [G]
 the angel did say 
-      [C]
+      [C]
 Was to certain poor 
-[D]        [C]            [G]
+[D]        [C]            [G]
 Shepards in fields as they lay: 
-  [G]                 [D]
+  [G]                 [D]
 In fields where they lay
- [C]           [G]
+ [C]           [G]
 a keeping their sheep
-    [C]           [D]            [C][G] 
+    [C]           [D]            [C][G] 
 On a cold winter's night that was so deep.
 
 :::{.song-chorus}
- [G]  [D]  [C]  [G]
+ [G]  [D]  [C]  [G]
 Noel Noel Noel Noel
-[C]        [D]     [C] [G]
+[C]        [D]     [C] [G]
 Born is the King of Israel.
 :::
  
-    [G]    [D]  
+    [G]    [D]  
 They looked up 
-   [C]   [G]
+   [C]   [G]
 and saw a star 
-       [C]    [D]     [C]      [G]
+       [C]    [D]     [C]      [G]
 Shining in the east beyond them far:
-   [G]    [D]      
+   [G]    [D]      
 And to the earth 
-  [C]        [G]
+  [C]        [G]
 it gave great light
-   [C]       [D]        [C]     [G] 
+   [C]       [D]        [C]     [G] 
 And so it continued both day and night. 
 
 {chorus}
 
-   [G]       [D] 
+   [G]       [D] 
 And by the light
-   [C]      [G]
+   [C]      [G]
 of that same star 
-     [C]      [D]           [C]     [G]
+     [C]      [D]           [C]     [G]
 Three wise men came from the country far; 
-  [G]        [D]
+  [G]        [D]
 To seek for a King
-   [C]     [G]
+   [C]     [G]
 was their intent, 
-      [C]        [D]      [C]     [G] 
+      [C]        [D]      [C]     [G] 
 And to follow the star wherever it went. 
 
 {chorus}
 
-    [G]  [D] 
+    [G]  [D] 
 This star drew 
-    [C]          [G]
+    [C]          [G]
 nigh to the north-west; 
-    [C]   [D]    [C]       [G]
+    [C]   [D]    [C]       [G]
 O'er Bethlehem it took it's rest, 
-   [G]      [D]
+   [G]      [D]
 And there it did
-    [C]      [G]
+    [C]      [G]
 both stop and stay, 
-     [C]      [D]         [C]   [G] 
+     [C]      [D]         [C]   [G] 
 Right over the place where Jesus lay. 
 
 {chorus}
 
-    [G]     [D] 
+    [G]     [D] 
 Then entered in
-     [C]      [G]
+     [C]      [G]
 those wise men three, 
-    [C]        [D]        [C] [G]
+    [C]        [D]        [C] [G]
 Fell reverently upon their knee, 
-   [G]     [D]
+   [G]     [D]
 And offered there 
-      [C][G]
+      [C][G]
 in his presence 
-     [C]      [D]       [C]    [G] 
+     [C]      [D]       [C]    [G] 
 Their gold and myrrh and frankincense. 
 
 {chorus}
 
-    [G]    [D] 
+    [G]    [D] 
 Then let us all
-    [C] [G]
-with one accord  
-    [C]     [D]    [C]      [G]
+    [C] [G]
+with one accord  
+    [C]     [D]    [C]      [G]
 Sing praises to our heavenly Lord, 
-    [G]  [D]
+    [G]  [D]
 That hath made
-          [C]      [G]
+          [C]      [G]
 heaven and earth of nought,
-   [C]      [D]   [C]         [G] 
+   [C]      [D]   [C]         [G] 
 And with his blood mankind has bought. 
 
 {chorus}

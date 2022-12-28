@@ -5,62 +5,62 @@ source: https://als.wikipedia.org/wiki/Text:Volkslieder/Lueget_vo_Berg_und_Tal
 takt: 3/4
 ---
 
-D          A        D
+D          A        D
 Lueget, vo Bärg und Tal
-                    A
+                    A
 flieht scho de Sunnestrahl
-D       D7 G       D
+D       D7 G       D
 Lueget, uf Aue und Matte
-       D7  G       D
+       D7  G       D
 Wachse die dunkele Schatte
-Hm           A        D
+Hm           A        D
 D´Sunn uf de Bärge no stoht
-             A            D
+             A            D
 Oh, wie si d'Gletscher so rot
-Hm           Em           D
+Hm           Em           D
 Oh, wie si d'Gletscher so rot
 
-D          A     D
+D          A     D
 Lueget do aben a See!
-                       A
+                       A
 Heimezue wändet sich s’Veh;
-D      D7    G           D
+D      D7    G           D
 Loset, wie d'Glogge, die schöne,
-        D7  G       D
+        D7  G       D
 Fründli vom Moos üs ertöne;
-Hm            A     D
+Hm            A     D
 Chüehjerglüt, üseri Lust,
-             A        D
+             A        D
 Tuet is so wohl i der Brust.
-Hm           Em           D
+Hm           Em           D
 Tuet is so wohl i der Brust.
 
-D          A            D
+D          A            D
 Still a de Bärge wird's Nacht,
-                      A
+                      A
 Aber der Herrgott, da wacht.
-D          D7 G            D
+D          D7 G            D
 Gseht der säb Stärnli dört schyne?
-         D7  G           D
+         D7  G           D
 Stärnli, wie bisch du so fryne!
-Hm           A        D
+Hm           A        D
 Gseht der, am Himmel do stoht's:
-               A             D
+               A             D
 Stärnli, Gott grüess di, wie goht's?
-Hm            Em             D
+Hm            Em             D
 Stärnli, Gott grüess di, wie goht's?
 
-D          A            D
+D          A            D
 Loset, es seit is: "Gar guet!
-                      A
+                      A
 Het mi nit Gott i der Huet?
-D       D7 G         D
+D       D7 G         D
 Fryli, der Vater vo alle
-       D7    G          D
+       D7    G          D
 Lot mi gwüss währli nit falle.
-Hm       A          D
+Hm       A          D
 Vater im Himmel, dä wacht
-               A             D
+               A             D
 Stärnli, liebs Stärnli, guet Nacht! 
-Hm             Em            D
+Hm             Em            D
 Stärnli, liebs Stärnli, guet Nacht! 

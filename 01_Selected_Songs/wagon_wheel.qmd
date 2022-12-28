@@ -5,13 +5,13 @@ capo: '2'
 
 ---
 
-[G]                     [D]
+[G]                     [D]
 Headed down south to the land of the pines
-       [Em]                 [C]
+       [Em]                 [C]
 And I'm thumbin' my way into North Caroline
 [G]
 Starin' up the road
-           [D]       [C]
+           [D]       [C]
 And pray to God I see headlights
 
 
@@ -21,17 +21,17 @@ And I'm a hopin' for Raleigh
 I can see my baby tonight
 
 :::{.song-chorus}
-  [G]                 [D]
+  [G]                 [D]
 So rock me mama like a wagon wheel
-[Em]           [C]
+[Em]           [C]
 Rock me mama anyway you feel
-[G][D]   [C]
+[G][D]   [C]
 Hey, mama rock me
-[G]                  [D]
+[G]                  [D]
 Rock me mama like the wind and the rain
-[Em]               [C]
+[Em]               [C]
 Rock me mama like a south-bound train
-[G][D]   [C]
+[G][D]   [C]
 Hey, mama rock me
 :::
 

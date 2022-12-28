@@ -4,78 +4,78 @@ artist: Hannes Wader
 
 ---
 
-     [G]                
+     [G]                
 Heute hier, morgen dort 
-        [C]        [G]
+        [C]        [G]
 bin kaum da muß ich fort
-                     [Em]    [D]
+                     [Em]    [D]
 hab mich niemals des wegen beklagt
-       [G]               
+       [G]               
 hab es selbst so gewählt
-        [C]      [G]
+        [C]      [G]
 nie die Jahre gezählt 
-         [Em]       [D]     [G]
+         [Em]       [D]     [G]
 nie nach gestern und morgen gefragt
 
 :::{.song-chorus}
-          [D]              
+          [D]              
 Manchmal träume ich schwer 
-        [C]          [G]
+        [C]          [G]
 und dann denk` ich es wär
-         [D]            
+         [D]            
 Zeit zu bleiben und nun 
-        [C]       [G]
+        [C]       [G]
 was ganz andres zu tun
-                        
+                        
 So vergeht Jahr um Jahr 
-   [C]            [G]
+   [C]            [G]
 und ist mir längst klar
-          [Em]     
+          [Em]     
 daß nichts bleibt, 
-          [D]           [G]
+          [D]           [G]
 daß nichts bleibt wie es war.
 
 :::
 
-       [G]                
+       [G]                
 Daß man mich kaum vermißt 
-          [C]      [G]
+          [C]      [G]
 schon nach Tagen vergißt
-                      [Em]      [D]
+                      [Em]      [D]
 wenn ich längst wieder anders wo bin
-         [G]                 
+         [G]                 
 stört und kümmert mich nicht
-          [C]          [G]
+          [C]          [G]
 vielleicht bleibt mein Gesicht 
-        [Em]     [D]        [G]
+        [Em]     [D]        [G]
 doch dem ein oder andern im Sinn
 
 {chorus}
 
-          [G]          
+          [G]          
 Fragt mich einer warum 
-      [C]             [G]
+      [C]             [G]
 ich so bin bleib ich stumm
-                  [Em]           [D]
+                  [Em]           [D]
 denn die Antwort darauf fällt mir schwer
-        [G]               
+        [G]               
 denn was neu ist wird alt
-        [C]         [G]
+        [C]         [G]
 und was gestern noch galt 
-            [Em]        [D]         [G]
+            [Em]        [D]         [G]
 stimmt schon heut oder morgen nicht mehr.
 
-           [D]             
+           [D]             
 Manchmal träume ich schwer 
-         [C]          [G]
+         [C]          [G]
 und dann denk ich es wär
-         [D]            
+         [D]            
 Zeit zu bleiben und nun 
-        [C]       [G]
+        [C]       [G]
 was ganz andres zu tun
-                        
+                        
 So vergeht Jahr um Jahr 
-   [C]            [G]
+   [C]            [G]
 und ist mir längst klar
-          [Em]               [D]           [G]
+          [Em]               [D]           [G]
 daß nichts bleibt, daß nichts bleibt wie es war.
