@@ -4,11 +4,11 @@ artist: Tom Waits
 
 ---
 
-[Bm]           [Em]  [A7]            [D]
+[Bm]           [Em]  [A7]            [D]
 I fell into the ocean  and you became my wife
 [G7]                                        [Bm]
 I risked it all against the sea to have a better life
-          [Em]             [A7]         [D]
+          [Em]             [A7]         [D]
 Marie you are the wild blue sky, men do foolish things
 [G7]                                      [Bm]
  You turn kings into beggars and beggars into kings
@@ -16,11 +16,11 @@ Marie you are the wild blue sky, men do foolish things
 :::{.song-chorus}
   [G]                  [D] 
 Pretend that you owe me nothing      
-   [A7]             [D]
+   [A7]             [D]
 and all the world is green
-[G]                   [D]        
- We can bring back the old days again     
-    [A7]             [D]
+[G]                   [D]        
+ We can bring back the old days again     
+    [A7]             [D]
 when all the world is green
 :::
 

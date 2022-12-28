@@ -4,21 +4,21 @@ artist: Bob Dylan
 
 ---
 
-[C]       [F]        [C]      [Am] 
+[C]       [F]        [C]      [Am] 
 How many roads must a man walk down, 
   [C]        [F]  [G]-[G7]
 before you call him a man?
-[C]     [F]          [C]       [Am] 
+[C]     [F]          [C]       [Am] 
 How many seas must a white dove sail, 
   [C]        [F]        [G]-[G7]
 before she sleeps in the sand?
-[C]     [F]               [C]  [Am]
+[C]     [F]               [C]  [Am]
 How many times must the cannonballs fly, 
-  [C]           [F]    [G]
+  [C]           [F]    [G]
 before they're forever banned?
-      [F]       [G]      C-E-Am             
+      [F]       [G]      C-E-Am             
 The answer my friend, is blowing in the wind.
-      [F]       [G]         [C]
+      [F]       [G]         [C]
 The answer is blowing in the wind.
 
 How many years must a mountain exist, 

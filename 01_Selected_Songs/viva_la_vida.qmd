@@ -9,13 +9,13 @@ capo: '1'
 C - D - G - Em 
 :::
 
-(Em)     [C]      [D]
+(Em)     [C]      [D]
 I used to rule the world
           [G]                  [Em]
 Seas would rise when I gave the word
-                    [C]     [D]
+                    [C]     [D]
 Now in the morning I sleep alone	
-         [G]               [Em]
+         [G]               [Em]
 Sweep the streets I used to own
 
 :::{.song-grid}
@@ -37,15 +37,15 @@ Upon pillars of salt and pillars of sand
 I hear Jerusalem bells are ringing
 [G]          [Em]
 Roman Cavalry choirs are singing
-[C]             [D]
+[C]             [D]
 Be my mirror, my sword, and shield
-  [G]               [Em]
+  [G]               [Em]
 My missionaries in a foreign field
 [C]              [D]
 For some reason I can't explain
 [G]                  [Em]            [C]    [D]
 Once you go there was never, never an honest word
-        [Bm]             [Em]
+        [Bm]             [Em]
 That was when I ruled the world
 
 :::
