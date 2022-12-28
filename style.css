@@ -18,6 +18,10 @@ body {
   background-color: dimgray;
 }
 
-.tab{
+.tab {
   font-size: smaller;
+}
+
+p {
+  margin-bottom: 2rem;
 }
