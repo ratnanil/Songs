@@ -1,9 +1,10 @@
 % <-- remove "chapter" from chapters and reduce the amout of space before the chapter
 % https://mirror.init7.net/ctan/info/MemoirChapStyles/
 \makechapterstyle{section}{%
-  \setlength{\beforechapskip}{0pt} % reduce the amout of space on a page before the chapter
-  \setlength{\afterchapskip}{0pt}  % reduce the amout of space on a page before the chapter
+  \setlength{\beforechapskip}{0pt}     % reduce the amout of space on a page before the chapter
+  \setlength{\afterchapskip}{0pt}      % reduce the amout of space on a page before the chapter
   \setlength{\parskip}{1\baselineskip} % increase the amout of space between paragraphs
+  \setlength{\parindent}{0pt}          % remove indentation of all paragraphs
   \renewcommand{\printchaptername}{}
   \renewcommand{\chapternamenum}{}
   \renewcommand{\chapnumfont}{\normalfont\Huge\bfseries}
@@ -12,6 +13,7 @@
 }
 \chapterstyle{section}
 % --> 
+
 
 % <-- prevent the creation of a automatic titlepage 
 % https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown
