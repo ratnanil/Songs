@@ -1,7 +1,3 @@
 ---
 title: Kinderlieder
 ---
-
-
-<!-- openright-on -->
-<!-- \csname @openrighttrue\endcsname -->

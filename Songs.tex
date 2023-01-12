@@ -37,7 +37,7 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\usepackage[a5paper,left=16mm,top=10mm,right=02mm,bottom=02mm]{geometry}
+\usepackage[left=16mm,top=05mm,right=02mm,bottom=5mm]{geometry}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \setcounter{secnumdepth}{5}
 % Make \paragraph and \subparagraph free-standing
@@ -76,14 +76,30 @@
 \def\fps@figure{htbp}
 \makeatother
 
-%\RedeclareSectionCommand[beforeskip=0pt, afterskip=0pt]{chapter} % <- this does not seem to work with memoir
+% <-- remove "chapter" from chapters and reduce the amout of space before the chapter
+% https://mirror.init7.net/ctan/info/MemoirChapStyles/
+\makechapterstyle{section}{%
+  \setlength{\beforechapskip}{0pt} % reduce the amout of space on a page before the chapter
+  \setlength{\afterchapskip}{0pt}  % reduce the amout of space on a page before the chapter
+  \setlength{\parskip}{1\baselineskip}
+  \renewcommand{\printchaptername}{}
+  \renewcommand{\chapternamenum}{}
+  \renewcommand{\chapnumfont}{\normalfont\Huge\bfseries}
+  \renewcommand{\printchapternum}{\chapnumfont \thechapter\space}
+  \renewcommand{\afterchapternum}{}
+}
+\chapterstyle{section}
+% --> 
 
+% <-- prevent the creation of a automatic titlepage 
 % https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown
 \let\oldmaketitle\maketitle
 \AtBeginDocument{\let\maketitle\relax}
+% --> 
 
 
-% <-- start with https://tex.stackexchange.com/questions/66278/chapters-that-openleft-unless-the-chapter-is-only-one-page-long?rq=1
+% <-- start chapter on the left, except when it is of length 1
+% https://tex.stackexchange.com/questions/66278/chapters-that-openleft-unless-the-chapter-is-only-one-page-long?rq=1
 \usepackage{zref-abspage}
 \usepackage{atveryend}
 
@@ -103,10 +119,9 @@
   }{%
     \zref@ifrefundefined{\theabschap{end}}{%
     }{%
-      \ifnum\numexpr
-        \zref@extract{\theabschap{end}}{abspage}%
-        -\zref@extract{\theabschap{beg}}{abspage}%
-      = 1 %
+      \ifodd\numexpr % i replace iffnum with ifodd, since this is what I'm interested in
+        \zref@extract{\theabschap{end}}{abspage}-\zref@extract{\theabschap{beg}}{abspage}% made this into one line
+      %= 1 % removed this line, since ifodd needs no test
         \let\ClearChapter\@empty
       \fi
     }%
@@ -136,7 +151,12 @@
   \org@part
 }
 \makeatother
-% ---> finished
+% ---> 
+
+
+
+
+
 \makeatletter
 \makeatother
 \makeatletter
@@ -212,7 +232,44 @@
 \begin{document}
 \frontmatter
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, frame hidden, interior hidden, breakable, enhanced, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt]}{\end{tcolorbox}}\fi
+%\newgeometry{tmargin=1.5cm,lmargin=2.5cm,rmargin=2.5cm,bmargin=0.5cm} %verbose
+
+\begin{titlingpage}
+\begin{center}
+  
+
+\end{center}
+\vspace{1.5cm}
+\begin{center}
+
+{\LARGE Songs}
+
+\end{center}
+ \vspace{1cm}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=1\textwidth]{misc/title.png}
+  \label{titelbild}
+\end{figure}
+
+\begin{center}
+\textbf{}
+
+
+\end{center} 
+
+\vspace{1.0cm}
+
+
+\end{titlingpage} %
+%\restoregeometry
+
+% https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown
+\let\maketitle\oldmaketitle
+%\maketitle %if you turn this on (uncomment it), it will create a second titlepage
+
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, interior hidden, enhanced, breakable, frame hidden]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {

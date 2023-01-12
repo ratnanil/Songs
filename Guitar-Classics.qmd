@@ -1,7 +1,3 @@
 ---
 title: Guitar Classics 
 ---
-
-
-<!-- openright-on -->
-<!-- \csname @openrighttrue\endcsname -->

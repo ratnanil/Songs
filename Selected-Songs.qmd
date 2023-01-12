@@ -1,7 +1,3 @@
 ---
 title: Selected Songs
 ---
-
-
-<!-- openright-on -->
-<!-- \csname @openrighttrue\endcsname -->
