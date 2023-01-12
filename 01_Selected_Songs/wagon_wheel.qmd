@@ -63,5 +63,3 @@ At least I will die free
 {chorus}
 
 
-<!-- openright-off -->
-\csname @openrightfalse\endcsname

@@ -77,5 +77,3 @@ And All That I Can See
 Is Just a Yellow Lemon-tree.
 
 
-<!-- openright-off -->
-\csname @openrightfalse\endcsname
