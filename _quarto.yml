@@ -1,0 +1,130 @@
+project:
+  type: book
+
+book:
+  title: "Songs"
+  author: "Nils Ratnaweera"
+  downloads: pdf
+  sidebar: 
+    collapse-level: 1
+  chapters:
+    - index.qmd
+    - part: Selected-Songs.qmd
+      chapters:
+      - 01_Selected_Songs/i_will_follow_you_into_the_dark.qmd # 2
+      - 01_Selected_Songs/suzanne.qmd                         # 2
+      - 01_Selected_Songs/jar_of_hearts.qmd                   # 2
+      - 01_Selected_Songs/new_slang.qmd                       # 2
+      - 01_Selected_Songs/viva_la_vida.qmd                    # 2
+      - 01_Selected_Songs/wagon_wheel.qmd                     # 2
+      - 01_Selected_Songs/mad_world.qmd                       # 1
+      - 01_Selected_Songs/windows_in_paradise.qmd             # 1
+      - 01_Selected_Songs/all_the_world_is_green.qmd          # 1 
+      - 01_Selected_Songs/dance_me_to_the_end_of_love.qmd     # 1
+      - 01_Selected_Songs/build_me_up_buttercup.qmd           # 1
+      - 01_Selected_Songs/hallelujah.qmd                      # 1
+    - part: Guitar-Classics.qmd
+      chapters:
+      - 02_Classics/ein_bett_im_kornfeld.qmd                  # 2
+      - 02_Classics/sweet_home_alabama.qmd                    # 2
+      - 02_Classics/calafornia_dreaming.qmd                   # 2
+      - 02_Classics/wind_of_change.qmd                        # 2
+      - 02_Classics/boulevard_of_broken_dreams.qmd            # 2
+      - 02_Classics/sound_of_silence.qmd                      # 2
+      - 02_Classics/lemon_tree.qmd                            # 2
+      - 02_Classics/hurt.qmd                                  # 1
+      - 02_Classics/where_have_all_the_flowers_gone.qmd       # 1
+      - 02_Classics/house_of_the_rising_sun.qmd               # 1
+      - 02_Classics/streets_of_london.qmd                     # 1
+      - 02_Classics/morning_has_broken.qmd                    # 1
+      - 02_Classics/dust_in_the_wind.qmd                      # 1
+      - 02_Classics/blowing_in_the_wind.qmd                   # 1
+    - part: "Mundart & Deutsch"
+      chapters:
+      - 03_Mundart_und_Deutsch/heidi.qmd                      # 2
+      - 03_Mundart_und_Deutsch/s_zundhoelzli.qmd              # 2
+      - 03_Mundart_und_Deutsch/sie_hoert_musik_nur.qmd        # 2
+      - 03_Mundart_und_Deutsch/dr_alpeflug.qmd                # 2
+      - 03_Mundart_und_Deutsch/heute_hier_morgen_dort.qmd     # 2
+      - 03_Mundart_und_Deutsch/der_traum_vom_fliegen.qmd      # 2
+      - 03_Mundart_und_Deutsch/kaspar.qmd                     # 2
+      - 03_Mundart_und_Deutsch/alls_wo_mir_id_finger.qmd      # 2
+      - 03_Mundart_und_Deutsch/sag_mir_wo_die_blumen_sind.qmd # 3
+      - 03_Mundart_und_Deutsch/das_testament.qmd              # 5
+      - 03_Mundart_und_Deutsch/so_kleine_haende.qmd           # 1
+      - 03_Mundart_und_Deutsch/dr_wecker.qmd                  # 1
+      - 03_Mundart_und_Deutsch/nueni_tramm.qmd                # 1
+      - 03_Mundart_und_Deutsch/arabisch.qmd                   # 1
+      - 03_Mundart_und_Deutsch/bim_coiffeur.qmd               # 1
+      - 03_Mundart_und_Deutsch/eskimo.qmd                     # 1
+      - 03_Mundart_und_Deutsch/hemmige.qmd                    # 1
+    - part: Weihnachtslieder.qmd
+      chapters:
+      - 04_Weihnachten/in_der_weihnachtsbaeckerei.qmd         # 2
+      - 04_Weihnachten/oh_come_all_ye_faithful.qmd            # 2
+      - 04_Weihnachten/es_ist_fuer_uns_eine_zeit.qmd          # 2
+      - 04_Weihnachten/ihr_kinderleit_kommet.qmd              # 2
+      - 04_Weihnachten/am_weihnachtsbaume.qmd                 # 2
+      - 04_Weihnachten/suesser_die_glocken_nie_klingen.qmd    # 2
+      - 04_Weihnachten/zu_bethlehem_geboren.qmd               # 2
+      - 04_Weihnachten/kling_gloecklein.qmd                   # 2
+      - 04_Weihnachten/marys_bornchild.qmd                    # 2
+      - 04_Weihnachten/oh_holy_night.qmd                      # 2 
+      - 04_Weihnachten/the_first_noel.qmd                     # 3
+      - 04_Weihnachten/oh_tannenbaum.qmd                      # 1
+      - 04_Weihnachten/oh_du_froehliche.qmd                   # 1
+      - 04_Weihnachten/silent_night.qmd                       # 1
+      - 04_Weihnachten/stille_nacht.qmd                       # 1
+      - 04_Weihnachten/leise_rieselt_der_schnee.qmd           # 1
+      - 04_Weihnachten/kommet_ihr_hirten.qmd                  # 1
+      - 04_Weihnachten/gloria.qmd                             # 1
+    - part: Volkslieder.qmd
+      chapters: 
+      - 05_Volkslieder/Guggisberg.qmd                         # 2
+      - 05_Volkslieder/im_Aargau.qmd                          # 2
+      - 05_Volkslieder/alles_fahrt_ski.qmd                    # 2
+      - 05_Volkslieder/lueged_vo_Berge_u_Tal.qmd              # 2
+      - 05_Volkslieder/Beresinalied.qmd                       # 1
+      - 05_Volkslieder/de_blogeti_hansli.qmd                  # 1
+      - 05_Volkslieder/gang_ruef_de_bruune.qmd                # 1
+      - 05_Volkslieder/ich_kenne_europas_zonen.qmd            # 1
+      - 05_Volkslieder/bergvagabunden.qmd                     # 1
+      - 05_Volkslieder/lustig_ist_das_zigeunerleben.qmd       # 1
+      - 05_Volkslieder/es_Burebuebli.qmd                      # 1
+      - 05_Volkslieder/vo_Luzern.qmd                          # 1
+    - part: Kinderlieder.qmd
+      chapters: 
+      - 06_Kinderlieder/der_Mond.qmd                          # 2
+      - 06_Kinderlieder/isch_mer_alles_eis_ding.qmd           # 1
+      - 06_Kinderlieder/Hippi_gspaengstli.qmd                 # 1
+      - 06_Kinderlieder/traaeumli.qmd                         # 1
+      - 06_Kinderlieder/min_vatter_isch_en_appizaeller.qmd    # 1
+      - 06_Kinderlieder/ramseiers_wei_go_grase.qmd            # 1
+      - 06_Kinderlieder/vo_luzern_gege_weggis.qmd             # 1
+      - 06_Kinderlieder/vogellisi.qmd                         # 1
+      - 06_Kinderlieder/det_aenet_am_bergli.qmd               # 1
+
+
+format:
+  pdf: 
+    documentclass: memoir
+    classoption: a5paper
+    geometry:
+      - left=16mm
+      - top=05mm
+      - right=02mm
+      - bottom=5mm
+    keep-tex: true
+    include-before-body: titlepage.tex
+    include-in-header: preamble.tex
+    mainfont: FreeMono
+    cover-image: misc/title.png
+    latex-max-runs: 5 # default is 9, testing for even odd pages seems to need more (Inf ?) runs
+  html:
+    css: style.css
+    theme: darkly
+    linestretch: 1
+    fontsize: 0.8em
+from: markdown+hard_line_breaks-smart
+# extension "hard_line_breaks" interprets single line breaks as hard line breaks
+# extension "smart" replaces two -- as an emdash, which is not good for tabs

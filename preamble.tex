@@ -1,0 +1,81 @@
+% <-- remove "chapter" from chapters and reduce the amout of space before the chapter
+% https://mirror.init7.net/ctan/info/MemoirChapStyles/
+\makechapterstyle{section}{%
+  \setlength{\beforechapskip}{0pt} % reduce the amout of space on a page before the chapter
+  \setlength{\afterchapskip}{0pt}  % reduce the amout of space on a page before the chapter
+  \setlength{\parskip}{1\baselineskip} % increase the amout of space between paragraphs
+  \renewcommand{\printchaptername}{}
+  \renewcommand{\chapternamenum}{}
+  \renewcommand{\chapnumfont}{\normalfont\Huge\bfseries}
+  \renewcommand{\printchapternum}{\chapnumfont \thechapter\space}
+  \renewcommand{\afterchapternum}{}
+}
+\chapterstyle{section}
+% --> 
+
+% <-- prevent the creation of a automatic titlepage 
+% https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown
+\let\oldmaketitle\maketitle
+\AtBeginDocument{\let\maketitle\relax}
+% --> 
+
+
+% <-- start chapter on the left, except when it is of length 1
+% https://tex.stackexchange.com/questions/66278/chapters-that-openleft-unless-the-chapter-is-only-one-page-long?rq=1
+\usepackage{zref-abspage}
+\usepackage{atveryend}
+
+\makeatletter
+% Because of starred chapters we need an extra chapter counter
+% for identifying a chapter. \thechapter is not unique in general.
+\newcounter{abschap}
+\renewcommand*{\theabschap}[1]{abschap.\the\value{abschap}.#1}
+
+\renewcommand*{\clearforchapter}{%
+  \EndChapter
+  \stepcounter{abschap}%
+  \zref@refused{\theabschap{beg}}%
+  \zref@refused{\theabschap{end}}%
+  \def\ClearChapter{\cleartoverso}%
+  \zref@ifrefundefined{\theabschap{beg}}{%
+  }{%
+    \zref@ifrefundefined{\theabschap{end}}{%
+    }{%
+      \ifodd\numexpr % i replace iffnum with ifodd, since this is what I'm interested in
+        \zref@extract{\theabschap{end}}{abspage}-\zref@extract{\theabschap{beg}}{abspage}% made this into one line
+      %= 1 % removed this line, since ifodd needs no test
+        \let\ClearChapter\@empty
+      \fi
+    }%
+  }%
+  \ClearChapter
+  \zref@wrapper@immediate{%
+    \zref@labelbyprops{\theabschap{beg}}{abspage}%
+  }%
+}
+\newcommand*{\EndChapter}{%
+  % flush floats
+  \clearpage
+  % Set an anchor after the last page with contents of the current
+  % chapter.
+  \zref@wrapper@immediate{%
+    \@ifundefined{\theabschap{end}}{%
+      \zref@labelbyprops{\theabschap{end}}{abspage}%
+      \global\expandafter\let\csname\theabschap{end}\endcsname\@empty
+    }{}%
+  }%
+}
+\AfterLastShipout{\EndChapter}
+\newcommand*{\org@part}{}
+\let\org@part\part
+\renewcommand*{\part}{%
+  \EndChapter
+  \org@part
+}
+\makeatother
+% ---> 
+
+
+
+
+

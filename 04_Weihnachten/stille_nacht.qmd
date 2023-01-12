@@ -1,0 +1,38 @@
+---
+title: Stille Nacht
+time: 3/4
+capo: '0'
+
+---
+
+
+:::{.song-grid}
+G···|····|····|····|
+D···|D7··|G···|G7··|
+C···|····|G···|····|
+C···|····|G···|····|
+D···|D7··|G···|Em··|
+G···|D···|G···|····|
+:::
+
+Stille Nacht! Heilige Nacht!
+Alles schläft, einsam wacht
+nur das traute hoch heilige Paar.
+"Holder Knabe im lockigen Haar
+schlaf in himmlischer Ruh'
+schlaf in himmlischer Ruh'!
+
+Stille Nacht! Heilige Nacht!
+Hirten erst, kundgemacht!
+durch der Engel Halleluja
+tönt es laut von Fern' und Nah:
+Christ, der Retter ist da!
+Christ, der Retter ist da!
+
+Stille Nacht! Heilige Nacht!
+Gottes Sohn, o wie lacht
+lieb' aus deinem göttlichen Mund
+da uns schlägt die rettende Stund':
+Christ in deiner Geburt.
+Christ in deiner Geburt.
+

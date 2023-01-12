@@ -1,9 +1,0 @@
-Package: Songs
-Title: A Collection Of Songs
-Version: 0.0.0.9000
-Suggests: 
-  bookdown,
-  tinytex,
-  pander,
-  remotes,
-Remotes:

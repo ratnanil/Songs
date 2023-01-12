@@ -1,0 +1,49 @@
+---
+title: Hemmige
+artist: Mani Matter
+capo: '1'
+time: 4/4
+
+---
+:::{.song-grid}
+|Em······|Am······|D7······|G·······|
+|········|H7······|Em······|H7······|
+:::
+
+
+S'git Lüt, die würden alletwäge nie
+Es Lied vorsinge, so win ig jitz hie
+Eis singen um kei Prys, nei bhüetis nei
+Wil si Hemmige hei
+
+Si wäre vilicht gärn im Grund gno fräch
+Und dänke, das syg ires grosse Päch
+Und s'laschtet uf ne win e schwäre Stei
+Dass si Hemmige hei
+
+I weis, das macht eim heiss, verschlat eim d'Stimm
+Doch dünkt eim mängisch o s'syg nüt so schlimm
+S'isch glych es Glück, o we mirs gar nid wei
+Das mir Hemmige hei
+
+Was unterscheidet d'Mönsche vom Schimpans
+S'isch nid die glatti Hut, dr fählend Schwanz*
+Nid dass mir schlächter d'Böim ufchöme, nei
+Dass mir Hemmige hei
+
+Me stell sech d'Manne vor, wenns anders wär
+Und s'chäm es hübsches Meiteli derhär
+Jitz luege mir doch höchstens chly uf d'Bei
+Wil mir Hemmige hei
+
+<!--Abschluss-->
+:::{.song-grid} 
+|Em······|Am······|D7······|G·······|
+|········|H7······|Em··H7··|Em······| 
+:::
+
+Und we me gseht, was hütt dr Mönschheit droht
+So gseht me würklech schwarz, nid nume rot
+Und was me no cha hoffen isch alei
+Dass si Hemmige hei
+
