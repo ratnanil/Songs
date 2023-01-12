@@ -81,7 +81,7 @@
 \makechapterstyle{section}{%
   \setlength{\beforechapskip}{0pt} % reduce the amout of space on a page before the chapter
   \setlength{\afterchapskip}{0pt}  % reduce the amout of space on a page before the chapter
-  \setlength{\parskip}{1\baselineskip}
+  \setlength{\parskip}{1\baselineskip} % increase the amout of space between paragraphs
   \renewcommand{\printchaptername}{}
   \renewcommand{\chapternamenum}{}
   \renewcommand{\chapnumfont}{\normalfont\Huge\bfseries}
@@ -269,7 +269,7 @@
 \let\maketitle\oldmaketitle
 %\maketitle %if you turn this on (uncomment it), it will create a second titlepage
 
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, interior hidden, enhanced, breakable, frame hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, interior hidden, enhanced, sharp corners, frame hidden]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {

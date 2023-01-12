@@ -17,7 +17,6 @@ book:
       - 01_Selected_Songs/new_slang.qmd                       # 2
       - 01_Selected_Songs/viva_la_vida.qmd                    # 2
       - 01_Selected_Songs/wagon_wheel.qmd                     # 2
-      # - openright-off.qmd
       - 01_Selected_Songs/mad_world.qmd                       # 1
       - 01_Selected_Songs/windows_in_paradise.qmd             # 1
       - 01_Selected_Songs/all_the_world_is_green.qmd          # 1 
@@ -33,7 +32,6 @@ book:
       - 02_Classics/boulevard_of_broken_dreams.qmd            # 2
       - 02_Classics/sound_of_silence.qmd                      # 2
       - 02_Classics/lemon_tree.qmd                            # 2
-      # - openright-off.qmd
       - 02_Classics/hurt.qmd                                  # 1
       - 02_Classics/where_have_all_the_flowers_gone.qmd       # 1
       - 02_Classics/house_of_the_rising_sun.qmd               # 1
@@ -51,7 +49,6 @@ book:
       - 03_Mundart_und_Deutsch/der_traum_vom_fliegen.qmd      # 2
       - 03_Mundart_und_Deutsch/kaspar.qmd                     # 2
       - 03_Mundart_und_Deutsch/alls_wo_mir_id_finger.qmd      # 2
-      # - openright-off.qmd
       - 03_Mundart_und_Deutsch/sag_mir_wo_die_blumen_sind.qmd # 3
       - 03_Mundart_und_Deutsch/das_testament.qmd              # 5
       - 03_Mundart_und_Deutsch/so_kleine_haende.qmd           # 1
@@ -73,7 +70,6 @@ book:
       - 04_Weihnachten/kling_gloecklein.qmd                   # 2
       - 04_Weihnachten/marys_bornchild.qmd                    # 2
       - 04_Weihnachten/oh_holy_night.qmd                      # 2 
-      # - openright-off.qmd
       - 04_Weihnachten/the_first_noel.qmd                     # 3
       - 04_Weihnachten/oh_tannenbaum.qmd                      # 1
       - 04_Weihnachten/oh_du_froehliche.qmd                   # 1
@@ -88,7 +84,6 @@ book:
       - 05_Volkslieder/im_Aargau.qmd                          # 2
       - 05_Volkslieder/alles_fahrt_ski.qmd                    # 2
       - 05_Volkslieder/lueged_vo_Berge_u_Tal.qmd              # 2
-      # - openright-off.qmd
       - 05_Volkslieder/Beresinalied.qmd                       # 1
       - 05_Volkslieder/de_blogeti_hansli.qmd                  # 1
       - 05_Volkslieder/gang_ruef_de_bruune.qmd                # 1
@@ -100,7 +95,6 @@ book:
     - part: Kinderlieder.qmd
       chapters: 
       - 06_Kinderlieder/der_Mond.qmd                          # 2
-      # - openright-off.qmd
       - 06_Kinderlieder/isch_mer_alles_eis_ding.qmd           # 1
       - 06_Kinderlieder/Hippi_gspaengstli.qmd                 # 1
       - 06_Kinderlieder/traaeumli.qmd                         # 1
