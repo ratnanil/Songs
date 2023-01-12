@@ -13,15 +13,6 @@ body {
   visibility: collapse;
 }
 
-.chorus{
-  padding-left: 20px;
-  background-color: dimgray;
-}
-
-.tab {
-  font-size: smaller;
-}
-
 p {
   margin-bottom: 2rem;
 }
