@@ -36,7 +36,7 @@ Wolken, sie ziehen, Edelweiß blühen,
 [B7]                     [E]
 wir klettern mit sicherer Hand.
 
-{chorus}
+*play chorus*
 
 [E]
 Beim Alpenglühen heimwärts wir ziehen,
@@ -48,5 +48,5 @@ Wir kommen wieder, denn wir sind Brüder,
 Brüder auf Leben und Tod.
 
 
-{chorus}
+*play chorus*
 

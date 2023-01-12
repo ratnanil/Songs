@@ -51,7 +51,7 @@ I've learned to live half a life
 [Em]        [D]          [Asus4][A]
 And now you want me one more time
 
-{chorus}
+*play chorus*
 
 [Bm]       [F#]         [D]     [E]
 It took so long just to feel alright
@@ -66,7 +66,7 @@ And now you're back
                 [F#]
 You don't get to get me back
 
-{chorus}
+*play chorus*
 
 *(...Don't come back at all) x2*
 

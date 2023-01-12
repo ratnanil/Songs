@@ -54,4 +54,4 @@ ihre Hände wissen nicht, mit wem sie reden sollen
 es ist niemand da, der mit ihr spricht.
 
 
-{chorus}
+*play chorus*

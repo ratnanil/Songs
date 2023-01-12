@@ -65,7 +65,7 @@ I walk alone, I walk alone.
 I walk alone, I walk a....
 
 
-{chorus}
+*play chorus*
 
 
 Ah-Ah Ah-Ah Ah-Ah   Ahhh-Ah
@@ -87,6 +87,6 @@ Where the city sleeps,
 and I'm the only one and I walk a...
 
 
-{chorus}
+*play chorus*
 
 

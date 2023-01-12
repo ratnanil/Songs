@@ -73,7 +73,7 @@ Let your balalaika sing
 What my guitar wants to say
 :::
 
-{chorus}
+*play chorus*
 
 *play outro, same as intro*
 

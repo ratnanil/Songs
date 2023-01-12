@@ -41,7 +41,7 @@ it gave great light
    [C]       [D]        [C]     [G] 
 And so it continued both day and night. 
 
-{chorus}
+*play chorus*
 
    [G]       [D] 
 And by the light
@@ -56,7 +56,7 @@ was their intent,
       [C]        [D]      [C]     [G] 
 And to follow the star wherever it went. 
 
-{chorus}
+*play chorus*
 
     [G]  [D] 
 This star drew 
@@ -71,7 +71,7 @@ both stop and stay,
      [C]      [D]         [C]   [G] 
 Right over the place where Jesus lay. 
 
-{chorus}
+*play chorus*
 
     [G]     [D] 
 Then entered in
@@ -86,7 +86,7 @@ in his presence
      [C]      [D]       [C]    [G] 
 Their gold and myrrh and frankincense. 
 
-{chorus}
+*play chorus*
 
     [G]    [D] 
 Then let us all
@@ -101,4 +101,4 @@ heaven and earth of nought,
    [C]      [D]   [C]         [G] 
 And with his blood mankind has bought. 
 
-{chorus}
+*play chorus*

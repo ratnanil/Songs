@@ -29,7 +29,7 @@ I'll be beside the phone waiting for you
 Ooo-oo-ooo, ooo-oo-ooo
 :::
 
-{chorus}
+*play chorus*
 
 You were my toy but I could be the boy you adore
 If you'd just let me know (bah-dah-dah)
@@ -38,6 +38,6 @@ Why do I need you so
 
 {bridge}
 
-{chorus}
+*play chorus*
 
 

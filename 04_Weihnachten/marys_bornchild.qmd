@@ -34,22 +34,22 @@ they see a bright new shining star.
 They hear a choir sing a song,  
 the music seemed to come from afar.  
   
-{chorus} 
+*play chorus* 
 
 Now Joseph and his wife, Mary, 
 came to Bethlehem that night. 
 They found no place to bear the child,  
 not a single room was in sight.      
   
-{chorus}
+*play chorus*
 
 Trumpets sound and Angels sing...
 listen to what they say, 
 that man will live forever more 
 because of Christmas Day. 
 
-{chorus}
-{chorus}
+*play chorus*
+*play chorus*
   
 And then they found a little nook, 
 in a stable all forlorn. 
@@ -62,7 +62,7 @@ Mary's boychild, Jesus Christ,
 was born on Christmas Day. 
 
   
-{chorus}
+*play chorus*
 
 Trumpets sound and Angels sing...
 listen to what they say, 
