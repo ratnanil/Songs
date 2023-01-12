@@ -8,10 +8,6 @@ I've implemented following tricks to make this book work:
 - Since chords have multiple spaces to align them to the right place in the text, i need spaces to be respected. To enable this, I created a preprocessor to replace all double spaces with no break spaces (see `preprocessor.sh`)
 - For pdf, I want to make sure that even-paged-songs start on the left page, and odd-paged-songs appear on any page. I therefore switched to document class `memoir`, which has the options `openright` AND `openleft` (other latex classes seem only to have `openright` and `openany`). Not only that, but I found [an SO solution](https://tex.stackexchange.com/questions/66278/chapters-that-openleft-unless-the-chapter-is-only-one-page-long?rq=1) where the number of pages per chapter is counted, and if this number is odd, the chapter is started on an odd page and vise versa. This goes a long way towards what I need.
 
-Todo: 
-- `:::{.song-chorus}` is seems to be inserterd literaly into the pdf output. It would be much more elegant if paragraphs wrapped in this markdown thingy would be wrapped with `tcolorbox`'s `\begin{tcolorbox}` and `\end{tcolorbox}`. 
-
-
 
 
 

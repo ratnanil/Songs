@@ -4,15 +4,12 @@ artist: Kansas
 
 ---
 
-:::{.song-tab}
 e|-----------|
 B|-1-------1-|
 G|-----0-----|
 D|---2-------|
 A|-3-----3---|
 E|-----------|
-:::
-
 
  [C]    G/B [Am]  [G]        Dm           [Am]
 I close my eyes only for a moment and a moment´s gone.
