@@ -103,7 +103,9 @@ book:
       - 06_Kinderlieder/vo_luzern_gege_weggis.qmd             # 1
       - 06_Kinderlieder/vogellisi.qmd                         # 1
       - 06_Kinderlieder/det_aenet_am_bergli.qmd               # 1
-
+    - part: "Notes and Tabs"
+      chapters: 
+      - 07_notes_and_tabs/greensleeves.qmd
 
 format:
   pdf: 
