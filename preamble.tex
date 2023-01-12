@@ -1,11 +1,26 @@
-%\RedeclareSectionCommand[beforeskip=0pt, afterskip=0pt]{chapter} % <- this does not seem to work with memoir
+% <-- remove "chapter" from chapters and reduce the amout of space before the chapter
+% https://mirror.init7.net/ctan/info/MemoirChapStyles/
+\makechapterstyle{section}{%
+  \setlength{\beforechapskip}{0pt} % reduce the amout of space on a page before the chapter
+  \setlength{\afterchapskip}{0pt}  % reduce the amout of space on a page before the chapter
+  \renewcommand{\printchaptername}{}
+  \renewcommand{\chapternamenum}{}
+  \renewcommand{\chapnumfont}{\normalfont\Huge\bfseries}
+  \renewcommand{\printchapternum}{\chapnumfont \thechapter\space}
+  \renewcommand{\afterchapternum}{}
+}
+\chapterstyle{section}
+% --> 
 
+% <-- prevent the creation of a automatic titlepage 
 % https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown
 \let\oldmaketitle\maketitle
 \AtBeginDocument{\let\maketitle\relax}
+% --> 
 
 
-% <-- start with https://tex.stackexchange.com/questions/66278/chapters-that-openleft-unless-the-chapter-is-only-one-page-long?rq=1
+% <-- start chapter on the left, except when it is of length 1
+% https://tex.stackexchange.com/questions/66278/chapters-that-openleft-unless-the-chapter-is-only-one-page-long?rq=1
 \usepackage{zref-abspage}
 \usepackage{atveryend}
 
@@ -25,10 +40,9 @@
   }{%
     \zref@ifrefundefined{\theabschap{end}}{%
     }{%
-      \ifnum\numexpr
-        \zref@extract{\theabschap{end}}{abspage}%
-        -\zref@extract{\theabschap{beg}}{abspage}%
-      = 1 %
+      \ifodd\numexpr % i replace iffnum with ifodd, since this is what I'm interested in
+        \zref@extract{\theabschap{end}}{abspage}-\zref@extract{\theabschap{beg}}{abspage}% made this into one line
+      %= 1 % removed this line, since ifodd needs no test
         \let\ClearChapter\@empty
       \fi
     }%
@@ -58,4 +72,9 @@
   \org@part
 }
 \makeatother
-% ---> finished
+% ---> 
+
+
+
+
+

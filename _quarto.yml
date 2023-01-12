@@ -115,18 +115,17 @@ format:
   pdf: 
     documentclass: memoir
     classoption: a5paper
-    # by default, scrbook is twosided, which means each chapter must start on an odd page
     geometry:
-      - a5paper
       - left=16mm
-      - top=10mm
+      - top=05mm
       - right=02mm
-      - bottom=02mm
+      - bottom=5mm
     keep-tex: true
-    # include-before-body: titlepage.tex
+    include-before-body: titlepage.tex
     include-in-header: preamble.tex
     mainfont: FreeMono
     cover-image: misc/title.png
+    latex-max-runs: 5 # default is 9, testing for even odd pages seems to need more (Inf ?) runs
   html:
     css: style.css
     theme: darkly
