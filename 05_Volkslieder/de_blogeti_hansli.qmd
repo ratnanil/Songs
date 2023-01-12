@@ -14,7 +14,7 @@ Mues immer de blogeti Hansli si,
 so lang as i läbe und bi.
 Refrain
 
-:::{.song-chorus}
+::: {.callout appearance="minimal"}
 Halli, hallo, halli, hallo,
 bi üs gohts immer je länger, je schlimmer.
 Halli, hallo, halli, hallo,

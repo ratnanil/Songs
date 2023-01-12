@@ -32,7 +32,7 @@ Next the walls were closed on me
 And I discovered that my castles stand 
 Upon pillars of salt and pillars of sand 
 
-:::{.song-chorus}
+::: {.callout appearance="minimal"}
  [C]            [D]
 I hear Jerusalem bells are ringing
 [G]          [Em]

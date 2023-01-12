@@ -17,7 +17,7 @@ nie die Jahre gezählt
          [Em]       [D]     [G]
 nie nach gestern und morgen gefragt
 
-:::{.song-chorus}
+::: {.callout appearance="minimal"}
           [D]              
 Manchmal träume ich schwer 
         [C]          [G]

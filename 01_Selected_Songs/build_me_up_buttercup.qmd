@@ -5,7 +5,7 @@ artist: The Foundations
 ---
 
 
-:::{.song-chorus}
+::: {.callout appearance="minimal"}
 Why do you build me up (build me up) Buttercup, baby
 Just to let me down (let me down)and mess me around
 And then worst of all (worst of all) you never call, baby

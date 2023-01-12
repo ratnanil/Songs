@@ -13,7 +13,7 @@ brennt eine Sehnsucht in uns'rem Herzen,
 die lässt uns nimmermehr in Ruh.
 
 
-:::{.song-chorus}
+::: {.callout appearance="minimal"}
 
 [A]             [E]
 Herrliche Berge, sonnige Höhen

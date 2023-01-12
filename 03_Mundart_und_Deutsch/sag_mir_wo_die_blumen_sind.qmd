@@ -43,7 +43,7 @@ Wann wird man je verstehen?     
 F             G          C
 Wann wird man je ver- stehen?
 
-{comment: play bridge}
+*play bridge*
 
 C               Am           
 Sag mir, wo die Männer sind, 
@@ -62,7 +62,7 @@ Wann wird man je verstehen?     
 F             G          C
 Wann wird man je ver- stehen?
 
-{comment: play bridge}
+*play bridge*
 
 C               Am           
 Sag mir, wo die Soldaten sind, 
@@ -81,7 +81,7 @@ Wann wird man je verstehen?     
 F             G          C
 Wann wird man je ver- stehen?
 
-{comment: play bridge}
+*play bridge*
 
 C               Am           
 Sag mir, wo die Gräber sind, 
@@ -102,4 +102,4 @@ Wann wird man je ver- stehen?
 
 
 
-{comment: play bridge}
+*play bridge*

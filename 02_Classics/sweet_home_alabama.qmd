@@ -33,7 +33,7 @@ Well I hope Neil Young will remember
 
 [Chorus]
 
-:::{.song-chorus}
+::: {.callout appearance="minimal"}
 [D]  [Cadd9] [G]   [D]       [Cadd9]      [G]        
 Sweet home Alabama, where the skies are so blue
 [D]  [Cadd9] [G]   [D]       [Cadd9]       [G]     

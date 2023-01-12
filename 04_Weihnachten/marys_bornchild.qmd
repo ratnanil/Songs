@@ -22,7 +22,7 @@ G··C··|D··G···|Em·Am·|D····|
 G·····|C··Am··|G··D··|G····|
 :::
 
-:::{.song-chorus}
+::: {.callout appearance="minimal"}
 Hark now! Hear the Angels sing, 
 a King was born today, 
 and man will live forever more 

@@ -14,7 +14,7 @@ Marie you are the wild blue sky, men do foolish things
 [G7]                                      [Bm]
  You turn kings into beggars and beggars into kings
 
-:::{.song-chorus}
+:::{.callout appearance="minimal"}
   [G]                  [D] 
 Pretend that you owe me nothing      
    [A7]             [D]
@@ -45,5 +45,5 @@ On a blade of grass
 The dew will settle on our graves
 When all the world is green
 
-{Comment: Play chorus, solo, repeat last verse}
+*Play chorus, solo, repeat last verse*
 

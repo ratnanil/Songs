@@ -19,7 +19,7 @@ Or tunnels to gates of white
 Just our hands clasped so tight
 Waiting for, the hint of a spark 
 
-:::{.song-chorus} 
+::: {.callout appearance="minimal"} 
   [Am]               [C]     
 If heaven and hell decide,      
           [F]         [C]G

@@ -19,7 +19,7 @@ Pickin' me a bouquet of dogwood flowers
 And I'm a hopin' for Raleigh 
 I can see my baby tonight
 
-:::{.song-chorus}
+::: {.callout appearance="minimal"}
   [G]                 [D]
 So rock me mama like a wagon wheel
 [Em]           [C]

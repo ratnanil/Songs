@@ -28,7 +28,7 @@ and I'm the only one and I walk alone
 .........I walk alone, I walk a....
 
 
-:::{.song-chorus}
+::: {.callout appearance="minimal"}
 [C]    [G]          [D]            [Em]
     My shadow's the only one that walks beside me
 [C]     [G]     [D]             [Em]

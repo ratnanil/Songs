@@ -11,7 +11,7 @@ Det äne am Bergli, det schtat e wiessi Geiss.
 I ha si welle mälche, da haut sie mer eis.
 
 
-:::{.song-chorus}
+::: {.callout appearance="minimal"}
 
 Hole duli, duli, duli, hole duli, duli, duli, duli
 hole duli, duli, duli, hole duli, duli, duli, duli

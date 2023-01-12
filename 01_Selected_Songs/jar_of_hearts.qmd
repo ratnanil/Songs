@@ -18,7 +18,7 @@ I learned to live half a life
 [Em]        [D]           [Asus4][A]
 And now you want me one more time
 
-:::{.song-chorus}
+::: {.callout appearance="minimal"}
 [D]                  [A]
 Who do you think you are?
                        [Bm]
@@ -68,7 +68,7 @@ You don't get to get me back
 
 {chorus}
 
-{comment: (...Don't come back at all) x2}
+*(...Don't come back at all) x2*
 
 Gm                    [D]
 Who do you think you are?

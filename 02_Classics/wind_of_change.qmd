@@ -75,5 +75,5 @@ What my guitar wants to say
 
 {chorus}
 
-{comment: play outro, same as intro}
+*play outro, same as intro*
 

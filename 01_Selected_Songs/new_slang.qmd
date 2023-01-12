@@ -22,7 +22,7 @@ I was when we met
 [C]          [F]          [Am] [G]
 I was happier then with no mind set
 
-:::{.song-chorus}
+::: {.callout appearance="minimal"}
 [G]                   [C]
 And if you'd a took to me like
  [F]  [C]          [G]
