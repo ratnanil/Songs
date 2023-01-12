@@ -9,36 +9,36 @@ book:
     collapse-level: 1
   chapters:
     - index.qmd
-    - part: "Selected Songs"
+    - part: Selected-Songs.qmd
       chapters:
-      - 01_Selected_Songs/i_will_follow_you_into_the_dark.qmd
-      - 01_Selected_Songs/suzanne.qmd
-      - 01_Selected_Songs/windows_in_paradise.qmd
-      - 01_Selected_Songs/all_the_world_is_green.qmd
-      - 01_Selected_Songs/dance_me_to_the_end_of_love.qmd
-      - 01_Selected_Songs/build_me_up_buttercup.qmd
-      - 01_Selected_Songs/hallelujah.qmd
-      - 01_Selected_Songs/jar_of_hearts.qmd
-      - 01_Selected_Songs/new_slang.qmd
-      - 01_Selected_Songs/viva_la_vida.qmd
-      - 01_Selected_Songs/wagon_wheel.qmd
-      - 01_Selected_Songs/mad_world.qmd
-    - part: "Guitar Classics"
+      - 01_Selected_Songs/i_will_follow_you_into_the_dark.qmd # 2
+      - 01_Selected_Songs/suzanne.qmd                         # 2
+      - 01_Selected_Songs/jar_of_hearts.qmd                   # 2
+      - 01_Selected_Songs/new_slang.qmd                       # 2
+      - 01_Selected_Songs/viva_la_vida.qmd                    # 2
+      - 01_Selected_Songs/wagon_wheel.qmd                     # 2
+      - 01_Selected_Songs/mad_world.qmd                       # 1
+      - 01_Selected_Songs/windows_in_paradise.qmd             # 1
+      - 01_Selected_Songs/all_the_world_is_green.qmd          # 1 
+      - 01_Selected_Songs/dance_me_to_the_end_of_love.qmd     # 1
+      - 01_Selected_Songs/build_me_up_buttercup.qmd           # 1
+      - 01_Selected_Songs/hallelujah.qmd                      # 1
+    - part: Guitar-Classics.qmd
       chapters:
-      - 02_Classics/hurt.qmd
-      - 02_Classics/where_have_all_the_flowers_gone.qmd
-      - 02_Classics/ein_bett_im_kornfeld.qmd
-      - 02_Classics/house_of_the_rising_sun.qmd
-      - 02_Classics/sweet_home_alabama.qmd
-      - 02_Classics/streets_of_london.qmd
-      - 02_Classics/calafornia_dreaming.qmd
-      - 02_Classics/morning_has_broken.qmd
-      - 02_Classics/dust_in_the_wind.qmd
-      - 02_Classics/blowing_in_the_wind.qmd
-      - 02_Classics/wind_of_change.qmd
-      - 02_Classics/boulevard_of_broken_dreams.qmd
-      - 02_Classics/sound_of_silence.qmd
-      - 02_Classics/lemon_tree.qmd
+      - 02_Classics/ein_bett_im_kornfeld.qmd                  # 2
+      - 02_Classics/sweet_home_alabama.qmd                    # 2
+      - 02_Classics/calafornia_dreaming.qmd                   # 2
+      - 02_Classics/wind_of_change.qmd                        # 2
+      - 02_Classics/boulevard_of_broken_dreams.qmd            # 2
+      - 02_Classics/sound_of_silence.qmd                      # 2
+      - 02_Classics/lemon_tree.qmd                            # 2
+      - 02_Classics/hurt.qmd                                  # 1
+      - 02_Classics/where_have_all_the_flowers_gone.qmd       # 1
+      - 02_Classics/house_of_the_rising_sun.qmd               # 1
+      - 02_Classics/streets_of_london.qmd                     # 1
+      - 02_Classics/morning_has_broken.qmd                    # 1
+      - 02_Classics/dust_in_the_wind.qmd                      # 1
+      - 02_Classics/blowing_in_the_wind.qmd                   # 1
     - part: "Mundart & Deutsch"
       chapters:
       - 03_Mundart_und_Deutsch/heidi.qmd
@@ -109,7 +109,6 @@ format:
   pdf: 
     documentclass: scrbook
     # by default, scrbook is twosided, which means each chapter must start on an odd page
-    classoption: twoside=false
     geometry:
       - a5paper
       - left=16mm

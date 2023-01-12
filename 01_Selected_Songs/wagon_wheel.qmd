@@ -2,7 +2,6 @@
 title: Wagon Wheel
 artist: Old Crow Medicine Show
 capo: '2'
-
 ---
 
 [G]                     [D]
@@ -62,3 +61,7 @@ And if I die in Raleigh
 At least I will die free
 
 {chorus}
+
+
+<!-- openright-off -->
+\csname @openrightfalse\endcsname
