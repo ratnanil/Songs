@@ -18,8 +18,24 @@ p {
 }
 
 .chorus{
-  padding-left: 20px;
   background-color: dimgray;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  border-top: 20px solid darkgray; /* experimental*/
+}
+/* the follwing is also experimental*/
+.chorus::before {
+  content: "Chorus"; /* this is hardcoded here, while its an argument in latex */
+  position: relative;
+  top: -20px;
+  color: white;
+}
+
+.chorus> :last-child{
+  margin-bottom: 0rem;
 }
 
 .tab {
