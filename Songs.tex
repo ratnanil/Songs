@@ -93,6 +93,13 @@
 % --> 
 
 
+% <-- prevent page breaks inside paragraphs (i.e. verses)
+% https://tex.stackexchange.com/questions/21983/how-to-avoid-page-breaks-inside-paragraphs
+\widowpenalties 1 10000
+\raggedbottom
+% -->
+
+
 % <-- prevent the creation of a automatic titlepage 
 % https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown
 \let\oldmaketitle\maketitle
@@ -287,7 +294,7 @@
 \let\maketitle\oldmaketitle
 %\maketitle %if you turn this on (uncomment it), it will create a second titlepage
 
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, boxrule=0pt, sharp corners, frame hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, interior hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, boxrule=0pt, interior hidden, sharp corners, borderline west={3pt}{0pt}{shadecolor}, enhanced, breakable]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -331,7 +338,7 @@ Or tunnels to gates of white\\
 Just our hands clasped so tight\\
 Waiting for, the hint of a spark
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 ~~{[}Am{]}~~~~~~~~~~~~~~~{[}C{]}~~~~~\\
 If heaven and hell decide,~~~~~~\\
@@ -483,7 +490,7 @@ I learned to live half a life\\
 {[}Em{]}~~~~~~~~{[}D{]}~~~~~~~~~~~{[}Asus4{]}{[}A{]}\\
 And now you want me one more time
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 {[}D{]}~~~~~~~~~~~~~~~~~~{[}A{]}\\
 Who do you think you are?\\
@@ -563,7 +570,7 @@ I was when we met\\
 {[}C{]}~~~~~~~~~~{[}F{]}~~~~~~~~~~{[}Am{]} {[}G{]}\\
 I was happier then with no mind set
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 {[}G{]}~~~~~~~~~~~~~~~~~~~{[}C{]}\\
 And if you\textquotesingle d a took to me like\\
@@ -649,7 +656,7 @@ Next the walls were closed on me\\
 And I discovered that my castles stand\\
 Upon pillars of salt and pillars of sand
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 {[}C{]}~~~~~~~~~~~~{[}D{]}\\
 I hear Jerusalem bells are ringing\\
@@ -698,7 +705,7 @@ Pickin\textquotesingle{} me a bouquet of dogwood flowers\\
 And I\textquotesingle m a hopin\textquotesingle{} for Raleigh\\
 I can see my baby tonight
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 ~~{[}G{]}~~~~~~~~~~~~~~~~~{[}D{]}\\
 So rock me mama like a wagon wheel\\
@@ -829,7 +836,7 @@ Marie you are the wild blue sky, men do foolish things\\
 {[}G7{]}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{[}Bm{]}\\
 You turn kings into beggars and beggars into kings
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 ~~{[}G{]}~~~~~~~~~~~~~~~~~~{[}D{]}\\
 Pretend that you owe me nothing~~~~~~\\
@@ -903,7 +910,7 @@ Dance me to the end of love (3x)
 \hypertarget{build-me-up-buttercup}{%
 \chapter{Build me up Buttercup}\label{build-me-up-buttercup}}
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Why do you build me up (build me up) Buttercup, baby\\
 Just to let me down (let me down)and mess me around\\
@@ -1007,7 +1014,7 @@ Und sie sagte: "Ich bedaure dich sehr."\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}A{]}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{[}D{]}\\
 Doch ich lachte und sprach: "Ich brauch keine weichen Daunen"
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 ~~~~~~~~~~~~~{[}G{]}\\
 Ein Bett im Kornfeld,\\
@@ -1079,7 +1086,7 @@ Well I hope Neil Young will remember\\
 
 {[}Chorus{]}
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 {[}D{]}~~{[}Cadd9{]}
 {[}G{]}~~~{[}D{]}~~~~~~~{[}Cadd9{]}~~~~~~{[}G{]}~~~~~~~~\\
@@ -1146,7 +1153,7 @@ warm)\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}G{]}~~~~{[}Am{]}~~~~~~~~~~~~~~~{[}E{]}\\
 If I was in L.A.~~(if I was in L.A.)
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 {[}E{]}~~~~~~~~~~{[}Am{]}~~~~~{[}G{]}~~~~~~~{[}F{]}\\
 California dreamin~~(California dreamin\textquotesingle)\\
@@ -1293,7 +1300,7 @@ and I\textquotesingle m the only one and I walk alone
 {[}Em{]}{[}G{]}{[}D{]}~~~~~~~~~~{[}A{]}\\
 .........I walk alone, I walk a....
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 {[}C{]}~~~~{[}G{]}~~~~~~~~~~{[}D{]}~~~~~~~~~~~~{[}Em{]}\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}My
@@ -1513,7 +1520,7 @@ The needle tears a hole~~~the old familiar sting\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}C{]}~~~~{[}D{]}~~~~{[}Am{]}~~~~~~~~~{[}C{]}~~~~{[}D{]}~~~~{[}G{]}~~~~~~~~~\\
 Try to kill it all away~~~but I remember everything
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 {[}Am{]}~~~~~~~~~~~{[}F{]}~~~{[}C{]}~~~~~~~~~~~~~{[}G{]}\\
 What have I become?~~~~~My sweetest friend\\
@@ -1617,7 +1624,7 @@ In his eyes you see no pride, and held loosely by his side\\
 yesterday\textquotesingle s papers, telling yesterday\textquotesingle s
 news
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 ~~~~~{[}F{]}~~~~~~~~~{[}Em{]}~~~~~~~~~~~~{[}C{]}~~{[}G7{]}~~~{[}Am{]}\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}So
@@ -1713,7 +1720,7 @@ I close my eyes only for a moment and a moment´s gone.\\
 {[}C{]} G/B~~{[}Am{]}~~~{[}G{]}~~~~~~~~~~~~Dm~~~~~~~~~{[}Am{]}\\
 All my dreams pass before my eyes a curiosity.
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 {[}D{]}{[}G{]}~~~~~~{[}Am{]}~~{[}D{]}~~~~~~~~~~{[}G{]}~~~~~~~~~{[}Am{]}\\
 Dust in the wind, all we are is dust in the wind.
@@ -1912,7 +1919,7 @@ Sie weiß nicht, dass der Schnee lautlos auf die Erde fällt,\\
 {[}Dm{]}~~~~~~~~~~~~~{[}Eb{]}~~~~~~~~~~~~~{[}Bb{]} {[}F{]}\\
 merkt nichts vom Klopfen an der Wand.
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 ~~~~~~~{[}Eb{]}~~~~~~~~~~~~~~~~{[}Bb{]}\\
 Sie mag Musik nur, wenn sie laut ist,\\
@@ -2025,7 +2032,7 @@ nie die Jahre gezählt\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}Em{]}~~~~~~~{[}D{]}~~~~~{[}G{]}\\
 nie nach gestern und morgen gefragt
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 ~~~~~~~~~~{[}D{]}~~~~~~~~~~~~~~\\
 Manchmal träume ich schwer\\
@@ -3472,7 +3479,7 @@ a keeping their sheep\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}C{]}~~~~~~~~~~~{[}D{]}~~~~~~~~~~~~{[}C{]}{[}G{]}\\
 On a cold winter\textquotesingle s night that was so deep.
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 {[}G{]}~~{[}D{]}~~{[}C{]}~~{[}G{]}\\
 Noel Noel Noel Noel\\
@@ -4049,25 +4056,41 @@ Stärnli, liebs Stärnli, guet Nacht!
 \hypertarget{beresinalied}{%
 \chapter{Beresinalied}\label{beresinalied}}
 
+C G C\\
 Unser Leben gleicht der Reise\\
-Eines Wandrers in der Nacht;\\
-Jeder hat in seinem Gleise\\
-Etwas, das ihm Kummer macht.
+G D7 G\\
+eines Wandrers in der Nacht.\\
+G7 C G C\\
+Jeder hat in seinem Gleise,\\
+F C G7 C\\
+etwas, das ihm Kummer macht.
 
+C G C\\
 Aber unerwartet schwindet\\
-Vor uns Nacht und Dunkelheit,\\
-Und der Schwergedrückte findet\\
+G D7 G\\
+vor uns Nacht und Dunkelheit,\\
+G7 C G C\\
+und der Schwerbedrückte findet\\
+F C G7 C\\
 Linderung in seinem Leid.
 
+C G C\\
 Mutig, mutig, liebe Brüder,\\
-Gebt das bange Sorgen auf;\\
+G D7 G\\
+gebt das bange Sorgen auf:\\
+G7 C G C\\
 Morgen steigt die Sonne wieder\\
-Freundlich an dem Himmel auf.
+F C G7 C\\
+freundlich an dem Himmel auf.
 
-Darum laßt uns weitergehen;\\
-Weichet nicht verzagt zurück!\\
-Hinter jenen fernen Höhen\\
-Wartet unser noch ein Glück.
+C G C\\
+Darum laßt uns weitergehen,\\
+G D7 G\\
+weichet nicht verzagt zurück!\\
+G7 C G C\\
+Dort in jenen fernen Höhen\\
+F C G7 C\\
+wartet unser noch ein Glück.
 
 \hypertarget{de-blogeti-hansli}{%
 \chapter{De blogeti Hansli}\label{de-blogeti-hansli}}
@@ -4082,7 +4105,7 @@ Mues immer de blogeti Hansli si,\\
 so lang as i läbe und bi.\\
 Refrain
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Halli, hallo, halli, hallo,\\
 bi üs gohts immer je länger, je schlimmer.\\
@@ -4181,7 +4204,7 @@ brennt eine Sehnsucht in uns\textquotesingle rem Herzen,\\
 {[}B7{]}~~~~~~~~~~~~~~~~~~~~~~~{[}E{]}\\
 die lässt uns nimmermehr in Ruh.
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 {[}A{]}~~~~~~~~~~~~~{[}E{]}\\
 Herrliche Berge, sonnige Höhen\\
@@ -4601,7 +4624,7 @@ Griffe: A E A E A
 Det äne am Bergli, det schtat e wiessi Geiss.\\
 I ha si welle mälche, da haut sie mer eis.
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, colframe=quarto-callout-color-frame, leftrule=.75mm, colback=white, arc=.35mm, rightrule=.15mm, bottomrule=.15mm, toprule=.15mm, left=2mm, opacityback=0]
+\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
 
 Hole duli, duli, duli, hole duli, duli, duli, duli\\
 hole duli, duli, duli, hole duli, duli, duli, duli
@@ -4618,46 +4641,6 @@ wänn mer use chunt wirds hell.
 Min Vater und d'Muetter sind sparsami Lüt.\\
 Sie flicket mer d'Hose mit Härdöpfelhüt.\\
 Auf der Gitarre begleiten
-
-\part{Notes and Tabs}
-
-\hypertarget{greensleeves}{%
-\chapter{Greensleeves}\label{greensleeves}}
-
-\begin{verbatim}
-     Am    C          G                Am               E
-\end{verbatim}
-
-e\textbar-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-0-\/-1-\/-0-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar{}\\
-B\textbar-\/-\/-\/-\/-\textbar-1-\/-3-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-3-\/-0-\/-\/-\/-\/-\/-\/-\/-0-\/-\textbar-1-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-0-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar{}\\
-G\textbar-\/-2-\/-\textbar-2-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-0-\/-2-\/-\/-\/-\/-\textbar-\/-\/-\/-2-\/-2-\/-1-\/-2-\/-\textbar-\/-\/-\/-1-\/-\/-\/-\/-2-\/-\textbar{}\\
-D\textbar-\/-\/-\/-\/-\textbar-2-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-2-\/-\/-\/-\/-\textbar{}\\
-A\textbar-\/-\/-\/-\/-\textbar-0-\/-2-\/-3-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-0-\/-\/-\/-\/-0-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar{}\\
-E\textbar-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-3-\/-\/-\/-\/-3-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-0-\/-\/-\/-\/-0-\/-\/-\/-\/-\textbar{}
-
-Am C G Am E Am\\
-e\textbar-\/-\/-\/-\/-\/-\/-0-\/-1-\/-0-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar{}\\
-B\textbar-1-\/-3-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-3-\/-0-\/-\/-\/-\/-\/-\/-\/-0-\/-\textbar-1-\/-0-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar{}\\
-G\textbar-2-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-0-\/-2-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-2-\/-1-\/-\/-\/-\/-1-\/-\textbar-2-\/-2-\/-2-\/-\textbar{}\\
-D\textbar-2-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-4-\/-\/-\/-\/-\textbar-2-\/-\/-\/-\/-2-\/-\textbar{}\\
-A\textbar-0-\/-2-\/-3-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-0-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-0-\/-\/-\/-\/-0-\/-\textbar{}\\
-E\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-3-\/-\/-\/-\/-3-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-0-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar{}
-
-C G Am E\\
-e\textbar-3-\/-3-\/-2-\/-0-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar{}\\
-B\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-3-\/-0-\/-\/-\/-\/-\/-\/-\/-0-\/-\textbar-1-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-0-\/-\/-\/-\/-\/-\/-\/-\textbar{}\\
-G\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-0-\/-2-\/-\/-\/-\/-\textbar-\/-\/-\/-2-\/-2-\/-1-\/-2-\/-\textbar-\/-\/-\/-1-\/-\/-\/-\/-\textbar{}\\
-D\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-2-\/-\textbar{}\\
-A\textbar-3-\/-3-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-0-\/-\/-\/-\/-0-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar{}\\
-E\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-3-\/-\/-\/-\/-3-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-0-\/-\/-\/-\/-0-\/-\textbar{}
-
-C G Am E Am\\
-e\textbar-3-\/-3-\/-2-\/-0-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\textbar{}\\
-B\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-3-\/-0-\/-\/-\/-\/-\/-\/-\/-0-\/-\textbar-1-\/-0-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\textbar{}\\
-G\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-0-\/-2-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-2-\/-1-\/-\/-\/-\/-1-\/-\textbar-2-\/-2-\/-\textbar{}\\
-D\textbar-\/-\/-\/-2-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-4-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\textbar{}\\
-A\textbar-3-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-0-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-0-\/-0-\/-\textbar{}\\
-E\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar-3-\/-\/-\/-\/-3-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-0-\/-\/-\/-\/-\/-\/-\/-\textbar-\/-\/-\/-\/-\/-\/-\textbar{}
 
 
 \backmatter
