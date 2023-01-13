@@ -105,7 +105,7 @@ book:
       - 06_Kinderlieder/det_aenet_am_bergli.qmd               # 1
     - part: "Notes and Tabs"
       chapters: 
-      - 07_notes_and_tabs/greensleeves.qmd
+      - 07_notes_and_tabs/greensleeves.qmd"
 
 format:
   pdf: 
