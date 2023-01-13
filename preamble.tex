@@ -1,12 +1,13 @@
-% <-- remove "chapter" from chapters and reduce the amout of space before the chapter
+% <-- Create a new chapterstyle named "section" and apply this style to the document
+% most of this code was taken from the "MemoirChapStyles" example of the same name
 % https://mirror.init7.net/ctan/info/MemoirChapStyles/
 \makechapterstyle{section}{%
   \setlength{\beforechapskip}{0pt}     % reduce the amout of space on a page before the chapter
   \setlength{\afterchapskip}{0pt}      % reduce the amout of space on a page before the chapter
   \setlength{\parskip}{1\baselineskip} % increase the amout of space between paragraphs
   \setlength{\parindent}{0pt}          % remove indentation of all paragraphs
-  \renewcommand{\printchaptername}{}
-  \renewcommand{\chapternamenum}{}
+  \renewcommand{\printchaptername}{}   % < remove the text "chapter" from chapters and reduce 
+  \renewcommand{\chapternamenum}{}     % the amout of space before the chapter >
   \renewcommand{\chapnumfont}{\normalfont\Huge\bfseries}
   \renewcommand{\printchapternum}{\chapnumfont \thechapter\space}
   \renewcommand{\afterchapternum}{}
@@ -28,8 +29,19 @@
 \AtBeginDocument{\let\maketitle\relax}
 % --> 
 
+% <--
+% creates an environment "chorus" which can be used together with the lua filter "latex-environment"
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+\newtcolorbox{chorus}[1][Chorus]{colback=white,left*=0mm,grow to left by=2mm,fonttitle=\scriptsize,title=#1,colbacktitle=lightgray,colframe=lightgray}
+% [1] means 1 optional argument (the title, where the default is "Chorus")
+\newtcolorbox{tab}{blanker,fontupper=\small} % for tabs, grids, etc
 
-% <-- start chapter on the left, except when it is of length 1
+% --> 
+
+
+
+% <-- Start chapters with an odd number of pages on the right, and with an even number of pages on the left
 % https://tex.stackexchange.com/questions/66278/chapters-that-openleft-unless-the-chapter-is-only-one-page-long?rq=1
 \usepackage{zref-abspage}
 \usepackage{atveryend}

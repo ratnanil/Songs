@@ -18,7 +18,7 @@ I'd be safe and warm (I'd be safe and warm)
     [G]    [Am]               [E]
 If I was in L.A.  (if I was in L.A.)
 
-::: {.callout appearance="minimal"}
+:::{.chorus}
 [E]          [Am]     [G]       [F]
 California dreamin  (California dreamin')
    [G]    [Am]     [E]

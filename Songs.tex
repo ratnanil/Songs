@@ -37,7 +37,7 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\usepackage[left=16mm,top=05mm,right=02mm,bottom=5mm]{geometry}
+\usepackage[left=16mm,top=05mm,right=05mm,bottom=5mm]{geometry}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \setcounter{secnumdepth}{5}
 % Make \paragraph and \subparagraph free-standing
@@ -76,15 +76,16 @@
 \def\fps@figure{htbp}
 \makeatother
 
-% <-- remove "chapter" from chapters and reduce the amout of space before the chapter
+% <-- Create a new chapterstyle named "section" and apply this style to the document
+% most of this code was taken from the "MemoirChapStyles" example of the same name
 % https://mirror.init7.net/ctan/info/MemoirChapStyles/
 \makechapterstyle{section}{%
   \setlength{\beforechapskip}{0pt}     % reduce the amout of space on a page before the chapter
   \setlength{\afterchapskip}{0pt}      % reduce the amout of space on a page before the chapter
   \setlength{\parskip}{1\baselineskip} % increase the amout of space between paragraphs
   \setlength{\parindent}{0pt}          % remove indentation of all paragraphs
-  \renewcommand{\printchaptername}{}
-  \renewcommand{\chapternamenum}{}
+  \renewcommand{\printchaptername}{}   % < remove the text "chapter" from chapters and reduce 
+  \renewcommand{\chapternamenum}{}     % the amout of space before the chapter >
   \renewcommand{\chapnumfont}{\normalfont\Huge\bfseries}
   \renewcommand{\printchapternum}{\chapnumfont \thechapter\space}
   \renewcommand{\afterchapternum}{}
@@ -106,8 +107,19 @@
 \AtBeginDocument{\let\maketitle\relax}
 % --> 
 
+% <--
+% creates an environment "chorus" which can be used together with the lua filter "latex-environment"
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+\newtcolorbox{chorus}[1][Chorus]{colback=white,left*=0mm,grow to left by=2mm,fonttitle=\scriptsize,title=#1,colbacktitle=lightgray,colframe=lightgray}
+% [1] means 1 optional argument (the title, where the default is "Chorus")
+\newtcolorbox{tab}{blanker,fontupper=\small} % for tabs, grids, etc
 
-% <-- start chapter on the left, except when it is of length 1
+% --> 
+
+
+
+% <-- Start chapters with an odd number of pages on the right, and with an even number of pages on the left
 % https://tex.stackexchange.com/questions/66278/chapters-that-openleft-unless-the-chapter-is-only-one-page-long?rq=1
 \usepackage{zref-abspage}
 \usepackage{atveryend}
@@ -166,22 +178,6 @@
 
 
 
-\makeatletter
-\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
-\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
-\definecolor{quarto-callout-color}{HTML}{909090}
-\definecolor{quarto-callout-note-color}{HTML}{0758E5}
-\definecolor{quarto-callout-important-color}{HTML}{CC1914}
-\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
-\definecolor{quarto-callout-tip-color}{HTML}{00A047}
-\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
-\definecolor{quarto-callout-color-frame}{HTML}{acacac}
-\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
-\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
-\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
-\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
-\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
-\makeatother
 \makeatletter
 \makeatother
 \makeatletter
@@ -294,7 +290,7 @@
 \let\maketitle\oldmaketitle
 %\maketitle %if you turn this on (uncomment it), it will create a second titlepage
 
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, boxrule=0pt, interior hidden, sharp corners, borderline west={3pt}{0pt}{shadecolor}, enhanced, breakable]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, sharp corners, enhanced, frame hidden, breakable]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -338,8 +334,7 @@ Or tunnels to gates of white\\
 Just our hands clasped so tight\\
 Waiting for, the hint of a spark
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 ~~{[}Am{]}~~~~~~~~~~~~~~~{[}C{]}~~~~~\\
 If heaven and hell decide,~~~~~~\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}F{]}~~~~~~~~~{[}C{]}G\\
@@ -353,7 +348,7 @@ when your soul embarks\\
 Bb~~~~~~~~~~~~~~~~~Bbm~~~~~~~~~~~\href{C\%20root\%20note}{F}\\
 Then I will follow you into the dark
 
-\end{tcolorbox}
+\end{chorus}
 
 Catholic school\\
 As vicious as roman rule\\
@@ -387,12 +382,15 @@ If there\textquotesingle s no one beside you, when your soul embarks\\
 {[}F{]}~~~~~~~~~~~~~~~Fm~~~~~~~~~~~{[}C{]}~~~\\
 Then I will follow you into the dark
 
+\begin{tab}
 E-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar{}\\
 B-\/-\/-1-\/-\/-1-\/-\/-\/-\/-\/-\/-\/-1-\/-\/-\/-\textbar{}\\
 G-\/-\/-2-\/-\/-2-\/-\/-\/-\/-\/-\/-\/-2-\/-\/-\/-\textbar{}\\
 D-\/-\/-0-\/-\/-0-\/-\/-\/-\/-\/-\/-\/-2-\/-\/-\/-\textbar{}\\
 A-\/-\/-3-\/-\/-2-\/-\/-\/-0-\/-\/-0-\/-\/-\/-\textbar{}\\
 E-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar{}
+
+\end{tab}
 
 {[}F{]}~~~~~~~~~~~~~~~Fm~~~~~~~~~~~{[}C{]}~~~\\
 Then I will follow you into the dark
@@ -490,8 +488,7 @@ I learned to live half a life\\
 {[}Em{]}~~~~~~~~{[}D{]}~~~~~~~~~~~{[}Asus4{]}{[}A{]}\\
 And now you want me one more time
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 {[}D{]}~~~~~~~~~~~~~~~~~~{[}A{]}\\
 Who do you think you are?\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}Bm{]}\\
@@ -509,7 +506,7 @@ Don\textquotesingle t come back for me\\
 Gm~~~~~~~~~~~~~~~~~~~{[}D{]}\\
 Who do you think you are?
 
-\end{tcolorbox}
+\end{chorus}
 
 {[}Bm{]}~~~~~~~~~~~~~~~~~~~~~~{[}D{]}\\
 I hear you\textquotesingle re asking all around\\
@@ -570,8 +567,7 @@ I was when we met\\
 {[}C{]}~~~~~~~~~~{[}F{]}~~~~~~~~~~{[}Am{]} {[}G{]}\\
 I was happier then with no mind set
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 {[}G{]}~~~~~~~~~~~~~~~~~~~{[}C{]}\\
 And if you\textquotesingle d a took to me like\\
 {[}F{]}~~{[}C{]}~~~~~~~~~~{[}G{]}\\
@@ -583,7 +579,7 @@ And I\textquotesingle d a danced like the king of the eyesores\\
 {[}F{]}~~~~~~~~~~~~~~~~{[}C{]}~~~~~~~~~~~{[}G{]}\\
 And the rest of our lives would\textquotesingle a fared well
 
-\end{tcolorbox}
+\end{chorus}
 
 {[}Am{]}~~~~~~~~~~~~~~{[}C{]}~~~~~~~~{[}F{]}\\
 New slang when you notice the stripes\\
@@ -656,8 +652,7 @@ Next the walls were closed on me\\
 And I discovered that my castles stand\\
 Upon pillars of salt and pillars of sand
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 {[}C{]}~~~~~~~~~~~~{[}D{]}\\
 I hear Jerusalem bells are ringing\\
 {[}G{]}~~~~~~~~~~{[}Em{]}\\
@@ -673,7 +668,7 @@ Once you go there was never, never an honest word\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}Bm{]}~~~~~~~~~~~~~{[}Em{]}\\
 That was when I ruled the world
 
-\end{tcolorbox}
+\end{chorus}
 
 It was the wicked and wild wind\\
 Blew down the doors to let me in\\
@@ -705,8 +700,7 @@ Pickin\textquotesingle{} me a bouquet of dogwood flowers\\
 And I\textquotesingle m a hopin\textquotesingle{} for Raleigh\\
 I can see my baby tonight
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 ~~{[}G{]}~~~~~~~~~~~~~~~~~{[}D{]}\\
 So rock me mama like a wagon wheel\\
 {[}Em{]}~~~~~~~~~~~{[}C{]}\\
@@ -720,7 +714,7 @@ Rock me mama like a south-bound train\\
 {[}G{]}{[}D{]}~~~{[}C{]}\\
 Hey, mama rock me
 
-\end{tcolorbox}
+\end{chorus}
 
 Intro
 
@@ -836,8 +830,7 @@ Marie you are the wild blue sky, men do foolish things\\
 {[}G7{]}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{[}Bm{]}\\
 You turn kings into beggars and beggars into kings
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 ~~{[}G{]}~~~~~~~~~~~~~~~~~~{[}D{]}\\
 Pretend that you owe me nothing~~~~~~\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}A7{]}~~~~~~~~~~~~~{[}D{]}\\
@@ -847,7 +840,7 @@ We can bring back the old days again~~~~~\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}A7{]}~~~~~~~~~~~~~{[}D{]}\\
 when all the world is green
 
-\end{tcolorbox}
+\end{chorus}
 
 The face forgives the mirror\\
 The worm forgives the plow\\
@@ -910,8 +903,7 @@ Dance me to the end of love (3x)
 \hypertarget{build-me-up-buttercup}{%
 \chapter{Build me up Buttercup}\label{build-me-up-buttercup}}
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 Why do you build me up (build me up) Buttercup, baby\\
 Just to let me down (let me down)and mess me around\\
 And then worst of all (worst of all) you never call, baby\\
@@ -921,7 +913,7 @@ You know that I have from the start\\
 So build me up (build me up) Buttercup,\\
 don\textquotesingle t break my heart
 
-\end{tcolorbox}
+\end{chorus}
 
 "I\textquotesingle ll be over at ten", you told me time and again\\
 But you\textquotesingle re late, I wait around and then (bah-dah-dah)\\
@@ -1014,8 +1006,7 @@ Und sie sagte: "Ich bedaure dich sehr."\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}A{]}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{[}D{]}\\
 Doch ich lachte und sprach: "Ich brauch keine weichen Daunen"
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 ~~~~~~~~~~~~~{[}G{]}\\
 Ein Bett im Kornfeld,\\
 Das ist immer frei, denn es ist\\
@@ -1035,7 +1026,7 @@ Ein Bett im Kornfeld mach ich mir\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}D{]}\\
 irgendwo ganz alleine.
 
-\end{tcolorbox}
+\end{chorus}
 
 {[}D{]}\\
 Etwas später lag ihr Fahrrad im\\
@@ -1058,12 +1049,15 @@ Doch ich lachte und sprach:\\
 \hypertarget{sweet-home-alabama}{%
 \chapter{Sweet Home Alabama}\label{sweet-home-alabama}}
 
+\begin{tab}
 e\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-3-\textbar{}\\
 B\textbar-\/-\/-\/-\/-3-\/-\/-\/-\/-\/-\/-\/-\/-3-\/-\/-\/-\/-\/-\/-\/-\/-3-\textbar{}\\
 G\textbar-\/-\/-\/-\/-\/-\/-2-\/-\/-\/-\/-\/-\/-\/-\/-\/-0-\/-\/-\/-\/-\/-0-\textbar~~x4\\
 D\textbar-0-0-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-0-\textbar~~~~~\\
 A\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-3-3-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-2-\textbar{}\\
 E\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-3-3-3-\textbar{}
+
+\end{tab}
 
 {[}D{]} {[}Cadd9{]}~~~~~~~{[}G{]}\\
 Big wheels keep on turning\\
@@ -1086,8 +1080,7 @@ Well I hope Neil Young will remember\\
 
 {[}Chorus{]}
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 {[}D{]}~~{[}Cadd9{]}
 {[}G{]}~~~{[}D{]}~~~~~~~{[}Cadd9{]}~~~~~~{[}G{]}~~~~~~~~\\
 Sweet home Alabama, where the skies are so blue\\
@@ -1095,7 +1088,7 @@ Sweet home Alabama, where the skies are so blue\\
 {[}G{]}~~~{[}D{]}~~~~~~~{[}Cadd9{]}~~~~~~~{[}G{]}~~~~~\\
 Sweet home Alabama, lord I'm coming home to you.
 
-\end{tcolorbox}
+\end{chorus}
 
 {[}F{]}\\
 {[}D{]}add9{[}G{]}\\
@@ -1153,14 +1146,13 @@ warm)\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}G{]}~~~~{[}Am{]}~~~~~~~~~~~~~~~{[}E{]}\\
 If I was in L.A.~~(if I was in L.A.)
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 {[}E{]}~~~~~~~~~~{[}Am{]}~~~~~{[}G{]}~~~~~~~{[}F{]}\\
 California dreamin~~(California dreamin\textquotesingle)\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}G{]}~~~~{[}Am{]}~~~~~{[}E{]}\\
 On such a winter\textquotesingle s day
 
-\end{tcolorbox}
+\end{chorus}
 
 {[}E{]}~~~~~~~~~~~~{[}Am{]}\\
 Stopped in to a church\\
@@ -1300,8 +1292,7 @@ and I\textquotesingle m the only one and I walk alone
 {[}Em{]}{[}G{]}{[}D{]}~~~~~~~~~~{[}A{]}\\
 .........I walk alone, I walk a....
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 {[}C{]}~~~~{[}G{]}~~~~~~~~~~{[}D{]}~~~~~~~~~~~~{[}Em{]}\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}My
 shadow\textquotesingle s the only one that walks beside me\\
@@ -1316,7 +1307,7 @@ I wish someone out there will find me\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}Till
 then I walk alone
 
-\end{tcolorbox}
+\end{chorus}
 
 {[}Em{]}~~{[}G{]}~~~{[}D{]}~~~~~{[}A{]}\\
 Ah-Ah Ah-Ah Ah-Ah~~~Ahhh-Ah\\
@@ -1520,8 +1511,7 @@ The needle tears a hole~~~the old familiar sting\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}C{]}~~~~{[}D{]}~~~~{[}Am{]}~~~~~~~~~{[}C{]}~~~~{[}D{]}~~~~{[}G{]}~~~~~~~~~\\
 Try to kill it all away~~~but I remember everything
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 {[}Am{]}~~~~~~~~~~~{[}F{]}~~~{[}C{]}~~~~~~~~~~~~~{[}G{]}\\
 What have I become?~~~~~My sweetest friend\\
 {[}Am{]}~~~~~~~{[}F{]}~~~~~~~~~~~{[}C{]}~~~~~~{[}G{]}\\
@@ -1531,7 +1521,7 @@ And you could have it all~~~My empire of dirt\\
 {[}Am{]}~~~~~~~~~~~{[}F{]}~~~~{[}G{]}~~~~~~~~~~~~~~{[}Am{]}\\
 I will let you down~~~~I will make you hurt
 
-\end{tcolorbox}
+\end{chorus}
 
 I wear this crown of thorns~~~upon my liar\textquotesingle s chair\\
 Full of broken thoughts~~~I cannot repair\\
@@ -1549,29 +1539,47 @@ I would keep myself~~I would find a way
 \chapter{Where have all the flowers
 Gone?}\label{where-have-all-the-flowers-gone}}
 
-C~~~~~~~~~~~~~~~~~~Am~~~~~~~~~~~~F~~~~~~~~~~G\\
-Where have all the flowers gone, long time passing\\
-C~~~~~~~~~~~~~~~~~~Am~~~~~~~~~~~~F~~~~~~~~~~G\\
-Where have all the flowers gone, long time ago\\
-C~~~~~~~~~~~~~~~~~~Am~~~~~~~~~~~~F~~~~~~~~~~~G\\
-Where have all the flowers gone, young girls picked them every one\\
-F~~~~~~~~~C~~~~~~~~~~~~~~~~~~F~~~~~~~~~G~~~~~~~~~~C~~~\\
-When will they ever learn? , when will they ever learn?
+C~~~~~~~~~~~~~~~~~~Am~~~~~~~~~~~\\
+Where have all the flowers gone,\\
+F~~~~~~~~~~G\\
+long time passing\\
+C~~~~~~~~~~~~~~~~~~Am~~~~~~~~~~~~\\
+Where have all the flowers gone,\\
+F~~~~~~~~~~G\\
+long time ago\\
+C~~~~~~~~~~~~~~~~~~Am~~~~~~~~~~~~\\
+Where have all the flowers gone,\\
+F~~~~~~~~~~~G\\
+young girls picked them every one\\
+F~~~~~~~~~C~~~~~~~~~~~~~~~~~\\
+When will they ever learn? ,\\
+F~~~~~~~~~G~~~~~~~~~~C~~~\\
+when will they ever learn?
 
-C~~~~~~~~~~~~~~~~~~~Am~~~~~~~~~~~F~~~~~~~~~~~~G\\
-Where have all the young girls gone, Gone to young men every one
+C~~~~~~~~~~~~~~~~~~~Am~~~~~~~~~~~F~~~\\
+Where have all the young girls gone,\\
+\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}G\\
+Gone to young men every one
 
-C~~~~~~~~~~~~~~~~~~~Am~~~~~~~~~~~F~~~~~~~~~~~~G\\
-Where have all the young men gone, Gone to soldiers every one
+C~~~~~~~~~~~~~~~~~~~Am~~~~~~~~ F~~~\\
+Where have all the young men gone,\\
+\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}G\\
+Gone to soldiers every one
 
-C~~~~~~~~~~~~~~~~~~~Am~~~~~~~~~~~F~~~~~~~~~~~~G~~~\\
-Where have all the soldiers gone, Gone to graves every one
+C~~~~~~~~~~~~~~~~~~~Am~~~~~~~~~~~\\
+Where have all the soldiers gone,\\
+F~~~~~~~~~~~~G~~~\\
+Gone to graves every one
 
-C~~~~~~~~~~~~~~~~~~~Am~~~~~~~~~~~F~~~~~~~~~~~~G~~\\
-Where have all the graves gone, Gone to flowers every one.
+C~~~~~~~~~~~~~~~~~~~Am~~~~~~~~~~\\
+Where have all the graves gone,\\
+\hspace*{0.333em}F~~~~~~~~~~~~G~~\\
+Gone to flowers every one.
 
-F~~~~~~~~~C~~~~~~~~~~~~~~~~~~F~~~~~~~~~G~~~~~~~~~~C\\
-When will they ever learn? , when will they ever learn?
+F~~~~~~~~~C~~~~~~~~~~~~~~~~~\\
+When will they ever learn?,\\
+F~~~~~~~~~G~~~~~~~~~~C\\
+when will they ever learn?
 
 \hypertarget{house-of-the-rising-sun}{%
 \chapter{House of the Rising Sun}\label{house-of-the-rising-sun}}
@@ -1624,8 +1632,7 @@ In his eyes you see no pride, and held loosely by his side\\
 yesterday\textquotesingle s papers, telling yesterday\textquotesingle s
 news
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 ~~~~~{[}F{]}~~~~~~~~~{[}Em{]}~~~~~~~~~~~~{[}C{]}~~{[}G7{]}~~~{[}Am{]}\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}So
 how can you tell me, you\textquotesingle re lo - ne - ly\\
@@ -1639,7 +1646,7 @@ London\\
 \hspace*{0.333em}\hspace*{0.333em}I\textquotesingle ll show you
 something, to make you change your mind
 
-\end{tcolorbox}
+\end{chorus}
 
 Have you seen the old gal, who walks the streets of London\\
 dirt in her hair, and her clothes in rags?\\
@@ -1708,6 +1715,7 @@ Praise for them spring-ing fresh from the world
 \hypertarget{dust-in-the-wind}{%
 \chapter{Dust in the Wind}\label{dust-in-the-wind}}
 
+\begin{tab}
 e\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar{}\\
 B\textbar-1-\/-\/-\/-\/-\/-\/-1-\textbar{}\\
 G\textbar-\/-\/-\/-\/-0-\/-\/-\/-\/-\textbar{}\\
@@ -1715,17 +1723,18 @@ D\textbar-\/-\/-2-\/-\/-\/-\/-\/-\/-\textbar{}\\
 A\textbar-3-\/-\/-\/-\/-3-\/-\/-\textbar{}\\
 E\textbar-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\textbar{}
 
+\end{tab}
+
 {[}C{]}~~~~G/B {[}Am{]}~~{[}G{]}~~~~~~~~Dm~~~~~~~~~~~{[}Am{]}\\
 I close my eyes only for a moment and a moment´s gone.\\
 {[}C{]} G/B~~{[}Am{]}~~~{[}G{]}~~~~~~~~~~~~Dm~~~~~~~~~{[}Am{]}\\
 All my dreams pass before my eyes a curiosity.
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 {[}D{]}{[}G{]}~~~~~~{[}Am{]}~~{[}D{]}~~~~~~~~~~{[}G{]}~~~~~~~~~{[}Am{]}\\
 Dust in the wind, all we are is dust in the wind.
 
-\end{tcolorbox}
+\end{chorus}
 
 {[}C{]}G/B {[}Am{]}~~{[}G{]}~~~~~~~~~~~~Dm~~~~~~~~~~~~~{[}Am{]}\\
 Same old song, just a drop of water in the endless sea.\\
@@ -1919,8 +1928,7 @@ Sie weiß nicht, dass der Schnee lautlos auf die Erde fällt,\\
 {[}Dm{]}~~~~~~~~~~~~~{[}Eb{]}~~~~~~~~~~~~~{[}Bb{]} {[}F{]}\\
 merkt nichts vom Klopfen an der Wand.
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 ~~~~~~~{[}Eb{]}~~~~~~~~~~~~~~~~{[}Bb{]}\\
 Sie mag Musik nur, wenn sie laut ist,\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}Eb{]}~~~~~~~~~~~{[}Bb{]}\\
@@ -1936,7 +1944,7 @@ wenn der Boden unter den Füßen bebt,\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}Gm{]}~~~~~~~~~~~~~~~~{[}F{]}~~~~~~~~{[}G{]}\\
 dann vergisst sie, dass sie taub ist.
 
-\end{tcolorbox}
+\end{chorus}
 
 Gm~~~~~~~~~~~~~~~~~~~~~~~~~~~~{[}F\#{]}\\
 Der Mann ihrer Träume muss ein Bassmann sein\\
@@ -2032,8 +2040,7 @@ nie die Jahre gezählt\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}Em{]}~~~~~~~{[}D{]}~~~~~{[}G{]}\\
 nie nach gestern und morgen gefragt
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 ~~~~~~~~~~{[}D{]}~~~~~~~~~~~~~~\\
 Manchmal träume ich schwer\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}C{]}~~~~~~~~~~{[}G{]}\\
@@ -2051,7 +2058,7 @@ daß nichts bleibt,\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}D{]}~~~~~~~~~~~{[}G{]}\\
 daß nichts bleibt wie es war.
 
-\end{tcolorbox}
+\end{chorus}
 
 ~~~~~~~{[}G{]}~~~~~~~~~~~~~~~~\\
 Daß man mich kaum vermißt\\
@@ -3348,10 +3355,10 @@ so the Holy Bible says,~~\\
 Mary\textquotesingle s boychild, Jesus Christ,\\
 was born on Christmas Day.
 
+:::\{.chorus\}\\
 G··C··\textbar D··G···\textbar Em·Am·\textbar D····\textbar{}\\
 G·····\textbar C··Am··\textbar G··D··\textbar G····\textbar{}
 
-::: \{.callout appearance="minimal"\}\\
 Hark now! Hear the Angels sing,\\
 a King was born today,\\
 and man will live forever more\\
@@ -3377,7 +3384,6 @@ listen to what they say,\\
 that man will live forever more\\
 because of Christmas Day.
 
-\emph{play chorus}\\
 \emph{play chorus}\\
 \hspace*{0.333em}\hspace*{0.333em}\\
 And then they found a little nook,\\
@@ -3479,14 +3485,13 @@ a keeping their sheep\\
 \hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}\hspace*{0.333em}{[}C{]}~~~~~~~~~~~{[}D{]}~~~~~~~~~~~~{[}C{]}{[}G{]}\\
 On a cold winter\textquotesingle s night that was so deep.
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 {[}G{]}~~{[}D{]}~~{[}C{]}~~{[}G{]}\\
 Noel Noel Noel Noel\\
 {[}C{]}~~~~~~~~{[}D{]}~~~~~{[}C{]} {[}G{]}\\
 Born is the King of Israel.
 
-\end{tcolorbox}
+\end{chorus}
 
 ~~~~{[}G{]}~~~~{[}D{]}~~\\
 They looked up\\
@@ -4105,15 +4110,14 @@ Mues immer de blogeti Hansli si,\\
 so lang as i läbe und bi.\\
 Refrain
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 Halli, hallo, halli, hallo,\\
 bi üs gohts immer je länger, je schlimmer.\\
 Halli, hallo, halli, hallo,\\
 bis üs gohts immer eso!\\
 Weitere Strophen
 
-\end{tcolorbox}
+\end{chorus}
 
 Mi Frau isch siebezähni gsi,\\
 und i prezis so alt wie si,
@@ -4204,8 +4208,7 @@ brennt eine Sehnsucht in uns\textquotesingle rem Herzen,\\
 {[}B7{]}~~~~~~~~~~~~~~~~~~~~~~~{[}E{]}\\
 die lässt uns nimmermehr in Ruh.
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 {[}A{]}~~~~~~~~~~~~~{[}E{]}\\
 Herrliche Berge, sonnige Höhen\\
 {[}B7{]}~~~~~~~~~~~~~~~{[}E{]}\\
@@ -4215,7 +4218,7 @@ Herrliche Berge, sonnige Höhen\\
 {[}B7{]}~~~~~~~~~~~~~~~{[}E{]}\\
 Bergvagabunden sind wir.
 
-\end{tcolorbox}
+\end{chorus}
 
 {[}E{]}~~~~~~\\
 Mit Seil und Haken alles zu wagen,\\
@@ -4624,12 +4627,11 @@ Griffe: A E A E A
 Det äne am Bergli, det schtat e wiessi Geiss.\\
 I ha si welle mälche, da haut sie mer eis.
 
-\begin{tcolorbox}[enhanced jigsaw, breakable, bottomrule=.15mm, colframe=quarto-callout-color-frame, rightrule=.15mm, opacityback=0, colback=white, arc=.35mm, toprule=.15mm, leftrule=.75mm, left=2mm]
-
+\begin{chorus}
 Hole duli, duli, duli, hole duli, duli, duli, duli\\
 hole duli, duli, duli, hole duli, duli, duli, duli
 
-\end{tcolorbox}
+\end{chorus}
 
 Sie hät mer eis g'haue, das tuet mer so weh.\\
 Jetzt mälch i miner Läbtig, kei wiessi Geiss meh'.

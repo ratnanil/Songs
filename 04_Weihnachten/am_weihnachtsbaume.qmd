@@ -1,6 +1,6 @@
 ---
 title: Am Weihnachtsbaum die Lichter brennen
-capo: '3'
+capo: 3
 time: 4/4
 
 ---

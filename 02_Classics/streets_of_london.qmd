@@ -14,7 +14,7 @@ In his eyes you see no pride, and held loosely by his side
 [F]        [C]             [G7]        [C]
 yesterday's papers, telling yesterday's news
 
-::: {.callout appearance="minimal"}
+:::{.chorus}
      [F]         [Em]            [C]  [G7]   [Am]
     So how can you tell me, you're lo - ne - ly
 [D7]         [D7]                   [G]    [G7]

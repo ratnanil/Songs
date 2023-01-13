@@ -1,7 +1,7 @@
 ---
 title: Wagon Wheel
 artist: Old Crow Medicine Show
-capo: '2'
+capo: 2
 ---
 
 [G]                     [D]
@@ -19,7 +19,7 @@ Pickin' me a bouquet of dogwood flowers
 And I'm a hopin' for Raleigh 
 I can see my baby tonight
 
-::: {.callout appearance="minimal"}
+:::{.chorus}
   [G]                 [D]
 So rock me mama like a wagon wheel
 [Em]           [C]

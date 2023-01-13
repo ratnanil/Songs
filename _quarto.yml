@@ -130,3 +130,6 @@ format:
 from: markdown+hard_line_breaks-smart
 # extension "hard_line_breaks" interprets single line breaks as hard line breaks
 # extension "smart" replaces two -- as an emdash, which is not good for tabs
+filters:
+   - latex-environment # enables the creation of latex environments with :::{.name} and :::
+environments: [chorus,tab]

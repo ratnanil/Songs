@@ -1,7 +1,7 @@
 ---
 title: Stille Nacht
 time: 3/4
-capo: '0'
+capo: 0
 
 ---
 

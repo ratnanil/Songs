@@ -2,7 +2,7 @@
 title: Arabisch
 artist: Mani Matter
 time: 2/4
-capo: '2'
+capo: 2
 
 ---
 :::{.song-grid}

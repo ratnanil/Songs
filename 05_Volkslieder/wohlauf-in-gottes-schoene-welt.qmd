@@ -4,25 +4,25 @@ artist: Julius Rodenberg
 source: https://www.lieder-archiv.de/wohlauf_in_gottes_schoene_welt-notenblatt_100122.html 
 ---
 
-    F             F      
+    F             F      
 Wohlauf in Gottes schöne Welt
-C7        F
+C7        F
 lebewohl ade! 
 
 Die Luft ist blau und grün das Feld
-C7        F
+C7        F
 lebewohl ade! 
-    B               F
+    B               F
 Die Berge glühn wie Edelstein
-Dm  C7              F
+Dm  C7              F
 Ich wandere mit dem Sonnenschein
-C7        F
+C7        F
 la la la, la la la
-     C7            F  C F
+     C7            F  C F
 in´s weite Land hinein
-C7        F 
+C7        F 
 la la la, la la la
-     C7            F
+     C7            F
 in´s weite Land hinein
 
 
@@ -32,7 +32,7 @@ Der ruft den letzten Gruß mir nach,
 lebewohl ade!
 Ach Gott da wird so eigen mir
 So milde weh’n die Lüfte hier
-Tralala. . .  als wär’s ein Gruß von Dir
+Tralala. . .  als wär’s ein Gruß von Dir
 
 Ein Gruß von dir, du schönes Kind,
 lebewohl ade!
@@ -40,7 +40,7 @@ Doch nun den Berg hinab geschwind,
 lebewohl ade!
 Wer wandern will, der darf nicht stehen,
 Der darf niemals nach hinten sehen,
-Tralala. . .  muß immer weiter gehn.
+Tralala. . .  muß immer weiter gehn.
 
 Du traute Stadt am Bergeshang,
 lebewohl ade!
@@ -48,4 +48,4 @@ Du hoher Turm du Glockenklang,
 lebewohl ade!
 Ihr Häuser alle wohlbekannt
 Noch einmal wink’ ich mit der Hand
-Tralala. . .  und nun seitab gewandt
+Tralala. . .  und nun seitab gewandt

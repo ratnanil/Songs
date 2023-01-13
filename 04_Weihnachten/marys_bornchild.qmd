@@ -1,28 +1,22 @@
 ---
 title: Marys Bornchild
-capo: '0'
+capo: 0
 time: 6/6
 
 ---
-<!--Verse-->
-:::{.song-grid} 
-
 G·····|C··Am·|D····|G·····|
 G·····|C··Am·|D····|G·····|
-:::
 
 Long time ago in Bethlehem, 
 so the Holy Bible says,  
 Mary's boychild, Jesus Christ, 
 was born on Christmas Day. 
 
-<!--Chorus-->
-:::{.song-grid} 
+
+:::{.chorus}
 G··C··|D··G···|Em·Am·|D····|
 G·····|C··Am··|G··D··|G····|
-:::
 
-::: {.callout appearance="minimal"}
 Hark now! Hear the Angels sing, 
 a King was born today, 
 and man will live forever more 
@@ -48,7 +42,6 @@ listen to what they say,
 that man will live forever more 
 because of Christmas Day. 
 
-*play chorus*
 *play chorus*
   
 And then they found a little nook, 

@@ -10,12 +10,41 @@ I've implemented following tricks to make this book work:
   - I therefore switched to document class `memoir`, which has the options `openright` AND `openleft` (other latex classes seem only to have `openright` and `openany`). 
   - I additionally implemented [an SO solution](https://tex.stackexchange.com/questions/66278/chapters-that-openleft-unless-the-chapter-is-only-one-page-long?rq=1) where the number of pages per chapter is counted, and if this number is odd, the chapter is started on an odd page and vise versa.
 - For pdf output, I added `\widowpenalties` 1 10000 and `\raggedbottom` to the preamble to prevent page braks within paragraphs, i.e. verses.
-
+- I want to easily highlight the chorus using markdown. 
+  - To do so, I installed the extension `latex-environment` with
+  ```sh
+  quarto install extension quarto-ext/latex-environment`
+  ```
+  - I then added the following to _quarto.yml
+  ```
+  filters:
+    - latex-environment
+  environments: [chorus]
+  ```
+  - Now, using the following syntax, I can easily add specify a chorus using the following syntax:
+  ```
+  :::{.chorus}
+  California dreamin  (California dreamin')
+  :::
+  ```
+  - This will create a latex environment named chorus (it will also create a div (?) with the class "chorus"):
+  ```
+  \begin{chorus}
+  California dreamin  (California dreamin')
+  \end{chorus}
+  ```
+  - This is not a valid latex environment *yet*. To make it so, I use the package `tcolorbox`. With the following three lines, I add create an evironment named chorus
+  ```
+  \usepackage{tcolorbox}
+  \tcbuselibrary{skins} % optional I think
+  \newtcolorbox{chorus}[1][Chorus]{left*=0mm,grow to left by=2mm,fonttitle=\small,title=#1}
+  % [1] means 1 optional argument (the title, where the default is "Chorus")
+  ```
 
 Syntax:
 
 - To add a song, i need to create a \*.qmd file in one of the available subfolders. 
-- The song needs a title and can have other meta data (which one day I want to display in the book) such as `capo`, `year`, `artist`, `time`, and `source`
+- The song needs a title and can have other meta data (which one day I want to display in the book) such as `capo`, `year`, `artist`, `time`, `source` and `tempo`(bpm)
 - If the Song has a chorus (or something else to be highlighted), place it in between `:::{.callout appearance="minimal"}` and `:::`
 - add the path to the \*.qmd file to `_quarto.yml`
 - Play the song

@@ -1,6 +1,6 @@
 ---
 title: Ihr Kinderlein Kommet
-capo: '2'
+capo: 2
 
 ---
 

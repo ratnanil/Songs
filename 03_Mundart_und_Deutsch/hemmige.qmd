@@ -1,7 +1,7 @@
 ---
 title: Hemmige
 artist: Mani Matter
-capo: '1'
+capo: 1
 time: 4/4
 
 ---

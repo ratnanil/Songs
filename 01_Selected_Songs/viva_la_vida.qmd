@@ -1,7 +1,7 @@
 ---
 title: Viva la Vida
 artist: Coldplay
-capo: '1'
+capo: 1
 
 ---
 
@@ -32,7 +32,7 @@ Next the walls were closed on me
 And I discovered that my castles stand 
 Upon pillars of salt and pillars of sand 
 
-::: {.callout appearance="minimal"}
+:::{.chorus}
  [C]            [D]
 I hear Jerusalem bells are ringing
 [G]          [Em]

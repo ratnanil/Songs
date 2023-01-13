@@ -2,7 +2,7 @@
 title: Der Traum vom Fliegen
 artist: Alexandra
 year: 1968
-capo: '0'
+capo: 0
 
 ---
 {temp: 8/8}
