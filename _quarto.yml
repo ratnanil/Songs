@@ -114,7 +114,7 @@ format:
     geometry:
       - left=16mm
       - top=05mm
-      - right=02mm
+      - right=05mm
       - bottom=5mm
     keep-tex: true
     include-before-body: titlepage.tex
