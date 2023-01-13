@@ -15,6 +15,13 @@
 % --> 
 
 
+% <-- prevent page breaks inside paragraphs (i.e. verses)
+% https://tex.stackexchange.com/questions/21983/how-to-avoid-page-breaks-inside-paragraphs
+\widowpenalties 1 10000
+\raggedbottom
+% -->
+
+
 % <-- prevent the creation of a automatic titlepage 
 % https://stackoverflow.com/questions/45963505/coverpage-and-copyright-notice-before-title-in-r-bookdown
 \let\oldmaketitle\maketitle
