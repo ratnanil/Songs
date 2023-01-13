@@ -1,7 +1,7 @@
 ---
 title: Sound of Silence
 artist: Simon and Garfunkel
-year: '1964'
+year: 1964
 capo: '6'
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: For the Windows in Paradise
 artist: Sufjan Stevens
-year: '2003'
+year: 2003
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Der Mond ist aufgegangen
 artist: Matthias Claudius
-year: '1779'
+year: 1779
 source: https://de.wikipedia.org/wiki/Abendlied_(Matthias_Claudius)
 
 ---

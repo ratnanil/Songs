@@ -1,7 +1,7 @@
 ---
 title: Winds of Change
 artist: Scorpions
-year: '1991'
+year: 1991
 
 ---
 

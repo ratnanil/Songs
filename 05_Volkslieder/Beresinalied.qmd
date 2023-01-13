@@ -1,7 +1,7 @@
 ---
 title: Beresinalied
 artist: Thomas Legler
-year: '1812'
+year: 1812
 source: https://tabs.ultimate-guitar.com/tab/4239166
 ---
 
