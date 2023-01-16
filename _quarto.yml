@@ -1,12 +1,43 @@
 project:
   type: book
 
+
+format:
+  pdf: 
+    documentclass: memoir
+    classoption: a5paper
+    geometry:
+      - left=16mm
+      - top=05mm
+      - right=05mm
+      - bottom=5mm
+    keep-tex: true
+    include-before-body: titlepage.tex
+    include-in-header: preamble.tex
+    mainfont: FreeMono
+    cover-image: misc/title.png
+    latex-max-runs: 5 # default is 9, testing for even odd pages seems to need more (Inf ?) runs
+  html:
+    css: style.css
+    theme: darkly
+    linestretch: 1
+    fontsize: 0.8em
+from: markdown+hard_line_breaks-smart
+# extension "hard_line_breaks" interprets single line breaks as hard line breaks
+# extension "smart" replaces two -- as an emdash, which is not good for tabs
+filters:
+   - latex-environment # enables the creation of latex environments with :::{.name} and :::
+environments: [chorus,tab]
+
 book:
   title: "Songs"
   author: "Nils Ratnaweera"
   downloads: pdf
   sidebar: 
     collapse-level: 1
+  repo-url: https://github.com/ratnanil/Songs
+  repo-actions: [edit] # this doesn't show since my pages have no toc
+  repo-branch: master
   chapters:
     - index.qmd
     - part: Selected-Songs.qmd
@@ -107,29 +138,4 @@ book:
     #   chapters: 
     #   - 07_notes_and_tabs/greensleeves.qmd"
 
-format:
-  pdf: 
-    documentclass: memoir
-    classoption: a5paper
-    geometry:
-      - left=16mm
-      - top=05mm
-      - right=05mm
-      - bottom=5mm
-    keep-tex: true
-    include-before-body: titlepage.tex
-    include-in-header: preamble.tex
-    mainfont: FreeMono
-    cover-image: misc/title.png
-    latex-max-runs: 5 # default is 9, testing for even odd pages seems to need more (Inf ?) runs
-  html:
-    css: style.css
-    theme: darkly
-    linestretch: 1
-    fontsize: 0.8em
-from: markdown+hard_line_breaks-smart
-# extension "hard_line_breaks" interprets single line breaks as hard line breaks
-# extension "smart" replaces two -- as an emdash, which is not good for tabs
-filters:
-   - latex-environment # enables the creation of latex environments with :::{.name} and :::
-environments: [chorus,tab]
+
