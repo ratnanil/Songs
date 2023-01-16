@@ -32,7 +32,7 @@ p {
 .chorus::before {
   content: "Chorus"; /* this is hardcoded here, while its an argument in latex */
   position: relative;
-  top: -20px;
+  top: -16px;
   color: white;
 }
 
