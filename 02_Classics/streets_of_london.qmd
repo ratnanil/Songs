@@ -5,43 +5,71 @@ year: 1967
 
 ---
 
-[C]              [G]      [Am]               [Em]
-Have you seen the old man, in the closed-down market
-[F]           [C]              [D7]     [G7]
-picking up the papers, with his worn-out shoes?
-[C]            [G]           [Am]             [Em]
-In his eyes you see no pride, and held loosely by his side
-[F]        [C]             [G7]        [C]
-yesterday's papers, telling yesterday's news
+[C]              [G]      
+Have you seen the old man,
+[Am]               [Em]
+ in the closed-down market
+[F]           [C]     
+picking up the papers,
+        [D7]     [G7]
+with his worn-out shoes?
+[C]            [G]           
+In his eyes you see no pride,
+[Am]             [Em]
+ and held loosely by his side
+[F]        [C]      
+yesterday's papers, 
+       [G7]        [C]
+telling yesterday's news
 
 :::{.chorus}
-     [F]         [Em]            [C]  [G7]   [Am]
-    So how can you tell me, you're lo - ne - ly
-[D7]         [D7]                   [G]    [G7]
-  and say for you that the sun don't shine?
-[C]            [G]              [Am]                 [Em]
-Let me take you by the hand, and lead you through the streets of London
-[F]            [C]           [G7]                 [C]    [C]
-  I'll show you something, to make you change your mind
+ [F]         [Em]       
+So how can you tell me, 
+     [C]  [G7]   [Am]
+you're lo - ne - ly
+[D7]         [D7] 
+  and say for you 
+                  [G]    [G7]
+that the sun don't shine?
+[C]            [G]           
+Let me take you by the hand, 
+   [Am]                 [Em]
+and lead you through the streets of London
+[F]            [C]         
+I'll show you something, 
+  [G7]                 [C]    [C]
+to make you change your mind
 :::
 
-Have you seen the old gal, who walks the streets of London
-dirt in her hair, and her clothes in rags?
-She's no time for talking, she just keeps right on walking
-Carrying her home, in two carrier bags
+Have you seen the old gal, 
+who walks the streets of London
+dirt in her hair, 
+and her clothes in rags?
+She's no time for talking, 
+she just keeps right on walking
+Carrying her home, 
+in two carrier bags
 
 *play chorus*
 
-And in the all-night cafe, at a quarter past eleven
-some old man sitting there, all on his own
-Looking at the world, over the rim of his tea-cup
-Each day lasts an hour, then he wanders home alone
+And in the all-night cafe, 
+at a quarter past eleven
+some old man sitting there, 
+all on his own
+Looking at the world, 
+over the rim of his tea-cup
+Each day lasts an hour, 
+then he wanders home alone
 
 *play chorus*
 
-And have you seen the old man, outside the seaman's mission?
-His memory's fading, with those medal ribbons that he wears
-And in our winter city, the rain cries little pity
-For one more forgotten hero, and a world that doesn't care
+And have you seen the old man, 
+outside the seaman's mission?
+His memory's fading, 
+with those medal ribbons that he wears
+And in our winter city, 
+the rain cries little pity
+For one more forgotten hero, 
+and a world that doesn't care
 
 

@@ -30,7 +30,7 @@ Illuminate the "no's", on their vacancy signs
 If there's no one beside you,
           [E]    [Am]G
 when your soul embarks
-Bb                 Bbm           [F](C root note)
+Bb                 Bbm           [F]\(C root note)
 Then I will follow you into the dark
 :::
 
@@ -55,16 +55,7 @@ Because we'll hold each other soon
 [Am]                 Fm    Fm
 in the blackest of rooms 
 
-[Am]                [C]    
-If heaven and hell decide, 
-          [F]          [C]G
-that they both are satisfied
-[Am]            [C]                G(bar)
-Illuminate the "no's", on their vacancy signs
-[Am]                     [C]            [E]    [Am]G
-If there's no one beside you, when your soul embarks
-[F]               Fm           [C]   
-Then I will follow you into the dark
+*Play chorus*
 
 :::{.tab}
 E---------------------|
