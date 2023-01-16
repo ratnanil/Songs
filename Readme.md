@@ -1,6 +1,17 @@
 
 
-I've implemented following tricks to make this book work:
+## How to add a new song
+
+1. Create a \*.qmd file in one of the available subfolders. 
+2. Add a yaml header to the file.
+  - Mandatory field(s): `title`
+  - Optional field(s): `capo`, `year`, `artist`, `time`, `source` and `tempo`(bpm)
+3. Wrap chorus between `:::{.chorus}` and `:::`
+4. Add the path to the \*.qmd file to `_quarto.yml`
+5. Play the song
+
+
+## How this book is built
 
 - Since chords and text appear on seperate lines, the font needs to be monospaced so that they are aligned correctly (see `mainfont: FreeMono` in `_quarto.yml` for pdf and `font-family: 'Roboto Mono', monospace;` for html)
 - Since chords and text area only seperated by single linebreaks, i needed to activate the extension `hard_line_breaks` (see `_quarto.yml` `from`)
@@ -40,11 +51,11 @@ I've implemented following tricks to make this book work:
   \newtcolorbox{chorus}[1][Chorus]{left*=0mm,grow to left by=2mm,fonttitle=\small,title=#1}
   % [1] means 1 optional argument (the title, where the default is "Chorus")
   ```
+  - BTW: I can pass options and arguments to the latex environment `chorus` by writing `:::{.chorus options="option" arguments="argument"}`. The `tcolorbox` based environment `chorus` would theoretically support using a custom title (e.g. `bridge`). However, it's unclear how I could implement this in html, since the title `chorus` is currently hardcoded in css. `options` and `arguments` passed to `chorus` are stored in the `div` as html attributes `data-options` and `data-arguments`:
+  ```
+  <div class="chorus" data-options="option" data-arguments="argument">
+  ```
 
-Syntax:
 
-- To add a song, i need to create a \*.qmd file in one of the available subfolders. 
-- The song needs a title and can have other meta data (which one day I want to display in the book) such as `capo`, `year`, `artist`, `time`, `source` and `tempo`(bpm)
-- If the Song has a chorus (or something else to be highlighted), place it in between `:::{.callout appearance="minimal"}` and `:::`
-- add the path to the \*.qmd file to `_quarto.yml`
-- Play the song
+
+
