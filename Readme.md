@@ -53,10 +53,9 @@
   \newtcolorbox{chorus}[1][Chorus]{left*=0mm,grow to left by=2mm,fonttitle=\small,title=#1}
   % [1] means 1 optional argument (the title, where the default is "Chorus")
   ```
-  - BTW: I can pass options and arguments to the latex environment `chorus` by writing `:::{.chorus options="option" arguments="argument"}`. The `tcolorbox` based environment `chorus` would theoretically support using a custom title (e.g. `bridge`). However, it's unclear how I could implement this in html, since the title `chorus` is currently hardcoded in css. `options` and `arguments` passed to `chorus` are stored in the `div` as html attributes `data-options` and `data-arguments`:
-  ```
-  <div class="chorus" data-options="option" data-arguments="argument">
-  ```
+  - With a clever interplay of the lua filter, html, css and latex, I can do the following: Pass an option writing `:::{.chorus options="option"}`.
+    - The `tcolorbox` based environment `chorus` will interprete this as a custom title (e.g. `bridge`). 
+    - In html, this option will be stored as an attribute to the div (`data-options="bridge"`). The appropriate html selecters will use this attribute as `content`. If no such attribute is present, it will default to `chorus` as content.
 
 
 
