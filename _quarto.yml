@@ -40,7 +40,7 @@ book:
   repo-branch: master
   chapters:
     - index.qmd
-    - part: Selected-Songs.qmd
+    - part: "Selected Songs"
       chapters:
       - 01_Selected_Songs/i_will_follow_you_into_the_dark.qmd # 2
       - 01_Selected_Songs/suzanne.qmd                         # 2
@@ -54,7 +54,7 @@ book:
       - 01_Selected_Songs/dance_me_to_the_end_of_love.qmd     # 1
       - 01_Selected_Songs/build_me_up_buttercup.qmd           # 1
       - 01_Selected_Songs/hallelujah.qmd                      # 1
-    - part: Guitar-Classics.qmd
+    - part: "Guitar Classics"
       chapters:
       - 02_Classics/ein_bett_im_kornfeld.qmd                  # 2
       - 02_Classics/sweet_home_alabama.qmd                    # 2
@@ -89,7 +89,7 @@ book:
       - 03_Mundart_und_Deutsch/bim_coiffeur.qmd               # 1
       - 03_Mundart_und_Deutsch/eskimo.qmd                     # 1
       - 03_Mundart_und_Deutsch/hemmige.qmd                    # 1
-    - part: Weihnachtslieder.qmd
+    - part: "Weihnachtslieder"
       chapters:
       - 04_Weihnachten/in_der_weihnachtsbaeckerei.qmd         # 2
       - 04_Weihnachten/oh_come_all_ye_faithful.qmd            # 2
@@ -109,7 +109,7 @@ book:
       - 04_Weihnachten/leise_rieselt_der_schnee.qmd           # 1
       - 04_Weihnachten/kommet_ihr_hirten.qmd                  # 1
       - 04_Weihnachten/gloria.qmd                             # 1
-    - part: Volkslieder.qmd
+    - part: "Volkslieder"
       chapters: 
       - 05_Volkslieder/Guggisberg.qmd                         # 2
       - 05_Volkslieder/im_Aargau.qmd                          # 2
@@ -123,7 +123,7 @@ book:
       - 05_Volkslieder/lustig_ist_das_zigeunerleben.qmd       # 1
       - 05_Volkslieder/es_Burebuebli.qmd                      # 1
       - 05_Volkslieder/vo_Luzern.qmd                          # 1
-    - part: Kinderlieder.qmd
+    - part: "Kinderlieder"
       chapters: 
       - 06_Kinderlieder/der_Mond.qmd                          # 2
       - 06_Kinderlieder/isch_mer_alles_eis_ding.qmd           # 1
