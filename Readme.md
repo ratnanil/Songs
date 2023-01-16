@@ -13,7 +13,9 @@
 
 ## How this book is built
 
-- Since chords and text appear on seperate lines, the font needs to be monospaced so that they are aligned correctly (see `mainfont: FreeMono` in `_quarto.yml` for pdf and `font-family: 'Roboto Mono', monospace;` for html)
+- Since chords and text appear on seperate lines, the font needs to be monospaced so that they are aligned correctly. See `_quarto.yml`
+  - pdf: `mainfont: FreeMono` 
+  - html: `font-family: 'Roboto Mono', monospace;`
 - Since chords and text area only seperated by single linebreaks, i needed to activate the extension `hard_line_breaks` (see `_quarto.yml` `from`)
 - Since tabs sometimes rely on multiple dashes (-), and the extension `smart` interprets two dashes (--) as an emdash, I needed to deactivate this extension (see `_quarto.yml` `from`)
 - Since chords have multiple spaces to align them to the right place in the text, i need spaces to be respected. To enable this, I created a preprocessor to replace all double spaces with no break spaces (see `preprocessor.sh`)
