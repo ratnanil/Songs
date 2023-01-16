@@ -17,6 +17,7 @@ p {
   margin-bottom: 2rem;
 }
 
+
 .chorus {
 	padding-top: 0px;
 	padding-left: 5px;
@@ -28,15 +29,39 @@ p {
 	border-top: 20px solid darkgray;
 }
 
-/* the follwing is also experimental*/
+
+/*
+Selects all .chorus elements without a "data-options" attribute 
+and set's the content to "Chorus". 
+*/
+:not([data-options]).chorus::before{
+  content: "Chorus";
+}
+
+/*
+Selects all .chorus elements with a "data-options" attribute 
+and set's the content to that attribute
+*/
+[data-options].chorus::before{
+  content: attr(data-options);
+}
+
+/*
+Styling the content which is set above
+*/
 .chorus::before {
-  content: "Chorus"; /* this is hardcoded here, while its an argument in latex */
   position: relative;
   top: -16px;
   color: white;
 }
 
-.chorus> :last-child{
+/*remove some a big gap after the title*/
+.chorus>:first-child{
+  margin-top: -10px;
+}
+
+/*remove a big gap after the last p*/
+.chorus>:last-child{
   margin-bottom: 0rem;
 }
 
