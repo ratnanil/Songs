@@ -14,11 +14,13 @@ No expression, no expression
 Hide my head, I want to drown my sorrow
 No tomorrow, no tomorrow
 
+:::{.chorus}
 And I find it kinda funny, I find it kinda sad
 The dreams in which I'm dying are the best I've ever had
 I find it hard to tell you, I find it hard to take
 When people run in circles it's a very very
 Mad world, mad world
+:::
 
 Children waiting for the day, they feel good
 Happy birthday, happy birthday
@@ -30,10 +32,4 @@ No one knew me, no one knew me
 Hello teacher, tell me what's my lesson
 Look right through me, look right through me
 
-And I find it kinda funny, I find it kinda sad
-The dreams in which I'm dying are the best I've ever had
-I find it hard to tell you, I find it hard to take
-When people run in circles it's a very very
-Mad world, mad world
-Enlarge your world
-Mad world
+*play chorus*

@@ -29,7 +29,7 @@ I'd Like To Change My Point Of View
 I Feel So Lonely I'm Waiting For You
 But Nothing Ever Happens - And I Wonder
 
-Chorus
+:::{.chorus}
 [G]           [D]
 I Wonder How I Wonder Why
 [Em]                           [Bm]
@@ -42,13 +42,12 @@ I'm Turning My Head Up And Down
  I'm Turning Turning Turning Turning Turning Around
 [C]               [A]                  [D]
 And All That I Can See Is Just another Lemon-tree
-
-
-:::{.song-bridge}
- Em Bm Em Bm Am Bm Em 
- dadada....
 :::
 
+
+<!-- bridge -->
+Em Bm Em Bm Am Bm Em 
+dadada....
 
 I'm Sitting Here I Miss The Power
 I'd Like To Go Out Taking a Shower
@@ -65,7 +64,7 @@ I'm Steppin' Around In a Desert Of Joy
 Baby Anyhow I'll Get Another Toy
 And Everything Will Happen - And You'll Wonder
 
-Chorus 2x
+*play chorus twice*
 
 [C]               [D]
 And All That I Can See

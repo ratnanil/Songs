@@ -37,14 +37,14 @@ Sang der Nachtwind in den Bäumen
 Wiegte sich das Blatt in Träumen
 Von der weiten herrlichen Welt
 
-Refr
+:::{.chorus}
 Könnt ich nur einmal wie der Wind
 Flie   gen
 Mit den Wolken übers Meer
 Ach mein Leben gäb ich her
 Könnt ich Flie-gen
 Könnt ich Fliegen
-
+:::
 
 Bald kam der Herbst
 Gab dem Blatt sein schönstes Kleid

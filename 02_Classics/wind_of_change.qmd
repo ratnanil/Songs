@@ -31,6 +31,7 @@ The future's in the air
 I can feel it everywhere
 Blowing with the wind of change 
 
+:::{.chorus}
 [C] [G]       [Dm]         [G]
 Take me to the magic of the moment
     [C]   [G]
@@ -39,26 +40,24 @@ On a glory night
 Where the children of tomorrow dream away
 [F]             [G]
 In the wind of change
+:::
+
 Walking down the street
 Distant memories
 Are buried in the past forever
 
-
 I follow the Moskva
 Down to Gorky Park
 Listening to the wind of change
-Chorus (1st Part):
+
 Take me to the magic of the moment
 On a glory night
 Where the children of tomorrow share their dreams
 With you and me
 
-Take me to the magic of the moment
-On a glory night
-Where the children of tomorrow dream away
-In the wind of change
+*Play chorus*
 
-:::{.song-bridge}
+<!--bridge -->
 [Am]                     [G]
 The wind of change blows straight
                  [Am]
@@ -71,7 +70,7 @@ The freedom bell for peace of mind
 Let your balalaika sing
                        [Em]    [E7]
 What my guitar wants to say
-:::
+
 
 *play chorus*
 
