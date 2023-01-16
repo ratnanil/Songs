@@ -7,7 +7,7 @@ capo: 0
 ---
 {temp: 8/8}
 
- <!--Intro-->
+ <!--Intro-->
 
 :::{.song-grid}
 Am····|D·····|Am····|D·····|
@@ -60,7 +60,7 @@ Und er riss vom Baum das Blatt
 trieb es in die große Stadt
 ließ es flie gen, ließ es
 Flie gen
- 
+ 
 Kurz war das Glück
 Müde sank das Blatt hinab
 Auf die Straße, sein regennasses Grab

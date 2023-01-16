@@ -6,7 +6,7 @@ year: 1991
 ---
 
 :::{.song-grid}
- F  Dm  F   Dm Am   G  Am  G  C   C
+ F  Dm  F   Dm Am   G  Am  G  C   C
 :::
 
 [C]            [Dm]

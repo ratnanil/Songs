@@ -6,7 +6,7 @@ year: 1992
 ---
 
 :::{.song-grid}
- E A D  G   B  E 
+ E A D  G   B  E 
 :::
 
    [Am]                  [D]

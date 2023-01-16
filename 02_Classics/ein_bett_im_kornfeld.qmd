@@ -5,18 +5,19 @@ artist: Jürgen Drews
 ---
 
 [D]
-Sommerabend über blühendem Land.
-Schon seit Mittag stand ich am 
-Straßenrand.
+Sommerabend über blühendem Land
+Schon seit Mittag stand ich am Straßenrand
            [A]
 Bei jedem Wagen, der vorüber fuhr,
             [D]
 hob ich den Daumen.
-auf einem Fahrrad kam da ein 
+
+Auf einem Fahrrad kam da ein 
 Mädchen her.
 Und sie sagte: "Ich bedaure dich sehr."
           [A]                                         [D]
-Doch ich lachte und sprach: "Ich brauch keine weichen Daunen"
+Doch ich lachte und sprach: 
+"Ich brauch keine weichen Daunen"
 
 :::{.chorus data-options="Refrain"}
              [G]

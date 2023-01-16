@@ -6,7 +6,7 @@ artist: The Shins
 
 :::{.song-grid}
 Am C F C G C Am G x4
- C 
+ C 
 :::
 
 [Am]            [C]            [F]
@@ -25,7 +25,7 @@ I was happier then with no mind set
 :::{.chorus}
 [G]                   [C]
 And if you'd a took to me like
- [F]  [C]          [G]
+ [F]  [C]          [G]
 A gull takes to the wind
            [G]         [C]
 Well, I'd a jumped from my tree
