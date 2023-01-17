@@ -19,7 +19,7 @@ Und sie sagte: "Ich bedaure dich sehr."
 Doch ich lachte und sprach: 
 "Ich brauch keine weichen Daunen"
 
-:::{.chorus data-options="Refrain"}
+:::{.chorus options="Refrain"}
              [G]
 Ein Bett im Kornfeld,
 Das ist immer frei, denn es ist
