@@ -105,7 +105,7 @@ I dont want this book to become more complex that it already is. However, it's h
 
 ### lua filter `lilypond`
 
-Lilypond is a huge software for music notation. It does far more that I will *ever* need, but some subsets of the program might be interesting. What makes lilypond great is the fact that it is a text based command line program for which someone built a lua filter that can be included in pandoc. For example, assume the following lines are stored in a file named `fretboard.md`:
+Lilypond is a huge software for music notation. It does far more that I will *ever* need, but some subsets of the program might be interesting. What makes lilypond great is the fact that it is a text based command line program [for which someone built a lua filter](https://github.com/pandoc/lua-filters/tree/master/lilypond) that can be included in pandoc. For example, assume the following lines are stored in a file named `fretboard.md` (taken from [here](https://lilypond.org/doc/v2.22/Documentation/snippets-big-page#fretted-strings-barres-in-automatic-fretboards)):
 
 
 ``` 
