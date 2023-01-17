@@ -1,17 +1,29 @@
 
 
-## How to add a new song
+## How do I add a new song?
 
 1. Create a \*.qmd file in one of the available subfolders. 
 2. Add a yaml header to the file.
   - Mandatory field(s): `title`
-  - Optional field(s): `capo`, `year`, `artist`, `time`, `source` and `tempo`(bpm)
-3. Wrap chorus between `:::{.chorus}` and `:::`
+  - Optional field(s): `capo`, `year`, `artist`, `time`, `source` and `tempo`(bpm) (see [chordpro](https://www.chordpro.org/chordpro/chordpro-directives/))
+3. Wrap chorus between 
+   ```
+   :::{.chorus}
+   California dreamin  (California dreamin')
+   ...
+   :::
+   ```
 4. Add the path to the \*.qmd file to `_quarto.yml`
-5. Play the song
+5. *Play the song*
 
 
-## How this book is built
+## How does this book work?
+
+(*For future me, what are the components that make this book work?*)
+
+I've had many iterations of this book. Initially in 2011, I stared out using Latex with the [songbook package](https://songs.sourceforge.net/index.html). I switched to Lynx at some point and just copy and pasted songs and displayed them in vertabim / monospaced fonts. This was all pdf based, so after a couple of years I switched to [bookdown ](https://bookdown.org/) which could create both html and pdf outputs. I even created an R Package based on bookdown (`songbookdown`), but found it too much work to maintain. I then quickly switched to the newly released software [quarto](https://quarto.org/) and am very happy with the current status. I try to keep work on my side minimal and leverage pandoc extensions and lua filters to do the heavy lifting. I also try to keep the source files as simple as possible, so I can continue to copy and paste songs from popular websites without having to manually adjust them to my schema.
+
+I use the following tricks to generate the book:
 
 - Since chords and text appear on seperate lines, the font needs to be monospaced so that they are aligned correctly. See `_quarto.yml`
   - pdf: `mainfont: FreeMono` 
