@@ -93,8 +93,8 @@ California dreamin  (California dreamin')
 % [1] means 1 optional argument (the title, where the default is "Chorus")
 ```
 - With a clever interplay of the lua filter, html/css and latex/tcolorbox, I can do the following: Pass an alternative header as an option, e.g. `:::{.chorus options="Refrain"}`
-  - In latex, the `tcolorbox` based environment `chorus` will interprete this as a custom title (e.g. `bridge`),since this is how I had prepared the environment in step before 
-  - In html, this option will be stored as an attribute to the div (`data-options="bridge"`). The appropriate html selecters will use this attribute as `content`. If no such attribute is present, it will default to `chorus` as content.
+  - In latex, the `tcolorbox` based environment `chorus` will interprete this as a custom title (since this is how I had prepared the environment in step before) 
+  - In html, this option will be stored as an attribute to the div (`data-options="Refrain"`). The appropriate html selecters will use this attribute as `content`. If no such attribute is present, it will default to `Chorus` as content.
 
 
 ## (further) notes to self
