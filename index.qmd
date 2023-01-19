@@ -2,14 +2,10 @@
 
 
 ::: {.content-visible when-format="html"}
-This is a hand picked collection of songs.
-While you're looking at the web-version of this book, there is also a pdf version that can be downloaded by clicking on the pdf symbol in the top left corner.
-Edits and feedback can be made via the repo ([github.com/ratnanil/songs](https://github.com/ratnanil/songs)). 
+This is a hand picked collection of songs.While you're looking at the web-version of this book, there is also a pdf version that can be downloaded by clicking on the pdf symbol in the top left corner.Edits and feedback can be made via the repo ([github.com/ratnanil/songs](https://github.com/ratnanil/songs)). 
 :::
 
 ::: {.content-visible when-format="pdf"}
-This is a hand picked collection of songs. 
-While you're looking at the pdf version of this book, there is also an online version hosted on [ratnaweera.xyz/Songs](https://www.ratnaweera.xyz/Songs) 
-Edits and feedback can be made via the repo ([github.com/ratnanil/songs](https://github.com/ratnanil/songs)). 
+This is a hand picked collection of songs. While you're looking at the pdf version of this book, there is also an online version hosted on [ratnaweera.xyz/Songs](https://www.ratnaweera.xyz/Songs). Edits and feedback can be made via the repo ([github.com/ratnanil/songs](https://github.com/ratnanil/songs)). 
 :::
 
