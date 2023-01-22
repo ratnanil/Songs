@@ -27,6 +27,7 @@ from: markdown+hard_line_breaks-smart
 # extension "smart" replaces two -- as an emdash, which is not good for tabs
 filters:
    - latex-environment # enables the creation of latex environments with :::{.name} and :::
+  #  - add_to_title.lua
 environments: [chorus,tab]
 
 book:
@@ -89,6 +90,7 @@ book:
       - 03_Mundart_und_Deutsch/bim_coiffeur.qmd               # 1
       - 03_Mundart_und_Deutsch/eskimo.qmd                     # 1
       - 03_Mundart_und_Deutsch/hemmige.qmd                    # 1
+      - 03_Mundart_und_Deutsch/dene_wos_guet_geit.qmd         # 1
     - part: "Weihnachtslieder"
       chapters:
       - 04_Weihnachten/in_der_weihnachtsbaeckerei.qmd         # 2
