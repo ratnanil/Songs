@@ -42,7 +42,6 @@ function Para(element)
   local lengthNum = 0
   for k, v in pairs(my_key_values) do 
     lengthNum = lengthNum + 1
-    print(lengthNum)
   end
   -- -->
   
