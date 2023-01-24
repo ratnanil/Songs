@@ -1,7 +1,8 @@
 ---
 title: Stille Nacht
-time: 3/4
-capo: 0
+song_meta:
+  time: 3/4
+  capo: 0
 
 ---
 

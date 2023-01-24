@@ -1,7 +1,8 @@
 ---
 title: The First Noel
-capo: 0
-time: 3/4
+song_meta:
+  capo: 0
+  time: 3/4
 
 ---
 

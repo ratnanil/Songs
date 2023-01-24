@@ -1,8 +1,9 @@
 ---
 title: Leise rieselt der Schnee
-capo: 0
 source: https://tabs.ultimate-guitar.com/tab/misc-christmas/leise-rieselt-der-schnee-chords-448821
-time: 3/4
+song_meta:
+  time: 3/4
+  capo: 0
 ---
 
 G     D7          G     G7

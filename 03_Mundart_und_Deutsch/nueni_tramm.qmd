@@ -5,12 +5,16 @@ time: 4/8
 
 ---
 
+Intro: Am6+
+
 :::{.song-grid}
 |Am·······|········|········|········|
 |·········|········|········|········|
 |G7·······|········|········|········|
 |Am·······|········|E·······|Am6+····|
 :::
+
+Am6+: 002212
 
 Geschter z'Nacht het ds Nüünitram statt hei i ds Depot z'gah
 Plötzlich, niemer weis warum, sys Schinegleis verla

@@ -1,8 +1,8 @@
 ---
 title: I will follow you into the Dark
 artist: Death Cab for Cutie
-capo: 5
-
+song_meta:
+    capo: 5
 ---
 
 [C]

@@ -1,8 +1,9 @@
 ---
 title: Hemmige
 artist: Mani Matter
-capo: 1
-time: 4/4
+song_meta:
+  capo: 1
+  time: 4/4
 
 ---
 :::{.song-grid}
