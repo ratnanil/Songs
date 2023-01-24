@@ -1,7 +1,6 @@
 ---
 title: Sweet Home Alabama
 artist: Lynyrd Skynyrd
-
 ---
 
 :::{.tab}

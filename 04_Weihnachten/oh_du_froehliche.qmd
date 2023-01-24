@@ -2,8 +2,7 @@
 title: Oh Du Fröhliche
 source: https://tabs.ultimate-guitar.com/tab/3454490
 song_meta:
-  capo: 3
-
+  capo: 3
 ---
 
 G  C  G

@@ -2,7 +2,6 @@
 title: Es Burebüebli
 artist: vo Bern
 source: https://als.wikipedia.org/wiki/Text:Volkslieder/Es_Bureb%C3%BCebli
-
 ---
 
 

@@ -2,8 +2,7 @@
 title: Viva la Vida
 artist: Coldplay
 song_meta:
-  capo: 1
-
+  capo: 1
 ---
 
 :::{.song-grid}

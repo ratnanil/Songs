@@ -2,7 +2,6 @@
 title: Alls wo mir id finger chunnt
 artist: Mani Matter
 time: 2/4
-
 ---
 
 

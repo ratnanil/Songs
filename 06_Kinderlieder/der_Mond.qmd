@@ -4,8 +4,8 @@ artist: Matthias Claudius
 year: 1779
 source: https://www.youtube.com/watch?v=hvjZt9T3Ljk
 song_meta:
-  capo: 2
-  time: 8/8
+  capo: 2
+  time: 8/8
 ---
 
 C   G7   F C G   C        F C  G7  C        F C 

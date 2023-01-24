@@ -2,7 +2,6 @@
 title: Dr Wecker
 artist: Mani Matter
 time: 4/8
-
 ---
 
 

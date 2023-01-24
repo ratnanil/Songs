@@ -2,7 +2,6 @@
 title: S'Vogellisi
 artist: Peter Wackel
 source: https://www.lyrix.at/t/peter-wackel-vogellisi-54a
-
 ---
 
 

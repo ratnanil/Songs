@@ -1,7 +1,6 @@
 ---
 title: Silent Night
 time: 3/4
-
 ---
 
 

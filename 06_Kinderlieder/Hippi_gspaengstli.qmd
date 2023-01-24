@@ -2,7 +2,6 @@
 title: Ds Hippygspängstli
 artist: Peter Reber
 source: https://www.brauchtumschweiz.ch/volkslieder-mundart/ds-hippygspaengstli
-
 ---
 
 

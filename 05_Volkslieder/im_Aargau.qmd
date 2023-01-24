@@ -2,7 +2,6 @@
 title: im Aargau sind zwöi Liebi
 artist: anonym
 source: https://als.wikipedia.org/wiki/Text:Volkslieder/Im_Aarg%C3%A4u_sind_zw%C3%B6i_Liebi
-
 ---
 
 

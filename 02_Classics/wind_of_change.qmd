@@ -2,7 +2,6 @@
 title: Winds of Change
 artist: Scorpions
 year: 1991
-
 ---
 
 :::{.song-grid}

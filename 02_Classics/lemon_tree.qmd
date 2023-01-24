@@ -2,10 +2,9 @@
 title: Lemon Tree
 artist: Fools Garden
 song_meta:
-  year: 1996
-  tempo: 115 bpm
-  capo: 1
-
+  tempo: 115 bpm
+  capo: 1
+year: 1996
 ---
 
 :::{.song-grid}

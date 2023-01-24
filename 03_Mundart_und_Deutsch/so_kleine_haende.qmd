@@ -1,7 +1,6 @@
 ---
 title: Kinder - Sind so kleine Hände
 artist: Bettina Wegner
-
 ---
 
 :::{.song-grid}

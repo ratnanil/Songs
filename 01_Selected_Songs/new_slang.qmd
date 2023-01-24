@@ -1,7 +1,6 @@
 ---
 title: New Slang
 artist: The Shins
-
 ---
 
 :::{.song-grid}

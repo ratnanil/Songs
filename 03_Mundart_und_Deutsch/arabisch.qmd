@@ -2,9 +2,8 @@
 title: Arabisch
 artist: Mani Matter
 song_meta:
-  time: 2/4
-  capo: 2
-
+  time: 2/4
+  capo: 2
 ---
 :::{.song-grid}
 |Am······|········|

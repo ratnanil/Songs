@@ -2,7 +2,6 @@
 title: Lustig ist das Zigeunerleben
 artist: anonym
 source: https://www.volksliederarchiv.de/lustig-ist-das-zigeunerleben/
-
 ---
 
 Lustig ist das Zigeunerleben, 

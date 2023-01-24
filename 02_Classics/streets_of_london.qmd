@@ -2,7 +2,6 @@
 title: Streets of London
 artist: Ralph McTell
 year: 1967
-
 ---
 
 [C]              [G]      

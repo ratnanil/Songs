@@ -3,8 +3,7 @@ title: Sound of Silence
 artist: Simon and Garfunkel
 year: 1964
 song_meta:
-  capo: 6
-
+  capo: 6
 ---
 
 [Am]                    [G]

@@ -1,7 +1,6 @@
 ---
 title: Suzanne
 artist: Leonard Cohen
-
 ---
 
 [E]              

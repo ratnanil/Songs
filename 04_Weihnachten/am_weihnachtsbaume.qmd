@@ -1,8 +1,8 @@
 ---
 title: Am Weihnachtsbaum die Lichter brennen
 song_meta:
-  capo: 3
-  time: 4/4
+    capo: 3
+    time: 4/4
 ---
 
 [G]                    [C]      [G]

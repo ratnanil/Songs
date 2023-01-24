@@ -1,7 +1,6 @@
 ---
 title: Hallelujah
 artist: Leonard Cohen
-
 ---
 
 Well I heard there was a secret chord 

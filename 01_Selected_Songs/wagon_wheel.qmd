@@ -2,7 +2,7 @@
 title: Wagon Wheel
 artist: Old Crow Medicine Show
 song_meta:
-  capo: 2
+  capo: 2
 ---
 
 [G]                     [D]

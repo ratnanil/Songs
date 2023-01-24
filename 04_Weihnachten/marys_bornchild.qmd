@@ -2,7 +2,6 @@
 title: Marys Bornchild
 capo: 0
 time: 6/6
-
 ---
 G·····|C··Am·|D····|G·····|
 G·····|C··Am·|D····|G·····|

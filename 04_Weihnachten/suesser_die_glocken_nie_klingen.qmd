@@ -2,7 +2,6 @@
 title: Süsser die Glocken nie klingen
 capo: 5
 time: 3/4
-
 ---
 
 :::{.song-grid}

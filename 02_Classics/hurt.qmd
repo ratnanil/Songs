@@ -1,7 +1,6 @@
 ---
 title: Hurt
 artist: Johnny Cash
-
 ---
 
 [Am][C]     [D]   [Am]     [C]    [D]     [Am]

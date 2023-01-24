@@ -2,7 +2,6 @@
 title: Lied des Zigeuners
 artist: Jean Portier und Dietmar Janz
 source: https://angerweit.tikon.ch/lieder/jugendbewegung/europaszonen.pdf
-
 ---
 
 
