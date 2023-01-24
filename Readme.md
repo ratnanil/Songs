@@ -21,20 +21,20 @@
 
 (*For future me, what are the components that make this book work?*)
 
-I've had many iterations of this book. Initially in 2011, I stared out using Latex with the [songbook package](https://songs.sourceforge.net/index.html). I switched to Lynx at some point and just copy and pasted songs and displayed them in vertabim / monospaced fonts. This was all pdf based, so after a couple of years I switched to [bookdown ](https://bookdown.org/) which could create both html and pdf outputs. I even created an R Package based on bookdown (`songbookdown`), but found it too much work to maintain. I then quickly switched to the newly released software [quarto](https://quarto.org/) and am very happy with the current status. I try to keep work on my side minimal and leverage pandoc extensions and lua filters to do the heavy lifting. I also try to keep the source files as simple as possible, so I can continue to copy and paste songs from popular websites without having to manually adjust them to my schema.
+I've had many iterations of this book. Initially in 2011, I stared out using Latex with the [songbook package](https://songs.sourceforge.net/index.html). I switched to Lynx at some point and just copy and pasted songs and displayed them in verbatim / monospaced fonts. This was all pdf based, so after a couple of years I switched to [bookdown ](https://bookdown.org/) which could create both html and pdf outputs. I even created an R Package based on bookdown (`songbookdown`), but found it too much work to maintain. I then quickly switched to the newly released software [quarto](https://quarto.org/) and am very happy with the current status. I try to keep work on my side minimal and leverage pandoc extensions and lua filters to do the heavy lifting. I also try to keep the source files as simple as possible, so I can continue to copy and paste songs from popular websites without having to manually adjust them to my schema.
 
 I use the following tricks to generate the book:
 
 
 ### Monospaced fonts
 
-Since chords and text appear on seperate lines, the font needs to be monospaced so that they are aligned correctly. See `_quarto.yml`
+Since chords and text appear on separate lines, the font needs to be monospaced so that they are aligned correctly. See `_quarto.yml`
 - pdf: `mainfont: FreeMono` 
 - html: `font-family: 'Roboto Mono', monospace;`
 
 ### Respect soft line breaks
 
-Since chords and text area only seperated by single linebreaks, i needed to activate the extension `hard_line_breaks` (see `_quarto.yml` `from`)
+Since chords and text area only separated by single linebreaks, i needed to activate the extension `hard_line_breaks` (see `_quarto.yml` `from`)
 
 ### Ignore multiple dashes 
 
@@ -85,7 +85,7 @@ California dreamin  (California dreamin')
 \end{chorus}
 ```
 
-- This is not a valid latex environment *yet*. To make it so, I use the package `tcolorbox`. With the following three lines, I add create an evironment named chorus
+- This is not a valid latex environment *yet*. To make it so, I use the package `tcolorbox`. With the following three lines, I add create an environment named chorus
 ```
 \usepackage{tcolorbox}
 \tcbuselibrary{skins} % optional I think
@@ -93,13 +93,18 @@ California dreamin  (California dreamin')
 % [1] means 1 optional argument (the title, where the default is "Chorus")
 ```
 - With a clever interplay of the lua filter, html/css and latex/tcolorbox, I can do the following: Pass an alternative header as an option, e.g. `:::{.chorus options="Refrain"}`
-  - In latex, the `tcolorbox` based environment `chorus` will interprete this as a custom title (since this is how I had prepared the environment in step before) 
-  - In html, this option will be stored as an attribute to the div (`data-options="Refrain"`). The appropriate html selecters will use this attribute as `content`. If no such attribute is present, it will default to `Chorus` as content.
+  - In latex, the `tcolorbox` based environment `chorus` will interpret this as a custom title (since this is how I had prepared the environment in step before) 
+  - In html, this option will be stored as an attribute to the div (`data-options="Refrain"`). The appropriate html selectors will use this attribute as `content`. If no such attribute is present, it will default to `Chorus` as content.
 
+### Add Metadata to document
+
+I was adamant to add the song's metadata to the YAML header. I was sure there is a simple way to then extract this metadata and inject it into the documents body. I was right and I was wrong: There is a way, but its not that simple. But it *is* a chance to learn lua filters, which I've wanted to for a long time. 
+
+So with a little digging into lua filters and [a lot of help from cscheid](https://github.com/quarto-dev/quarto-cli/discussions/4042#discussioncomment-4745280) (on GitHub) I was able to come up with a lua filter that does exactly what I need (see `add_to_title.lua`).
 
 ## (further) notes to self
 
-I dont want this book to become more complex that it already is. However, it's hard not to leverage *even more* of the power behind pandoc. For example, somebody built a lua filter that I could simply integrate into this book to generate chord diagrams for selected songs. More on this below.
+I don't want this book to become more complex that it already is. However, it's hard not to leverage *even more* of the power behind pandoc. For example, somebody built a lua filter that I could simply integrate into this book to generate chord diagrams for selected songs. More on this below.
 
 
 ### lua filter `lilypond`
@@ -131,5 +136,5 @@ where as fretboard.png is the following image:
 
 ![image](https://user-images.githubusercontent.com/12532091/212983581-9e58003a-c443-4f61-9f19-0eaa16b7d340.png)
 
-(the fretboard is very pixallated since its only a tiny portion of a large image, I would need to debug this first).
-
+(the fretboard is very pixellated since its only a tiny portion of a large image, I would need to debug this first).
+h
