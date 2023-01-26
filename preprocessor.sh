@@ -1,9 +1,10 @@
 echo preprocessing
 for d in */*.qmd; do 
-    # sed $'s/\u0020/\./g' $d
-    perl -i -p -e "s/  /  /g;" $d #searching for \u0020\u0020 and replacing with \u00a0\u00a0
-    perl -i -p -e "s/  /  /g;" $d #searching for \u0020\u00a0 and replacing with \u00a0\u00a0
-    perl -i -p -e "s/  /  /g;" $d #searching for \u00a0\u0020 and replacing with \u00a0\u00a0
-    perl -i -p -e "s/^ / /g;" $d  #searching for u0020 at the beginning of a line and replacing it with \u00a0
-
+    # determin the line number of the YAML terminator (second ---)
+    line=$(grep -n "^---" index.qmd | head -2 | tail -1 | awk -F: '{print $1}' )
+    # replace various form of double spaces wtih non-breaking spaces. BUT: skip the YAML header. 
+    perl -i -sne 'if ($. < $n) { print } else { s/  /  /g; print }' -- -n=$line $d
+    perl -i -sne 'if ($. < $n) { print } else { s/  /  /g; print }' -- -n=$line $d
+    perl -i -sne 'if ($. < $n) { print } else { s/  /  /g; print }' -- -n=$line $d
+    perl -i -sne 'if ($. < $n) { print } else { s/^ / /g; print }' -- -n=$line $d
 done
