@@ -1,7 +1,6 @@
 project:
   type: book
 
-
 format:
   pdf: 
     documentclass: memoir
